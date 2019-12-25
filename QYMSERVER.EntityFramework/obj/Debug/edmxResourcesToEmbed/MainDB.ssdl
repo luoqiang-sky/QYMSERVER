@@ -1,0 +1,2415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TestQYDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--生成过程中发现错误:
+警告 6013: 表/视图“TestQYDB.dbo.H_EMPLOYEE”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+        <EntityType Name="H_EMPLOYEE">
+          <Property Name="UserID" Type="nchar" MaxLength="10" />
+          <Property Name="Name" Type="nchar" MaxLength="10" />
+          <Property Name="Department" Type="nchar" MaxLength="10" />
+          <Property Name="UserLevel" Type="nchar" MaxLength="10" />
+          <Property Name="Photo" Type="nchar" MaxLength="10" />
+          <Property Name="Address" Type="nchar" MaxLength="10" />
+          <Property Name="PictureId" Type="nchar" MaxLength="10" />
+          <Property Name="HireDate" Type="nchar" MaxLength="10" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="MobilePhone" Type="nvarchar" MaxLength="50" />
+          <Property Name="Status" Type="nchar" MaxLength="10" />
+        </EntityType>-->
+  <EntityType Name="H_EQUIPMENTALARM">
+    <Key>
+      <PropertyRef Name="EquipmentID" />
+    </Key>
+    <Property Name="EquipmentID" Type="int" Nullable="false" />
+    <Property Name="AlarmType" Type="nvarchar" MaxLength="50" />
+    <Property Name="AlarmStartTime" Type="datetime" />
+    <Property Name="AlarmEndTime" Type="datetime" />
+    <Property Name="AlarmDiscription" Type="nvarchar(max)" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“TestQYDB.dbo.H_EQUIPMENTMAINTENANCE”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="H_EQUIPMENTMAINTENANCE">
+    <Key>
+      <PropertyRef Name="EquipmentID" />
+      <PropertyRef Name="MaintenanceType" />
+    </Key>
+    <Property Name="EquipmentID" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="MaintenanceType" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="MaintenanceDate" Type="datetime" />
+    <Property Name="MaintenanceOperatior" Type="nchar" MaxLength="10" />
+    <Property Name="MaintenanceUsedTime" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="H_EQUIPMENTTABLE">
+    <Key>
+      <PropertyRef Name="EquipmentID" />
+    </Key>
+    <Property Name="EquipmentID" Type="int" Nullable="false" />
+    <Property Name="EquipmentName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="EquipmentStatus" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="EquipmentSchedule" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="H_PRODUCTATTACHEDEDFILE">
+    <Key>
+      <PropertyRef Name="ProductTableId" />
+    </Key>
+    <Property Name="ProductTableId" Type="nchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name" Type="nchar" MaxLength="10" />
+    <Property Name="ContentPath" Type="nvarchar(max)" />
+    <Property Name="Content" Type="varbinary(max)" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6013: 表/视图“TestQYDB.dbo.H_PRODUCTERROR”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+        <EntityType Name="H_PRODUCTERROR">
+          <Property Name="H_PRODUCTERROR" Type="nchar" MaxLength="10" />
+        </EntityType>-->
+  <!--生成过程中发现错误:
+警告 6013: 表/视图“TestQYDB.dbo.H_PRODUCTINFO”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+        <EntityType Name="H_PRODUCTINFO">
+          <Property Name="H_PRODUCTINFO" Type="nchar" MaxLength="10" />
+        </EntityType>-->
+  <!--生成过程中发现错误:
+警告 6013: 表/视图“TestQYDB.dbo.H_QUALITYTABLE”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+        <EntityType Name="H_QUALITYTABLE">
+          <Property Name="QUALITYID" Type="nchar" MaxLength="10" />
+        </EntityType>-->
+  <!--生成过程中发现错误:
+警告 6013: 表/视图“TestQYDB.dbo.H_ROBOTDATA”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+        <EntityType Name="H_ROBOTDATA">
+          <Property Name="Robot" Type="nchar" MaxLength="10" />
+        </EntityType>-->
+  <!--生成过程中发现错误:
+警告 6013: 表/视图“TestQYDB.dbo.H_TRACEDATA”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+        <EntityType Name="H_TRACEDATA">
+          <Property Name="DateTime" Type="datetime" />
+        </EntityType>-->
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“TestQYDB.dbo.IWS_CAMCRAFTCMDEQPCONFIGTABLE”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="IWS_CAMCRAFTCMDEQPCONFIGTABLE">
+    <Key>
+      <PropertyRef Name="SHEBEIPEIZHIZHILINGID" />
+      <PropertyRef Name="MASKBORDER" />
+      <PropertyRef Name="GRAPH2MASKUPLIMIT" />
+      <PropertyRef Name="GRAPH2MASKDWLIMIT" />
+      <PropertyRef Name="MASKTYPE" />
+      <PropertyRef Name="MASKSIZETYPE" />
+      <PropertyRef Name="MINLSAREA" />
+      <PropertyRef Name="MINLSUPLIMIT" />
+      <PropertyRef Name="MINLSDWLIMIT" />
+      <PropertyRef Name="CDUPLIMIT" />
+      <PropertyRef Name="CDDWLIMIT" />
+      <PropertyRef Name="EMULTYPE" />
+      <PropertyRef Name="WRKCTRID" />
+      <PropertyRef Name="OBJECT" />
+      <PropertyRef Name="TOVERIFY" />
+      <PropertyRef Name="INVALID" />
+      <PropertyRef Name="VERIFYER" />
+      <PropertyRef Name="RECORDER" />
+      <PropertyRef Name="EFFECTTIMELIMIT" />
+      <PropertyRef Name="APPOINTDAY" />
+      <PropertyRef Name="APPOINTDAYTZID" />
+      <PropertyRef Name="TOVERIFYTIME" />
+      <PropertyRef Name="TOVERIFYTIMETZID" />
+      <PropertyRef Name="TOEFFECTTIME" />
+      <PropertyRef Name="TOEFFECTTIMETZID" />
+      <PropertyRef Name="RECORDTIME" />
+      <PropertyRef Name="RECORDTIMETZID" />
+      <PropertyRef Name="SENDDEPARTMENT" />
+      <PropertyRef Name="ACCEPTDEPARTMENT" />
+      <PropertyRef Name="TECHNUM" />
+      <PropertyRef Name="TECHNAME" />
+      <PropertyRef Name="TECHTARGET" />
+      <PropertyRef Name="TECHTYPE" />
+      <PropertyRef Name="MINLSTYPE" />
+      <PropertyRef Name="TRADEID" />
+      <PropertyRef Name="CUSTACCOUNT" />
+      <PropertyRef Name="DATAAREAID" />
+      <PropertyRef Name="RECVERSION" />
+      <PropertyRef Name="RECID" />
+      <PropertyRef Name="MINLINETYPE" />
+    </Key>
+    <Property Name="SHEBEIPEIZHIZHILINGID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="MASKBORDER" Type="int" Nullable="false" />
+    <Property Name="GRAPH2MASKUPLIMIT" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="GRAPH2MASKDWLIMIT" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="MASKTYPE" Type="int" Nullable="false" />
+    <Property Name="MASKSIZETYPE" Type="int" Nullable="false" />
+    <Property Name="MINLSAREA" Type="int" Nullable="false" />
+    <Property Name="MINLSUPLIMIT" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="MINLSDWLIMIT" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="CDUPLIMIT" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="CDDWLIMIT" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="EMULTYPE" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="WRKCTRID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="OBJECT" Type="int" Nullable="false" />
+    <Property Name="TOVERIFY" Type="int" Nullable="false" />
+    <Property Name="INVALID" Type="int" Nullable="false" />
+    <Property Name="VERIFYER" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="RECORDER" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="EFFECTTIMELIMIT" Type="int" Nullable="false" />
+    <Property Name="APPOINTDAY" Type="datetime" Nullable="false" />
+    <Property Name="APPOINTDAYTZID" Type="int" Nullable="false" />
+    <Property Name="TOVERIFYTIME" Type="datetime" Nullable="false" />
+    <Property Name="TOVERIFYTIMETZID" Type="int" Nullable="false" />
+    <Property Name="TOEFFECTTIME" Type="datetime" Nullable="false" />
+    <Property Name="TOEFFECTTIMETZID" Type="int" Nullable="false" />
+    <Property Name="RECORDTIME" Type="datetime" Nullable="false" />
+    <Property Name="RECORDTIMETZID" Type="int" Nullable="false" />
+    <Property Name="SENDDEPARTMENT" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ACCEPTDEPARTMENT" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="TECHNUM" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="TECHNAME" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="TECHTARGET" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="TECHTYPE" Type="int" Nullable="false" />
+    <Property Name="MINLSTYPE" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="TRADEID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="CUSTACCOUNT" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="DATAAREAID" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="RECVERSION" Type="int" Nullable="false" />
+    <Property Name="RECID" Type="bigint" Nullable="false" />
+    <Property Name="MINLINETYPE" Type="int" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“TestQYDB.dbo.IWS_CAMCRAFTCMDMATERIALTABLE”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="IWS_CAMCRAFTCMDMATERIALTABLE">
+    <Key>
+      <PropertyRef Name="BANCAIPIPEIID" />
+      <PropertyRef Name="WRKCTRID" />
+      <PropertyRef Name="TOVERIFY" />
+      <PropertyRef Name="INVALID" />
+      <PropertyRef Name="VERIFYER" />
+      <PropertyRef Name="RECORDER" />
+      <PropertyRef Name="EFFECTTIMELIMIT" />
+      <PropertyRef Name="APPOINTDAY" />
+      <PropertyRef Name="APPOINTDAYTZID" />
+      <PropertyRef Name="TOVERIFYTIME" />
+      <PropertyRef Name="TOVERIFYTIMETZID" />
+      <PropertyRef Name="TOEFFECTTIME" />
+      <PropertyRef Name="TOEFFECTTIMETZID" />
+      <PropertyRef Name="RECORDTIME" />
+      <PropertyRef Name="RECORDTIMETZID" />
+      <PropertyRef Name="SENDDEPARTMENT" />
+      <PropertyRef Name="TECHNUM" />
+      <PropertyRef Name="TECHNAME" />
+      <PropertyRef Name="TECHTARGET" />
+      <PropertyRef Name="TECHTYPE" />
+      <PropertyRef Name="ITEMID" />
+      <PropertyRef Name="ACCEPTDEPARTMENT" />
+      <PropertyRef Name="ACCEPTDEPARTMENT2_" />
+      <PropertyRef Name="ACCEPTDEPARTMENT3_" />
+      <PropertyRef Name="ACCEPTDEPARTMENT4_" />
+      <PropertyRef Name="ACCEPTDEPARTMENT5_" />
+      <PropertyRef Name="ACCEPTDEPARTMENT6_" />
+      <PropertyRef Name="DATAAREAID" />
+      <PropertyRef Name="RECVERSION" />
+      <PropertyRef Name="RECID" />
+    </Key>
+    <Property Name="BANCAIPIPEIID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="WRKCTRID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="TOVERIFY" Type="int" Nullable="false" />
+    <Property Name="INVALID" Type="int" Nullable="false" />
+    <Property Name="VERIFYER" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="RECORDER" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="EFFECTTIMELIMIT" Type="int" Nullable="false" />
+    <Property Name="APPOINTDAY" Type="datetime" Nullable="false" />
+    <Property Name="APPOINTDAYTZID" Type="int" Nullable="false" />
+    <Property Name="TOVERIFYTIME" Type="datetime" Nullable="false" />
+    <Property Name="TOVERIFYTIMETZID" Type="int" Nullable="false" />
+    <Property Name="TOEFFECTTIME" Type="datetime" Nullable="false" />
+    <Property Name="TOEFFECTTIMETZID" Type="int" Nullable="false" />
+    <Property Name="RECORDTIME" Type="datetime" Nullable="false" />
+    <Property Name="RECORDTIMETZID" Type="int" Nullable="false" />
+    <Property Name="SENDDEPARTMENT" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="TECHNUM" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="TECHNAME" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="TECHTARGET" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="TECHTYPE" Type="int" Nullable="false" />
+    <Property Name="ITEMID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="ACCEPTDEPARTMENT" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ACCEPTDEPARTMENT2_" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ACCEPTDEPARTMENT3_" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ACCEPTDEPARTMENT4_" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ACCEPTDEPARTMENT5_" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ACCEPTDEPARTMENT6_" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="DATAAREAID" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="RECVERSION" Type="int" Nullable="false" />
+    <Property Name="RECID" Type="bigint" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“TestQYDB.dbo.IWS_CAMCRAFTCMDTRADETABLE”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="IWS_CAMCRAFTCMDTRADETABLE">
+    <Key>
+      <PropertyRef Name="HANGYEPIPEIID" />
+      <PropertyRef Name="WRKCTRID" />
+      <PropertyRef Name="TRADEID" />
+      <PropertyRef Name="TOVERIFY" />
+      <PropertyRef Name="INVALID" />
+      <PropertyRef Name="VERIFYER" />
+      <PropertyRef Name="RECORDER" />
+      <PropertyRef Name="EFFECTTIMELIMIT" />
+      <PropertyRef Name="APPOINTDAY" />
+      <PropertyRef Name="APPOINTDAYTZID" />
+      <PropertyRef Name="TOVERIFYTIME" />
+      <PropertyRef Name="TOVERIFYTIMETZID" />
+      <PropertyRef Name="TOEFFECTTIME" />
+      <PropertyRef Name="TOEFFECTTIMETZID" />
+      <PropertyRef Name="RECORDTIME" />
+      <PropertyRef Name="RECORDTIMETZID" />
+      <PropertyRef Name="SENDDEPARTMENT" />
+      <PropertyRef Name="ACCEPTDEPARTMENT" />
+      <PropertyRef Name="TECHNUM" />
+      <PropertyRef Name="TECHNAME" />
+      <PropertyRef Name="TECHTARGET" />
+      <PropertyRef Name="TECHTYPE" />
+      <PropertyRef Name="DATAAREAID" />
+      <PropertyRef Name="RECVERSION" />
+      <PropertyRef Name="RECID" />
+      <PropertyRef Name="MURAVALUE" />
+    </Key>
+    <Property Name="HANGYEPIPEIID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="WRKCTRID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="TRADEID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="TOVERIFY" Type="int" Nullable="false" />
+    <Property Name="INVALID" Type="int" Nullable="false" />
+    <Property Name="VERIFYER" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="RECORDER" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="EFFECTTIMELIMIT" Type="int" Nullable="false" />
+    <Property Name="APPOINTDAY" Type="datetime" Nullable="false" />
+    <Property Name="APPOINTDAYTZID" Type="int" Nullable="false" />
+    <Property Name="TOVERIFYTIME" Type="datetime" Nullable="false" />
+    <Property Name="TOVERIFYTIMETZID" Type="int" Nullable="false" />
+    <Property Name="TOEFFECTTIME" Type="datetime" Nullable="false" />
+    <Property Name="TOEFFECTTIMETZID" Type="int" Nullable="false" />
+    <Property Name="RECORDTIME" Type="datetime" Nullable="false" />
+    <Property Name="RECORDTIMETZID" Type="int" Nullable="false" />
+    <Property Name="SENDDEPARTMENT" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ACCEPTDEPARTMENT" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="TECHNUM" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="TECHNAME" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="TECHTARGET" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="TECHTYPE" Type="int" Nullable="false" />
+    <Property Name="DATAAREAID" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="RECVERSION" Type="int" Nullable="false" />
+    <Property Name="RECID" Type="bigint" Nullable="false" />
+    <Property Name="MURAVALUE" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“TestQYDB.dbo.IWS_CAMDESIGNPARAMTABLE”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="IWS_CAMDESIGNPARAMTABLE">
+    <Key>
+      <PropertyRef Name="PRODID" />
+      <PropertyRef Name="INVENTREFID" />
+      <PropertyRef Name="INVENTREFTRANSID" />
+      <PropertyRef Name="INVENTDIMID" />
+      <PropertyRef Name="CDPRECISION" />
+      <PropertyRef Name="MINLSWIDTH" />
+      <PropertyRef Name="MINLSTYPE" />
+      <PropertyRef Name="GRAPH2EDGE" />
+      <PropertyRef Name="GRAPHFEATRUES" />
+      <PropertyRef Name="MASKOUTLINE" />
+      <PropertyRef Name="WRKCTRID" />
+      <PropertyRef Name="MACHINENAME" />
+      <PropertyRef Name="LENS" />
+      <PropertyRef Name="QYBARCODE" />
+      <PropertyRef Name="CLIENTBARCODE" />
+      <PropertyRef Name="INVERT" />
+      <PropertyRef Name="ROTATE" />
+      <PropertyRef Name="MIRROR" />
+      <PropertyRef Name="CPMASKMIRROR" />
+      <PropertyRef Name="LASTMIRROR" />
+      <PropertyRef Name="ISDELMASKMARK" />
+      <PropertyRef Name="NETPTDENSITY" />
+      <PropertyRef Name="NETPTANGLE" />
+      <PropertyRef Name="APERTURERATIO" />
+      <PropertyRef Name="X1STEP" />
+      <PropertyRef Name="Y1STEP" />
+      <PropertyRef Name="X2STEP" />
+      <PropertyRef Name="Y2STEP" />
+      <PropertyRef Name="MASKSIZEX" />
+      <PropertyRef Name="MASKSIZEY" />
+      <PropertyRef Name="MASKSIZEZ" />
+      <PropertyRef Name="TEMPERATUREXPPB" />
+      <PropertyRef Name="TEMPERATUREYPPB" />
+      <PropertyRef Name="GRAPHSCALEXPPB" />
+      <PropertyRef Name="GRAPHSCALEYPPB" />
+      <PropertyRef Name="CRAFTSCALEXPPB" />
+      <PropertyRef Name="CRAFTSCALEYPPB" />
+      <PropertyRef Name="CRAFTSCALEORTHOPPB" />
+      <PropertyRef Name="DESIGNLASTSCALEXPPB" />
+      <PropertyRef Name="DESIGNLASTSCALEYPPB" />
+      <PropertyRef Name="DESIGNLASTSCALEX" />
+      <PropertyRef Name="DESIGNLASTSCALEY" />
+      <PropertyRef Name="CRFIELDNAME1" />
+      <PropertyRef Name="CRFIELDNAME2" />
+      <PropertyRef Name="CRFIELDNAME3" />
+      <PropertyRef Name="CRFIELDNAME4" />
+      <PropertyRef Name="CRATIO1" />
+      <PropertyRef Name="CRATIO2" />
+      <PropertyRef Name="CRATIO3" />
+      <PropertyRef Name="CRATIO4" />
+      <PropertyRef Name="DESIGNFORMAT" />
+      <PropertyRef Name="TOPCELL" />
+      <PropertyRef Name="CELLPITCHX" />
+      <PropertyRef Name="CELLPITCHY" />
+      <PropertyRef Name="MEBENAME" />
+      <PropertyRef Name="STRIPEWIDTH" />
+      <PropertyRef Name="PIXELSIZE" />
+      <PropertyRef Name="STETCHMODE" />
+      <PropertyRef Name="ADDITIONALPIXEL" />
+      <PropertyRef Name="BIDIRECTION" />
+      <PropertyRef Name="LICBUFFERSIZE" />
+      <PropertyRef Name="OVERLAP" />
+      <PropertyRef Name="YSPEED" />
+      <PropertyRef Name="RESOLUTION" />
+      <PropertyRef Name="BIASX" />
+      <PropertyRef Name="BIASY" />
+      <PropertyRef Name="PROCESS" />
+      <PropertyRef Name="ORIGINTYPE" />
+      <PropertyRef Name="MEASURECDAMOUNT" />
+      <PropertyRef Name="MURAFUNCTION" />
+      <PropertyRef Name="PIXELPITCHX" />
+      <PropertyRef Name="PIXELPITCHY" />
+      <PropertyRef Name="CRAFTLAYERNAME" />
+      <PropertyRef Name="ADDEXPOSALAMOUNT" />
+      <PropertyRef Name="EXPOSELOCATION" />
+      <PropertyRef Name="OFFSETUP" />
+      <PropertyRef Name="OFFSETDW" />
+      <PropertyRef Name="OFFSETLE" />
+      <PropertyRef Name="OFFSETRI" />
+      <PropertyRef Name="CONVERTFORMAT" />
+      <PropertyRef Name="DESIGNNAME" />
+      <PropertyRef Name="JOBNAME" />
+      <PropertyRef Name="JOBID" />
+      <PropertyRef Name="CONVERTNAME" />
+      <PropertyRef Name="WRKSTATUS" />
+      <PropertyRef Name="INVENTREFTYPE" />
+      <PropertyRef Name="OPRID" />
+      <PropertyRef Name="ITEMID" />
+      <PropertyRef Name="SAVETYPE" />
+      <PropertyRef Name="X1VALUE" />
+      <PropertyRef Name="Y1VALUE" />
+      <PropertyRef Name="X2VALUE" />
+      <PropertyRef Name="Y2VALUE" />
+      <PropertyRef Name="GRAPHSIZEX" />
+      <PropertyRef Name="GRAPHSIZEY" />
+      <PropertyRef Name="CONVERTSCALEXPPB" />
+      <PropertyRef Name="CONVERTSCALEYPPB" />
+      <PropertyRef Name="CONVERTSCALEORTHOPPB" />
+      <PropertyRef Name="CONVERTDESIGNNAME" />
+      <PropertyRef Name="DATAAREAID" />
+      <PropertyRef Name="RECVERSION" />
+      <PropertyRef Name="RECID" />
+      <PropertyRef Name="LICBUFFERSIZE1" />
+      <PropertyRef Name="LAYERNAMEALIAS" />
+      <PropertyRef Name="CAMTOOL" />
+      <PropertyRef Name="EXPOSESIZEX" />
+      <PropertyRef Name="EXPOSESIZEY" />
+      <PropertyRef Name="MURAVALUE" />
+      <PropertyRef Name="Y_NOEXPOSESIZE" />
+      <PropertyRef Name="SDIST" />
+      <PropertyRef Name="GRAPHCD" />
+      <PropertyRef Name="GRAPHBIAS" />
+      <PropertyRef Name="DISTORTION" />
+      <PropertyRef Name="LARGESTLENGTH" />
+      <PropertyRef Name="TOTALLENGTH" />
+      <PropertyRef Name="LICUNITTIME" />
+      <PropertyRef Name="PPO" />
+      <PropertyRef Name="AOITYPE" />
+      <PropertyRef Name="PARAMINDETERMINACY" />
+      <PropertyRef Name="XOR" />
+      <PropertyRef Name="ISSOURCEAOI" />
+      <PropertyRef Name="AOITOPCELL" />
+      <PropertyRef Name="AOISOURCENAME" />
+    </Key>
+    <Property Name="PRODID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="INVENTREFID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="INVENTREFTRANSID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="INVENTDIMID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="CDPRECISION" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="MINLSWIDTH" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="MINLSTYPE" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="GRAPH2EDGE" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="GRAPHFEATRUES" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="MASKOUTLINE" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="WRKCTRID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="MACHINENAME" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="LENS" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="QYBARCODE" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="CLIENTBARCODE" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="INVERT" Type="int" Nullable="false" />
+    <Property Name="ROTATE" Type="int" Nullable="false" />
+    <Property Name="MIRROR" Type="int" Nullable="false" />
+    <Property Name="CPMASKMIRROR" Type="int" Nullable="false" />
+    <Property Name="LASTMIRROR" Type="int" Nullable="false" />
+    <Property Name="ISDELMASKMARK" Type="int" Nullable="false" />
+    <Property Name="NETPTDENSITY" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="NETPTANGLE" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="APERTURERATIO" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="X1STEP" Type="int" Nullable="false" />
+    <Property Name="Y1STEP" Type="int" Nullable="false" />
+    <Property Name="X2STEP" Type="int" Nullable="false" />
+    <Property Name="Y2STEP" Type="int" Nullable="false" />
+    <Property Name="MASKSIZEX" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="MASKSIZEY" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="MASKSIZEZ" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="TEMPERATUREXPPB" Type="int" Nullable="false" />
+    <Property Name="TEMPERATUREYPPB" Type="int" Nullable="false" />
+    <Property Name="GRAPHSCALEXPPB" Type="int" Nullable="false" />
+    <Property Name="GRAPHSCALEYPPB" Type="int" Nullable="false" />
+    <Property Name="CRAFTSCALEXPPB" Type="int" Nullable="false" />
+    <Property Name="CRAFTSCALEYPPB" Type="int" Nullable="false" />
+    <Property Name="CRAFTSCALEORTHOPPB" Type="int" Nullable="false" />
+    <Property Name="DESIGNLASTSCALEXPPB" Type="int" Nullable="false" />
+    <Property Name="DESIGNLASTSCALEYPPB" Type="int" Nullable="false" />
+    <Property Name="DESIGNLASTSCALEX" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="DESIGNLASTSCALEY" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="CRFIELDNAME1" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="CRFIELDNAME2" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="CRFIELDNAME3" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="CRFIELDNAME4" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="CRATIO1" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="CRATIO2" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="CRATIO3" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="CRATIO4" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="DESIGNFORMAT" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="TOPCELL" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="LAYLOGICALS" Type="ntext" />
+    <Property Name="CELLPITCHX" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="CELLPITCHY" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="MEBENAME" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="STRIPEWIDTH" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="PIXELSIZE" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="STETCHMODE" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="ADDITIONALPIXEL" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="BIDIRECTION" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="LICBUFFERSIZE" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="OVERLAP" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="YSPEED" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="RESOLUTION" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="BIASX" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="BIASY" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="PROCESS" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="ORIGINTYPE" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="MEASURECDAMOUNT" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="MURAFUNCTION" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="PIXELPITCHX" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="PIXELPITCHY" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="CRAFTLAYERNAME" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="ADDEXPOSALAMOUNT" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="EXPOSELOCATION" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="OFFSETUP" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="OFFSETDW" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="OFFSETLE" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="OFFSETRI" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="CONVERTFORMAT" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="DESIGNNAME" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="JOBNAME" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="JOBID" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="CONVERTNAME" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="REBACKREMARK" Type="ntext" />
+    <Property Name="CAMREMARK" Type="ntext" />
+    <Property Name="WRKSTATUS" Type="int" Nullable="false" />
+    <Property Name="INVENTREFTYPE" Type="int" Nullable="false" />
+    <Property Name="OPRID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ITEMID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="SAVETYPE" Type="int" Nullable="false" />
+    <Property Name="X1VALUE" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="Y1VALUE" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="X2VALUE" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="Y2VALUE" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="GRAPHSIZEX" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="GRAPHSIZEY" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="CONVERTSCALEXPPB" Type="int" Nullable="false" />
+    <Property Name="CONVERTSCALEYPPB" Type="int" Nullable="false" />
+    <Property Name="CONVERTSCALEORTHOPPB" Type="int" Nullable="false" />
+    <Property Name="CONVERTDESIGNNAME" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="DATAAREAID" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="RECVERSION" Type="int" Nullable="false" />
+    <Property Name="RECID" Type="bigint" Nullable="false" />
+    <Property Name="LICBUFFERSIZE1" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="LAYERNAMEALIAS" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="CAMTOOL" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="EXPOSESIZEX" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="EXPOSESIZEY" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="MURAVALUE" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="Y_NOEXPOSESIZE" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="SDIST" Type="int" Nullable="false" />
+    <Property Name="GRAPHCD" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="GRAPHBIAS" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="DISTORTION" Type="int" Nullable="false" />
+    <Property Name="LARGESTLENGTH" Type="int" Nullable="false" />
+    <Property Name="TOTALLENGTH" Type="int" Nullable="false" />
+    <Property Name="LICUNITTIME" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PPO" Type="int" Nullable="false" />
+    <Property Name="AOITYPE" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="PARAMINDETERMINACY" Type="int" Nullable="false" />
+    <Property Name="XOR" Type="int" Nullable="false" />
+    <Property Name="ISSOURCEAOI" Type="int" Nullable="false" />
+    <Property Name="AOILAYER" Type="ntext" />
+    <Property Name="AOITOPCELL" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOISOURCENAME" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="RESOULT" Type="int" />
+    <Property Name="Completion" Type="int" />
+  </EntityType>
+  <EntityType Name="IWS_CHECK_AOITABLE">
+    <Key>
+      <PropertyRef Name="DATAAREAID" />
+      <PropertyRef Name="RECID" />
+    </Key>
+    <Property Name="INVALID" Type="int" Nullable="false" />
+    <Property Name="PRODSERIAL" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="PRODID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="AOIEQUIPMENT" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIDIETODIE" Type="int" Nullable="false" />
+    <Property Name="AOIDIELOWSLOW" Type="int" Nullable="false" />
+    <Property Name="AOIDIELOWFAST" Type="int" Nullable="false" />
+    <Property Name="AOIDIESFAST" Type="int" Nullable="false" />
+    <Property Name="AOIDIEHIGHSLOW" Type="int" Nullable="false" />
+    <Property Name="AOIDIEHIGHFAST" Type="int" Nullable="false" />
+    <Property Name="AOIDIETRANS" Type="int" Nullable="false" />
+    <Property Name="AOIDIEREVER" Type="int" Nullable="false" />
+    <Property Name="AOIDIESHIELD1" Type="int" Nullable="false" />
+    <Property Name="AOIDIESHIELD2" Type="int" Nullable="false" />
+    <Property Name="AOIDIESHIELD3" Type="int" Nullable="false" />
+    <Property Name="AOIDIESHIELD4" Type="int" Nullable="false" />
+    <Property Name="AOIDIESTATO" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIDIEFILENAME" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIDIEBLACKBUGNUM" Type="int" Nullable="false" />
+    <Property Name="AOIDIEWHITEBUGNUM" Type="int" Nullable="false" />
+    <Property Name="AOIDIEDIRTHNUM" Type="int" Nullable="false" />
+    <Property Name="AOIDIETODIERESULT" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIDIEOPERATOR" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIDIETODB" Type="int" Nullable="false" />
+    <Property Name="AOIDBLOWSLOW" Type="int" Nullable="false" />
+    <Property Name="AOIDBLOWFAST" Type="int" Nullable="false" />
+    <Property Name="AOIDBHIGHSLOW" Type="int" Nullable="false" />
+    <Property Name="AOIDBHIGHFAST" Type="int" Nullable="false" />
+    <Property Name="AOIDBTRANS" Type="int" Nullable="false" />
+    <Property Name="AOIDBREVER" Type="int" Nullable="false" />
+    <Property Name="AOIDBV" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIDBH" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIDBCONVO" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIDBREVERSE" Type="int" Nullable="false" />
+    <Property Name="AOIDBCORNERCUT" Type="int" Nullable="false" />
+    <Property Name="AOIDBHALFTONE" Type="int" Nullable="false" />
+    <Property Name="AOIDBSTATO" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOISCALEX" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOISCALEY" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIDBSPEC" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="AOIDBFILENAME" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="AOIDBBLACKBUGNUM" Type="int" Nullable="false" />
+    <Property Name="AOIDBWHITEBUGNUM" Type="int" Nullable="false" />
+    <Property Name="AOIDBDIRTHNUM" Type="int" Nullable="false" />
+    <Property Name="AOIDBTODIERESULT" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIDBOPERATOR" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIBUGTYPE1" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIBUGTYPE2" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIBUGTYPE3" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIBUGTYPE4" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIBUGTYPE5" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIBUGTYPE6" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIBUGTYPE7" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIBUGTYPE8" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIOPERATETIME" Type="datetime" Nullable="false" />
+    <Property Name="AOIOPERATETIMETZID" Type="int" Nullable="false" />
+    <Property Name="AOIBUGPOSX1" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIBUGPOSX2" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIBUGPOSX3" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIBUGPOSX4" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIBUGPOSX5" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIBUGPOSX6" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIBUGPOSX7" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIBUGPOSX8" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIBUGPOSSIZE1" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIBUGPOSSIZE2" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIBUGPOSSIZE3" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIBUGPOSSIZE4" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIBUGPOSSIZE5" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIBUGPOSSIZE6" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIBUGPOSSIZE7" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIBUGPOSSIZE8" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIBUGPOSY1" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIBUGPOSY2" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIBUGPOSY3" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIBUGPOSY4" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIBUGPOSY5" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIBUGPOSY6" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIBUGPOSY7" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIBUGPOSY8" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="OPRID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="DATAAREAID" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="RECVERSION" Type="int" Nullable="false" />
+    <Property Name="RECID" Type="bigint" Nullable="false" />
+    <Property Name="MODIFIEDDATETIME" Type="datetime" Nullable="false" />
+    <Property Name="CREATEDDATETIME" Type="datetime" Nullable="false" />
+    <Property Name="MODIFIEDBY" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="CREATEDBY" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="OPRNAME" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="ISSHIPMENTREPORT" Type="int" Nullable="false" />
+    <Property Name="ZAPOPERATOR" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="CVDOPERATOR" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="AOIWRKCTRNAME" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIEQUIPMENT1" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIEQUIPMENT2" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIEQUIPMENT3" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIWRKCTRNAME1" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIWRKCTRNAME2" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIWRKCTRNAME3" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="AOIBLACKBUGNUM1" Type="int" Nullable="false" />
+    <Property Name="AOIWHITEBUGNUM1" Type="int" Nullable="false" />
+    <Property Name="AOIWHITEBUGNUM2" Type="int" Nullable="false" />
+    <Property Name="AOIBLACKBUGNUM2" Type="int" Nullable="false" />
+    <Property Name="AOIWHITEBUGNUM3" Type="int" Nullable="false" />
+    <Property Name="AOIBLACKBUGNUM3" Type="int" Nullable="false" />
+    <Property Name="AOIWHITEBUGNUM4" Type="int" Nullable="false" />
+    <Property Name="AOIBLACKBUGNUM4" Type="int" Nullable="false" />
+    <Property Name="ISCHECKBYAREA" Type="int" Nullable="false" />
+    <Property Name="Completion" Type="int" />
+  </EntityType>
+  <EntityType Name="IWS_CHECK_INNERPACKTABLE">
+    <Key>
+      <PropertyRef Name="DATAAREAID" />
+      <PropertyRef Name="RECID" />
+    </Key>
+    <Property Name="PRODID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="PACKBOXSIZE" Type="int" Nullable="false" />
+    <Property Name="PACKBOXCLEANYES" Type="int" Nullable="false" />
+    <Property Name="PACKBOXCLEANNO" Type="int" Nullable="false" />
+    <Property Name="PACKBOXSTATICYES" Type="int" Nullable="false" />
+    <Property Name="PACKBOXSTATICNO" Type="int" Nullable="false" />
+    <Property Name="PACKMETHOD" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="PACKOPERATOR1" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="PACKOPERATOR2" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="PACKOPERATOR3" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="PACKRESULT" Type="int" Nullable="false" />
+    <Property Name="PACKREMARKS" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="PACKTIME" Type="datetime" Nullable="false" />
+    <Property Name="PACKTIMETZID" Type="int" Nullable="false" />
+    <Property Name="FQCCUSTOMER" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="FQCMASKTITLE" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="FQCLAYERNAME" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="FQCMASKSIZE" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="FQCMATERIAL" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="FQCSUPERMASKLOT" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="SHIPCUSTOMER" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="SHIPMASKSIZE" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="SHIPMATERIAL" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="SHIPQTY" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="SHIPNO" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="SHIPCARTONNO" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="FQCDATE" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="SHIPDATE" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="INVALID" Type="int" Nullable="false" />
+    <Property Name="PRODSERIAL" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="DATAAREAID" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="RECVERSION" Type="int" Nullable="false" />
+    <Property Name="RECID" Type="bigint" Nullable="false" />
+    <Property Name="MODIFIEDDATETIME" Type="datetime" Nullable="false" />
+    <Property Name="CREATEDDATETIME" Type="datetime" Nullable="false" />
+    <Property Name="MODIFIEDBY" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="CREATEDBY" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="ISSHIPMENTREPORT" Type="int" Nullable="false" />
+    <Property Name="PACKFOGNUM" Type="int" Nullable="false" />
+    <Property Name="PACKBUTTNUM" Type="int" Nullable="false" />
+    <Property Name="PACKCORNERNUM" Type="int" Nullable="false" />
+    <Property Name="PACKDESTROYNUM" Type="int" Nullable="false" />
+    <Property Name="PACKLINENUM" Type="int" Nullable="false" />
+    <Property Name="PACKBOXMATERIALNO" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="PACKBOXMATERIALBATCHNO" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="PACKBOXUSENUM" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="QUALITYRESULT" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ISSTRIPE6" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ISSTRIPE5" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ISSTRIPE4" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ISSTRIPE3" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ISSTRIPE2" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ISSTRIPE1" Type="nvarchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="IWS_CHECK_LONGSIZETABLE">
+    <Key>
+      <PropertyRef Name="DATAAREAID" />
+      <PropertyRef Name="RECID" />
+    </Key>
+    <Property Name="PRODID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="LONGCENTERTOLE" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERDESIGNX1" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERDESIGNX2" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERDESIGNX12" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERDESIGNX22" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERDESIGNY1" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERDESIGNY2" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERDESIGNY12" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERDESIGNY22" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERCHECKX1" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERCHECKX2" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERCHECKX12" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERCHECKX22" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERCHECKY1" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERCHECKY2" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERCHECKY12" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERCHECKY22" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERTOLEX1" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERTOLEX2" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERTOLEX12" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERTOLEX22" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERTOLEY1" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERTOLEY2" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERTOLEY12" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERTOLEY22" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGSIZECODE" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="LONGSIZERESULT" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="LONGOPERATETIME" Type="datetime" Nullable="false" />
+    <Property Name="LONGOPERATETIMETZID" Type="int" Nullable="false" />
+    <Property Name="LONGREMARKS" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="INVALID" Type="int" Nullable="false" />
+    <Property Name="PRODSERIAL" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="OPRID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="LONGSIZEDESIGNX1" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGSIZEDESIGNX2" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGSIZEDESIGNY1" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGSIZEDESIGNY2" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGSIZECHECKX1" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGSIZECHECKX2" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGSIZECHECKY1" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGSIZECHECKY2" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGSIZETOLEX1" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGSIZETOLEX2" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGSIZETOLEY1" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGSIZETOLEY2" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="DATAAREAID" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="RECVERSION" Type="int" Nullable="false" />
+    <Property Name="RECID" Type="bigint" Nullable="false" />
+    <Property Name="LONGSIZETOLE" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="MODIFIEDDATETIME" Type="datetime" Nullable="false" />
+    <Property Name="CREATEDDATETIME" Type="datetime" Nullable="false" />
+    <Property Name="MODIFIEDBY" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="CREATEDBY" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="LONGCENTERDESIGNG" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERDESIGNH" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERCHECKG" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERCHECKH" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERTOLEG" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERTOLEH" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="ISSHIPMENTREPORT" Type="int" Nullable="false" />
+    <Property Name="ISLONGCENTERDESIGNADD" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="IWS_CHECK_PELLICLETABLE">
+    <Key>
+      <PropertyRef Name="DATAAREAID" />
+      <PropertyRef Name="RECID" />
+    </Key>
+    <Property Name="PRODID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="PRODSERIAL" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="INVALID" Type="int" Nullable="false" />
+    <Property Name="GUIDESPEC" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="GUIDEDESIGN" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="GUIDEMEASUREX1" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="GUIDEMEASUREX2" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="GUIDEMEASUREY1" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="GUIDEMEASUREY2" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="GUIDEERRORX1" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="GUIDEERRORX2" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="GUIDEERRORY1" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="GUIDEERRORY2" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PELLICLEMATERIALNO1" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="PELLICLEBATCHNO1" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="PELLICLEUSENUM1" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PELLICLEMATERIALNO2" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="PELLICLEBATCHNO2" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="PELLICLEUSENUM2" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PELLICLEOPERATOR" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="PELLICLEOPTIME" Type="datetime" Nullable="false" />
+    <Property Name="PELLICLEOPTIMETZID" Type="int" Nullable="false" />
+    <Property Name="GUIDEOPERATOR" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="GUIDEOPTIME" Type="datetime" Nullable="false" />
+    <Property Name="GUIDEOPTIMETZID" Type="int" Nullable="false" />
+    <Property Name="OPRID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="DATAAREAID" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="RECVERSION" Type="int" Nullable="false" />
+    <Property Name="RECID" Type="bigint" Nullable="false" />
+    <Property Name="PELLICLEMATRIALTYPE1" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="PELLICLEMATRIALTYPE2" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="MODIFIEDDATETIME" Type="datetime" Nullable="false" />
+    <Property Name="CREATEDDATETIME" Type="datetime" Nullable="false" />
+    <Property Name="MODIFIEDBY" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="CREATEDBY" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="ISSHIPMENTREPORT" Type="int" Nullable="false" />
+    <Property Name="PELLICLEOPERATOR1" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="PELLICLEOPERATOR2" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="PELLICLEOPERATOR3" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="PELLICLEREMARKS" Type="ntext" />
+    <Property Name="ISPELLICLEDISPOSED1" Type="int" Nullable="false" />
+    <Property Name="ISPELLICLEDISPOSED2" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="IWS_CHECK_REPAIRTABLE">
+    <Key>
+      <PropertyRef Name="DATAAREAID" />
+      <PropertyRef Name="RECID" />
+    </Key>
+    <Property Name="PRODID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="REPAIRZAPBLACKNUM" Type="int" Nullable="false" />
+    <Property Name="REPAIRZAPBURRNUM" Type="int" Nullable="false" />
+    <Property Name="REPAIRZAPLINKNUM" Type="int" Nullable="false" />
+    <Property Name="REPAIRZAPTOTALNUM" Type="int" Nullable="false" />
+    <Property Name="REPAIRZAPRBLACKNUM" Type="int" Nullable="false" />
+    <Property Name="REPAIRZAPRBURRNUM" Type="int" Nullable="false" />
+    <Property Name="REPAIRZAPRLINKNUM" Type="int" Nullable="false" />
+    <Property Name="REPAIRZAPRTOTALNUM" Type="int" Nullable="false" />
+    <Property Name="REPAIRZAPBUGID" Type="int" Nullable="false" />
+    <Property Name="REPAIRZAPCRAFTNAME" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="REPAIRZAPPICNAME" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="REPAIRZAPOTHERS" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="REPAIRCVDTRY" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="REPAIRCVDHOLENUM" Type="int" Nullable="false" />
+    <Property Name="REPAIRCVDHOLLOWNUM" Type="int" Nullable="false" />
+    <Property Name="REPAIRCVDCUTNUM" Type="int" Nullable="false" />
+    <Property Name="REPAIRCVDTOTALNUM" Type="int" Nullable="false" />
+    <Property Name="REPAIRCVDRHOLENUM" Type="int" Nullable="false" />
+    <Property Name="REPAIRCVDRHOLLOWNUM" Type="int" Nullable="false" />
+    <Property Name="REPAIRCVDRCUTNUM" Type="int" Nullable="false" />
+    <Property Name="REPAIRCVDRTOTALNUM" Type="int" Nullable="false" />
+    <Property Name="REPAIRCVDBUGID" Type="int" Nullable="false" />
+    <Property Name="REPAIRCVDCRAFTNAME" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="REPAIRCVDPICNAME" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="REPAIRCVDOTHERS" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="REPAIRDOZAP" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="REPAIRDOZAPREMARKS" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="REPAIRCVDPHOTIC" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="REPAIRSURFACE" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="REPAIRCONFIRM" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="REPAIRBUGTYPE" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="REPAIRBUGNO" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="REPAIRTYPE" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="REPAIRSURFACERE" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="REPAIRCONFIRMRE" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="REPAIRBLACKTOTALNUM" Type="int" Nullable="false" />
+    <Property Name="REPAIRBURRTOTALNUM" Type="int" Nullable="false" />
+    <Property Name="REPAIRLINKTOTALNUM" Type="int" Nullable="false" />
+    <Property Name="REPAIRHOLETOTALNUM" Type="int" Nullable="false" />
+    <Property Name="REPAIRHOLLOWTOTALNUM" Type="int" Nullable="false" />
+    <Property Name="REPAIRCUTTOTALNUM" Type="int" Nullable="false" />
+    <Property Name="REPAIRZAPOK1" Type="int" Nullable="false" />
+    <Property Name="REPAIRZAPOK2" Type="int" Nullable="false" />
+    <Property Name="REPAIRZAPOK3" Type="int" Nullable="false" />
+    <Property Name="REPAIRZAPOK4" Type="int" Nullable="false" />
+    <Property Name="REPAIRZAPOK5" Type="int" Nullable="false" />
+    <Property Name="REPAIRZAPOK6" Type="int" Nullable="false" />
+    <Property Name="REPAIRZAPOK7" Type="int" Nullable="false" />
+    <Property Name="REPAIRZAPOK8" Type="int" Nullable="false" />
+    <Property Name="REPAIRSURFACEOK" Type="int" Nullable="false" />
+    <Property Name="REPAIRCONFIRMOK" Type="int" Nullable="false" />
+    <Property Name="REPAIRREOK1" Type="int" Nullable="false" />
+    <Property Name="REPAIRREOK2" Type="int" Nullable="false" />
+    <Property Name="REPAIRREOK3" Type="int" Nullable="false" />
+    <Property Name="REPAIRREOK4" Type="int" Nullable="false" />
+    <Property Name="REPAIRREOK5" Type="int" Nullable="false" />
+    <Property Name="REPAIRBUGTOTALNUMOK" Type="int" Nullable="false" />
+    <Property Name="REPAIROPERATOR" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="REPAIRTIME" Type="datetime" Nullable="false" />
+    <Property Name="REPAIRTIMETZID" Type="int" Nullable="false" />
+    <Property Name="INVALID" Type="int" Nullable="false" />
+    <Property Name="PRODSERIAL" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="OPRID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="REPAIRINK" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="REPAIRLCVD" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="REPAIRAFILM" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="DATAAREAID" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="RECVERSION" Type="int" Nullable="false" />
+    <Property Name="RECID" Type="bigint" Nullable="false" />
+    <Property Name="MODIFIEDDATETIME" Type="datetime" Nullable="false" />
+    <Property Name="CREATEDDATETIME" Type="datetime" Nullable="false" />
+    <Property Name="MODIFIEDBY" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="CREATEDBY" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="ISSHIPMENTREPORT" Type="int" Nullable="false" />
+    <Property Name="ZAPOPERATOR" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="CVDOPERATOR" Type="nvarchar" MaxLength="45" Nullable="false" />
+  </EntityType>
+  <EntityType Name="IWS_CHECK_WASHTABLE">
+    <Key>
+      <PropertyRef Name="TIMESNUM" />
+    </Key>
+    <Property Name="TIMESNUM" Type="int" Nullable="false" />
+    <Property Name="PRODID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="RECID" Type="bigint" Nullable="false" />
+    <Property Name="MRECIPENAME" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="JRECIPENAME" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="RESULT" Type="tinyint" Nullable="false" />
+    <Property Name="OPERATOR" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="BENGBIAN" Type="int" Nullable="false" />
+    <Property Name="BENGJIAO" Type="int" Nullable="false" />
+    <Property Name="HUASHANG" Type="int" Nullable="false" />
+    <Property Name="LIEWEN" Type="int" Nullable="false" />
+    <Property Name="DIRTYPOINT" Type="int" Nullable="false" />
+    <Property Name="STREAK" Type="int" Nullable="false" />
+    <Property Name="UNUSUALMESSAGE" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="STARTTIME" Type="datetime" Nullable="false" />
+    <Property Name="ENDTIME" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“TestQYDB.dbo.IWS_CUSTPARATRADETABLE”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="IWS_CUSTPARATRADETABLE">
+    <Key>
+      <PropertyRef Name="CUSTTRADEREPORTAREA" />
+      <PropertyRef Name="CUSTTRADEREPORTTYPE" />
+      <PropertyRef Name="MEASUREREPORT" />
+      <PropertyRef Name="MAKEOUTDEFECT" />
+      <PropertyRef Name="BARCODE" />
+      <PropertyRef Name="LABLE" />
+      <PropertyRef Name="LABLETYPE" />
+      <PropertyRef Name="DEFECTTYPE" />
+      <PropertyRef Name="CUSTTRADEREPORTADDRESS" />
+      <PropertyRef Name="DELIVERTYPE" />
+      <PropertyRef Name="DELEVEROTHERDESC" />
+      <PropertyRef Name="DELIVERYDOC" />
+      <PropertyRef Name="LOGISTICALDOC" />
+      <PropertyRef Name="LOGISTICALOTHERDESC" />
+      <PropertyRef Name="MAKEUPORDERNUM" />
+      <PropertyRef Name="PRINTPRICE" />
+      <PropertyRef Name="ROHS" />
+      <PropertyRef Name="DELIVERYDOCOTHER" />
+      <PropertyRef Name="DELIVERYDOCOTHERDESC" />
+      <PropertyRef Name="WASHWAY" />
+      <PropertyRef Name="TUXINGYAOQIU" />
+      <PropertyRef Name="KEHUBAOGUANGJIMODEL" />
+      <PropertyRef Name="BAOGUANGWENDU" />
+      <PropertyRef Name="PACKINGDEMANDINNER" />
+      <PropertyRef Name="JIECHUSHIBAOZHTYPE" />
+      <PropertyRef Name="XIAOBANJINGHUATYPE" />
+      <PropertyRef Name="JIAODAIMIFENG" />
+      <PropertyRef Name="JIAODAIYOUWU" />
+      <PropertyRef Name="JINGHUADAI" />
+      <PropertyRef Name="JINGHUADAITYPE" />
+      <PropertyRef Name="LEIXING" />
+      <PropertyRef Name="FENGZHLEIX" />
+      <PropertyRef Name="FENGZHOTHER" />
+      <PropertyRef Name="FENGZHOTHERDESC" />
+      <PropertyRef Name="PACKINGDEMANDOUTER" />
+      <PropertyRef Name="BIAOMINGZHMXH" />
+      <PropertyRef Name="BIAOMIANTZH" />
+      <PropertyRef Name="YAOQIUOTHER" />
+      <PropertyRef Name="YAOQIUOTHERDESC" />
+      <PropertyRef Name="ITEMID" />
+      <PropertyRef Name="CUSTACCOUNT" />
+      <PropertyRef Name="ICSHIPPINGREPORT" />
+      <PropertyRef Name="OTHERREPORT" />
+      <PropertyRef Name="PRINTREMAND" />
+      <PropertyRef Name="OTHERREPORTVALUE" />
+      <PropertyRef Name="BIGVERSIONBOX" />
+      <PropertyRef Name="RETICLEABS" />
+      <PropertyRef Name="NOTRETICLEABS" />
+      <PropertyRef Name="PPBOXCHINA" />
+      <PropertyRef Name="PPBOXFOREIGN" />
+      <PropertyRef Name="ENVIRREQ" />
+      <PropertyRef Name="CLEANPACKAGESINGLE" />
+      <PropertyRef Name="CLEANPACKAGEDOUBLE" />
+      <PropertyRef Name="MANUALFILMPACKAGE" />
+      <PropertyRef Name="PACKAGECLEANREQ" />
+      <PropertyRef Name="VACUUMPACKAGE" />
+      <PropertyRef Name="FILMMACHINEPACKAGE" />
+      <PropertyRef Name="OTHERPACKAGE" />
+      <PropertyRef Name="OTHERPACKAGEVALUE" />
+      <PropertyRef Name="C5DELIVERYREPORT" />
+      <PropertyRef Name="DELIVERYSPECIALDESC" />
+      <PropertyRef Name="DATAAREAID" />
+      <PropertyRef Name="RECVERSION" />
+      <PropertyRef Name="RECID" />
+      <PropertyRef Name="ICSHIPPINGREPORTCOM" />
+      <PropertyRef Name="QY_ISPACKBOXSUPPORTOR" />
+      <PropertyRef Name="QY_PB_GUDENG" />
+      <PropertyRef Name="QY_PB_SEYANG" />
+      <PropertyRef Name="QY_PB_POZZETTA" />
+      <PropertyRef Name="QY_PB_GUOHUA" />
+      <PropertyRef Name="QY_PB_KEHU" />
+      <PropertyRef Name="QY_PB_OTHERS" />
+      <PropertyRef Name="QY_PB_OTHERSVALUE" />
+    </Key>
+    <Property Name="CUSTTRADEREPORTAREA" Type="int" Nullable="false" />
+    <Property Name="CUSTTRADEREPORTTYPE" Type="int" Nullable="false" />
+    <Property Name="MEASUREREPORT" Type="int" Nullable="false" />
+    <Property Name="MAKEOUTDEFECT" Type="int" Nullable="false" />
+    <Property Name="BARCODE" Type="int" Nullable="false" />
+    <Property Name="LABLE" Type="int" Nullable="false" />
+    <Property Name="LABLETYPE" Type="int" Nullable="false" />
+    <Property Name="DEFECTTYPE" Type="int" Nullable="false" />
+    <Property Name="CUSTTRADEREPORTADDRESS" Type="int" Nullable="false" />
+    <Property Name="SPECIALDESC" Type="ntext" />
+    <Property Name="DELIVERTYPE" Type="int" Nullable="false" />
+    <Property Name="DELEVEROTHERDESC" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="DELIVERYDOC" Type="int" Nullable="false" />
+    <Property Name="LOGISTICALDOC" Type="int" Nullable="false" />
+    <Property Name="LOGISTICALOTHERDESC" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="MAKEUPORDERNUM" Type="int" Nullable="false" />
+    <Property Name="PRINTPRICE" Type="int" Nullable="false" />
+    <Property Name="ROHS" Type="int" Nullable="false" />
+    <Property Name="DELIVERYDOCOTHER" Type="int" Nullable="false" />
+    <Property Name="DELIVERYDOCOTHERDESC" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="WASHWAY" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="TUXINGYAOQIU" Type="int" Nullable="false" />
+    <Property Name="KEHUBAOGUANGJIMODEL" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="BAOGUANGWENDU" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PACKINGDEMANDINNER" Type="int" Nullable="false" />
+    <Property Name="JIECHUSHIBAOZHTYPE" Type="int" Nullable="false" />
+    <Property Name="XIAOBANJINGHUATYPE" Type="int" Nullable="false" />
+    <Property Name="JIAODAIMIFENG" Type="int" Nullable="false" />
+    <Property Name="JIAODAIYOUWU" Type="int" Nullable="false" />
+    <Property Name="JINGHUADAI" Type="int" Nullable="false" />
+    <Property Name="JINGHUADAITYPE" Type="int" Nullable="false" />
+    <Property Name="LEIXING" Type="int" Nullable="false" />
+    <Property Name="FENGZHLEIX" Type="int" Nullable="false" />
+    <Property Name="FENGZHOTHER" Type="int" Nullable="false" />
+    <Property Name="FENGZHOTHERDESC" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="PACKINGDEMANDOUTER" Type="int" Nullable="false" />
+    <Property Name="BIAOMINGZHMXH" Type="int" Nullable="false" />
+    <Property Name="BIAOMIANTZH" Type="int" Nullable="false" />
+    <Property Name="YAOQIUOTHER" Type="int" Nullable="false" />
+    <Property Name="YAOQIUOTHERDESC" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="ITEMID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="CUSTACCOUNT" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="ICSHIPPINGREPORT" Type="int" Nullable="false" />
+    <Property Name="OTHERREPORT" Type="int" Nullable="false" />
+    <Property Name="PRINTREMAND" Type="int" Nullable="false" />
+    <Property Name="OTHERREPORTVALUE" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="BIGVERSIONBOX" Type="int" Nullable="false" />
+    <Property Name="RETICLEABS" Type="int" Nullable="false" />
+    <Property Name="NOTRETICLEABS" Type="int" Nullable="false" />
+    <Property Name="PPBOXCHINA" Type="int" Nullable="false" />
+    <Property Name="PPBOXFOREIGN" Type="int" Nullable="false" />
+    <Property Name="ENVIRREQ" Type="int" Nullable="false" />
+    <Property Name="CLEANPACKAGESINGLE" Type="int" Nullable="false" />
+    <Property Name="CLEANPACKAGEDOUBLE" Type="int" Nullable="false" />
+    <Property Name="MANUALFILMPACKAGE" Type="int" Nullable="false" />
+    <Property Name="PACKAGECLEANREQ" Type="int" Nullable="false" />
+    <Property Name="VACUUMPACKAGE" Type="int" Nullable="false" />
+    <Property Name="FILMMACHINEPACKAGE" Type="int" Nullable="false" />
+    <Property Name="OTHERPACKAGE" Type="int" Nullable="false" />
+    <Property Name="OTHERPACKAGEVALUE" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="C5DELIVERYREPORT" Type="int" Nullable="false" />
+    <Property Name="DELIVERYSPECIALDESC" Type="nvarchar" MaxLength="1200" Nullable="false" />
+    <Property Name="DATAAREAID" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="RECVERSION" Type="int" Nullable="false" />
+    <Property Name="RECID" Type="bigint" Nullable="false" />
+    <Property Name="ICSHIPPINGREPORTCOM" Type="int" Nullable="false" />
+    <Property Name="QY_ISPACKBOXSUPPORTOR" Type="int" Nullable="false" />
+    <Property Name="QY_PB_GUDENG" Type="int" Nullable="false" />
+    <Property Name="QY_PB_SEYANG" Type="int" Nullable="false" />
+    <Property Name="QY_PB_POZZETTA" Type="int" Nullable="false" />
+    <Property Name="QY_PB_GUOHUA" Type="int" Nullable="false" />
+    <Property Name="QY_PB_KEHU" Type="int" Nullable="false" />
+    <Property Name="QY_PB_OTHERS" Type="int" Nullable="false" />
+    <Property Name="QY_PB_OTHERSVALUE" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“TestQYDB.dbo.IWS_JINGDUQUEXIANPARAMETER”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="IWS_JINGDUQUEXIANPARAMETER">
+    <Key>
+      <PropertyRef Name="ITEMID" />
+      <PropertyRef Name="XFLESS" />
+      <PropertyRef Name="XFRANGE" />
+      <PropertyRef Name="XFMORE" />
+      <PropertyRef Name="CUSTACCOUNT" />
+      <PropertyRef Name="XFLESSMATHSYMBOL" />
+      <PropertyRef Name="XFGREATERMATHSYMBOL" />
+      <PropertyRef Name="XIANFENGOTHER" />
+      <PropertyRef Name="XIANFENGOTHERVALUE" />
+      <PropertyRef Name="XIANFENG" />
+      <PropertyRef Name="TAOHE" />
+      <PropertyRef Name="TAOHEOTHER" />
+      <PropertyRef Name="TAOHEOTHERVALUE" />
+      <PropertyRef Name="THVALUE" />
+      <PropertyRef Name="THRANGE" />
+      <PropertyRef Name="ZONGCHANG" />
+      <PropertyRef Name="ZONGCHANGOTHER" />
+      <PropertyRef Name="ZONGCHANGOTHERVALUE" />
+      <PropertyRef Name="ZONGCHANGVALUE" />
+      <PropertyRef Name="ZONGCHANGRANGE" />
+      <PropertyRef Name="CHUIZHIDU" />
+      <PropertyRef Name="CHUIZHIDUOTHER" />
+      <PropertyRef Name="CHUIZHIDUOTHERVALUE" />
+      <PropertyRef Name="CHUIZHIDUVALUE" />
+      <PropertyRef Name="CHUIZHIDURANGE" />
+      <PropertyRef Name="QXDYAREA" />
+      <PropertyRef Name="QXDYAREAF" />
+      <PropertyRef Name="BUYUNXUCHAOCU" />
+      <PropertyRef Name="BUYUNXUCHAOCUF" />
+      <PropertyRef Name="TESUYAOQIU" />
+      <PropertyRef Name="TESUYAOQIUF" />
+      <PropertyRef Name="CHANPINYAOQIU" />
+      <PropertyRef Name="CHANPINYAOQIUVALUE" />
+      <PropertyRef Name="MAOCIXIUBUVALUE" />
+      <PropertyRef Name="MAOCIXIUBU" />
+      <PropertyRef Name="ZHENKONGAOXIANSHULIANG" />
+      <PropertyRef Name="ZHENKONGAOXIANSHULIANGVALUE" />
+      <PropertyRef Name="ZHENKONGAOXIANGAODU" />
+      <PropertyRef Name="ZHENKONGAOXIANGAODUVALUE" />
+      <PropertyRef Name="QITACAILIAO" />
+      <PropertyRef Name="QITACAILIAOVALUE" />
+      <PropertyRef Name="JINSHUYE" />
+      <PropertyRef Name="YOUMO" />
+      <PropertyRef Name="HONGTU" />
+      <PropertyRef Name="AXINGJIAO" />
+      <PropertyRef Name="LCVD" />
+      <PropertyRef Name="XIANTIAOZHILIANG" />
+      <PropertyRef Name="XIANTIAOZHILIANGVALUE" />
+      <PropertyRef Name="ZHENGBANTIAOWENVALUE" />
+      <PropertyRef Name="ZHENGBANTIAOWEN" />
+      <PropertyRef Name="ZHENYUANDU" />
+      <PropertyRef Name="ZHENYUANDUVALUE" />
+      <PropertyRef Name="XIANFENGCELIANGVALUE" />
+      <PropertyRef Name="CHANGCHICUNCELIANG" />
+      <PropertyRef Name="CHANGCHICUNCELIANGVALUE" />
+      <PropertyRef Name="SHUJUFENXIYAOQIU" />
+      <PropertyRef Name="SHUJUFENXIYAOQIUVALUE" />
+      <PropertyRef Name="COPYOFCHANPINYAOQIUVALUE" />
+      <PropertyRef Name="DATAAREAID" />
+      <PropertyRef Name="RECVERSION" />
+      <PropertyRef Name="RECID" />
+      <PropertyRef Name="MAXBUGSIZE" />
+    </Key>
+    <Property Name="ITEMID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="XFLESS" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="XFRANGE" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="XFMORE" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="CUSTACCOUNT" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="XFLESSMATHSYMBOL" Type="int" Nullable="false" />
+    <Property Name="XFGREATERMATHSYMBOL" Type="int" Nullable="false" />
+    <Property Name="XIANFENGOTHER" Type="int" Nullable="false" />
+    <Property Name="XIANFENGOTHERVALUE" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="XIANFENG" Type="int" Nullable="false" />
+    <Property Name="TAOHE" Type="int" Nullable="false" />
+    <Property Name="TAOHEOTHER" Type="int" Nullable="false" />
+    <Property Name="TAOHEOTHERVALUE" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="THVALUE" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="THRANGE" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="ZONGCHANG" Type="int" Nullable="false" />
+    <Property Name="ZONGCHANGOTHER" Type="int" Nullable="false" />
+    <Property Name="ZONGCHANGOTHERVALUE" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="ZONGCHANGVALUE" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="ZONGCHANGRANGE" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="CHUIZHIDU" Type="int" Nullable="false" />
+    <Property Name="CHUIZHIDUOTHER" Type="int" Nullable="false" />
+    <Property Name="CHUIZHIDUOTHERVALUE" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="CHUIZHIDUVALUE" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="CHUIZHIDURANGE" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="QXDYAREA" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="QXDYAREAF" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="BUYUNXUCHAOCU" Type="int" Nullable="false" />
+    <Property Name="BUYUNXUCHAOCUF" Type="int" Nullable="false" />
+    <Property Name="TESUYAOQIU" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="TESUYAOQIUF" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="CHANPINYAOQIU" Type="int" Nullable="false" />
+    <Property Name="CHANPINYAOQIUVALUE" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="MAOCIXIUBUVALUE" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="MAOCIXIUBU" Type="int" Nullable="false" />
+    <Property Name="ZHENKONGAOXIANSHULIANG" Type="int" Nullable="false" />
+    <Property Name="ZHENKONGAOXIANSHULIANGVALUE" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="ZHENKONGAOXIANGAODU" Type="int" Nullable="false" />
+    <Property Name="ZHENKONGAOXIANGAODUVALUE" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="QITACAILIAO" Type="int" Nullable="false" />
+    <Property Name="QITACAILIAOVALUE" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="JINSHUYE" Type="int" Nullable="false" />
+    <Property Name="YOUMO" Type="int" Nullable="false" />
+    <Property Name="HONGTU" Type="int" Nullable="false" />
+    <Property Name="AXINGJIAO" Type="int" Nullable="false" />
+    <Property Name="LCVD" Type="int" Nullable="false" />
+    <Property Name="XIANTIAOZHILIANG" Type="int" Nullable="false" />
+    <Property Name="XIANTIAOZHILIANGVALUE" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="ZHENGBANTIAOWENVALUE" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="ZHENGBANTIAOWEN" Type="int" Nullable="false" />
+    <Property Name="ZHENYUANDU" Type="int" Nullable="false" />
+    <Property Name="ZHENYUANDUVALUE" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="XIANFENGCELIANGVALUE" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="CHANGCHICUNCELIANG" Type="int" Nullable="false" />
+    <Property Name="CHANGCHICUNCELIANGVALUE" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="SHUJUFENXIYAOQIU" Type="int" Nullable="false" />
+    <Property Name="SHUJUFENXIYAOQIUVALUE" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="COPYOFCHANPINYAOQIUVALUE" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="DATAAREAID" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="RECVERSION" Type="int" Nullable="false" />
+    <Property Name="RECID" Type="bigint" Nullable="false" />
+    <Property Name="MAXBUGSIZE" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“TestQYDB.dbo.IWS_PRODUCTPARAMETER”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="IWS_PRODUCTPARAMETER">
+    <Key>
+      <PropertyRef Name="ITEMID" />
+      <PropertyRef Name="BANCAITYPE" />
+      <PropertyRef Name="BANCAIDESC" />
+      <PropertyRef Name="SIZE1X" />
+      <PropertyRef Name="SIZE1Y" />
+      <PropertyRef Name="HOU11" />
+      <PropertyRef Name="WUCHATYPE" />
+      <PropertyRef Name="PINGZHENGDUYAOQIU" />
+      <PropertyRef Name="PINGZHENGDUYAOQIUDESC" />
+      <PropertyRef Name="QIEGEJINGDU" />
+      <PropertyRef Name="DAOJIAOYAOQIU" />
+      <PropertyRef Name="DAOJIAOSIZE" />
+      <PropertyRef Name="BENGBIANYAOQIU" />
+      <PropertyRef Name="BENGBIANOTHERVALUE" />
+      <PropertyRef Name="WUCHAVALUE" />
+      <PropertyRef Name="PELLICLEYAOQIU" />
+      <PropertyRef Name="PELLICLEYAOQIUTYPE" />
+      <PropertyRef Name="PELLICLEMODEL" />
+      <PropertyRef Name="PELLICLEJINGDU" />
+      <PropertyRef Name="GUIDEYAOQIU" />
+      <PropertyRef Name="GUIDETIEHETPYE" />
+      <PropertyRef Name="CUSTACCOUNT" />
+      <PropertyRef Name="JUZHONGYAOQIU" />
+      <PropertyRef Name="SECTIONALQUALITYVALUE" />
+      <PropertyRef Name="SECTIONALQUALITY" />
+      <PropertyRef Name="SCRATCH" />
+      <PropertyRef Name="CUSTCLEANWAY" />
+      <PropertyRef Name="OUTSIDESTAIN" />
+      <PropertyRef Name="DAOJIAOSIZEVALUE" />
+      <PropertyRef Name="DATAAREAID" />
+      <PropertyRef Name="RECVERSION" />
+      <PropertyRef Name="RECID" />
+    </Key>
+    <Property Name="ITEMID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="BANCAITYPE" Type="int" Nullable="false" />
+    <Property Name="BANCAIDESC" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="SIZE1X" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="SIZE1Y" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="HOU11" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="WUCHATYPE" Type="int" Nullable="false" />
+    <Property Name="PINGZHENGDUYAOQIU" Type="int" Nullable="false" />
+    <Property Name="PINGZHENGDUYAOQIUDESC" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="QIEGEJINGDU" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="DAOJIAOYAOQIU" Type="int" Nullable="false" />
+    <Property Name="DAOJIAOSIZE" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="BENGBIANYAOQIU" Type="int" Nullable="false" />
+    <Property Name="BENGBIANOTHERVALUE" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="WUCHAVALUE" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PELLICLEYAOQIU" Type="int" Nullable="false" />
+    <Property Name="PELLICLEYAOQIUTYPE" Type="int" Nullable="false" />
+    <Property Name="PELLICLEMODEL" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="PELLICLEJINGDU" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="GUIDEYAOQIU" Type="int" Nullable="false" />
+    <Property Name="GUIDETIEHETPYE" Type="int" Nullable="false" />
+    <Property Name="CUSTACCOUNT" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="JUZHONGYAOQIU" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="SECTIONALQUALITYVALUE" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="SECTIONALQUALITY" Type="int" Nullable="false" />
+    <Property Name="SCRATCH" Type="nvarchar" MaxLength="1200" Nullable="false" />
+    <Property Name="CUSTCLEANWAY" Type="nvarchar" MaxLength="1200" Nullable="false" />
+    <Property Name="OUTSIDESTAIN" Type="nvarchar" MaxLength="1200" Nullable="false" />
+    <Property Name="DAOJIAOSIZEVALUE" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="DATAAREAID" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="RECVERSION" Type="int" Nullable="false" />
+    <Property Name="RECID" Type="bigint" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“TestQYDB.dbo.PRODBOM”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="PRODBOM">
+    <Key>
+      <PropertyRef Name="PRODID" />
+      <PropertyRef Name="LINENUM" />
+      <PropertyRef Name="PRODLINETYPE" />
+      <PropertyRef Name="BOMCONSUMP" />
+      <PropertyRef Name="ITEMID" />
+      <PropertyRef Name="BOMQTY" />
+      <PropertyRef Name="DIM1" />
+      <PropertyRef Name="DIM2" />
+      <PropertyRef Name="DIM3" />
+      <PropertyRef Name="DIM4" />
+      <PropertyRef Name="DIM5" />
+      <PropertyRef Name="ROUNDUP" />
+      <PropertyRef Name="ROUNDUPQTY" />
+      <PropertyRef Name="POSITION" />
+      <PropertyRef Name="QTYBOMCALC" />
+      <PropertyRef Name="REMAINBOMPHYSICAL" />
+      <PropertyRef Name="REMAINBOMFINANCIAL" />
+      <PropertyRef Name="QTYINVENTCALC" />
+      <PropertyRef Name="PRODFLUSHINGPRINCIP" />
+      <PropertyRef Name="RESERVATION" />
+      <PropertyRef Name="INVENTTRANSID" />
+      <PropertyRef Name="RAWMATERIALDATE" />
+      <PropertyRef Name="REMAININVENTPHYSICAL" />
+      <PropertyRef Name="DIMENSION" />
+      <PropertyRef Name="DIMENSION2_" />
+      <PropertyRef Name="DIMENSION3_" />
+      <PropertyRef Name="INVENTREFTYPE" />
+      <PropertyRef Name="INVENTREFID" />
+      <PropertyRef Name="INVENTREFTRANSID" />
+      <PropertyRef Name="VENDID" />
+      <PropertyRef Name="UNITID" />
+      <PropertyRef Name="BACKORDERSTATUS" />
+      <PropertyRef Name="CALCULATION" />
+      <PropertyRef Name="QTYINVENTSTUP" />
+      <PropertyRef Name="QTYBOMSTUP" />
+      <PropertyRef Name="BOMID" />
+      <PropertyRef Name="FORMULA" />
+      <PropertyRef Name="BOMREFRECID" />
+      <PropertyRef Name="BOMQTYSERIE" />
+      <PropertyRef Name="ITEMBOMID" />
+      <PropertyRef Name="INVENTDIMID" />
+      <PropertyRef Name="REQPOID" />
+      <PropertyRef Name="REQPLANIDSCHED" />
+      <PropertyRef Name="SCRAPVAR" />
+      <PropertyRef Name="SCRAPCONST" />
+      <PropertyRef Name="CONSTANTRELEASED" />
+      <PropertyRef Name="ENDCONSUMP" />
+      <PropertyRef Name="PROJCATEGORYID" />
+      <PropertyRef Name="ACTIVITYNUMBER" />
+      <PropertyRef Name="PROJTRANSID" />
+      <PropertyRef Name="PROJTRANSDATE" />
+      <PropertyRef Name="PROJLINEPROPERTYID" />
+      <PropertyRef Name="PROJCOSTPRICE" />
+      <PropertyRef Name="PROJCOSTAMOUNT" />
+      <PropertyRef Name="PROJSALESCURRENCYID" />
+      <PropertyRef Name="PROJSALESPRICE" />
+      <PropertyRef Name="PROJTAXGROUPID" />
+      <PropertyRef Name="PROJTAXITEMGROUPID" />
+      <PropertyRef Name="PROJID" />
+      <PropertyRef Name="PROJSETSUBPRODTOCONSUMED" />
+      <PropertyRef Name="DATAAREAID" />
+      <PropertyRef Name="RECVERSION" />
+      <PropertyRef Name="RECID" />
+      <PropertyRef Name="OPRNUM" />
+      <PropertyRef Name="WRKCTRCONSUMPTION" />
+      <PropertyRef Name="ITEMROUTEID" />
+      <PropertyRef Name="RAWMATERIALTIME" />
+      <PropertyRef Name="ENDSCHEDCONSUMP" />
+      <PropertyRef Name="IWS_REPLACEITEMID" />
+    </Key>
+    <Property Name="PRODID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="LINENUM" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PRODLINETYPE" Type="int" Nullable="false" />
+    <Property Name="BOMCONSUMP" Type="int" Nullable="false" />
+    <Property Name="ITEMID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="BOMQTY" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="DIM1" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="DIM2" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="DIM3" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="DIM4" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="DIM5" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="ROUNDUP" Type="int" Nullable="false" />
+    <Property Name="ROUNDUPQTY" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="POSITION" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="QTYBOMCALC" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="REMAINBOMPHYSICAL" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="REMAINBOMFINANCIAL" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="QTYINVENTCALC" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PRODFLUSHINGPRINCIP" Type="int" Nullable="false" />
+    <Property Name="RESERVATION" Type="int" Nullable="false" />
+    <Property Name="INVENTTRANSID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="RAWMATERIALDATE" Type="datetime" Nullable="false" />
+    <Property Name="REMAININVENTPHYSICAL" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="DIMENSION" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="DIMENSION2_" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="DIMENSION3_" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="INVENTREFTYPE" Type="int" Nullable="false" />
+    <Property Name="INVENTREFID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="INVENTREFTRANSID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="VENDID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="UNITID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="BACKORDERSTATUS" Type="int" Nullable="false" />
+    <Property Name="CALCULATION" Type="int" Nullable="false" />
+    <Property Name="QTYINVENTSTUP" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="QTYBOMSTUP" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="BOMID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="FORMULA" Type="int" Nullable="false" />
+    <Property Name="BOMREFRECID" Type="bigint" Nullable="false" />
+    <Property Name="BOMQTYSERIE" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="ITEMBOMID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="INVENTDIMID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="REQPOID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="REQPLANIDSCHED" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="SCRAPVAR" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="SCRAPCONST" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="CONSTANTRELEASED" Type="int" Nullable="false" />
+    <Property Name="ENDCONSUMP" Type="int" Nullable="false" />
+    <Property Name="PROJCATEGORYID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ACTIVITYNUMBER" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="PROJTRANSID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="PROJTRANSDATE" Type="datetime" Nullable="false" />
+    <Property Name="PROJLINEPROPERTYID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="PROJCOSTPRICE" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PROJCOSTAMOUNT" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PROJSALESCURRENCYID" Type="nvarchar" MaxLength="3" Nullable="false" />
+    <Property Name="PROJSALESPRICE" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PROJTAXGROUPID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="PROJTAXITEMGROUPID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="PROJID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="PROJSETSUBPRODTOCONSUMED" Type="int" Nullable="false" />
+    <Property Name="DATAAREAID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="RECVERSION" Type="int" Nullable="false" />
+    <Property Name="RECID" Type="bigint" Nullable="false" />
+    <Property Name="OPRNUM" Type="int" Nullable="false" />
+    <Property Name="WRKCTRCONSUMPTION" Type="int" Nullable="false" />
+    <Property Name="ITEMROUTEID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="RAWMATERIALTIME" Type="int" Nullable="false" />
+    <Property Name="ENDSCHEDCONSUMP" Type="int" Nullable="false" />
+    <Property Name="IWS_REPLACEITEMID" Type="nvarchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PRODJOURNALBOM">
+    <Key>
+      <PropertyRef Name="JOURNALID" />
+      <PropertyRef Name="LINENUM" />
+      <PropertyRef Name="DATAAREAID" />
+    </Key>
+    <Property Name="JOURNALID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="VOUCHER" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="LINENUM" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PRODID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="TRANSDATE" Type="datetime" Nullable="false" />
+    <Property Name="ITEMID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="PROJID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="INVENTTRANSID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="POSITION" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="INVENTCONSUMP" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="BOMCONSUMP" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="BOMUNITID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="INVENTPROPOSAL" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="BOMPROPOSAL" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="BOMSCRAP" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="ERRORCAUSE" Type="int" Nullable="false" />
+    <Property Name="DIMENSION" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="DIMENSION2_" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="DIMENSION3_" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ENDCONSUMP" Type="int" Nullable="false" />
+    <Property Name="INVENTDIMID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="INVENTTRANSCHILDREFID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="INVENTTRANSCHILDTYPE" Type="int" Nullable="false" />
+    <Property Name="INVENTRETURNFLAG" Type="int" Nullable="false" />
+    <Property Name="INVENTCONTROLPROPOSAL" Type="int" Nullable="false" />
+    <Property Name="ACTIVITYNUMBER" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="PROJCATEGORYID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="PROJLINEPROPERTYID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="PROJTRANSID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="PROJCOSTPRICE" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PROJCOSTAMOUNT" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PROJSALESCURRENCYID" Type="nvarchar" MaxLength="3" Nullable="false" />
+    <Property Name="PROJSALESPRICE" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PROJTAXGROUPID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="PROJTAXITEMGROUPID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="DATAAREAID" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="RECVERSION" Type="int" Nullable="false" />
+    <Property Name="RECID" Type="bigint" Nullable="false" />
+    <Property Name="OPRNUM" Type="int" Nullable="false" />
+    <Property Name="IWS_INVENTSERIALID" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PRODJOURNALROUTE">
+    <Key>
+      <PropertyRef Name="JOURNALID" />
+      <PropertyRef Name="LINENUM" />
+      <PropertyRef Name="DATAAREAID" />
+    </Key>
+    <Property Name="JOURNALID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="VOUCHER" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="LINENUM" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="TRANSDATE" Type="datetime" Nullable="false" />
+    <Property Name="PRODID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="WRKCTRID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="HOURPRICE" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="QTYGOOD" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="QTYERROR" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="ERRORCAUSE" Type="int" Nullable="false" />
+    <Property Name="EMPLID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="DIMENSION" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="DIMENSION2_" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="DIMENSION3_" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="CANCELLED" Type="int" Nullable="false" />
+    <Property Name="PRODINVENTDIMID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="PRODPICKLISTJOURNALID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="PRODREPORTFINISHEDJOURNALID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="DATAAREAID" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="RECVERSION" Type="int" Nullable="false" />
+    <Property Name="RECID" Type="bigint" Nullable="false" />
+    <Property Name="OPRNUM" Type="int" Nullable="false" />
+    <Property Name="JOBTYPE" Type="int" Nullable="false" />
+    <Property Name="HOURS" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="CATEGORYHOURSID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="QTYPRICE" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="OPRFINISHED" Type="int" Nullable="false" />
+    <Property Name="CATEGORYQTYID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="EXECUTEDPCT" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="JOBFINISHED" Type="int" Nullable="false" />
+    <Property Name="OPRPRIORITY" Type="int" Nullable="false" />
+    <Property Name="FROMTIME" Type="int" Nullable="false" />
+    <Property Name="TOTIME" Type="int" Nullable="false" />
+    <Property Name="JOBID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="OPRID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="PRODREPORTFINISHED" Type="int" Nullable="false" />
+    <Property Name="PRODPICKLIST" Type="int" Nullable="false" />
+    <Property Name="IWS_WRKSTATUS" Type="int" Nullable="false" />
+    <Property Name="IWS_HOURS" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="IWS_IPCAMOUNT" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="IWS_SHEETGOOD" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="IWS_SHEETERROR" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="IWS_WEIGHTS" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="IWS_EMPLNAME" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="CREATEDDATETIME" Type="datetime" Nullable="false" />
+    <Property Name="QY_MINUTE" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PRODROUTE">
+    <Key>
+      <PropertyRef Name="PRODID" />
+      <PropertyRef Name="OPRNUM" />
+      <PropertyRef Name="OPRPRIORITY" />
+      <PropertyRef Name="DATAAREAID" />
+    </Key>
+    <Property Name="PRODID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="OPRNUM" Type="int" Nullable="false" />
+    <Property Name="LEVEL_" Type="int" Nullable="false" />
+    <Property Name="OPRNUMNEXT" Type="int" Nullable="false" />
+    <Property Name="OPRID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="WRKCTRID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="TASKGROUPID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="QUEUETIMEBEFORE" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="SETUPTIME" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PROCESSTIME" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PROCESSPERQTY" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="TRANSPTIME" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="QUEUETIMEAFTER" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="OVERLAPQTY" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="ERRORPCT" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="ACCERROR" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="TOHOURS" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="TRANSFERBATCH" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="SETUPCATEGORYID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="PROCESSCATEGORYID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="OPRFINISHED" Type="int" Nullable="false" />
+    <Property Name="FORMULAFACTOR1" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="ROUTETYPE" Type="int" Nullable="false" />
+    <Property Name="BACKORDERSTATUS" Type="int" Nullable="false" />
+    <Property Name="PROPERTYID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ROUTEGROUPID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="QTYCATEGORYID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="FROMDATE" Type="datetime" Nullable="false" />
+    <Property Name="FROMTIME" Type="int" Nullable="false" />
+    <Property Name="TODATE" Type="datetime" Nullable="false" />
+    <Property Name="TOTIME" Type="int" Nullable="false" />
+    <Property Name="CALCQTY" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="CALCSETUP" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="CALCPROC" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="WRKCTRTASKDEMAND" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="OPRPRIORITY" Type="int" Nullable="false" />
+    <Property Name="WRKCTRLOADPCT" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="WRKCTRNUMOF" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="DIMENSION" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="DIMENSION2_" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="DIMENSION3_" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="FORMULA" Type="int" Nullable="false" />
+    <Property Name="ROUTEOPRREFRECID" Type="bigint" Nullable="false" />
+    <Property Name="LINKTYPE" Type="int" Nullable="false" />
+    <Property Name="OPRSTARTEDUP" Type="int" Nullable="false" />
+    <Property Name="EXECUTEDPROCESS" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="EXECUTEDSETUP" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="CONSTANTRELEASED" Type="int" Nullable="false" />
+    <Property Name="PHANTOMBOMFACTOR" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="DATAAREAID" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="RECVERSION" Type="int" Nullable="false" />
+    <Property Name="RECID" Type="bigint" Nullable="false" />
+    <Property Name="IWS_COSTCATEGORYGROUPID" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="IWS_TIMECATEGORYGROUPID" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="QY_OPRLEVEL" Type="int" Nullable="false" />
+    <Property Name="QY_FROMDATETIME" Type="datetime" Nullable="false" />
+    <Property Name="QY_FROMDATETIMETZID" Type="int" Nullable="false" />
+    <Property Name="QY_TODATETIME" Type="datetime" Nullable="false" />
+    <Property Name="QY_TODATETIMETZID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PRODTABLE">
+    <Key>
+      <PropertyRef Name="PRODID" />
+    </Key>
+    <Property Name="ITEMID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="NAME" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="PRODSTATUS" Type="int" Nullable="false" />
+    <Property Name="DATAAREAID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="PRODPRIO" Type="int" Nullable="false" />
+    <Property Name="PRODLOCKED" Type="int" Nullable="false" />
+    <Property Name="PRODTYPE" Type="int" Nullable="false" />
+    <Property Name="SCHEDSTATUS" Type="int" Nullable="false" />
+    <Property Name="SCHEDDATE" Type="datetime" Nullable="false" />
+    <Property Name="QTYSCHED" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="QTYSTUP" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="DLVDATE" Type="datetime" Nullable="false" />
+    <Property Name="FINISHEDDATE" Type="datetime" Nullable="false" />
+    <Property Name="SCHEDSTART" Type="datetime" Nullable="false" />
+    <Property Name="SCHEDEND" Type="datetime" Nullable="false" />
+    <Property Name="INVENTTRANSID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="DIMENSION" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="DIMENSION2_" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="BOMDATE" Type="datetime" Nullable="false" />
+    <Property Name="BACKORDERSTATUS" Type="int" Nullable="false" />
+    <Property Name="BOMID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="ROUTEID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="PRODID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="REALTIMEOPRID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="INVENTDIMID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="DLVTIME" Type="int" Nullable="false" />
+    <Property Name="IWS_WRKCTRID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="IWS_SCRAPRESEND" Type="int" Nullable="false" />
+    <Property Name="IWS_PRODUCTIONTYPE" Type="int" Nullable="false" />
+    <Property Name="IWS_LINETYPE" Type="int" Nullable="false" />
+    <Property Name="IWS_ISSUSPEND" Type="int" Nullable="false" />
+    <Property Name="IWS_DIAODUDATETIME" Type="datetime" Nullable="false" />
+    <Property Name="IWS_DIAODUDATETIMETZID" Type="int" Nullable="false" />
+    <Property Name="IWS_OTHERREQUEST" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="IWS_MATERIALREMARKS" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="IWS_DIAODUSHIREMARKS" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="IWS_DESIGNREAMRKS" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="IWS_ISNEWPRODUCTION" Type="int" Nullable="false" />
+    <Property Name="IWS_TOTALLENGTH" Type="int" Nullable="false" />
+    <Property Name="IWS_MINLINEWIDTHINMARKET" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="IWS_SALESNAME" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="IWS_MODELNUMBER" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="IWS_ITEMMIDDLETYPENAME" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="IWS_CDACCURACY" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="IWS_LINEWIDEFROM" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="SHIPPINGDATEREQUESTED" Type="datetime" Nullable="false" />
+    <Property Name="IWS_SPECIFICATIONS" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="IWS_SPECIFICATIONS2_" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="IWS_SPECIFICATIONS3_" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="IWS_CUSTNAMESEND" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="IWS_MARKETREMARKS" Type="ntext" />
+    <Property Name="SALESID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="IWS_SALESORDERDATE" Type="datetime" Nullable="false" />
+    <Property Name="IWS_SALESORDERDATETZID" Type="int" Nullable="false" />
+    <Property Name="IWS_BANBIANXIAOGUO" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="IWS_TUXINGJUBIAN" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="IWS_TUXINGTEZENG" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="IWS_BANCAITYPENAME" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="IWS_SUPERVISETYPE" Type="int" Nullable="false" />
+    <Property Name="IWS_EXAMBILLSREMARK" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="IWS_WRKCTRGRP" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="IWS_PLANDLVFLAG" Type="int" Nullable="false" />
+    <Property Name="IWS_CRAFTREMARKS" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="MODIFIEDBY" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="MODIFIEDTRANSACTIONID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CREATEDDATETIME" Type="datetime" Nullable="false" />
+    <Property Name="CREATEDBY" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="QY_ISCAMNEEDEDAOI" Type="int" Nullable="false" />
+    <Property Name="AOICREATEDDATETIME" Type="datetime" Nullable="false" />
+    <Property Name="AOICREATEDDATETIMETZID" Type="int" Nullable="false" />
+    <Property Name="QY_PREPUTINDATE" Type="datetime" Nullable="false" />
+    <Property Name="QY_PREPUTINDATETZID" Type="int" Nullable="false" />
+    <Property Name="QY_PREEXPOSEDATE" Type="datetime" Nullable="false" />
+    <Property Name="QY_PREEXPOSEDATETZID" Type="int" Nullable="false" />
+    <Property Name="PROCESS" Type="int" />
+    <Property Name="ISSTARTED" Type="int" />
+    <Property Name="STARTDATE" Type="datetime" />
+    <Property Name="DUEDATE" Type="datetime" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“TestQYDB.dbo.QY_CHECK_CDTABLE_NEW”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="QY_CHECK_CDTABLE_NEW">
+    <Key>
+      <PropertyRef Name="Num" />
+      <PropertyRef Name="CHECKDATA" />
+      <PropertyRef Name="COORDINATEY" />
+      <PropertyRef Name="COORDINATEX" />
+      <PropertyRef Name="SPEC" />
+      <PropertyRef Name="LINETYPE" />
+      <PropertyRef Name="CDTYPE" />
+      <PropertyRef Name="METHOD" />
+      <PropertyRef Name="DESIGN" />
+      <PropertyRef Name="GROUPID" />
+      <PropertyRef Name="PRODID" />
+      <PropertyRef Name="PRODSERIAL" />
+      <PropertyRef Name="INVALID" />
+      <PropertyRef Name="OPRID" />
+      <PropertyRef Name="DATAAREAID" />
+      <PropertyRef Name="RECVERSION" />
+      <PropertyRef Name="RECID" />
+    </Key>
+    <Property Name="Num" Type="nvarchar" MaxLength="3" Nullable="false" />
+    <Property Name="CHECKDATA" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="COORDINATEY" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="COORDINATEX" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="SPEC" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="LINETYPE" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="CDTYPE" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="METHOD" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="DESIGN" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="GROUPID" Type="int" Nullable="false" />
+    <Property Name="PRODID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="PRODSERIAL" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="INVALID" Type="int" Nullable="false" />
+    <Property Name="OPRID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="DATAAREAID" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="RECVERSION" Type="int" Nullable="false" />
+    <Property Name="RECID" Type="bigint" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“TestQYDB.dbo.QY_CHECK_TPTABLE_NEW”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="QY_CHECK_TPTABLE_NEW">
+    <Key>
+      <PropertyRef Name="DEVY" />
+      <PropertyRef Name="DEVX" />
+      <PropertyRef Name="NOMY" />
+      <PropertyRef Name="NOMX" />
+      <PropertyRef Name="ZCORRECTION" />
+      <PropertyRef Name="ORTHO" />
+      <PropertyRef Name="YSCALE" />
+      <PropertyRef Name="XSCALE" />
+      <PropertyRef Name="OPRID" />
+      <PropertyRef Name="INVALID" />
+      <PropertyRef Name="PRODSERIAL" />
+      <PropertyRef Name="PRODID" />
+      <PropertyRef Name="CREATEDDATETIME" />
+      <PropertyRef Name="DATAAREAID" />
+      <PropertyRef Name="RECVERSION" />
+      <PropertyRef Name="RECID" />
+    </Key>
+    <Property Name="DEVY" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="DEVX" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="NOMY" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="NOMX" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="ZCORRECTION" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ORTHO" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="YSCALE" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="XSCALE" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="OPRID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="INVALID" Type="int" Nullable="false" />
+    <Property Name="PRODSERIAL" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="PRODID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="CREATEDDATETIME" Type="datetime" Nullable="false" />
+    <Property Name="DATAAREAID" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="RECVERSION" Type="int" Nullable="false" />
+    <Property Name="RECID" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ROUTEOPRTABLE">
+    <Key>
+      <PropertyRef Name="OPRID" />
+    </Key>
+    <Property Name="OPRID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="NAME" Type="nvarchar" MaxLength="60" />
+    <Property Name="DATAAREAID" Type="nvarchar" MaxLength="4" />
+    <Property Name="RECVERSION" Type="int" />
+    <Property Name="RECID" Type="bigint" />
+    <Property Name="IWS_PRODSHOW" Type="int" />
+    <Property Name="IWS_ROUTEOPRTYPE" Type="int" />
+    <Property Name="IWS_ROUTEOPRNUM" Type="int" />
+    <Property Name="IWS_ADDITIONALOPRID" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="WRKCTRTABLE">
+    <Key>
+      <PropertyRef Name="WRKCTRID" />
+      <PropertyRef Name="DATAAREAID" />
+    </Key>
+    <Property Name="WRKCTRGROUPID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="WRKCTRID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="NAME" Type="nvarchar" MaxLength="60" Nullable="false" />
+    <Property Name="WRKCTRTYPE" Type="int" Nullable="false" />
+    <Property Name="WRKCTRNUMOF" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="EFFECTIVITYPCT" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="OPERATIONSCHEDPCT" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="CAPACITY" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="CAPUNIT" Type="int" Nullable="false" />
+    <Property Name="VENDID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="CREATED" Type="datetime" Nullable="false" />
+    <Property Name="TOHOURS" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="DIMENSION" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="DIMENSION2_" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="DIMENSION3_" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ISGROUP" Type="int" Nullable="false" />
+    <Property Name="PRODUNITID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="SITEID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="BOTTLENECKRESOURCE" Type="int" Nullable="false" />
+    <Property Name="WMSLOCATIONID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="EMPLID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="CALENDARID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="CAPLIMITED" Type="int" Nullable="false" />
+    <Property Name="INVENTLOCATIONID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="CAPACITYBATCH" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="EXCLUSIVE" Type="int" Nullable="false" />
+    <Property Name="DATAAREAID" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="RECVERSION" Type="int" Nullable="false" />
+    <Property Name="RECID" Type="bigint" Nullable="false" />
+    <Property Name="ACCOUNTWRKCTRISSUE" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="ACCOUNTWIPVALUATION" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="QUEUETIMEBEFORE" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="SETUPTIME" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PROCESSTIME" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PROCESSPERQTY" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="TRANSPTIME" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="QUEUETIMEAFTER" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="TRANSFERBATCH" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="ERRORPCT" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="SETUPCATEGORYID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="PROCESSCATEGORYID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ACCOUNTWIPISSUE" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="TASKGROUPID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="WRKCTRTASKDEMAND" Type="numeric" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PROPERTYLIMITED" Type="int" Nullable="false" />
+    <Property Name="QTYCATEGORYID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ROUTEGROUPID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="ACCOUNTWRKCTRISSUEOFFSET" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="IWS_DEFAULTPRIORITY" Type="int" Nullable="false" />
+    <Property Name="IWS_JIXING" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="IWS_BEIZHU" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="IWS_PEIZHI" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="IWS_SENSITIVITY" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="IWS_JIXINGXINGHAO" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="IWS_VISIBLE" Type="int" Nullable="false" />
+    <Property Name="IWS_LOCATIONIDEXPORT" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="IWS_TIMECATEGORYGROUPID" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="IWS_COSTCATEGORYGROUPID" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="IWS_CAMENABLED" Type="int" Nullable="false" />
+    <Property Name="IWS_MACHINETYPE" Type="int" Nullable="false" />
+    <Property Name="QY_MAINMACHINE" Type="int" Nullable="false" />
+    <Property Name="QY_WRKQTY" Type="int" Nullable="false" />
+    <Property Name="QY_ISSTOP" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="TestQYDBModelStoreContainer">
+    <EntitySet Name="H_EQUIPMENTALARM" EntityType="Self.H_EQUIPMENTALARM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="H_EQUIPMENTTABLE" EntityType="Self.H_EQUIPMENTTABLE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="H_PRODUCTATTACHEDEDFILE" EntityType="Self.H_PRODUCTATTACHEDEDFILE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="IWS_CHECK_AOITABLE" EntityType="Self.IWS_CHECK_AOITABLE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="IWS_CHECK_INNERPACKTABLE" EntityType="Self.IWS_CHECK_INNERPACKTABLE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="IWS_CHECK_LONGSIZETABLE" EntityType="Self.IWS_CHECK_LONGSIZETABLE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="IWS_CHECK_PELLICLETABLE" EntityType="Self.IWS_CHECK_PELLICLETABLE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="IWS_CHECK_REPAIRTABLE" EntityType="Self.IWS_CHECK_REPAIRTABLE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="IWS_CHECK_WASHTABLE" EntityType="Self.IWS_CHECK_WASHTABLE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PRODJOURNALBOM" EntityType="Self.PRODJOURNALBOM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PRODJOURNALROUTE" EntityType="Self.PRODJOURNALROUTE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PRODROUTE" EntityType="Self.PRODROUTE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PRODTABLE" EntityType="Self.PRODTABLE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ROUTEOPRTABLE" EntityType="Self.ROUTEOPRTABLE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="WRKCTRTABLE" EntityType="Self.WRKCTRTABLE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="H_EQUIPMENTMAINTENANCE" EntityType="Self.H_EQUIPMENTMAINTENANCE" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [H_EQUIPMENTMAINTENANCE].[EquipmentID] AS [EquipmentID], 
+    [H_EQUIPMENTMAINTENANCE].[MaintenanceType] AS [MaintenanceType], 
+    [H_EQUIPMENTMAINTENANCE].[MaintenanceDate] AS [MaintenanceDate], 
+    [H_EQUIPMENTMAINTENANCE].[MaintenanceOperatior] AS [MaintenanceOperatior], 
+    [H_EQUIPMENTMAINTENANCE].[MaintenanceUsedTime] AS [MaintenanceUsedTime]
+    FROM [dbo].[H_EQUIPMENTMAINTENANCE] AS [H_EQUIPMENTMAINTENANCE]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="IWS_CAMCRAFTCMDEQPCONFIGTABLE" EntityType="Self.IWS_CAMCRAFTCMDEQPCONFIGTABLE" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[SHEBEIPEIZHIZHILINGID] AS [SHEBEIPEIZHIZHILINGID], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[MASKBORDER] AS [MASKBORDER], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[GRAPH2MASKUPLIMIT] AS [GRAPH2MASKUPLIMIT], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[GRAPH2MASKDWLIMIT] AS [GRAPH2MASKDWLIMIT], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[MASKTYPE] AS [MASKTYPE], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[MASKSIZETYPE] AS [MASKSIZETYPE], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[MINLSAREA] AS [MINLSAREA], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[MINLSUPLIMIT] AS [MINLSUPLIMIT], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[MINLSDWLIMIT] AS [MINLSDWLIMIT], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[CDUPLIMIT] AS [CDUPLIMIT], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[CDDWLIMIT] AS [CDDWLIMIT], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[EMULTYPE] AS [EMULTYPE], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[WRKCTRID] AS [WRKCTRID], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[OBJECT] AS [OBJECT], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[TOVERIFY] AS [TOVERIFY], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[INVALID] AS [INVALID], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[VERIFYER] AS [VERIFYER], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[RECORDER] AS [RECORDER], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[EFFECTTIMELIMIT] AS [EFFECTTIMELIMIT], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[APPOINTDAY] AS [APPOINTDAY], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[APPOINTDAYTZID] AS [APPOINTDAYTZID], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[TOVERIFYTIME] AS [TOVERIFYTIME], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[TOVERIFYTIMETZID] AS [TOVERIFYTIMETZID], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[TOEFFECTTIME] AS [TOEFFECTTIME], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[TOEFFECTTIMETZID] AS [TOEFFECTTIMETZID], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[RECORDTIME] AS [RECORDTIME], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[RECORDTIMETZID] AS [RECORDTIMETZID], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[SENDDEPARTMENT] AS [SENDDEPARTMENT], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[ACCEPTDEPARTMENT] AS [ACCEPTDEPARTMENT], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[TECHNUM] AS [TECHNUM], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[TECHNAME] AS [TECHNAME], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[TECHTARGET] AS [TECHTARGET], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[TECHTYPE] AS [TECHTYPE], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[MINLSTYPE] AS [MINLSTYPE], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[TRADEID] AS [TRADEID], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[CUSTACCOUNT] AS [CUSTACCOUNT], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[DATAAREAID] AS [DATAAREAID], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[RECVERSION] AS [RECVERSION], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[RECID] AS [RECID], 
+    [IWS_CAMCRAFTCMDEQPCONFIGTABLE].[MINLINETYPE] AS [MINLINETYPE]
+    FROM [dbo].[IWS_CAMCRAFTCMDEQPCONFIGTABLE] AS [IWS_CAMCRAFTCMDEQPCONFIGTABLE]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="IWS_CAMCRAFTCMDMATERIALTABLE" EntityType="Self.IWS_CAMCRAFTCMDMATERIALTABLE" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [IWS_CAMCRAFTCMDMATERIALTABLE].[BANCAIPIPEIID] AS [BANCAIPIPEIID], 
+    [IWS_CAMCRAFTCMDMATERIALTABLE].[WRKCTRID] AS [WRKCTRID], 
+    [IWS_CAMCRAFTCMDMATERIALTABLE].[TOVERIFY] AS [TOVERIFY], 
+    [IWS_CAMCRAFTCMDMATERIALTABLE].[INVALID] AS [INVALID], 
+    [IWS_CAMCRAFTCMDMATERIALTABLE].[VERIFYER] AS [VERIFYER], 
+    [IWS_CAMCRAFTCMDMATERIALTABLE].[RECORDER] AS [RECORDER], 
+    [IWS_CAMCRAFTCMDMATERIALTABLE].[EFFECTTIMELIMIT] AS [EFFECTTIMELIMIT], 
+    [IWS_CAMCRAFTCMDMATERIALTABLE].[APPOINTDAY] AS [APPOINTDAY], 
+    [IWS_CAMCRAFTCMDMATERIALTABLE].[APPOINTDAYTZID] AS [APPOINTDAYTZID], 
+    [IWS_CAMCRAFTCMDMATERIALTABLE].[TOVERIFYTIME] AS [TOVERIFYTIME], 
+    [IWS_CAMCRAFTCMDMATERIALTABLE].[TOVERIFYTIMETZID] AS [TOVERIFYTIMETZID], 
+    [IWS_CAMCRAFTCMDMATERIALTABLE].[TOEFFECTTIME] AS [TOEFFECTTIME], 
+    [IWS_CAMCRAFTCMDMATERIALTABLE].[TOEFFECTTIMETZID] AS [TOEFFECTTIMETZID], 
+    [IWS_CAMCRAFTCMDMATERIALTABLE].[RECORDTIME] AS [RECORDTIME], 
+    [IWS_CAMCRAFTCMDMATERIALTABLE].[RECORDTIMETZID] AS [RECORDTIMETZID], 
+    [IWS_CAMCRAFTCMDMATERIALTABLE].[SENDDEPARTMENT] AS [SENDDEPARTMENT], 
+    [IWS_CAMCRAFTCMDMATERIALTABLE].[TECHNUM] AS [TECHNUM], 
+    [IWS_CAMCRAFTCMDMATERIALTABLE].[TECHNAME] AS [TECHNAME], 
+    [IWS_CAMCRAFTCMDMATERIALTABLE].[TECHTARGET] AS [TECHTARGET], 
+    [IWS_CAMCRAFTCMDMATERIALTABLE].[TECHTYPE] AS [TECHTYPE], 
+    [IWS_CAMCRAFTCMDMATERIALTABLE].[ITEMID] AS [ITEMID], 
+    [IWS_CAMCRAFTCMDMATERIALTABLE].[ACCEPTDEPARTMENT] AS [ACCEPTDEPARTMENT], 
+    [IWS_CAMCRAFTCMDMATERIALTABLE].[ACCEPTDEPARTMENT2_] AS [ACCEPTDEPARTMENT2_], 
+    [IWS_CAMCRAFTCMDMATERIALTABLE].[ACCEPTDEPARTMENT3_] AS [ACCEPTDEPARTMENT3_], 
+    [IWS_CAMCRAFTCMDMATERIALTABLE].[ACCEPTDEPARTMENT4_] AS [ACCEPTDEPARTMENT4_], 
+    [IWS_CAMCRAFTCMDMATERIALTABLE].[ACCEPTDEPARTMENT5_] AS [ACCEPTDEPARTMENT5_], 
+    [IWS_CAMCRAFTCMDMATERIALTABLE].[ACCEPTDEPARTMENT6_] AS [ACCEPTDEPARTMENT6_], 
+    [IWS_CAMCRAFTCMDMATERIALTABLE].[DATAAREAID] AS [DATAAREAID], 
+    [IWS_CAMCRAFTCMDMATERIALTABLE].[RECVERSION] AS [RECVERSION], 
+    [IWS_CAMCRAFTCMDMATERIALTABLE].[RECID] AS [RECID]
+    FROM [dbo].[IWS_CAMCRAFTCMDMATERIALTABLE] AS [IWS_CAMCRAFTCMDMATERIALTABLE]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="IWS_CAMCRAFTCMDTRADETABLE" EntityType="Self.IWS_CAMCRAFTCMDTRADETABLE" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [IWS_CAMCRAFTCMDTRADETABLE].[HANGYEPIPEIID] AS [HANGYEPIPEIID], 
+    [IWS_CAMCRAFTCMDTRADETABLE].[WRKCTRID] AS [WRKCTRID], 
+    [IWS_CAMCRAFTCMDTRADETABLE].[TRADEID] AS [TRADEID], 
+    [IWS_CAMCRAFTCMDTRADETABLE].[TOVERIFY] AS [TOVERIFY], 
+    [IWS_CAMCRAFTCMDTRADETABLE].[INVALID] AS [INVALID], 
+    [IWS_CAMCRAFTCMDTRADETABLE].[VERIFYER] AS [VERIFYER], 
+    [IWS_CAMCRAFTCMDTRADETABLE].[RECORDER] AS [RECORDER], 
+    [IWS_CAMCRAFTCMDTRADETABLE].[EFFECTTIMELIMIT] AS [EFFECTTIMELIMIT], 
+    [IWS_CAMCRAFTCMDTRADETABLE].[APPOINTDAY] AS [APPOINTDAY], 
+    [IWS_CAMCRAFTCMDTRADETABLE].[APPOINTDAYTZID] AS [APPOINTDAYTZID], 
+    [IWS_CAMCRAFTCMDTRADETABLE].[TOVERIFYTIME] AS [TOVERIFYTIME], 
+    [IWS_CAMCRAFTCMDTRADETABLE].[TOVERIFYTIMETZID] AS [TOVERIFYTIMETZID], 
+    [IWS_CAMCRAFTCMDTRADETABLE].[TOEFFECTTIME] AS [TOEFFECTTIME], 
+    [IWS_CAMCRAFTCMDTRADETABLE].[TOEFFECTTIMETZID] AS [TOEFFECTTIMETZID], 
+    [IWS_CAMCRAFTCMDTRADETABLE].[RECORDTIME] AS [RECORDTIME], 
+    [IWS_CAMCRAFTCMDTRADETABLE].[RECORDTIMETZID] AS [RECORDTIMETZID], 
+    [IWS_CAMCRAFTCMDTRADETABLE].[SENDDEPARTMENT] AS [SENDDEPARTMENT], 
+    [IWS_CAMCRAFTCMDTRADETABLE].[ACCEPTDEPARTMENT] AS [ACCEPTDEPARTMENT], 
+    [IWS_CAMCRAFTCMDTRADETABLE].[TECHNUM] AS [TECHNUM], 
+    [IWS_CAMCRAFTCMDTRADETABLE].[TECHNAME] AS [TECHNAME], 
+    [IWS_CAMCRAFTCMDTRADETABLE].[TECHTARGET] AS [TECHTARGET], 
+    [IWS_CAMCRAFTCMDTRADETABLE].[TECHTYPE] AS [TECHTYPE], 
+    [IWS_CAMCRAFTCMDTRADETABLE].[DATAAREAID] AS [DATAAREAID], 
+    [IWS_CAMCRAFTCMDTRADETABLE].[RECVERSION] AS [RECVERSION], 
+    [IWS_CAMCRAFTCMDTRADETABLE].[RECID] AS [RECID], 
+    [IWS_CAMCRAFTCMDTRADETABLE].[MURAVALUE] AS [MURAVALUE]
+    FROM [dbo].[IWS_CAMCRAFTCMDTRADETABLE] AS [IWS_CAMCRAFTCMDTRADETABLE]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="IWS_CAMDESIGNPARAMTABLE" EntityType="Self.IWS_CAMDESIGNPARAMTABLE" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [IWS_CAMDESIGNPARAMTABLE].[PRODID] AS [PRODID], 
+    [IWS_CAMDESIGNPARAMTABLE].[INVENTREFID] AS [INVENTREFID], 
+    [IWS_CAMDESIGNPARAMTABLE].[INVENTREFTRANSID] AS [INVENTREFTRANSID], 
+    [IWS_CAMDESIGNPARAMTABLE].[INVENTDIMID] AS [INVENTDIMID], 
+    [IWS_CAMDESIGNPARAMTABLE].[CDPRECISION] AS [CDPRECISION], 
+    [IWS_CAMDESIGNPARAMTABLE].[MINLSWIDTH] AS [MINLSWIDTH], 
+    [IWS_CAMDESIGNPARAMTABLE].[MINLSTYPE] AS [MINLSTYPE], 
+    [IWS_CAMDESIGNPARAMTABLE].[GRAPH2EDGE] AS [GRAPH2EDGE], 
+    [IWS_CAMDESIGNPARAMTABLE].[GRAPHFEATRUES] AS [GRAPHFEATRUES], 
+    [IWS_CAMDESIGNPARAMTABLE].[MASKOUTLINE] AS [MASKOUTLINE], 
+    [IWS_CAMDESIGNPARAMTABLE].[WRKCTRID] AS [WRKCTRID], 
+    [IWS_CAMDESIGNPARAMTABLE].[MACHINENAME] AS [MACHINENAME], 
+    [IWS_CAMDESIGNPARAMTABLE].[LENS] AS [LENS], 
+    [IWS_CAMDESIGNPARAMTABLE].[QYBARCODE] AS [QYBARCODE], 
+    [IWS_CAMDESIGNPARAMTABLE].[CLIENTBARCODE] AS [CLIENTBARCODE], 
+    [IWS_CAMDESIGNPARAMTABLE].[INVERT] AS [INVERT], 
+    [IWS_CAMDESIGNPARAMTABLE].[ROTATE] AS [ROTATE], 
+    [IWS_CAMDESIGNPARAMTABLE].[MIRROR] AS [MIRROR], 
+    [IWS_CAMDESIGNPARAMTABLE].[CPMASKMIRROR] AS [CPMASKMIRROR], 
+    [IWS_CAMDESIGNPARAMTABLE].[LASTMIRROR] AS [LASTMIRROR], 
+    [IWS_CAMDESIGNPARAMTABLE].[ISDELMASKMARK] AS [ISDELMASKMARK], 
+    [IWS_CAMDESIGNPARAMTABLE].[NETPTDENSITY] AS [NETPTDENSITY], 
+    [IWS_CAMDESIGNPARAMTABLE].[NETPTANGLE] AS [NETPTANGLE], 
+    [IWS_CAMDESIGNPARAMTABLE].[APERTURERATIO] AS [APERTURERATIO], 
+    [IWS_CAMDESIGNPARAMTABLE].[X1STEP] AS [X1STEP], 
+    [IWS_CAMDESIGNPARAMTABLE].[Y1STEP] AS [Y1STEP], 
+    [IWS_CAMDESIGNPARAMTABLE].[X2STEP] AS [X2STEP], 
+    [IWS_CAMDESIGNPARAMTABLE].[Y2STEP] AS [Y2STEP], 
+    [IWS_CAMDESIGNPARAMTABLE].[MASKSIZEX] AS [MASKSIZEX], 
+    [IWS_CAMDESIGNPARAMTABLE].[MASKSIZEY] AS [MASKSIZEY], 
+    [IWS_CAMDESIGNPARAMTABLE].[MASKSIZEZ] AS [MASKSIZEZ], 
+    [IWS_CAMDESIGNPARAMTABLE].[TEMPERATUREXPPB] AS [TEMPERATUREXPPB], 
+    [IWS_CAMDESIGNPARAMTABLE].[TEMPERATUREYPPB] AS [TEMPERATUREYPPB], 
+    [IWS_CAMDESIGNPARAMTABLE].[GRAPHSCALEXPPB] AS [GRAPHSCALEXPPB], 
+    [IWS_CAMDESIGNPARAMTABLE].[GRAPHSCALEYPPB] AS [GRAPHSCALEYPPB], 
+    [IWS_CAMDESIGNPARAMTABLE].[CRAFTSCALEXPPB] AS [CRAFTSCALEXPPB], 
+    [IWS_CAMDESIGNPARAMTABLE].[CRAFTSCALEYPPB] AS [CRAFTSCALEYPPB], 
+    [IWS_CAMDESIGNPARAMTABLE].[CRAFTSCALEORTHOPPB] AS [CRAFTSCALEORTHOPPB], 
+    [IWS_CAMDESIGNPARAMTABLE].[DESIGNLASTSCALEXPPB] AS [DESIGNLASTSCALEXPPB], 
+    [IWS_CAMDESIGNPARAMTABLE].[DESIGNLASTSCALEYPPB] AS [DESIGNLASTSCALEYPPB], 
+    [IWS_CAMDESIGNPARAMTABLE].[DESIGNLASTSCALEX] AS [DESIGNLASTSCALEX], 
+    [IWS_CAMDESIGNPARAMTABLE].[DESIGNLASTSCALEY] AS [DESIGNLASTSCALEY], 
+    [IWS_CAMDESIGNPARAMTABLE].[CRFIELDNAME1] AS [CRFIELDNAME1], 
+    [IWS_CAMDESIGNPARAMTABLE].[CRFIELDNAME2] AS [CRFIELDNAME2], 
+    [IWS_CAMDESIGNPARAMTABLE].[CRFIELDNAME3] AS [CRFIELDNAME3], 
+    [IWS_CAMDESIGNPARAMTABLE].[CRFIELDNAME4] AS [CRFIELDNAME4], 
+    [IWS_CAMDESIGNPARAMTABLE].[CRATIO1] AS [CRATIO1], 
+    [IWS_CAMDESIGNPARAMTABLE].[CRATIO2] AS [CRATIO2], 
+    [IWS_CAMDESIGNPARAMTABLE].[CRATIO3] AS [CRATIO3], 
+    [IWS_CAMDESIGNPARAMTABLE].[CRATIO4] AS [CRATIO4], 
+    [IWS_CAMDESIGNPARAMTABLE].[DESIGNFORMAT] AS [DESIGNFORMAT], 
+    [IWS_CAMDESIGNPARAMTABLE].[TOPCELL] AS [TOPCELL], 
+    [IWS_CAMDESIGNPARAMTABLE].[LAYLOGICALS] AS [LAYLOGICALS], 
+    [IWS_CAMDESIGNPARAMTABLE].[CELLPITCHX] AS [CELLPITCHX], 
+    [IWS_CAMDESIGNPARAMTABLE].[CELLPITCHY] AS [CELLPITCHY], 
+    [IWS_CAMDESIGNPARAMTABLE].[MEBENAME] AS [MEBENAME], 
+    [IWS_CAMDESIGNPARAMTABLE].[STRIPEWIDTH] AS [STRIPEWIDTH], 
+    [IWS_CAMDESIGNPARAMTABLE].[PIXELSIZE] AS [PIXELSIZE], 
+    [IWS_CAMDESIGNPARAMTABLE].[STETCHMODE] AS [STETCHMODE], 
+    [IWS_CAMDESIGNPARAMTABLE].[ADDITIONALPIXEL] AS [ADDITIONALPIXEL], 
+    [IWS_CAMDESIGNPARAMTABLE].[BIDIRECTION] AS [BIDIRECTION], 
+    [IWS_CAMDESIGNPARAMTABLE].[LICBUFFERSIZE] AS [LICBUFFERSIZE], 
+    [IWS_CAMDESIGNPARAMTABLE].[OVERLAP] AS [OVERLAP], 
+    [IWS_CAMDESIGNPARAMTABLE].[YSPEED] AS [YSPEED], 
+    [IWS_CAMDESIGNPARAMTABLE].[RESOLUTION] AS [RESOLUTION], 
+    [IWS_CAMDESIGNPARAMTABLE].[BIASX] AS [BIASX], 
+    [IWS_CAMDESIGNPARAMTABLE].[BIASY] AS [BIASY], 
+    [IWS_CAMDESIGNPARAMTABLE].[PROCESS] AS [PROCESS], 
+    [IWS_CAMDESIGNPARAMTABLE].[ORIGINTYPE] AS [ORIGINTYPE], 
+    [IWS_CAMDESIGNPARAMTABLE].[MEASURECDAMOUNT] AS [MEASURECDAMOUNT], 
+    [IWS_CAMDESIGNPARAMTABLE].[MURAFUNCTION] AS [MURAFUNCTION], 
+    [IWS_CAMDESIGNPARAMTABLE].[PIXELPITCHX] AS [PIXELPITCHX], 
+    [IWS_CAMDESIGNPARAMTABLE].[PIXELPITCHY] AS [PIXELPITCHY], 
+    [IWS_CAMDESIGNPARAMTABLE].[CRAFTLAYERNAME] AS [CRAFTLAYERNAME], 
+    [IWS_CAMDESIGNPARAMTABLE].[ADDEXPOSALAMOUNT] AS [ADDEXPOSALAMOUNT], 
+    [IWS_CAMDESIGNPARAMTABLE].[EXPOSELOCATION] AS [EXPOSELOCATION], 
+    [IWS_CAMDESIGNPARAMTABLE].[OFFSETUP] AS [OFFSETUP], 
+    [IWS_CAMDESIGNPARAMTABLE].[OFFSETDW] AS [OFFSETDW], 
+    [IWS_CAMDESIGNPARAMTABLE].[OFFSETLE] AS [OFFSETLE], 
+    [IWS_CAMDESIGNPARAMTABLE].[OFFSETRI] AS [OFFSETRI], 
+    [IWS_CAMDESIGNPARAMTABLE].[CONVERTFORMAT] AS [CONVERTFORMAT], 
+    [IWS_CAMDESIGNPARAMTABLE].[DESIGNNAME] AS [DESIGNNAME], 
+    [IWS_CAMDESIGNPARAMTABLE].[JOBNAME] AS [JOBNAME], 
+    [IWS_CAMDESIGNPARAMTABLE].[JOBID] AS [JOBID], 
+    [IWS_CAMDESIGNPARAMTABLE].[CONVERTNAME] AS [CONVERTNAME], 
+    [IWS_CAMDESIGNPARAMTABLE].[REBACKREMARK] AS [REBACKREMARK], 
+    [IWS_CAMDESIGNPARAMTABLE].[CAMREMARK] AS [CAMREMARK], 
+    [IWS_CAMDESIGNPARAMTABLE].[WRKSTATUS] AS [WRKSTATUS], 
+    [IWS_CAMDESIGNPARAMTABLE].[INVENTREFTYPE] AS [INVENTREFTYPE], 
+    [IWS_CAMDESIGNPARAMTABLE].[OPRID] AS [OPRID], 
+    [IWS_CAMDESIGNPARAMTABLE].[ITEMID] AS [ITEMID], 
+    [IWS_CAMDESIGNPARAMTABLE].[SAVETYPE] AS [SAVETYPE], 
+    [IWS_CAMDESIGNPARAMTABLE].[X1VALUE] AS [X1VALUE], 
+    [IWS_CAMDESIGNPARAMTABLE].[Y1VALUE] AS [Y1VALUE], 
+    [IWS_CAMDESIGNPARAMTABLE].[X2VALUE] AS [X2VALUE], 
+    [IWS_CAMDESIGNPARAMTABLE].[Y2VALUE] AS [Y2VALUE], 
+    [IWS_CAMDESIGNPARAMTABLE].[GRAPHSIZEX] AS [GRAPHSIZEX], 
+    [IWS_CAMDESIGNPARAMTABLE].[GRAPHSIZEY] AS [GRAPHSIZEY], 
+    [IWS_CAMDESIGNPARAMTABLE].[CONVERTSCALEXPPB] AS [CONVERTSCALEXPPB], 
+    [IWS_CAMDESIGNPARAMTABLE].[CONVERTSCALEYPPB] AS [CONVERTSCALEYPPB], 
+    [IWS_CAMDESIGNPARAMTABLE].[CONVERTSCALEORTHOPPB] AS [CONVERTSCALEORTHOPPB], 
+    [IWS_CAMDESIGNPARAMTABLE].[CONVERTDESIGNNAME] AS [CONVERTDESIGNNAME], 
+    [IWS_CAMDESIGNPARAMTABLE].[DATAAREAID] AS [DATAAREAID], 
+    [IWS_CAMDESIGNPARAMTABLE].[RECVERSION] AS [RECVERSION], 
+    [IWS_CAMDESIGNPARAMTABLE].[RECID] AS [RECID], 
+    [IWS_CAMDESIGNPARAMTABLE].[LICBUFFERSIZE1] AS [LICBUFFERSIZE1], 
+    [IWS_CAMDESIGNPARAMTABLE].[LAYERNAMEALIAS] AS [LAYERNAMEALIAS], 
+    [IWS_CAMDESIGNPARAMTABLE].[CAMTOOL] AS [CAMTOOL], 
+    [IWS_CAMDESIGNPARAMTABLE].[EXPOSESIZEX] AS [EXPOSESIZEX], 
+    [IWS_CAMDESIGNPARAMTABLE].[EXPOSESIZEY] AS [EXPOSESIZEY], 
+    [IWS_CAMDESIGNPARAMTABLE].[MURAVALUE] AS [MURAVALUE], 
+    [IWS_CAMDESIGNPARAMTABLE].[Y_NOEXPOSESIZE] AS [Y_NOEXPOSESIZE], 
+    [IWS_CAMDESIGNPARAMTABLE].[SDIST] AS [SDIST], 
+    [IWS_CAMDESIGNPARAMTABLE].[GRAPHCD] AS [GRAPHCD], 
+    [IWS_CAMDESIGNPARAMTABLE].[GRAPHBIAS] AS [GRAPHBIAS], 
+    [IWS_CAMDESIGNPARAMTABLE].[DISTORTION] AS [DISTORTION], 
+    [IWS_CAMDESIGNPARAMTABLE].[LARGESTLENGTH] AS [LARGESTLENGTH], 
+    [IWS_CAMDESIGNPARAMTABLE].[TOTALLENGTH] AS [TOTALLENGTH], 
+    [IWS_CAMDESIGNPARAMTABLE].[LICUNITTIME] AS [LICUNITTIME], 
+    [IWS_CAMDESIGNPARAMTABLE].[PPO] AS [PPO], 
+    [IWS_CAMDESIGNPARAMTABLE].[AOITYPE] AS [AOITYPE], 
+    [IWS_CAMDESIGNPARAMTABLE].[PARAMINDETERMINACY] AS [PARAMINDETERMINACY], 
+    [IWS_CAMDESIGNPARAMTABLE].[XOR] AS [XOR], 
+    [IWS_CAMDESIGNPARAMTABLE].[ISSOURCEAOI] AS [ISSOURCEAOI], 
+    [IWS_CAMDESIGNPARAMTABLE].[AOILAYER] AS [AOILAYER], 
+    [IWS_CAMDESIGNPARAMTABLE].[AOITOPCELL] AS [AOITOPCELL], 
+    [IWS_CAMDESIGNPARAMTABLE].[AOISOURCENAME] AS [AOISOURCENAME], 
+    [IWS_CAMDESIGNPARAMTABLE].[RESOULT] AS [RESOULT], 
+    [IWS_CAMDESIGNPARAMTABLE].[Completion] AS [Completion]
+    FROM [dbo].[IWS_CAMDESIGNPARAMTABLE] AS [IWS_CAMDESIGNPARAMTABLE]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="IWS_CUSTPARATRADETABLE" EntityType="Self.IWS_CUSTPARATRADETABLE" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [IWS_CUSTPARATRADETABLE].[CUSTTRADEREPORTAREA] AS [CUSTTRADEREPORTAREA], 
+    [IWS_CUSTPARATRADETABLE].[CUSTTRADEREPORTTYPE] AS [CUSTTRADEREPORTTYPE], 
+    [IWS_CUSTPARATRADETABLE].[MEASUREREPORT] AS [MEASUREREPORT], 
+    [IWS_CUSTPARATRADETABLE].[MAKEOUTDEFECT] AS [MAKEOUTDEFECT], 
+    [IWS_CUSTPARATRADETABLE].[BARCODE] AS [BARCODE], 
+    [IWS_CUSTPARATRADETABLE].[LABLE] AS [LABLE], 
+    [IWS_CUSTPARATRADETABLE].[LABLETYPE] AS [LABLETYPE], 
+    [IWS_CUSTPARATRADETABLE].[DEFECTTYPE] AS [DEFECTTYPE], 
+    [IWS_CUSTPARATRADETABLE].[CUSTTRADEREPORTADDRESS] AS [CUSTTRADEREPORTADDRESS], 
+    [IWS_CUSTPARATRADETABLE].[SPECIALDESC] AS [SPECIALDESC], 
+    [IWS_CUSTPARATRADETABLE].[DELIVERTYPE] AS [DELIVERTYPE], 
+    [IWS_CUSTPARATRADETABLE].[DELEVEROTHERDESC] AS [DELEVEROTHERDESC], 
+    [IWS_CUSTPARATRADETABLE].[DELIVERYDOC] AS [DELIVERYDOC], 
+    [IWS_CUSTPARATRADETABLE].[LOGISTICALDOC] AS [LOGISTICALDOC], 
+    [IWS_CUSTPARATRADETABLE].[LOGISTICALOTHERDESC] AS [LOGISTICALOTHERDESC], 
+    [IWS_CUSTPARATRADETABLE].[MAKEUPORDERNUM] AS [MAKEUPORDERNUM], 
+    [IWS_CUSTPARATRADETABLE].[PRINTPRICE] AS [PRINTPRICE], 
+    [IWS_CUSTPARATRADETABLE].[ROHS] AS [ROHS], 
+    [IWS_CUSTPARATRADETABLE].[DELIVERYDOCOTHER] AS [DELIVERYDOCOTHER], 
+    [IWS_CUSTPARATRADETABLE].[DELIVERYDOCOTHERDESC] AS [DELIVERYDOCOTHERDESC], 
+    [IWS_CUSTPARATRADETABLE].[WASHWAY] AS [WASHWAY], 
+    [IWS_CUSTPARATRADETABLE].[TUXINGYAOQIU] AS [TUXINGYAOQIU], 
+    [IWS_CUSTPARATRADETABLE].[KEHUBAOGUANGJIMODEL] AS [KEHUBAOGUANGJIMODEL], 
+    [IWS_CUSTPARATRADETABLE].[BAOGUANGWENDU] AS [BAOGUANGWENDU], 
+    [IWS_CUSTPARATRADETABLE].[PACKINGDEMANDINNER] AS [PACKINGDEMANDINNER], 
+    [IWS_CUSTPARATRADETABLE].[JIECHUSHIBAOZHTYPE] AS [JIECHUSHIBAOZHTYPE], 
+    [IWS_CUSTPARATRADETABLE].[XIAOBANJINGHUATYPE] AS [XIAOBANJINGHUATYPE], 
+    [IWS_CUSTPARATRADETABLE].[JIAODAIMIFENG] AS [JIAODAIMIFENG], 
+    [IWS_CUSTPARATRADETABLE].[JIAODAIYOUWU] AS [JIAODAIYOUWU], 
+    [IWS_CUSTPARATRADETABLE].[JINGHUADAI] AS [JINGHUADAI], 
+    [IWS_CUSTPARATRADETABLE].[JINGHUADAITYPE] AS [JINGHUADAITYPE], 
+    [IWS_CUSTPARATRADETABLE].[LEIXING] AS [LEIXING], 
+    [IWS_CUSTPARATRADETABLE].[FENGZHLEIX] AS [FENGZHLEIX], 
+    [IWS_CUSTPARATRADETABLE].[FENGZHOTHER] AS [FENGZHOTHER], 
+    [IWS_CUSTPARATRADETABLE].[FENGZHOTHERDESC] AS [FENGZHOTHERDESC], 
+    [IWS_CUSTPARATRADETABLE].[PACKINGDEMANDOUTER] AS [PACKINGDEMANDOUTER], 
+    [IWS_CUSTPARATRADETABLE].[BIAOMINGZHMXH] AS [BIAOMINGZHMXH], 
+    [IWS_CUSTPARATRADETABLE].[BIAOMIANTZH] AS [BIAOMIANTZH], 
+    [IWS_CUSTPARATRADETABLE].[YAOQIUOTHER] AS [YAOQIUOTHER], 
+    [IWS_CUSTPARATRADETABLE].[YAOQIUOTHERDESC] AS [YAOQIUOTHERDESC], 
+    [IWS_CUSTPARATRADETABLE].[ITEMID] AS [ITEMID], 
+    [IWS_CUSTPARATRADETABLE].[CUSTACCOUNT] AS [CUSTACCOUNT], 
+    [IWS_CUSTPARATRADETABLE].[ICSHIPPINGREPORT] AS [ICSHIPPINGREPORT], 
+    [IWS_CUSTPARATRADETABLE].[OTHERREPORT] AS [OTHERREPORT], 
+    [IWS_CUSTPARATRADETABLE].[PRINTREMAND] AS [PRINTREMAND], 
+    [IWS_CUSTPARATRADETABLE].[OTHERREPORTVALUE] AS [OTHERREPORTVALUE], 
+    [IWS_CUSTPARATRADETABLE].[BIGVERSIONBOX] AS [BIGVERSIONBOX], 
+    [IWS_CUSTPARATRADETABLE].[RETICLEABS] AS [RETICLEABS], 
+    [IWS_CUSTPARATRADETABLE].[NOTRETICLEABS] AS [NOTRETICLEABS], 
+    [IWS_CUSTPARATRADETABLE].[PPBOXCHINA] AS [PPBOXCHINA], 
+    [IWS_CUSTPARATRADETABLE].[PPBOXFOREIGN] AS [PPBOXFOREIGN], 
+    [IWS_CUSTPARATRADETABLE].[ENVIRREQ] AS [ENVIRREQ], 
+    [IWS_CUSTPARATRADETABLE].[CLEANPACKAGESINGLE] AS [CLEANPACKAGESINGLE], 
+    [IWS_CUSTPARATRADETABLE].[CLEANPACKAGEDOUBLE] AS [CLEANPACKAGEDOUBLE], 
+    [IWS_CUSTPARATRADETABLE].[MANUALFILMPACKAGE] AS [MANUALFILMPACKAGE], 
+    [IWS_CUSTPARATRADETABLE].[PACKAGECLEANREQ] AS [PACKAGECLEANREQ], 
+    [IWS_CUSTPARATRADETABLE].[VACUUMPACKAGE] AS [VACUUMPACKAGE], 
+    [IWS_CUSTPARATRADETABLE].[FILMMACHINEPACKAGE] AS [FILMMACHINEPACKAGE], 
+    [IWS_CUSTPARATRADETABLE].[OTHERPACKAGE] AS [OTHERPACKAGE], 
+    [IWS_CUSTPARATRADETABLE].[OTHERPACKAGEVALUE] AS [OTHERPACKAGEVALUE], 
+    [IWS_CUSTPARATRADETABLE].[C5DELIVERYREPORT] AS [C5DELIVERYREPORT], 
+    [IWS_CUSTPARATRADETABLE].[DELIVERYSPECIALDESC] AS [DELIVERYSPECIALDESC], 
+    [IWS_CUSTPARATRADETABLE].[DATAAREAID] AS [DATAAREAID], 
+    [IWS_CUSTPARATRADETABLE].[RECVERSION] AS [RECVERSION], 
+    [IWS_CUSTPARATRADETABLE].[RECID] AS [RECID], 
+    [IWS_CUSTPARATRADETABLE].[ICSHIPPINGREPORTCOM] AS [ICSHIPPINGREPORTCOM], 
+    [IWS_CUSTPARATRADETABLE].[QY_ISPACKBOXSUPPORTOR] AS [QY_ISPACKBOXSUPPORTOR], 
+    [IWS_CUSTPARATRADETABLE].[QY_PB_GUDENG] AS [QY_PB_GUDENG], 
+    [IWS_CUSTPARATRADETABLE].[QY_PB_SEYANG] AS [QY_PB_SEYANG], 
+    [IWS_CUSTPARATRADETABLE].[QY_PB_POZZETTA] AS [QY_PB_POZZETTA], 
+    [IWS_CUSTPARATRADETABLE].[QY_PB_GUOHUA] AS [QY_PB_GUOHUA], 
+    [IWS_CUSTPARATRADETABLE].[QY_PB_KEHU] AS [QY_PB_KEHU], 
+    [IWS_CUSTPARATRADETABLE].[QY_PB_OTHERS] AS [QY_PB_OTHERS], 
+    [IWS_CUSTPARATRADETABLE].[QY_PB_OTHERSVALUE] AS [QY_PB_OTHERSVALUE]
+    FROM [dbo].[IWS_CUSTPARATRADETABLE] AS [IWS_CUSTPARATRADETABLE]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="IWS_JINGDUQUEXIANPARAMETER" EntityType="Self.IWS_JINGDUQUEXIANPARAMETER" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [IWS_JINGDUQUEXIANPARAMETER].[ITEMID] AS [ITEMID], 
+    [IWS_JINGDUQUEXIANPARAMETER].[XFLESS] AS [XFLESS], 
+    [IWS_JINGDUQUEXIANPARAMETER].[XFRANGE] AS [XFRANGE], 
+    [IWS_JINGDUQUEXIANPARAMETER].[XFMORE] AS [XFMORE], 
+    [IWS_JINGDUQUEXIANPARAMETER].[CUSTACCOUNT] AS [CUSTACCOUNT], 
+    [IWS_JINGDUQUEXIANPARAMETER].[XFLESSMATHSYMBOL] AS [XFLESSMATHSYMBOL], 
+    [IWS_JINGDUQUEXIANPARAMETER].[XFGREATERMATHSYMBOL] AS [XFGREATERMATHSYMBOL], 
+    [IWS_JINGDUQUEXIANPARAMETER].[XIANFENGOTHER] AS [XIANFENGOTHER], 
+    [IWS_JINGDUQUEXIANPARAMETER].[XIANFENGOTHERVALUE] AS [XIANFENGOTHERVALUE], 
+    [IWS_JINGDUQUEXIANPARAMETER].[XIANFENG] AS [XIANFENG], 
+    [IWS_JINGDUQUEXIANPARAMETER].[TAOHE] AS [TAOHE], 
+    [IWS_JINGDUQUEXIANPARAMETER].[TAOHEOTHER] AS [TAOHEOTHER], 
+    [IWS_JINGDUQUEXIANPARAMETER].[TAOHEOTHERVALUE] AS [TAOHEOTHERVALUE], 
+    [IWS_JINGDUQUEXIANPARAMETER].[THVALUE] AS [THVALUE], 
+    [IWS_JINGDUQUEXIANPARAMETER].[THRANGE] AS [THRANGE], 
+    [IWS_JINGDUQUEXIANPARAMETER].[ZONGCHANG] AS [ZONGCHANG], 
+    [IWS_JINGDUQUEXIANPARAMETER].[ZONGCHANGOTHER] AS [ZONGCHANGOTHER], 
+    [IWS_JINGDUQUEXIANPARAMETER].[ZONGCHANGOTHERVALUE] AS [ZONGCHANGOTHERVALUE], 
+    [IWS_JINGDUQUEXIANPARAMETER].[ZONGCHANGVALUE] AS [ZONGCHANGVALUE], 
+    [IWS_JINGDUQUEXIANPARAMETER].[ZONGCHANGRANGE] AS [ZONGCHANGRANGE], 
+    [IWS_JINGDUQUEXIANPARAMETER].[CHUIZHIDU] AS [CHUIZHIDU], 
+    [IWS_JINGDUQUEXIANPARAMETER].[CHUIZHIDUOTHER] AS [CHUIZHIDUOTHER], 
+    [IWS_JINGDUQUEXIANPARAMETER].[CHUIZHIDUOTHERVALUE] AS [CHUIZHIDUOTHERVALUE], 
+    [IWS_JINGDUQUEXIANPARAMETER].[CHUIZHIDUVALUE] AS [CHUIZHIDUVALUE], 
+    [IWS_JINGDUQUEXIANPARAMETER].[CHUIZHIDURANGE] AS [CHUIZHIDURANGE], 
+    [IWS_JINGDUQUEXIANPARAMETER].[QXDYAREA] AS [QXDYAREA], 
+    [IWS_JINGDUQUEXIANPARAMETER].[QXDYAREAF] AS [QXDYAREAF], 
+    [IWS_JINGDUQUEXIANPARAMETER].[BUYUNXUCHAOCU] AS [BUYUNXUCHAOCU], 
+    [IWS_JINGDUQUEXIANPARAMETER].[BUYUNXUCHAOCUF] AS [BUYUNXUCHAOCUF], 
+    [IWS_JINGDUQUEXIANPARAMETER].[TESUYAOQIU] AS [TESUYAOQIU], 
+    [IWS_JINGDUQUEXIANPARAMETER].[TESUYAOQIUF] AS [TESUYAOQIUF], 
+    [IWS_JINGDUQUEXIANPARAMETER].[CHANPINYAOQIU] AS [CHANPINYAOQIU], 
+    [IWS_JINGDUQUEXIANPARAMETER].[CHANPINYAOQIUVALUE] AS [CHANPINYAOQIUVALUE], 
+    [IWS_JINGDUQUEXIANPARAMETER].[MAOCIXIUBUVALUE] AS [MAOCIXIUBUVALUE], 
+    [IWS_JINGDUQUEXIANPARAMETER].[MAOCIXIUBU] AS [MAOCIXIUBU], 
+    [IWS_JINGDUQUEXIANPARAMETER].[ZHENKONGAOXIANSHULIANG] AS [ZHENKONGAOXIANSHULIANG], 
+    [IWS_JINGDUQUEXIANPARAMETER].[ZHENKONGAOXIANSHULIANGVALUE] AS [ZHENKONGAOXIANSHULIANGVALUE], 
+    [IWS_JINGDUQUEXIANPARAMETER].[ZHENKONGAOXIANGAODU] AS [ZHENKONGAOXIANGAODU], 
+    [IWS_JINGDUQUEXIANPARAMETER].[ZHENKONGAOXIANGAODUVALUE] AS [ZHENKONGAOXIANGAODUVALUE], 
+    [IWS_JINGDUQUEXIANPARAMETER].[QITACAILIAO] AS [QITACAILIAO], 
+    [IWS_JINGDUQUEXIANPARAMETER].[QITACAILIAOVALUE] AS [QITACAILIAOVALUE], 
+    [IWS_JINGDUQUEXIANPARAMETER].[JINSHUYE] AS [JINSHUYE], 
+    [IWS_JINGDUQUEXIANPARAMETER].[YOUMO] AS [YOUMO], 
+    [IWS_JINGDUQUEXIANPARAMETER].[HONGTU] AS [HONGTU], 
+    [IWS_JINGDUQUEXIANPARAMETER].[AXINGJIAO] AS [AXINGJIAO], 
+    [IWS_JINGDUQUEXIANPARAMETER].[LCVD] AS [LCVD], 
+    [IWS_JINGDUQUEXIANPARAMETER].[XIANTIAOZHILIANG] AS [XIANTIAOZHILIANG], 
+    [IWS_JINGDUQUEXIANPARAMETER].[XIANTIAOZHILIANGVALUE] AS [XIANTIAOZHILIANGVALUE], 
+    [IWS_JINGDUQUEXIANPARAMETER].[ZHENGBANTIAOWENVALUE] AS [ZHENGBANTIAOWENVALUE], 
+    [IWS_JINGDUQUEXIANPARAMETER].[ZHENGBANTIAOWEN] AS [ZHENGBANTIAOWEN], 
+    [IWS_JINGDUQUEXIANPARAMETER].[ZHENYUANDU] AS [ZHENYUANDU], 
+    [IWS_JINGDUQUEXIANPARAMETER].[ZHENYUANDUVALUE] AS [ZHENYUANDUVALUE], 
+    [IWS_JINGDUQUEXIANPARAMETER].[XIANFENGCELIANGVALUE] AS [XIANFENGCELIANGVALUE], 
+    [IWS_JINGDUQUEXIANPARAMETER].[CHANGCHICUNCELIANG] AS [CHANGCHICUNCELIANG], 
+    [IWS_JINGDUQUEXIANPARAMETER].[CHANGCHICUNCELIANGVALUE] AS [CHANGCHICUNCELIANGVALUE], 
+    [IWS_JINGDUQUEXIANPARAMETER].[SHUJUFENXIYAOQIU] AS [SHUJUFENXIYAOQIU], 
+    [IWS_JINGDUQUEXIANPARAMETER].[SHUJUFENXIYAOQIUVALUE] AS [SHUJUFENXIYAOQIUVALUE], 
+    [IWS_JINGDUQUEXIANPARAMETER].[COPYOFCHANPINYAOQIUVALUE] AS [COPYOFCHANPINYAOQIUVALUE], 
+    [IWS_JINGDUQUEXIANPARAMETER].[DATAAREAID] AS [DATAAREAID], 
+    [IWS_JINGDUQUEXIANPARAMETER].[RECVERSION] AS [RECVERSION], 
+    [IWS_JINGDUQUEXIANPARAMETER].[RECID] AS [RECID], 
+    [IWS_JINGDUQUEXIANPARAMETER].[MAXBUGSIZE] AS [MAXBUGSIZE]
+    FROM [dbo].[IWS_JINGDUQUEXIANPARAMETER] AS [IWS_JINGDUQUEXIANPARAMETER]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="IWS_PRODUCTPARAMETER" EntityType="Self.IWS_PRODUCTPARAMETER" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [IWS_PRODUCTPARAMETER].[ITEMID] AS [ITEMID], 
+    [IWS_PRODUCTPARAMETER].[BANCAITYPE] AS [BANCAITYPE], 
+    [IWS_PRODUCTPARAMETER].[BANCAIDESC] AS [BANCAIDESC], 
+    [IWS_PRODUCTPARAMETER].[SIZE1X] AS [SIZE1X], 
+    [IWS_PRODUCTPARAMETER].[SIZE1Y] AS [SIZE1Y], 
+    [IWS_PRODUCTPARAMETER].[HOU11] AS [HOU11], 
+    [IWS_PRODUCTPARAMETER].[WUCHATYPE] AS [WUCHATYPE], 
+    [IWS_PRODUCTPARAMETER].[PINGZHENGDUYAOQIU] AS [PINGZHENGDUYAOQIU], 
+    [IWS_PRODUCTPARAMETER].[PINGZHENGDUYAOQIUDESC] AS [PINGZHENGDUYAOQIUDESC], 
+    [IWS_PRODUCTPARAMETER].[QIEGEJINGDU] AS [QIEGEJINGDU], 
+    [IWS_PRODUCTPARAMETER].[DAOJIAOYAOQIU] AS [DAOJIAOYAOQIU], 
+    [IWS_PRODUCTPARAMETER].[DAOJIAOSIZE] AS [DAOJIAOSIZE], 
+    [IWS_PRODUCTPARAMETER].[BENGBIANYAOQIU] AS [BENGBIANYAOQIU], 
+    [IWS_PRODUCTPARAMETER].[BENGBIANOTHERVALUE] AS [BENGBIANOTHERVALUE], 
+    [IWS_PRODUCTPARAMETER].[WUCHAVALUE] AS [WUCHAVALUE], 
+    [IWS_PRODUCTPARAMETER].[PELLICLEYAOQIU] AS [PELLICLEYAOQIU], 
+    [IWS_PRODUCTPARAMETER].[PELLICLEYAOQIUTYPE] AS [PELLICLEYAOQIUTYPE], 
+    [IWS_PRODUCTPARAMETER].[PELLICLEMODEL] AS [PELLICLEMODEL], 
+    [IWS_PRODUCTPARAMETER].[PELLICLEJINGDU] AS [PELLICLEJINGDU], 
+    [IWS_PRODUCTPARAMETER].[GUIDEYAOQIU] AS [GUIDEYAOQIU], 
+    [IWS_PRODUCTPARAMETER].[GUIDETIEHETPYE] AS [GUIDETIEHETPYE], 
+    [IWS_PRODUCTPARAMETER].[CUSTACCOUNT] AS [CUSTACCOUNT], 
+    [IWS_PRODUCTPARAMETER].[JUZHONGYAOQIU] AS [JUZHONGYAOQIU], 
+    [IWS_PRODUCTPARAMETER].[SECTIONALQUALITYVALUE] AS [SECTIONALQUALITYVALUE], 
+    [IWS_PRODUCTPARAMETER].[SECTIONALQUALITY] AS [SECTIONALQUALITY], 
+    [IWS_PRODUCTPARAMETER].[SCRATCH] AS [SCRATCH], 
+    [IWS_PRODUCTPARAMETER].[CUSTCLEANWAY] AS [CUSTCLEANWAY], 
+    [IWS_PRODUCTPARAMETER].[OUTSIDESTAIN] AS [OUTSIDESTAIN], 
+    [IWS_PRODUCTPARAMETER].[DAOJIAOSIZEVALUE] AS [DAOJIAOSIZEVALUE], 
+    [IWS_PRODUCTPARAMETER].[DATAAREAID] AS [DATAAREAID], 
+    [IWS_PRODUCTPARAMETER].[RECVERSION] AS [RECVERSION], 
+    [IWS_PRODUCTPARAMETER].[RECID] AS [RECID]
+    FROM [dbo].[IWS_PRODUCTPARAMETER] AS [IWS_PRODUCTPARAMETER]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PRODBOM" EntityType="Self.PRODBOM" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PRODBOM].[PRODID] AS [PRODID], 
+    [PRODBOM].[LINENUM] AS [LINENUM], 
+    [PRODBOM].[PRODLINETYPE] AS [PRODLINETYPE], 
+    [PRODBOM].[BOMCONSUMP] AS [BOMCONSUMP], 
+    [PRODBOM].[ITEMID] AS [ITEMID], 
+    [PRODBOM].[BOMQTY] AS [BOMQTY], 
+    [PRODBOM].[DIM1] AS [DIM1], 
+    [PRODBOM].[DIM2] AS [DIM2], 
+    [PRODBOM].[DIM3] AS [DIM3], 
+    [PRODBOM].[DIM4] AS [DIM4], 
+    [PRODBOM].[DIM5] AS [DIM5], 
+    [PRODBOM].[ROUNDUP] AS [ROUNDUP], 
+    [PRODBOM].[ROUNDUPQTY] AS [ROUNDUPQTY], 
+    [PRODBOM].[POSITION] AS [POSITION], 
+    [PRODBOM].[QTYBOMCALC] AS [QTYBOMCALC], 
+    [PRODBOM].[REMAINBOMPHYSICAL] AS [REMAINBOMPHYSICAL], 
+    [PRODBOM].[REMAINBOMFINANCIAL] AS [REMAINBOMFINANCIAL], 
+    [PRODBOM].[QTYINVENTCALC] AS [QTYINVENTCALC], 
+    [PRODBOM].[PRODFLUSHINGPRINCIP] AS [PRODFLUSHINGPRINCIP], 
+    [PRODBOM].[RESERVATION] AS [RESERVATION], 
+    [PRODBOM].[INVENTTRANSID] AS [INVENTTRANSID], 
+    [PRODBOM].[RAWMATERIALDATE] AS [RAWMATERIALDATE], 
+    [PRODBOM].[REMAININVENTPHYSICAL] AS [REMAININVENTPHYSICAL], 
+    [PRODBOM].[DIMENSION] AS [DIMENSION], 
+    [PRODBOM].[DIMENSION2_] AS [DIMENSION2_], 
+    [PRODBOM].[DIMENSION3_] AS [DIMENSION3_], 
+    [PRODBOM].[INVENTREFTYPE] AS [INVENTREFTYPE], 
+    [PRODBOM].[INVENTREFID] AS [INVENTREFID], 
+    [PRODBOM].[INVENTREFTRANSID] AS [INVENTREFTRANSID], 
+    [PRODBOM].[VENDID] AS [VENDID], 
+    [PRODBOM].[UNITID] AS [UNITID], 
+    [PRODBOM].[BACKORDERSTATUS] AS [BACKORDERSTATUS], 
+    [PRODBOM].[CALCULATION] AS [CALCULATION], 
+    [PRODBOM].[QTYINVENTSTUP] AS [QTYINVENTSTUP], 
+    [PRODBOM].[QTYBOMSTUP] AS [QTYBOMSTUP], 
+    [PRODBOM].[BOMID] AS [BOMID], 
+    [PRODBOM].[FORMULA] AS [FORMULA], 
+    [PRODBOM].[BOMREFRECID] AS [BOMREFRECID], 
+    [PRODBOM].[BOMQTYSERIE] AS [BOMQTYSERIE], 
+    [PRODBOM].[ITEMBOMID] AS [ITEMBOMID], 
+    [PRODBOM].[INVENTDIMID] AS [INVENTDIMID], 
+    [PRODBOM].[REQPOID] AS [REQPOID], 
+    [PRODBOM].[REQPLANIDSCHED] AS [REQPLANIDSCHED], 
+    [PRODBOM].[SCRAPVAR] AS [SCRAPVAR], 
+    [PRODBOM].[SCRAPCONST] AS [SCRAPCONST], 
+    [PRODBOM].[CONSTANTRELEASED] AS [CONSTANTRELEASED], 
+    [PRODBOM].[ENDCONSUMP] AS [ENDCONSUMP], 
+    [PRODBOM].[PROJCATEGORYID] AS [PROJCATEGORYID], 
+    [PRODBOM].[ACTIVITYNUMBER] AS [ACTIVITYNUMBER], 
+    [PRODBOM].[PROJTRANSID] AS [PROJTRANSID], 
+    [PRODBOM].[PROJTRANSDATE] AS [PROJTRANSDATE], 
+    [PRODBOM].[PROJLINEPROPERTYID] AS [PROJLINEPROPERTYID], 
+    [PRODBOM].[PROJCOSTPRICE] AS [PROJCOSTPRICE], 
+    [PRODBOM].[PROJCOSTAMOUNT] AS [PROJCOSTAMOUNT], 
+    [PRODBOM].[PROJSALESCURRENCYID] AS [PROJSALESCURRENCYID], 
+    [PRODBOM].[PROJSALESPRICE] AS [PROJSALESPRICE], 
+    [PRODBOM].[PROJTAXGROUPID] AS [PROJTAXGROUPID], 
+    [PRODBOM].[PROJTAXITEMGROUPID] AS [PROJTAXITEMGROUPID], 
+    [PRODBOM].[PROJID] AS [PROJID], 
+    [PRODBOM].[PROJSETSUBPRODTOCONSUMED] AS [PROJSETSUBPRODTOCONSUMED], 
+    [PRODBOM].[DATAAREAID] AS [DATAAREAID], 
+    [PRODBOM].[RECVERSION] AS [RECVERSION], 
+    [PRODBOM].[RECID] AS [RECID], 
+    [PRODBOM].[OPRNUM] AS [OPRNUM], 
+    [PRODBOM].[WRKCTRCONSUMPTION] AS [WRKCTRCONSUMPTION], 
+    [PRODBOM].[ITEMROUTEID] AS [ITEMROUTEID], 
+    [PRODBOM].[RAWMATERIALTIME] AS [RAWMATERIALTIME], 
+    [PRODBOM].[ENDSCHEDCONSUMP] AS [ENDSCHEDCONSUMP], 
+    [PRODBOM].[IWS_REPLACEITEMID] AS [IWS_REPLACEITEMID]
+    FROM [dbo].[PRODBOM] AS [PRODBOM]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="QY_CHECK_CDTABLE_NEW" EntityType="Self.QY_CHECK_CDTABLE_NEW" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [QY_CHECK_CDTABLE_NEW].[Num] AS [Num], 
+    [QY_CHECK_CDTABLE_NEW].[CHECKDATA] AS [CHECKDATA], 
+    [QY_CHECK_CDTABLE_NEW].[COORDINATEY] AS [COORDINATEY], 
+    [QY_CHECK_CDTABLE_NEW].[COORDINATEX] AS [COORDINATEX], 
+    [QY_CHECK_CDTABLE_NEW].[SPEC] AS [SPEC], 
+    [QY_CHECK_CDTABLE_NEW].[LINETYPE] AS [LINETYPE], 
+    [QY_CHECK_CDTABLE_NEW].[CDTYPE] AS [CDTYPE], 
+    [QY_CHECK_CDTABLE_NEW].[METHOD] AS [METHOD], 
+    [QY_CHECK_CDTABLE_NEW].[DESIGN] AS [DESIGN], 
+    [QY_CHECK_CDTABLE_NEW].[GROUPID] AS [GROUPID], 
+    [QY_CHECK_CDTABLE_NEW].[PRODID] AS [PRODID], 
+    [QY_CHECK_CDTABLE_NEW].[PRODSERIAL] AS [PRODSERIAL], 
+    [QY_CHECK_CDTABLE_NEW].[INVALID] AS [INVALID], 
+    [QY_CHECK_CDTABLE_NEW].[OPRID] AS [OPRID], 
+    [QY_CHECK_CDTABLE_NEW].[DATAAREAID] AS [DATAAREAID], 
+    [QY_CHECK_CDTABLE_NEW].[RECVERSION] AS [RECVERSION], 
+    [QY_CHECK_CDTABLE_NEW].[RECID] AS [RECID]
+    FROM [dbo].[QY_CHECK_CDTABLE_NEW] AS [QY_CHECK_CDTABLE_NEW]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="QY_CHECK_TPTABLE_NEW" EntityType="Self.QY_CHECK_TPTABLE_NEW" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [QY_CHECK_TPTABLE_NEW].[DEVY] AS [DEVY], 
+    [QY_CHECK_TPTABLE_NEW].[DEVX] AS [DEVX], 
+    [QY_CHECK_TPTABLE_NEW].[NOMY] AS [NOMY], 
+    [QY_CHECK_TPTABLE_NEW].[NOMX] AS [NOMX], 
+    [QY_CHECK_TPTABLE_NEW].[ZCORRECTION] AS [ZCORRECTION], 
+    [QY_CHECK_TPTABLE_NEW].[ORTHO] AS [ORTHO], 
+    [QY_CHECK_TPTABLE_NEW].[YSCALE] AS [YSCALE], 
+    [QY_CHECK_TPTABLE_NEW].[XSCALE] AS [XSCALE], 
+    [QY_CHECK_TPTABLE_NEW].[OPRID] AS [OPRID], 
+    [QY_CHECK_TPTABLE_NEW].[INVALID] AS [INVALID], 
+    [QY_CHECK_TPTABLE_NEW].[PRODSERIAL] AS [PRODSERIAL], 
+    [QY_CHECK_TPTABLE_NEW].[PRODID] AS [PRODID], 
+    [QY_CHECK_TPTABLE_NEW].[CREATEDDATETIME] AS [CREATEDDATETIME], 
+    [QY_CHECK_TPTABLE_NEW].[DATAAREAID] AS [DATAAREAID], 
+    [QY_CHECK_TPTABLE_NEW].[RECVERSION] AS [RECVERSION], 
+    [QY_CHECK_TPTABLE_NEW].[RECID] AS [RECID]
+    FROM [dbo].[QY_CHECK_TPTABLE_NEW] AS [QY_CHECK_TPTABLE_NEW]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

@@ -1,5 +1,10 @@
-﻿using System.Data.Common;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Data.Common;
 using System.Data.Entity;
+using Abp.Domain.Entities;
+using Abp.Domain.Entities.Auditing;
 using Abp.Zero.EntityFramework;
 using QYMSERVER.Authorization.Roles;
 using QYMSERVER.Authorization.Users;
@@ -19,7 +24,8 @@ namespace QYMSERVER.EntityFramework
         public QYMSERVERDbContext()
             : base("Default")
         {
-
+            //以下操作是每次都会删除数据库并重新创建。实际上多用nuget控制台Add-Migration v1 Update-Database指令来进行数据库迁移
+            //Database.SetInitializer<QYMSERVERDbContext>(new DropCreateDatabaseIfModelChanges<QYMSERVERDbContext>()); 
         }
 
         /* NOTE:
@@ -48,7 +54,35 @@ namespace QYMSERVER.EntityFramework
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-
         }
+        public IDbSet<TaskK> Tasks { get; set; }
+    }
+    public class TaskK : Entity, IHasCreationTime
+    {
+ 
+        public long? AssignePersonId { get; set; }
+
+        [ForeignKey("AssignePersonId")]
+        public User AssignePerson { get; set; }
+
+        [Required]
+        public string Title { get; set; }
+
+        [Required]
+        public string Description { get; set; }
+
+
+        public DateTime CreationTime { get; set; }
+        public TaskK()
+        {
+            CreationTime = DateTime.Now;
+        }
+
+        public TaskK(string title, string description = null) : this()
+        {
+            Title = title;
+            Description = description;
+        }
+
     }
 }

@@ -1,0 +1,1820 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TestQYDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="H_EQUIPMENTALARM">
+    <Key>
+      <PropertyRef Name="EquipmentID" />
+    </Key>
+    <Property Name="EquipmentID" Type="Int32" Nullable="false" />
+    <Property Name="AlarmType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AlarmStartTime" Type="DateTime" Precision="3" />
+    <Property Name="AlarmEndTime" Type="DateTime" Precision="3" />
+    <Property Name="AlarmDiscription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="H_EQUIPMENTTABLE">
+    <Key>
+      <PropertyRef Name="EquipmentID" />
+    </Key>
+    <Property Name="EquipmentID" Type="Int32" Nullable="false" />
+    <Property Name="EquipmentName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EquipmentStatus" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="EquipmentSchedule" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="H_PRODUCTATTACHEDEDFILE">
+    <Key>
+      <PropertyRef Name="ProductTableId" />
+    </Key>
+    <Property Name="ProductTableId" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ContentPath" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Content" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="IWS_CHECK_AOITABLE">
+    <Key>
+      <PropertyRef Name="DATAAREAID" />
+      <PropertyRef Name="RECID" />
+    </Key>
+    <Property Name="INVALID" Type="Int32" Nullable="false" />
+    <Property Name="PRODSERIAL" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PRODID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIEQUIPMENT" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIDIETODIE" Type="Int32" Nullable="false" />
+    <Property Name="AOIDIELOWSLOW" Type="Int32" Nullable="false" />
+    <Property Name="AOIDIELOWFAST" Type="Int32" Nullable="false" />
+    <Property Name="AOIDIESFAST" Type="Int32" Nullable="false" />
+    <Property Name="AOIDIEHIGHSLOW" Type="Int32" Nullable="false" />
+    <Property Name="AOIDIEHIGHFAST" Type="Int32" Nullable="false" />
+    <Property Name="AOIDIETRANS" Type="Int32" Nullable="false" />
+    <Property Name="AOIDIEREVER" Type="Int32" Nullable="false" />
+    <Property Name="AOIDIESHIELD1" Type="Int32" Nullable="false" />
+    <Property Name="AOIDIESHIELD2" Type="Int32" Nullable="false" />
+    <Property Name="AOIDIESHIELD3" Type="Int32" Nullable="false" />
+    <Property Name="AOIDIESHIELD4" Type="Int32" Nullable="false" />
+    <Property Name="AOIDIESTATO" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIDIEFILENAME" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIDIEBLACKBUGNUM" Type="Int32" Nullable="false" />
+    <Property Name="AOIDIEWHITEBUGNUM" Type="Int32" Nullable="false" />
+    <Property Name="AOIDIEDIRTHNUM" Type="Int32" Nullable="false" />
+    <Property Name="AOIDIETODIERESULT" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIDIEOPERATOR" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIDIETODB" Type="Int32" Nullable="false" />
+    <Property Name="AOIDBLOWSLOW" Type="Int32" Nullable="false" />
+    <Property Name="AOIDBLOWFAST" Type="Int32" Nullable="false" />
+    <Property Name="AOIDBHIGHSLOW" Type="Int32" Nullable="false" />
+    <Property Name="AOIDBHIGHFAST" Type="Int32" Nullable="false" />
+    <Property Name="AOIDBTRANS" Type="Int32" Nullable="false" />
+    <Property Name="AOIDBREVER" Type="Int32" Nullable="false" />
+    <Property Name="AOIDBV" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIDBH" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIDBCONVO" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIDBREVERSE" Type="Int32" Nullable="false" />
+    <Property Name="AOIDBCORNERCUT" Type="Int32" Nullable="false" />
+    <Property Name="AOIDBHALFTONE" Type="Int32" Nullable="false" />
+    <Property Name="AOIDBSTATO" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOISCALEX" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOISCALEY" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIDBSPEC" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="AOIDBFILENAME" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIDBBLACKBUGNUM" Type="Int32" Nullable="false" />
+    <Property Name="AOIDBWHITEBUGNUM" Type="Int32" Nullable="false" />
+    <Property Name="AOIDBDIRTHNUM" Type="Int32" Nullable="false" />
+    <Property Name="AOIDBTODIERESULT" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIDBOPERATOR" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIBUGTYPE1" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIBUGTYPE2" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIBUGTYPE3" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIBUGTYPE4" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIBUGTYPE5" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIBUGTYPE6" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIBUGTYPE7" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIBUGTYPE8" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIOPERATETIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="AOIOPERATETIMETZID" Type="Int32" Nullable="false" />
+    <Property Name="AOIBUGPOSX1" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIBUGPOSX2" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIBUGPOSX3" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIBUGPOSX4" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIBUGPOSX5" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIBUGPOSX6" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIBUGPOSX7" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIBUGPOSX8" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIBUGPOSSIZE1" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIBUGPOSSIZE2" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIBUGPOSSIZE3" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIBUGPOSSIZE4" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIBUGPOSSIZE5" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIBUGPOSSIZE6" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIBUGPOSSIZE7" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIBUGPOSSIZE8" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIBUGPOSY1" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIBUGPOSY2" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIBUGPOSY3" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIBUGPOSY4" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIBUGPOSY5" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIBUGPOSY6" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIBUGPOSY7" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIBUGPOSY8" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="OPRID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DATAAREAID" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RECVERSION" Type="Int32" Nullable="false" />
+    <Property Name="RECID" Type="Int64" Nullable="false" />
+    <Property Name="MODIFIEDDATETIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATEDDATETIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="MODIFIEDBY" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CREATEDBY" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="OPRNAME" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ISSHIPMENTREPORT" Type="Int32" Nullable="false" />
+    <Property Name="ZAPOPERATOR" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CVDOPERATOR" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIWRKCTRNAME" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIEQUIPMENT1" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIEQUIPMENT2" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIEQUIPMENT3" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIWRKCTRNAME1" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIWRKCTRNAME2" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIWRKCTRNAME3" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOIBLACKBUGNUM1" Type="Int32" Nullable="false" />
+    <Property Name="AOIWHITEBUGNUM1" Type="Int32" Nullable="false" />
+    <Property Name="AOIWHITEBUGNUM2" Type="Int32" Nullable="false" />
+    <Property Name="AOIBLACKBUGNUM2" Type="Int32" Nullable="false" />
+    <Property Name="AOIWHITEBUGNUM3" Type="Int32" Nullable="false" />
+    <Property Name="AOIBLACKBUGNUM3" Type="Int32" Nullable="false" />
+    <Property Name="AOIWHITEBUGNUM4" Type="Int32" Nullable="false" />
+    <Property Name="AOIBLACKBUGNUM4" Type="Int32" Nullable="false" />
+    <Property Name="ISCHECKBYAREA" Type="Int32" Nullable="false" />
+    <Property Name="Completion" Type="Int32" />
+  </EntityType>
+  <EntityType Name="IWS_CHECK_INNERPACKTABLE">
+    <Key>
+      <PropertyRef Name="DATAAREAID" />
+      <PropertyRef Name="RECID" />
+    </Key>
+    <Property Name="PRODID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PACKBOXSIZE" Type="Int32" Nullable="false" />
+    <Property Name="PACKBOXCLEANYES" Type="Int32" Nullable="false" />
+    <Property Name="PACKBOXCLEANNO" Type="Int32" Nullable="false" />
+    <Property Name="PACKBOXSTATICYES" Type="Int32" Nullable="false" />
+    <Property Name="PACKBOXSTATICNO" Type="Int32" Nullable="false" />
+    <Property Name="PACKMETHOD" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PACKOPERATOR1" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PACKOPERATOR2" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PACKOPERATOR3" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PACKRESULT" Type="Int32" Nullable="false" />
+    <Property Name="PACKREMARKS" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PACKTIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="PACKTIMETZID" Type="Int32" Nullable="false" />
+    <Property Name="FQCCUSTOMER" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FQCMASKTITLE" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FQCLAYERNAME" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FQCMASKSIZE" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FQCMATERIAL" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FQCSUPERMASKLOT" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SHIPCUSTOMER" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SHIPMASKSIZE" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SHIPMATERIAL" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SHIPQTY" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SHIPNO" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SHIPCARTONNO" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FQCDATE" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SHIPDATE" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="INVALID" Type="Int32" Nullable="false" />
+    <Property Name="PRODSERIAL" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DATAAREAID" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RECVERSION" Type="Int32" Nullable="false" />
+    <Property Name="RECID" Type="Int64" Nullable="false" />
+    <Property Name="MODIFIEDDATETIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATEDDATETIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="MODIFIEDBY" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CREATEDBY" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ISSHIPMENTREPORT" Type="Int32" Nullable="false" />
+    <Property Name="PACKFOGNUM" Type="Int32" Nullable="false" />
+    <Property Name="PACKBUTTNUM" Type="Int32" Nullable="false" />
+    <Property Name="PACKCORNERNUM" Type="Int32" Nullable="false" />
+    <Property Name="PACKDESTROYNUM" Type="Int32" Nullable="false" />
+    <Property Name="PACKLINENUM" Type="Int32" Nullable="false" />
+    <Property Name="PACKBOXMATERIALNO" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PACKBOXMATERIALBATCHNO" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PACKBOXUSENUM" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="QUALITYRESULT" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ISSTRIPE6" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ISSTRIPE5" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ISSTRIPE4" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ISSTRIPE3" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ISSTRIPE2" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ISSTRIPE1" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="IWS_CHECK_LONGSIZETABLE">
+    <Key>
+      <PropertyRef Name="DATAAREAID" />
+      <PropertyRef Name="RECID" />
+    </Key>
+    <Property Name="PRODID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LONGCENTERTOLE" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERDESIGNX1" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERDESIGNX2" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERDESIGNX12" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERDESIGNX22" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERDESIGNY1" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERDESIGNY2" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERDESIGNY12" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERDESIGNY22" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERCHECKX1" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERCHECKX2" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERCHECKX12" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERCHECKX22" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERCHECKY1" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERCHECKY2" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERCHECKY12" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERCHECKY22" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERTOLEX1" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERTOLEX2" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERTOLEX12" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERTOLEX22" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERTOLEY1" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERTOLEY2" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERTOLEY12" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERTOLEY22" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGSIZECODE" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LONGSIZERESULT" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LONGOPERATETIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="LONGOPERATETIMETZID" Type="Int32" Nullable="false" />
+    <Property Name="LONGREMARKS" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="INVALID" Type="Int32" Nullable="false" />
+    <Property Name="PRODSERIAL" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="OPRID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LONGSIZEDESIGNX1" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGSIZEDESIGNX2" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGSIZEDESIGNY1" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGSIZEDESIGNY2" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGSIZECHECKX1" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGSIZECHECKX2" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGSIZECHECKY1" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGSIZECHECKY2" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGSIZETOLEX1" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGSIZETOLEX2" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGSIZETOLEY1" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGSIZETOLEY2" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="DATAAREAID" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RECVERSION" Type="Int32" Nullable="false" />
+    <Property Name="RECID" Type="Int64" Nullable="false" />
+    <Property Name="LONGSIZETOLE" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="MODIFIEDDATETIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATEDDATETIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="MODIFIEDBY" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CREATEDBY" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LONGCENTERDESIGNG" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERDESIGNH" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERCHECKG" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERCHECKH" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERTOLEG" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="LONGCENTERTOLEH" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="ISSHIPMENTREPORT" Type="Int32" Nullable="false" />
+    <Property Name="ISLONGCENTERDESIGNADD" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="IWS_CHECK_PELLICLETABLE">
+    <Key>
+      <PropertyRef Name="DATAAREAID" />
+      <PropertyRef Name="RECID" />
+    </Key>
+    <Property Name="PRODID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PRODSERIAL" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="INVALID" Type="Int32" Nullable="false" />
+    <Property Name="GUIDESPEC" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="GUIDEDESIGN" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="GUIDEMEASUREX1" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="GUIDEMEASUREX2" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="GUIDEMEASUREY1" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="GUIDEMEASUREY2" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="GUIDEERRORX1" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="GUIDEERRORX2" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="GUIDEERRORY1" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="GUIDEERRORY2" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PELLICLEMATERIALNO1" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PELLICLEBATCHNO1" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PELLICLEUSENUM1" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PELLICLEMATERIALNO2" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PELLICLEBATCHNO2" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PELLICLEUSENUM2" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PELLICLEOPERATOR" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PELLICLEOPTIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="PELLICLEOPTIMETZID" Type="Int32" Nullable="false" />
+    <Property Name="GUIDEOPERATOR" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="GUIDEOPTIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="GUIDEOPTIMETZID" Type="Int32" Nullable="false" />
+    <Property Name="OPRID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DATAAREAID" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RECVERSION" Type="Int32" Nullable="false" />
+    <Property Name="RECID" Type="Int64" Nullable="false" />
+    <Property Name="PELLICLEMATRIALTYPE1" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PELLICLEMATRIALTYPE2" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MODIFIEDDATETIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATEDDATETIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="MODIFIEDBY" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CREATEDBY" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ISSHIPMENTREPORT" Type="Int32" Nullable="false" />
+    <Property Name="PELLICLEOPERATOR1" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PELLICLEOPERATOR2" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PELLICLEOPERATOR3" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PELLICLEREMARKS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ISPELLICLEDISPOSED1" Type="Int32" Nullable="false" />
+    <Property Name="ISPELLICLEDISPOSED2" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="IWS_CHECK_REPAIRTABLE">
+    <Key>
+      <PropertyRef Name="DATAAREAID" />
+      <PropertyRef Name="RECID" />
+    </Key>
+    <Property Name="PRODID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="REPAIRZAPBLACKNUM" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRZAPBURRNUM" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRZAPLINKNUM" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRZAPTOTALNUM" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRZAPRBLACKNUM" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRZAPRBURRNUM" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRZAPRLINKNUM" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRZAPRTOTALNUM" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRZAPBUGID" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRZAPCRAFTNAME" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="REPAIRZAPPICNAME" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="REPAIRZAPOTHERS" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="REPAIRCVDTRY" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="REPAIRCVDHOLENUM" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRCVDHOLLOWNUM" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRCVDCUTNUM" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRCVDTOTALNUM" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRCVDRHOLENUM" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRCVDRHOLLOWNUM" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRCVDRCUTNUM" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRCVDRTOTALNUM" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRCVDBUGID" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRCVDCRAFTNAME" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="REPAIRCVDPICNAME" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="REPAIRCVDOTHERS" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="REPAIRDOZAP" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="REPAIRDOZAPREMARKS" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="REPAIRCVDPHOTIC" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="REPAIRSURFACE" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="REPAIRCONFIRM" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="REPAIRBUGTYPE" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="REPAIRBUGNO" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="REPAIRTYPE" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="REPAIRSURFACERE" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="REPAIRCONFIRMRE" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="REPAIRBLACKTOTALNUM" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRBURRTOTALNUM" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRLINKTOTALNUM" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRHOLETOTALNUM" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRHOLLOWTOTALNUM" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRCUTTOTALNUM" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRZAPOK1" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRZAPOK2" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRZAPOK3" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRZAPOK4" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRZAPOK5" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRZAPOK6" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRZAPOK7" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRZAPOK8" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRSURFACEOK" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRCONFIRMOK" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRREOK1" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRREOK2" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRREOK3" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRREOK4" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRREOK5" Type="Int32" Nullable="false" />
+    <Property Name="REPAIRBUGTOTALNUMOK" Type="Int32" Nullable="false" />
+    <Property Name="REPAIROPERATOR" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="REPAIRTIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="REPAIRTIMETZID" Type="Int32" Nullable="false" />
+    <Property Name="INVALID" Type="Int32" Nullable="false" />
+    <Property Name="PRODSERIAL" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="OPRID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="REPAIRINK" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="REPAIRLCVD" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="REPAIRAFILM" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DATAAREAID" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RECVERSION" Type="Int32" Nullable="false" />
+    <Property Name="RECID" Type="Int64" Nullable="false" />
+    <Property Name="MODIFIEDDATETIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATEDDATETIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="MODIFIEDBY" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CREATEDBY" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ISSHIPMENTREPORT" Type="Int32" Nullable="false" />
+    <Property Name="ZAPOPERATOR" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CVDOPERATOR" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="IWS_CHECK_WASHTABLE">
+    <Key>
+      <PropertyRef Name="TIMESNUM" />
+    </Key>
+    <Property Name="TIMESNUM" Type="Int32" Nullable="false" />
+    <Property Name="PRODID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RECID" Type="Int64" Nullable="false" />
+    <Property Name="MRECIPENAME" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="JRECIPENAME" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RESULT" Type="Byte" Nullable="false" />
+    <Property Name="OPERATOR" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BENGBIAN" Type="Int32" Nullable="false" />
+    <Property Name="BENGJIAO" Type="Int32" Nullable="false" />
+    <Property Name="HUASHANG" Type="Int32" Nullable="false" />
+    <Property Name="LIEWEN" Type="Int32" Nullable="false" />
+    <Property Name="DIRTYPOINT" Type="Int32" Nullable="false" />
+    <Property Name="STREAK" Type="Int32" Nullable="false" />
+    <Property Name="UNUSUALMESSAGE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="STARTTIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ENDTIME" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="PRODJOURNALBOM">
+    <Key>
+      <PropertyRef Name="JOURNALID" />
+      <PropertyRef Name="LINENUM" />
+      <PropertyRef Name="DATAAREAID" />
+    </Key>
+    <Property Name="JOURNALID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="VOUCHER" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LINENUM" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PRODID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TRANSDATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ITEMID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PROJID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="INVENTTRANSID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="POSITION" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="INVENTCONSUMP" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="BOMCONSUMP" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="BOMUNITID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="INVENTPROPOSAL" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="BOMPROPOSAL" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="BOMSCRAP" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="ERRORCAUSE" Type="Int32" Nullable="false" />
+    <Property Name="DIMENSION" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DIMENSION2_" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DIMENSION3_" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ENDCONSUMP" Type="Int32" Nullable="false" />
+    <Property Name="INVENTDIMID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="INVENTTRANSCHILDREFID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="INVENTTRANSCHILDTYPE" Type="Int32" Nullable="false" />
+    <Property Name="INVENTRETURNFLAG" Type="Int32" Nullable="false" />
+    <Property Name="INVENTCONTROLPROPOSAL" Type="Int32" Nullable="false" />
+    <Property Name="ACTIVITYNUMBER" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PROJCATEGORYID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PROJLINEPROPERTYID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PROJTRANSID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PROJCOSTPRICE" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PROJCOSTAMOUNT" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PROJSALESCURRENCYID" Type="String" MaxLength="3" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PROJSALESPRICE" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PROJTAXGROUPID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PROJTAXITEMGROUPID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DATAAREAID" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RECVERSION" Type="Int32" Nullable="false" />
+    <Property Name="RECID" Type="Int64" Nullable="false" />
+    <Property Name="OPRNUM" Type="Int32" Nullable="false" />
+    <Property Name="IWS_INVENTSERIALID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PRODJOURNALROUTE">
+    <Key>
+      <PropertyRef Name="JOURNALID" />
+      <PropertyRef Name="LINENUM" />
+      <PropertyRef Name="DATAAREAID" />
+    </Key>
+    <Property Name="JOURNALID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="VOUCHER" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LINENUM" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="TRANSDATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="PRODID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="WRKCTRID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="HOURPRICE" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="QTYGOOD" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="QTYERROR" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="ERRORCAUSE" Type="Int32" Nullable="false" />
+    <Property Name="EMPLID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DIMENSION" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DIMENSION2_" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DIMENSION3_" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CANCELLED" Type="Int32" Nullable="false" />
+    <Property Name="PRODINVENTDIMID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PRODPICKLISTJOURNALID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PRODREPORTFINISHEDJOURNALID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DATAAREAID" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RECVERSION" Type="Int32" Nullable="false" />
+    <Property Name="RECID" Type="Int64" Nullable="false" />
+    <Property Name="OPRNUM" Type="Int32" Nullable="false" />
+    <Property Name="JOBTYPE" Type="Int32" Nullable="false" />
+    <Property Name="HOURS" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="CATEGORYHOURSID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="QTYPRICE" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="OPRFINISHED" Type="Int32" Nullable="false" />
+    <Property Name="CATEGORYQTYID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EXECUTEDPCT" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="JOBFINISHED" Type="Int32" Nullable="false" />
+    <Property Name="OPRPRIORITY" Type="Int32" Nullable="false" />
+    <Property Name="FROMTIME" Type="Int32" Nullable="false" />
+    <Property Name="TOTIME" Type="Int32" Nullable="false" />
+    <Property Name="JOBID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="OPRID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PRODREPORTFINISHED" Type="Int32" Nullable="false" />
+    <Property Name="PRODPICKLIST" Type="Int32" Nullable="false" />
+    <Property Name="IWS_WRKSTATUS" Type="Int32" Nullable="false" />
+    <Property Name="IWS_HOURS" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="IWS_IPCAMOUNT" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="IWS_SHEETGOOD" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="IWS_SHEETERROR" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="IWS_WEIGHTS" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="IWS_EMPLNAME" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CREATEDDATETIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="QY_MINUTE" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PRODROUTE">
+    <Key>
+      <PropertyRef Name="PRODID" />
+      <PropertyRef Name="OPRNUM" />
+      <PropertyRef Name="OPRPRIORITY" />
+      <PropertyRef Name="DATAAREAID" />
+    </Key>
+    <Property Name="PRODID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="OPRNUM" Type="Int32" Nullable="false" />
+    <Property Name="LEVEL_" Type="Int32" Nullable="false" />
+    <Property Name="OPRNUMNEXT" Type="Int32" Nullable="false" />
+    <Property Name="OPRID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="WRKCTRID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TASKGROUPID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="QUEUETIMEBEFORE" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="SETUPTIME" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PROCESSTIME" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PROCESSPERQTY" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="TRANSPTIME" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="QUEUETIMEAFTER" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="OVERLAPQTY" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="ERRORPCT" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="ACCERROR" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="TOHOURS" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="TRANSFERBATCH" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="SETUPCATEGORYID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PROCESSCATEGORYID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="OPRFINISHED" Type="Int32" Nullable="false" />
+    <Property Name="FORMULAFACTOR1" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="ROUTETYPE" Type="Int32" Nullable="false" />
+    <Property Name="BACKORDERSTATUS" Type="Int32" Nullable="false" />
+    <Property Name="PROPERTYID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ROUTEGROUPID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="QTYCATEGORYID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FROMDATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FROMTIME" Type="Int32" Nullable="false" />
+    <Property Name="TODATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TOTIME" Type="Int32" Nullable="false" />
+    <Property Name="CALCQTY" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="CALCSETUP" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="CALCPROC" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="WRKCTRTASKDEMAND" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="OPRPRIORITY" Type="Int32" Nullable="false" />
+    <Property Name="WRKCTRLOADPCT" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="WRKCTRNUMOF" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="DIMENSION" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DIMENSION2_" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DIMENSION3_" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FORMULA" Type="Int32" Nullable="false" />
+    <Property Name="ROUTEOPRREFRECID" Type="Int64" Nullable="false" />
+    <Property Name="LINKTYPE" Type="Int32" Nullable="false" />
+    <Property Name="OPRSTARTEDUP" Type="Int32" Nullable="false" />
+    <Property Name="EXECUTEDPROCESS" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="EXECUTEDSETUP" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="CONSTANTRELEASED" Type="Int32" Nullable="false" />
+    <Property Name="PHANTOMBOMFACTOR" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="DATAAREAID" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RECVERSION" Type="Int32" Nullable="false" />
+    <Property Name="RECID" Type="Int64" Nullable="false" />
+    <Property Name="IWS_COSTCATEGORYGROUPID" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IWS_TIMECATEGORYGROUPID" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="QY_OPRLEVEL" Type="Int32" Nullable="false" />
+    <Property Name="QY_FROMDATETIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="QY_FROMDATETIMETZID" Type="Int32" Nullable="false" />
+    <Property Name="QY_TODATETIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="QY_TODATETIMETZID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PRODTABLE">
+    <Key>
+      <PropertyRef Name="PRODID" />
+    </Key>
+    <Property Name="ITEMID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NAME" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PRODSTATUS" Type="Int32" Nullable="false" />
+    <Property Name="DATAAREAID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PRODPRIO" Type="Int32" Nullable="false" />
+    <Property Name="PRODLOCKED" Type="Int32" Nullable="false" />
+    <Property Name="PRODTYPE" Type="Int32" Nullable="false" />
+    <Property Name="SCHEDSTATUS" Type="Int32" Nullable="false" />
+    <Property Name="SCHEDDATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="QTYSCHED" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="QTYSTUP" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="DLVDATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FINISHEDDATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SCHEDSTART" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SCHEDEND" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="INVENTTRANSID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DIMENSION" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DIMENSION2_" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BOMDATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="BACKORDERSTATUS" Type="Int32" Nullable="false" />
+    <Property Name="BOMID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ROUTEID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PRODID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="REALTIMEOPRID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="INVENTDIMID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DLVTIME" Type="Int32" Nullable="false" />
+    <Property Name="IWS_WRKCTRID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IWS_SCRAPRESEND" Type="Int32" Nullable="false" />
+    <Property Name="IWS_PRODUCTIONTYPE" Type="Int32" Nullable="false" />
+    <Property Name="IWS_LINETYPE" Type="Int32" Nullable="false" />
+    <Property Name="IWS_ISSUSPEND" Type="Int32" Nullable="false" />
+    <Property Name="IWS_DIAODUDATETIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IWS_DIAODUDATETIMETZID" Type="Int32" Nullable="false" />
+    <Property Name="IWS_OTHERREQUEST" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IWS_MATERIALREMARKS" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IWS_DIAODUSHIREMARKS" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IWS_DESIGNREAMRKS" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IWS_ISNEWPRODUCTION" Type="Int32" Nullable="false" />
+    <Property Name="IWS_TOTALLENGTH" Type="Int32" Nullable="false" />
+    <Property Name="IWS_MINLINEWIDTHINMARKET" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="IWS_SALESNAME" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IWS_MODELNUMBER" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IWS_ITEMMIDDLETYPENAME" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IWS_CDACCURACY" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="IWS_LINEWIDEFROM" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="SHIPPINGDATEREQUESTED" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IWS_SPECIFICATIONS" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="IWS_SPECIFICATIONS2_" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="IWS_SPECIFICATIONS3_" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="IWS_CUSTNAMESEND" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IWS_MARKETREMARKS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SALESID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IWS_SALESORDERDATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IWS_SALESORDERDATETZID" Type="Int32" Nullable="false" />
+    <Property Name="IWS_BANBIANXIAOGUO" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IWS_TUXINGJUBIAN" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IWS_TUXINGTEZENG" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IWS_BANCAITYPENAME" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IWS_SUPERVISETYPE" Type="Int32" Nullable="false" />
+    <Property Name="IWS_EXAMBILLSREMARK" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IWS_WRKCTRGRP" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IWS_PLANDLVFLAG" Type="Int32" Nullable="false" />
+    <Property Name="IWS_CRAFTREMARKS" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MODIFIEDBY" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MODIFIEDTRANSACTIONID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CREATEDDATETIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CREATEDBY" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="QY_ISCAMNEEDEDAOI" Type="Int32" Nullable="false" />
+    <Property Name="AOICREATEDDATETIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="AOICREATEDDATETIMETZID" Type="Int32" Nullable="false" />
+    <Property Name="QY_PREPUTINDATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="QY_PREPUTINDATETZID" Type="Int32" Nullable="false" />
+    <Property Name="QY_PREEXPOSEDATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="QY_PREEXPOSEDATETZID" Type="Int32" Nullable="false" />
+    <Property Name="PROCESS" Type="Int32" />
+    <Property Name="ISSTARTED" Type="Int32" />
+    <Property Name="STARTDATE" Type="DateTime" Precision="3" />
+    <Property Name="DUEDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="ROUTEOPRTABLE">
+    <Key>
+      <PropertyRef Name="OPRID" />
+    </Key>
+    <Property Name="OPRID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NAME" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="DATAAREAID" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="RECVERSION" Type="Int32" />
+    <Property Name="RECID" Type="Int64" />
+    <Property Name="IWS_PRODSHOW" Type="Int32" />
+    <Property Name="IWS_ROUTEOPRTYPE" Type="Int32" />
+    <Property Name="IWS_ROUTEOPRNUM" Type="Int32" />
+    <Property Name="IWS_ADDITIONALOPRID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="WRKCTRTABLE">
+    <Key>
+      <PropertyRef Name="WRKCTRID" />
+      <PropertyRef Name="DATAAREAID" />
+    </Key>
+    <Property Name="WRKCTRGROUPID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="WRKCTRID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NAME" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="WRKCTRTYPE" Type="Int32" Nullable="false" />
+    <Property Name="WRKCTRNUMOF" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="EFFECTIVITYPCT" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="OPERATIONSCHEDPCT" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="CAPACITY" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="CAPUNIT" Type="Int32" Nullable="false" />
+    <Property Name="VENDID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CREATED" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TOHOURS" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="DIMENSION" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DIMENSION2_" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DIMENSION3_" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ISGROUP" Type="Int32" Nullable="false" />
+    <Property Name="PRODUNITID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SITEID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BOTTLENECKRESOURCE" Type="Int32" Nullable="false" />
+    <Property Name="WMSLOCATIONID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EMPLID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CALENDARID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CAPLIMITED" Type="Int32" Nullable="false" />
+    <Property Name="INVENTLOCATIONID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CAPACITYBATCH" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="EXCLUSIVE" Type="Int32" Nullable="false" />
+    <Property Name="DATAAREAID" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RECVERSION" Type="Int32" Nullable="false" />
+    <Property Name="RECID" Type="Int64" Nullable="false" />
+    <Property Name="ACCOUNTWRKCTRISSUE" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ACCOUNTWIPVALUATION" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="QUEUETIMEBEFORE" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="SETUPTIME" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PROCESSTIME" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PROCESSPERQTY" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="TRANSPTIME" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="QUEUETIMEAFTER" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="TRANSFERBATCH" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="ERRORPCT" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="SETUPCATEGORYID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PROCESSCATEGORYID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ACCOUNTWIPISSUE" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TASKGROUPID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="WRKCTRTASKDEMAND" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PROPERTYLIMITED" Type="Int32" Nullable="false" />
+    <Property Name="QTYCATEGORYID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ROUTEGROUPID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ACCOUNTWRKCTRISSUEOFFSET" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IWS_DEFAULTPRIORITY" Type="Int32" Nullable="false" />
+    <Property Name="IWS_JIXING" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IWS_BEIZHU" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IWS_PEIZHI" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IWS_SENSITIVITY" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IWS_JIXINGXINGHAO" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IWS_VISIBLE" Type="Int32" Nullable="false" />
+    <Property Name="IWS_LOCATIONIDEXPORT" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IWS_TIMECATEGORYGROUPID" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IWS_COSTCATEGORYGROUPID" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IWS_CAMENABLED" Type="Int32" Nullable="false" />
+    <Property Name="IWS_MACHINETYPE" Type="Int32" Nullable="false" />
+    <Property Name="QY_MAINMACHINE" Type="Int32" Nullable="false" />
+    <Property Name="QY_WRKQTY" Type="Int32" Nullable="false" />
+    <Property Name="QY_ISSTOP" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="H_EQUIPMENTMAINTENANCE">
+    <Key>
+      <PropertyRef Name="EquipmentID" />
+      <PropertyRef Name="MaintenanceType" />
+    </Key>
+    <Property Name="EquipmentID" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="MaintenanceType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MaintenanceDate" Type="DateTime" Precision="3" />
+    <Property Name="MaintenanceOperatior" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="MaintenanceUsedTime" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="IWS_CAMCRAFTCMDEQPCONFIGTABLE">
+    <Key>
+      <PropertyRef Name="SHEBEIPEIZHIZHILINGID" />
+      <PropertyRef Name="MASKBORDER" />
+      <PropertyRef Name="GRAPH2MASKUPLIMIT" />
+      <PropertyRef Name="GRAPH2MASKDWLIMIT" />
+      <PropertyRef Name="MASKTYPE" />
+      <PropertyRef Name="MASKSIZETYPE" />
+      <PropertyRef Name="MINLSAREA" />
+      <PropertyRef Name="MINLSUPLIMIT" />
+      <PropertyRef Name="MINLSDWLIMIT" />
+      <PropertyRef Name="CDUPLIMIT" />
+      <PropertyRef Name="CDDWLIMIT" />
+      <PropertyRef Name="EMULTYPE" />
+      <PropertyRef Name="WRKCTRID" />
+      <PropertyRef Name="OBJECT" />
+      <PropertyRef Name="TOVERIFY" />
+      <PropertyRef Name="INVALID" />
+      <PropertyRef Name="VERIFYER" />
+      <PropertyRef Name="RECORDER" />
+      <PropertyRef Name="EFFECTTIMELIMIT" />
+      <PropertyRef Name="APPOINTDAY" />
+      <PropertyRef Name="APPOINTDAYTZID" />
+      <PropertyRef Name="TOVERIFYTIME" />
+      <PropertyRef Name="TOVERIFYTIMETZID" />
+      <PropertyRef Name="TOEFFECTTIME" />
+      <PropertyRef Name="TOEFFECTTIMETZID" />
+      <PropertyRef Name="RECORDTIME" />
+      <PropertyRef Name="RECORDTIMETZID" />
+      <PropertyRef Name="SENDDEPARTMENT" />
+      <PropertyRef Name="ACCEPTDEPARTMENT" />
+      <PropertyRef Name="TECHNUM" />
+      <PropertyRef Name="TECHNAME" />
+      <PropertyRef Name="TECHTARGET" />
+      <PropertyRef Name="TECHTYPE" />
+      <PropertyRef Name="MINLSTYPE" />
+      <PropertyRef Name="TRADEID" />
+      <PropertyRef Name="CUSTACCOUNT" />
+      <PropertyRef Name="DATAAREAID" />
+      <PropertyRef Name="RECVERSION" />
+      <PropertyRef Name="RECID" />
+      <PropertyRef Name="MINLINETYPE" />
+    </Key>
+    <Property Name="SHEBEIPEIZHIZHILINGID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MASKBORDER" Type="Int32" Nullable="false" />
+    <Property Name="GRAPH2MASKUPLIMIT" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="GRAPH2MASKDWLIMIT" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="MASKTYPE" Type="Int32" Nullable="false" />
+    <Property Name="MASKSIZETYPE" Type="Int32" Nullable="false" />
+    <Property Name="MINLSAREA" Type="Int32" Nullable="false" />
+    <Property Name="MINLSUPLIMIT" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="MINLSDWLIMIT" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="CDUPLIMIT" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="CDDWLIMIT" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="EMULTYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="WRKCTRID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="OBJECT" Type="Int32" Nullable="false" />
+    <Property Name="TOVERIFY" Type="Int32" Nullable="false" />
+    <Property Name="INVALID" Type="Int32" Nullable="false" />
+    <Property Name="VERIFYER" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RECORDER" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EFFECTTIMELIMIT" Type="Int32" Nullable="false" />
+    <Property Name="APPOINTDAY" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="APPOINTDAYTZID" Type="Int32" Nullable="false" />
+    <Property Name="TOVERIFYTIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TOVERIFYTIMETZID" Type="Int32" Nullable="false" />
+    <Property Name="TOEFFECTTIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TOEFFECTTIMETZID" Type="Int32" Nullable="false" />
+    <Property Name="RECORDTIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="RECORDTIMETZID" Type="Int32" Nullable="false" />
+    <Property Name="SENDDEPARTMENT" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ACCEPTDEPARTMENT" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TECHNUM" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TECHNAME" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TECHTARGET" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TECHTYPE" Type="Int32" Nullable="false" />
+    <Property Name="MINLSTYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TRADEID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CUSTACCOUNT" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DATAAREAID" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RECVERSION" Type="Int32" Nullable="false" />
+    <Property Name="RECID" Type="Int64" Nullable="false" />
+    <Property Name="MINLINETYPE" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="IWS_CAMCRAFTCMDMATERIALTABLE">
+    <Key>
+      <PropertyRef Name="BANCAIPIPEIID" />
+      <PropertyRef Name="WRKCTRID" />
+      <PropertyRef Name="TOVERIFY" />
+      <PropertyRef Name="INVALID" />
+      <PropertyRef Name="VERIFYER" />
+      <PropertyRef Name="RECORDER" />
+      <PropertyRef Name="EFFECTTIMELIMIT" />
+      <PropertyRef Name="APPOINTDAY" />
+      <PropertyRef Name="APPOINTDAYTZID" />
+      <PropertyRef Name="TOVERIFYTIME" />
+      <PropertyRef Name="TOVERIFYTIMETZID" />
+      <PropertyRef Name="TOEFFECTTIME" />
+      <PropertyRef Name="TOEFFECTTIMETZID" />
+      <PropertyRef Name="RECORDTIME" />
+      <PropertyRef Name="RECORDTIMETZID" />
+      <PropertyRef Name="SENDDEPARTMENT" />
+      <PropertyRef Name="TECHNUM" />
+      <PropertyRef Name="TECHNAME" />
+      <PropertyRef Name="TECHTARGET" />
+      <PropertyRef Name="TECHTYPE" />
+      <PropertyRef Name="ITEMID" />
+      <PropertyRef Name="ACCEPTDEPARTMENT" />
+      <PropertyRef Name="ACCEPTDEPARTMENT2_" />
+      <PropertyRef Name="ACCEPTDEPARTMENT3_" />
+      <PropertyRef Name="ACCEPTDEPARTMENT4_" />
+      <PropertyRef Name="ACCEPTDEPARTMENT5_" />
+      <PropertyRef Name="ACCEPTDEPARTMENT6_" />
+      <PropertyRef Name="DATAAREAID" />
+      <PropertyRef Name="RECVERSION" />
+      <PropertyRef Name="RECID" />
+    </Key>
+    <Property Name="BANCAIPIPEIID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="WRKCTRID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TOVERIFY" Type="Int32" Nullable="false" />
+    <Property Name="INVALID" Type="Int32" Nullable="false" />
+    <Property Name="VERIFYER" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RECORDER" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EFFECTTIMELIMIT" Type="Int32" Nullable="false" />
+    <Property Name="APPOINTDAY" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="APPOINTDAYTZID" Type="Int32" Nullable="false" />
+    <Property Name="TOVERIFYTIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TOVERIFYTIMETZID" Type="Int32" Nullable="false" />
+    <Property Name="TOEFFECTTIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TOEFFECTTIMETZID" Type="Int32" Nullable="false" />
+    <Property Name="RECORDTIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="RECORDTIMETZID" Type="Int32" Nullable="false" />
+    <Property Name="SENDDEPARTMENT" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TECHNUM" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TECHNAME" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TECHTARGET" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TECHTYPE" Type="Int32" Nullable="false" />
+    <Property Name="ITEMID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ACCEPTDEPARTMENT" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ACCEPTDEPARTMENT2_" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ACCEPTDEPARTMENT3_" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ACCEPTDEPARTMENT4_" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ACCEPTDEPARTMENT5_" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ACCEPTDEPARTMENT6_" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DATAAREAID" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RECVERSION" Type="Int32" Nullable="false" />
+    <Property Name="RECID" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="IWS_CAMCRAFTCMDTRADETABLE">
+    <Key>
+      <PropertyRef Name="HANGYEPIPEIID" />
+      <PropertyRef Name="WRKCTRID" />
+      <PropertyRef Name="TRADEID" />
+      <PropertyRef Name="TOVERIFY" />
+      <PropertyRef Name="INVALID" />
+      <PropertyRef Name="VERIFYER" />
+      <PropertyRef Name="RECORDER" />
+      <PropertyRef Name="EFFECTTIMELIMIT" />
+      <PropertyRef Name="APPOINTDAY" />
+      <PropertyRef Name="APPOINTDAYTZID" />
+      <PropertyRef Name="TOVERIFYTIME" />
+      <PropertyRef Name="TOVERIFYTIMETZID" />
+      <PropertyRef Name="TOEFFECTTIME" />
+      <PropertyRef Name="TOEFFECTTIMETZID" />
+      <PropertyRef Name="RECORDTIME" />
+      <PropertyRef Name="RECORDTIMETZID" />
+      <PropertyRef Name="SENDDEPARTMENT" />
+      <PropertyRef Name="ACCEPTDEPARTMENT" />
+      <PropertyRef Name="TECHNUM" />
+      <PropertyRef Name="TECHNAME" />
+      <PropertyRef Name="TECHTARGET" />
+      <PropertyRef Name="TECHTYPE" />
+      <PropertyRef Name="DATAAREAID" />
+      <PropertyRef Name="RECVERSION" />
+      <PropertyRef Name="RECID" />
+      <PropertyRef Name="MURAVALUE" />
+    </Key>
+    <Property Name="HANGYEPIPEIID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="WRKCTRID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TRADEID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TOVERIFY" Type="Int32" Nullable="false" />
+    <Property Name="INVALID" Type="Int32" Nullable="false" />
+    <Property Name="VERIFYER" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RECORDER" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EFFECTTIMELIMIT" Type="Int32" Nullable="false" />
+    <Property Name="APPOINTDAY" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="APPOINTDAYTZID" Type="Int32" Nullable="false" />
+    <Property Name="TOVERIFYTIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TOVERIFYTIMETZID" Type="Int32" Nullable="false" />
+    <Property Name="TOEFFECTTIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TOEFFECTTIMETZID" Type="Int32" Nullable="false" />
+    <Property Name="RECORDTIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="RECORDTIMETZID" Type="Int32" Nullable="false" />
+    <Property Name="SENDDEPARTMENT" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ACCEPTDEPARTMENT" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TECHNUM" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TECHNAME" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TECHTARGET" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TECHTYPE" Type="Int32" Nullable="false" />
+    <Property Name="DATAAREAID" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RECVERSION" Type="Int32" Nullable="false" />
+    <Property Name="RECID" Type="Int64" Nullable="false" />
+    <Property Name="MURAVALUE" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+  </EntityType>
+  <EntityType Name="IWS_CAMDESIGNPARAMTABLE">
+    <Key>
+      <PropertyRef Name="PRODID" />
+      <PropertyRef Name="INVENTREFID" />
+      <PropertyRef Name="INVENTREFTRANSID" />
+      <PropertyRef Name="INVENTDIMID" />
+      <PropertyRef Name="CDPRECISION" />
+      <PropertyRef Name="MINLSWIDTH" />
+      <PropertyRef Name="MINLSTYPE" />
+      <PropertyRef Name="GRAPH2EDGE" />
+      <PropertyRef Name="GRAPHFEATRUES" />
+      <PropertyRef Name="MASKOUTLINE" />
+      <PropertyRef Name="WRKCTRID" />
+      <PropertyRef Name="MACHINENAME" />
+      <PropertyRef Name="LENS" />
+      <PropertyRef Name="QYBARCODE" />
+      <PropertyRef Name="CLIENTBARCODE" />
+      <PropertyRef Name="INVERT" />
+      <PropertyRef Name="ROTATE" />
+      <PropertyRef Name="MIRROR" />
+      <PropertyRef Name="CPMASKMIRROR" />
+      <PropertyRef Name="LASTMIRROR" />
+      <PropertyRef Name="ISDELMASKMARK" />
+      <PropertyRef Name="NETPTDENSITY" />
+      <PropertyRef Name="NETPTANGLE" />
+      <PropertyRef Name="APERTURERATIO" />
+      <PropertyRef Name="X1STEP" />
+      <PropertyRef Name="Y1STEP" />
+      <PropertyRef Name="X2STEP" />
+      <PropertyRef Name="Y2STEP" />
+      <PropertyRef Name="MASKSIZEX" />
+      <PropertyRef Name="MASKSIZEY" />
+      <PropertyRef Name="MASKSIZEZ" />
+      <PropertyRef Name="TEMPERATUREXPPB" />
+      <PropertyRef Name="TEMPERATUREYPPB" />
+      <PropertyRef Name="GRAPHSCALEXPPB" />
+      <PropertyRef Name="GRAPHSCALEYPPB" />
+      <PropertyRef Name="CRAFTSCALEXPPB" />
+      <PropertyRef Name="CRAFTSCALEYPPB" />
+      <PropertyRef Name="CRAFTSCALEORTHOPPB" />
+      <PropertyRef Name="DESIGNLASTSCALEXPPB" />
+      <PropertyRef Name="DESIGNLASTSCALEYPPB" />
+      <PropertyRef Name="DESIGNLASTSCALEX" />
+      <PropertyRef Name="DESIGNLASTSCALEY" />
+      <PropertyRef Name="CRFIELDNAME1" />
+      <PropertyRef Name="CRFIELDNAME2" />
+      <PropertyRef Name="CRFIELDNAME3" />
+      <PropertyRef Name="CRFIELDNAME4" />
+      <PropertyRef Name="CRATIO1" />
+      <PropertyRef Name="CRATIO2" />
+      <PropertyRef Name="CRATIO3" />
+      <PropertyRef Name="CRATIO4" />
+      <PropertyRef Name="DESIGNFORMAT" />
+      <PropertyRef Name="TOPCELL" />
+      <PropertyRef Name="CELLPITCHX" />
+      <PropertyRef Name="CELLPITCHY" />
+      <PropertyRef Name="MEBENAME" />
+      <PropertyRef Name="STRIPEWIDTH" />
+      <PropertyRef Name="PIXELSIZE" />
+      <PropertyRef Name="STETCHMODE" />
+      <PropertyRef Name="ADDITIONALPIXEL" />
+      <PropertyRef Name="BIDIRECTION" />
+      <PropertyRef Name="LICBUFFERSIZE" />
+      <PropertyRef Name="OVERLAP" />
+      <PropertyRef Name="YSPEED" />
+      <PropertyRef Name="RESOLUTION" />
+      <PropertyRef Name="BIASX" />
+      <PropertyRef Name="BIASY" />
+      <PropertyRef Name="PROCESS" />
+      <PropertyRef Name="ORIGINTYPE" />
+      <PropertyRef Name="MEASURECDAMOUNT" />
+      <PropertyRef Name="MURAFUNCTION" />
+      <PropertyRef Name="PIXELPITCHX" />
+      <PropertyRef Name="PIXELPITCHY" />
+      <PropertyRef Name="CRAFTLAYERNAME" />
+      <PropertyRef Name="ADDEXPOSALAMOUNT" />
+      <PropertyRef Name="EXPOSELOCATION" />
+      <PropertyRef Name="OFFSETUP" />
+      <PropertyRef Name="OFFSETDW" />
+      <PropertyRef Name="OFFSETLE" />
+      <PropertyRef Name="OFFSETRI" />
+      <PropertyRef Name="CONVERTFORMAT" />
+      <PropertyRef Name="DESIGNNAME" />
+      <PropertyRef Name="JOBNAME" />
+      <PropertyRef Name="JOBID" />
+      <PropertyRef Name="CONVERTNAME" />
+      <PropertyRef Name="WRKSTATUS" />
+      <PropertyRef Name="INVENTREFTYPE" />
+      <PropertyRef Name="OPRID" />
+      <PropertyRef Name="ITEMID" />
+      <PropertyRef Name="SAVETYPE" />
+      <PropertyRef Name="X1VALUE" />
+      <PropertyRef Name="Y1VALUE" />
+      <PropertyRef Name="X2VALUE" />
+      <PropertyRef Name="Y2VALUE" />
+      <PropertyRef Name="GRAPHSIZEX" />
+      <PropertyRef Name="GRAPHSIZEY" />
+      <PropertyRef Name="CONVERTSCALEXPPB" />
+      <PropertyRef Name="CONVERTSCALEYPPB" />
+      <PropertyRef Name="CONVERTSCALEORTHOPPB" />
+      <PropertyRef Name="CONVERTDESIGNNAME" />
+      <PropertyRef Name="DATAAREAID" />
+      <PropertyRef Name="RECVERSION" />
+      <PropertyRef Name="RECID" />
+      <PropertyRef Name="LICBUFFERSIZE1" />
+      <PropertyRef Name="LAYERNAMEALIAS" />
+      <PropertyRef Name="CAMTOOL" />
+      <PropertyRef Name="EXPOSESIZEX" />
+      <PropertyRef Name="EXPOSESIZEY" />
+      <PropertyRef Name="MURAVALUE" />
+      <PropertyRef Name="Y_NOEXPOSESIZE" />
+      <PropertyRef Name="SDIST" />
+      <PropertyRef Name="GRAPHCD" />
+      <PropertyRef Name="GRAPHBIAS" />
+      <PropertyRef Name="DISTORTION" />
+      <PropertyRef Name="LARGESTLENGTH" />
+      <PropertyRef Name="TOTALLENGTH" />
+      <PropertyRef Name="LICUNITTIME" />
+      <PropertyRef Name="PPO" />
+      <PropertyRef Name="AOITYPE" />
+      <PropertyRef Name="PARAMINDETERMINACY" />
+      <PropertyRef Name="XOR" />
+      <PropertyRef Name="ISSOURCEAOI" />
+      <PropertyRef Name="AOITOPCELL" />
+      <PropertyRef Name="AOISOURCENAME" />
+    </Key>
+    <Property Name="PRODID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="INVENTREFID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="INVENTREFTRANSID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="INVENTDIMID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CDPRECISION" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MINLSWIDTH" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MINLSTYPE" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="GRAPH2EDGE" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="GRAPHFEATRUES" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MASKOUTLINE" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="WRKCTRID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MACHINENAME" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LENS" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="QYBARCODE" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CLIENTBARCODE" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="INVERT" Type="Int32" Nullable="false" />
+    <Property Name="ROTATE" Type="Int32" Nullable="false" />
+    <Property Name="MIRROR" Type="Int32" Nullable="false" />
+    <Property Name="CPMASKMIRROR" Type="Int32" Nullable="false" />
+    <Property Name="LASTMIRROR" Type="Int32" Nullable="false" />
+    <Property Name="ISDELMASKMARK" Type="Int32" Nullable="false" />
+    <Property Name="NETPTDENSITY" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NETPTANGLE" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="APERTURERATIO" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="X1STEP" Type="Int32" Nullable="false" />
+    <Property Name="Y1STEP" Type="Int32" Nullable="false" />
+    <Property Name="X2STEP" Type="Int32" Nullable="false" />
+    <Property Name="Y2STEP" Type="Int32" Nullable="false" />
+    <Property Name="MASKSIZEX" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="MASKSIZEY" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="MASKSIZEZ" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="TEMPERATUREXPPB" Type="Int32" Nullable="false" />
+    <Property Name="TEMPERATUREYPPB" Type="Int32" Nullable="false" />
+    <Property Name="GRAPHSCALEXPPB" Type="Int32" Nullable="false" />
+    <Property Name="GRAPHSCALEYPPB" Type="Int32" Nullable="false" />
+    <Property Name="CRAFTSCALEXPPB" Type="Int32" Nullable="false" />
+    <Property Name="CRAFTSCALEYPPB" Type="Int32" Nullable="false" />
+    <Property Name="CRAFTSCALEORTHOPPB" Type="Int32" Nullable="false" />
+    <Property Name="DESIGNLASTSCALEXPPB" Type="Int32" Nullable="false" />
+    <Property Name="DESIGNLASTSCALEYPPB" Type="Int32" Nullable="false" />
+    <Property Name="DESIGNLASTSCALEX" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="DESIGNLASTSCALEY" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="CRFIELDNAME1" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CRFIELDNAME2" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CRFIELDNAME3" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CRFIELDNAME4" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CRATIO1" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CRATIO2" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CRATIO3" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CRATIO4" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DESIGNFORMAT" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TOPCELL" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LAYLOGICALS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CELLPITCHX" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CELLPITCHY" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MEBENAME" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="STRIPEWIDTH" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PIXELSIZE" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="STETCHMODE" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ADDITIONALPIXEL" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BIDIRECTION" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LICBUFFERSIZE" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="OVERLAP" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="YSPEED" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RESOLUTION" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BIASX" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BIASY" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PROCESS" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ORIGINTYPE" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MEASURECDAMOUNT" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MURAFUNCTION" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PIXELPITCHX" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PIXELPITCHY" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CRAFTLAYERNAME" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ADDEXPOSALAMOUNT" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EXPOSELOCATION" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="OFFSETUP" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="OFFSETDW" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="OFFSETLE" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="OFFSETRI" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CONVERTFORMAT" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DESIGNNAME" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="JOBNAME" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="JOBID" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CONVERTNAME" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="REBACKREMARK" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CAMREMARK" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="WRKSTATUS" Type="Int32" Nullable="false" />
+    <Property Name="INVENTREFTYPE" Type="Int32" Nullable="false" />
+    <Property Name="OPRID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ITEMID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SAVETYPE" Type="Int32" Nullable="false" />
+    <Property Name="X1VALUE" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Y1VALUE" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="X2VALUE" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Y2VALUE" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="GRAPHSIZEX" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="GRAPHSIZEY" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CONVERTSCALEXPPB" Type="Int32" Nullable="false" />
+    <Property Name="CONVERTSCALEYPPB" Type="Int32" Nullable="false" />
+    <Property Name="CONVERTSCALEORTHOPPB" Type="Int32" Nullable="false" />
+    <Property Name="CONVERTDESIGNNAME" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DATAAREAID" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RECVERSION" Type="Int32" Nullable="false" />
+    <Property Name="RECID" Type="Int64" Nullable="false" />
+    <Property Name="LICBUFFERSIZE1" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LAYERNAMEALIAS" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CAMTOOL" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EXPOSESIZEX" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EXPOSESIZEY" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MURAVALUE" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Y_NOEXPOSESIZE" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="SDIST" Type="Int32" Nullable="false" />
+    <Property Name="GRAPHCD" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="GRAPHBIAS" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DISTORTION" Type="Int32" Nullable="false" />
+    <Property Name="LARGESTLENGTH" Type="Int32" Nullable="false" />
+    <Property Name="TOTALLENGTH" Type="Int32" Nullable="false" />
+    <Property Name="LICUNITTIME" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PPO" Type="Int32" Nullable="false" />
+    <Property Name="AOITYPE" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PARAMINDETERMINACY" Type="Int32" Nullable="false" />
+    <Property Name="XOR" Type="Int32" Nullable="false" />
+    <Property Name="ISSOURCEAOI" Type="Int32" Nullable="false" />
+    <Property Name="AOILAYER" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AOITOPCELL" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AOISOURCENAME" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RESOULT" Type="Int32" />
+    <Property Name="Completion" Type="Int32" />
+  </EntityType>
+  <EntityType Name="IWS_CUSTPARATRADETABLE">
+    <Key>
+      <PropertyRef Name="CUSTTRADEREPORTAREA" />
+      <PropertyRef Name="CUSTTRADEREPORTTYPE" />
+      <PropertyRef Name="MEASUREREPORT" />
+      <PropertyRef Name="MAKEOUTDEFECT" />
+      <PropertyRef Name="BARCODE" />
+      <PropertyRef Name="LABLE" />
+      <PropertyRef Name="LABLETYPE" />
+      <PropertyRef Name="DEFECTTYPE" />
+      <PropertyRef Name="CUSTTRADEREPORTADDRESS" />
+      <PropertyRef Name="DELIVERTYPE" />
+      <PropertyRef Name="DELEVEROTHERDESC" />
+      <PropertyRef Name="DELIVERYDOC" />
+      <PropertyRef Name="LOGISTICALDOC" />
+      <PropertyRef Name="LOGISTICALOTHERDESC" />
+      <PropertyRef Name="MAKEUPORDERNUM" />
+      <PropertyRef Name="PRINTPRICE" />
+      <PropertyRef Name="ROHS" />
+      <PropertyRef Name="DELIVERYDOCOTHER" />
+      <PropertyRef Name="DELIVERYDOCOTHERDESC" />
+      <PropertyRef Name="WASHWAY" />
+      <PropertyRef Name="TUXINGYAOQIU" />
+      <PropertyRef Name="KEHUBAOGUANGJIMODEL" />
+      <PropertyRef Name="BAOGUANGWENDU" />
+      <PropertyRef Name="PACKINGDEMANDINNER" />
+      <PropertyRef Name="JIECHUSHIBAOZHTYPE" />
+      <PropertyRef Name="XIAOBANJINGHUATYPE" />
+      <PropertyRef Name="JIAODAIMIFENG" />
+      <PropertyRef Name="JIAODAIYOUWU" />
+      <PropertyRef Name="JINGHUADAI" />
+      <PropertyRef Name="JINGHUADAITYPE" />
+      <PropertyRef Name="LEIXING" />
+      <PropertyRef Name="FENGZHLEIX" />
+      <PropertyRef Name="FENGZHOTHER" />
+      <PropertyRef Name="FENGZHOTHERDESC" />
+      <PropertyRef Name="PACKINGDEMANDOUTER" />
+      <PropertyRef Name="BIAOMINGZHMXH" />
+      <PropertyRef Name="BIAOMIANTZH" />
+      <PropertyRef Name="YAOQIUOTHER" />
+      <PropertyRef Name="YAOQIUOTHERDESC" />
+      <PropertyRef Name="ITEMID" />
+      <PropertyRef Name="CUSTACCOUNT" />
+      <PropertyRef Name="ICSHIPPINGREPORT" />
+      <PropertyRef Name="OTHERREPORT" />
+      <PropertyRef Name="PRINTREMAND" />
+      <PropertyRef Name="OTHERREPORTVALUE" />
+      <PropertyRef Name="BIGVERSIONBOX" />
+      <PropertyRef Name="RETICLEABS" />
+      <PropertyRef Name="NOTRETICLEABS" />
+      <PropertyRef Name="PPBOXCHINA" />
+      <PropertyRef Name="PPBOXFOREIGN" />
+      <PropertyRef Name="ENVIRREQ" />
+      <PropertyRef Name="CLEANPACKAGESINGLE" />
+      <PropertyRef Name="CLEANPACKAGEDOUBLE" />
+      <PropertyRef Name="MANUALFILMPACKAGE" />
+      <PropertyRef Name="PACKAGECLEANREQ" />
+      <PropertyRef Name="VACUUMPACKAGE" />
+      <PropertyRef Name="FILMMACHINEPACKAGE" />
+      <PropertyRef Name="OTHERPACKAGE" />
+      <PropertyRef Name="OTHERPACKAGEVALUE" />
+      <PropertyRef Name="C5DELIVERYREPORT" />
+      <PropertyRef Name="DELIVERYSPECIALDESC" />
+      <PropertyRef Name="DATAAREAID" />
+      <PropertyRef Name="RECVERSION" />
+      <PropertyRef Name="RECID" />
+      <PropertyRef Name="ICSHIPPINGREPORTCOM" />
+      <PropertyRef Name="QY_ISPACKBOXSUPPORTOR" />
+      <PropertyRef Name="QY_PB_GUDENG" />
+      <PropertyRef Name="QY_PB_SEYANG" />
+      <PropertyRef Name="QY_PB_POZZETTA" />
+      <PropertyRef Name="QY_PB_GUOHUA" />
+      <PropertyRef Name="QY_PB_KEHU" />
+      <PropertyRef Name="QY_PB_OTHERS" />
+      <PropertyRef Name="QY_PB_OTHERSVALUE" />
+    </Key>
+    <Property Name="CUSTTRADEREPORTAREA" Type="Int32" Nullable="false" />
+    <Property Name="CUSTTRADEREPORTTYPE" Type="Int32" Nullable="false" />
+    <Property Name="MEASUREREPORT" Type="Int32" Nullable="false" />
+    <Property Name="MAKEOUTDEFECT" Type="Int32" Nullable="false" />
+    <Property Name="BARCODE" Type="Int32" Nullable="false" />
+    <Property Name="LABLE" Type="Int32" Nullable="false" />
+    <Property Name="LABLETYPE" Type="Int32" Nullable="false" />
+    <Property Name="DEFECTTYPE" Type="Int32" Nullable="false" />
+    <Property Name="CUSTTRADEREPORTADDRESS" Type="Int32" Nullable="false" />
+    <Property Name="SPECIALDESC" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DELIVERTYPE" Type="Int32" Nullable="false" />
+    <Property Name="DELEVEROTHERDESC" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DELIVERYDOC" Type="Int32" Nullable="false" />
+    <Property Name="LOGISTICALDOC" Type="Int32" Nullable="false" />
+    <Property Name="LOGISTICALOTHERDESC" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MAKEUPORDERNUM" Type="Int32" Nullable="false" />
+    <Property Name="PRINTPRICE" Type="Int32" Nullable="false" />
+    <Property Name="ROHS" Type="Int32" Nullable="false" />
+    <Property Name="DELIVERYDOCOTHER" Type="Int32" Nullable="false" />
+    <Property Name="DELIVERYDOCOTHERDESC" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="WASHWAY" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TUXINGYAOQIU" Type="Int32" Nullable="false" />
+    <Property Name="KEHUBAOGUANGJIMODEL" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BAOGUANGWENDU" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PACKINGDEMANDINNER" Type="Int32" Nullable="false" />
+    <Property Name="JIECHUSHIBAOZHTYPE" Type="Int32" Nullable="false" />
+    <Property Name="XIAOBANJINGHUATYPE" Type="Int32" Nullable="false" />
+    <Property Name="JIAODAIMIFENG" Type="Int32" Nullable="false" />
+    <Property Name="JIAODAIYOUWU" Type="Int32" Nullable="false" />
+    <Property Name="JINGHUADAI" Type="Int32" Nullable="false" />
+    <Property Name="JINGHUADAITYPE" Type="Int32" Nullable="false" />
+    <Property Name="LEIXING" Type="Int32" Nullable="false" />
+    <Property Name="FENGZHLEIX" Type="Int32" Nullable="false" />
+    <Property Name="FENGZHOTHER" Type="Int32" Nullable="false" />
+    <Property Name="FENGZHOTHERDESC" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PACKINGDEMANDOUTER" Type="Int32" Nullable="false" />
+    <Property Name="BIAOMINGZHMXH" Type="Int32" Nullable="false" />
+    <Property Name="BIAOMIANTZH" Type="Int32" Nullable="false" />
+    <Property Name="YAOQIUOTHER" Type="Int32" Nullable="false" />
+    <Property Name="YAOQIUOTHERDESC" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ITEMID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CUSTACCOUNT" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ICSHIPPINGREPORT" Type="Int32" Nullable="false" />
+    <Property Name="OTHERREPORT" Type="Int32" Nullable="false" />
+    <Property Name="PRINTREMAND" Type="Int32" Nullable="false" />
+    <Property Name="OTHERREPORTVALUE" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BIGVERSIONBOX" Type="Int32" Nullable="false" />
+    <Property Name="RETICLEABS" Type="Int32" Nullable="false" />
+    <Property Name="NOTRETICLEABS" Type="Int32" Nullable="false" />
+    <Property Name="PPBOXCHINA" Type="Int32" Nullable="false" />
+    <Property Name="PPBOXFOREIGN" Type="Int32" Nullable="false" />
+    <Property Name="ENVIRREQ" Type="Int32" Nullable="false" />
+    <Property Name="CLEANPACKAGESINGLE" Type="Int32" Nullable="false" />
+    <Property Name="CLEANPACKAGEDOUBLE" Type="Int32" Nullable="false" />
+    <Property Name="MANUALFILMPACKAGE" Type="Int32" Nullable="false" />
+    <Property Name="PACKAGECLEANREQ" Type="Int32" Nullable="false" />
+    <Property Name="VACUUMPACKAGE" Type="Int32" Nullable="false" />
+    <Property Name="FILMMACHINEPACKAGE" Type="Int32" Nullable="false" />
+    <Property Name="OTHERPACKAGE" Type="Int32" Nullable="false" />
+    <Property Name="OTHERPACKAGEVALUE" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="C5DELIVERYREPORT" Type="Int32" Nullable="false" />
+    <Property Name="DELIVERYSPECIALDESC" Type="String" MaxLength="1200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DATAAREAID" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RECVERSION" Type="Int32" Nullable="false" />
+    <Property Name="RECID" Type="Int64" Nullable="false" />
+    <Property Name="ICSHIPPINGREPORTCOM" Type="Int32" Nullable="false" />
+    <Property Name="QY_ISPACKBOXSUPPORTOR" Type="Int32" Nullable="false" />
+    <Property Name="QY_PB_GUDENG" Type="Int32" Nullable="false" />
+    <Property Name="QY_PB_SEYANG" Type="Int32" Nullable="false" />
+    <Property Name="QY_PB_POZZETTA" Type="Int32" Nullable="false" />
+    <Property Name="QY_PB_GUOHUA" Type="Int32" Nullable="false" />
+    <Property Name="QY_PB_KEHU" Type="Int32" Nullable="false" />
+    <Property Name="QY_PB_OTHERS" Type="Int32" Nullable="false" />
+    <Property Name="QY_PB_OTHERSVALUE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="IWS_JINGDUQUEXIANPARAMETER">
+    <Key>
+      <PropertyRef Name="ITEMID" />
+      <PropertyRef Name="XFLESS" />
+      <PropertyRef Name="XFRANGE" />
+      <PropertyRef Name="XFMORE" />
+      <PropertyRef Name="CUSTACCOUNT" />
+      <PropertyRef Name="XFLESSMATHSYMBOL" />
+      <PropertyRef Name="XFGREATERMATHSYMBOL" />
+      <PropertyRef Name="XIANFENGOTHER" />
+      <PropertyRef Name="XIANFENGOTHERVALUE" />
+      <PropertyRef Name="XIANFENG" />
+      <PropertyRef Name="TAOHE" />
+      <PropertyRef Name="TAOHEOTHER" />
+      <PropertyRef Name="TAOHEOTHERVALUE" />
+      <PropertyRef Name="THVALUE" />
+      <PropertyRef Name="THRANGE" />
+      <PropertyRef Name="ZONGCHANG" />
+      <PropertyRef Name="ZONGCHANGOTHER" />
+      <PropertyRef Name="ZONGCHANGOTHERVALUE" />
+      <PropertyRef Name="ZONGCHANGVALUE" />
+      <PropertyRef Name="ZONGCHANGRANGE" />
+      <PropertyRef Name="CHUIZHIDU" />
+      <PropertyRef Name="CHUIZHIDUOTHER" />
+      <PropertyRef Name="CHUIZHIDUOTHERVALUE" />
+      <PropertyRef Name="CHUIZHIDUVALUE" />
+      <PropertyRef Name="CHUIZHIDURANGE" />
+      <PropertyRef Name="QXDYAREA" />
+      <PropertyRef Name="QXDYAREAF" />
+      <PropertyRef Name="BUYUNXUCHAOCU" />
+      <PropertyRef Name="BUYUNXUCHAOCUF" />
+      <PropertyRef Name="TESUYAOQIU" />
+      <PropertyRef Name="TESUYAOQIUF" />
+      <PropertyRef Name="CHANPINYAOQIU" />
+      <PropertyRef Name="CHANPINYAOQIUVALUE" />
+      <PropertyRef Name="MAOCIXIUBUVALUE" />
+      <PropertyRef Name="MAOCIXIUBU" />
+      <PropertyRef Name="ZHENKONGAOXIANSHULIANG" />
+      <PropertyRef Name="ZHENKONGAOXIANSHULIANGVALUE" />
+      <PropertyRef Name="ZHENKONGAOXIANGAODU" />
+      <PropertyRef Name="ZHENKONGAOXIANGAODUVALUE" />
+      <PropertyRef Name="QITACAILIAO" />
+      <PropertyRef Name="QITACAILIAOVALUE" />
+      <PropertyRef Name="JINSHUYE" />
+      <PropertyRef Name="YOUMO" />
+      <PropertyRef Name="HONGTU" />
+      <PropertyRef Name="AXINGJIAO" />
+      <PropertyRef Name="LCVD" />
+      <PropertyRef Name="XIANTIAOZHILIANG" />
+      <PropertyRef Name="XIANTIAOZHILIANGVALUE" />
+      <PropertyRef Name="ZHENGBANTIAOWENVALUE" />
+      <PropertyRef Name="ZHENGBANTIAOWEN" />
+      <PropertyRef Name="ZHENYUANDU" />
+      <PropertyRef Name="ZHENYUANDUVALUE" />
+      <PropertyRef Name="XIANFENGCELIANGVALUE" />
+      <PropertyRef Name="CHANGCHICUNCELIANG" />
+      <PropertyRef Name="CHANGCHICUNCELIANGVALUE" />
+      <PropertyRef Name="SHUJUFENXIYAOQIU" />
+      <PropertyRef Name="SHUJUFENXIYAOQIUVALUE" />
+      <PropertyRef Name="COPYOFCHANPINYAOQIUVALUE" />
+      <PropertyRef Name="DATAAREAID" />
+      <PropertyRef Name="RECVERSION" />
+      <PropertyRef Name="RECID" />
+      <PropertyRef Name="MAXBUGSIZE" />
+    </Key>
+    <Property Name="ITEMID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="XFLESS" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="XFRANGE" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="XFMORE" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="CUSTACCOUNT" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="XFLESSMATHSYMBOL" Type="Int32" Nullable="false" />
+    <Property Name="XFGREATERMATHSYMBOL" Type="Int32" Nullable="false" />
+    <Property Name="XIANFENGOTHER" Type="Int32" Nullable="false" />
+    <Property Name="XIANFENGOTHERVALUE" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="XIANFENG" Type="Int32" Nullable="false" />
+    <Property Name="TAOHE" Type="Int32" Nullable="false" />
+    <Property Name="TAOHEOTHER" Type="Int32" Nullable="false" />
+    <Property Name="TAOHEOTHERVALUE" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="THVALUE" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="THRANGE" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="ZONGCHANG" Type="Int32" Nullable="false" />
+    <Property Name="ZONGCHANGOTHER" Type="Int32" Nullable="false" />
+    <Property Name="ZONGCHANGOTHERVALUE" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ZONGCHANGVALUE" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="ZONGCHANGRANGE" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="CHUIZHIDU" Type="Int32" Nullable="false" />
+    <Property Name="CHUIZHIDUOTHER" Type="Int32" Nullable="false" />
+    <Property Name="CHUIZHIDUOTHERVALUE" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CHUIZHIDUVALUE" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="CHUIZHIDURANGE" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="QXDYAREA" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="QXDYAREAF" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BUYUNXUCHAOCU" Type="Int32" Nullable="false" />
+    <Property Name="BUYUNXUCHAOCUF" Type="Int32" Nullable="false" />
+    <Property Name="TESUYAOQIU" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TESUYAOQIUF" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CHANPINYAOQIU" Type="Int32" Nullable="false" />
+    <Property Name="CHANPINYAOQIUVALUE" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MAOCIXIUBUVALUE" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MAOCIXIUBU" Type="Int32" Nullable="false" />
+    <Property Name="ZHENKONGAOXIANSHULIANG" Type="Int32" Nullable="false" />
+    <Property Name="ZHENKONGAOXIANSHULIANGVALUE" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="ZHENKONGAOXIANGAODU" Type="Int32" Nullable="false" />
+    <Property Name="ZHENKONGAOXIANGAODUVALUE" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="QITACAILIAO" Type="Int32" Nullable="false" />
+    <Property Name="QITACAILIAOVALUE" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="JINSHUYE" Type="Int32" Nullable="false" />
+    <Property Name="YOUMO" Type="Int32" Nullable="false" />
+    <Property Name="HONGTU" Type="Int32" Nullable="false" />
+    <Property Name="AXINGJIAO" Type="Int32" Nullable="false" />
+    <Property Name="LCVD" Type="Int32" Nullable="false" />
+    <Property Name="XIANTIAOZHILIANG" Type="Int32" Nullable="false" />
+    <Property Name="XIANTIAOZHILIANGVALUE" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ZHENGBANTIAOWENVALUE" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ZHENGBANTIAOWEN" Type="Int32" Nullable="false" />
+    <Property Name="ZHENYUANDU" Type="Int32" Nullable="false" />
+    <Property Name="ZHENYUANDUVALUE" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="XIANFENGCELIANGVALUE" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="CHANGCHICUNCELIANG" Type="Int32" Nullable="false" />
+    <Property Name="CHANGCHICUNCELIANGVALUE" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SHUJUFENXIYAOQIU" Type="Int32" Nullable="false" />
+    <Property Name="SHUJUFENXIYAOQIUVALUE" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="COPYOFCHANPINYAOQIUVALUE" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DATAAREAID" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RECVERSION" Type="Int32" Nullable="false" />
+    <Property Name="RECID" Type="Int64" Nullable="false" />
+    <Property Name="MAXBUGSIZE" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+  </EntityType>
+  <EntityType Name="IWS_PRODUCTPARAMETER">
+    <Key>
+      <PropertyRef Name="ITEMID" />
+      <PropertyRef Name="BANCAITYPE" />
+      <PropertyRef Name="BANCAIDESC" />
+      <PropertyRef Name="SIZE1X" />
+      <PropertyRef Name="SIZE1Y" />
+      <PropertyRef Name="HOU11" />
+      <PropertyRef Name="WUCHATYPE" />
+      <PropertyRef Name="PINGZHENGDUYAOQIU" />
+      <PropertyRef Name="PINGZHENGDUYAOQIUDESC" />
+      <PropertyRef Name="QIEGEJINGDU" />
+      <PropertyRef Name="DAOJIAOYAOQIU" />
+      <PropertyRef Name="DAOJIAOSIZE" />
+      <PropertyRef Name="BENGBIANYAOQIU" />
+      <PropertyRef Name="BENGBIANOTHERVALUE" />
+      <PropertyRef Name="WUCHAVALUE" />
+      <PropertyRef Name="PELLICLEYAOQIU" />
+      <PropertyRef Name="PELLICLEYAOQIUTYPE" />
+      <PropertyRef Name="PELLICLEMODEL" />
+      <PropertyRef Name="PELLICLEJINGDU" />
+      <PropertyRef Name="GUIDEYAOQIU" />
+      <PropertyRef Name="GUIDETIEHETPYE" />
+      <PropertyRef Name="CUSTACCOUNT" />
+      <PropertyRef Name="JUZHONGYAOQIU" />
+      <PropertyRef Name="SECTIONALQUALITYVALUE" />
+      <PropertyRef Name="SECTIONALQUALITY" />
+      <PropertyRef Name="SCRATCH" />
+      <PropertyRef Name="CUSTCLEANWAY" />
+      <PropertyRef Name="OUTSIDESTAIN" />
+      <PropertyRef Name="DAOJIAOSIZEVALUE" />
+      <PropertyRef Name="DATAAREAID" />
+      <PropertyRef Name="RECVERSION" />
+      <PropertyRef Name="RECID" />
+    </Key>
+    <Property Name="ITEMID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BANCAITYPE" Type="Int32" Nullable="false" />
+    <Property Name="BANCAIDESC" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SIZE1X" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="SIZE1Y" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="HOU11" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="WUCHATYPE" Type="Int32" Nullable="false" />
+    <Property Name="PINGZHENGDUYAOQIU" Type="Int32" Nullable="false" />
+    <Property Name="PINGZHENGDUYAOQIUDESC" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="QIEGEJINGDU" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="DAOJIAOYAOQIU" Type="Int32" Nullable="false" />
+    <Property Name="DAOJIAOSIZE" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="BENGBIANYAOQIU" Type="Int32" Nullable="false" />
+    <Property Name="BENGBIANOTHERVALUE" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="WUCHAVALUE" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PELLICLEYAOQIU" Type="Int32" Nullable="false" />
+    <Property Name="PELLICLEYAOQIUTYPE" Type="Int32" Nullable="false" />
+    <Property Name="PELLICLEMODEL" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PELLICLEJINGDU" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="GUIDEYAOQIU" Type="Int32" Nullable="false" />
+    <Property Name="GUIDETIEHETPYE" Type="Int32" Nullable="false" />
+    <Property Name="CUSTACCOUNT" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="JUZHONGYAOQIU" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="SECTIONALQUALITYVALUE" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SECTIONALQUALITY" Type="Int32" Nullable="false" />
+    <Property Name="SCRATCH" Type="String" MaxLength="1200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CUSTCLEANWAY" Type="String" MaxLength="1200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="OUTSIDESTAIN" Type="String" MaxLength="1200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DAOJIAOSIZEVALUE" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DATAAREAID" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RECVERSION" Type="Int32" Nullable="false" />
+    <Property Name="RECID" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PRODBOM">
+    <Key>
+      <PropertyRef Name="PRODID" />
+      <PropertyRef Name="LINENUM" />
+      <PropertyRef Name="PRODLINETYPE" />
+      <PropertyRef Name="BOMCONSUMP" />
+      <PropertyRef Name="ITEMID" />
+      <PropertyRef Name="BOMQTY" />
+      <PropertyRef Name="DIM1" />
+      <PropertyRef Name="DIM2" />
+      <PropertyRef Name="DIM3" />
+      <PropertyRef Name="DIM4" />
+      <PropertyRef Name="DIM5" />
+      <PropertyRef Name="ROUNDUP" />
+      <PropertyRef Name="ROUNDUPQTY" />
+      <PropertyRef Name="POSITION" />
+      <PropertyRef Name="QTYBOMCALC" />
+      <PropertyRef Name="REMAINBOMPHYSICAL" />
+      <PropertyRef Name="REMAINBOMFINANCIAL" />
+      <PropertyRef Name="QTYINVENTCALC" />
+      <PropertyRef Name="PRODFLUSHINGPRINCIP" />
+      <PropertyRef Name="RESERVATION" />
+      <PropertyRef Name="INVENTTRANSID" />
+      <PropertyRef Name="RAWMATERIALDATE" />
+      <PropertyRef Name="REMAININVENTPHYSICAL" />
+      <PropertyRef Name="DIMENSION" />
+      <PropertyRef Name="DIMENSION2_" />
+      <PropertyRef Name="DIMENSION3_" />
+      <PropertyRef Name="INVENTREFTYPE" />
+      <PropertyRef Name="INVENTREFID" />
+      <PropertyRef Name="INVENTREFTRANSID" />
+      <PropertyRef Name="VENDID" />
+      <PropertyRef Name="UNITID" />
+      <PropertyRef Name="BACKORDERSTATUS" />
+      <PropertyRef Name="CALCULATION" />
+      <PropertyRef Name="QTYINVENTSTUP" />
+      <PropertyRef Name="QTYBOMSTUP" />
+      <PropertyRef Name="BOMID" />
+      <PropertyRef Name="FORMULA" />
+      <PropertyRef Name="BOMREFRECID" />
+      <PropertyRef Name="BOMQTYSERIE" />
+      <PropertyRef Name="ITEMBOMID" />
+      <PropertyRef Name="INVENTDIMID" />
+      <PropertyRef Name="REQPOID" />
+      <PropertyRef Name="REQPLANIDSCHED" />
+      <PropertyRef Name="SCRAPVAR" />
+      <PropertyRef Name="SCRAPCONST" />
+      <PropertyRef Name="CONSTANTRELEASED" />
+      <PropertyRef Name="ENDCONSUMP" />
+      <PropertyRef Name="PROJCATEGORYID" />
+      <PropertyRef Name="ACTIVITYNUMBER" />
+      <PropertyRef Name="PROJTRANSID" />
+      <PropertyRef Name="PROJTRANSDATE" />
+      <PropertyRef Name="PROJLINEPROPERTYID" />
+      <PropertyRef Name="PROJCOSTPRICE" />
+      <PropertyRef Name="PROJCOSTAMOUNT" />
+      <PropertyRef Name="PROJSALESCURRENCYID" />
+      <PropertyRef Name="PROJSALESPRICE" />
+      <PropertyRef Name="PROJTAXGROUPID" />
+      <PropertyRef Name="PROJTAXITEMGROUPID" />
+      <PropertyRef Name="PROJID" />
+      <PropertyRef Name="PROJSETSUBPRODTOCONSUMED" />
+      <PropertyRef Name="DATAAREAID" />
+      <PropertyRef Name="RECVERSION" />
+      <PropertyRef Name="RECID" />
+      <PropertyRef Name="OPRNUM" />
+      <PropertyRef Name="WRKCTRCONSUMPTION" />
+      <PropertyRef Name="ITEMROUTEID" />
+      <PropertyRef Name="RAWMATERIALTIME" />
+      <PropertyRef Name="ENDSCHEDCONSUMP" />
+      <PropertyRef Name="IWS_REPLACEITEMID" />
+    </Key>
+    <Property Name="PRODID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LINENUM" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PRODLINETYPE" Type="Int32" Nullable="false" />
+    <Property Name="BOMCONSUMP" Type="Int32" Nullable="false" />
+    <Property Name="ITEMID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BOMQTY" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="DIM1" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="DIM2" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="DIM3" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="DIM4" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="DIM5" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="ROUNDUP" Type="Int32" Nullable="false" />
+    <Property Name="ROUNDUPQTY" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="POSITION" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="QTYBOMCALC" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="REMAINBOMPHYSICAL" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="REMAINBOMFINANCIAL" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="QTYINVENTCALC" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PRODFLUSHINGPRINCIP" Type="Int32" Nullable="false" />
+    <Property Name="RESERVATION" Type="Int32" Nullable="false" />
+    <Property Name="INVENTTRANSID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RAWMATERIALDATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="REMAININVENTPHYSICAL" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="DIMENSION" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DIMENSION2_" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DIMENSION3_" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="INVENTREFTYPE" Type="Int32" Nullable="false" />
+    <Property Name="INVENTREFID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="INVENTREFTRANSID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="VENDID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UNITID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BACKORDERSTATUS" Type="Int32" Nullable="false" />
+    <Property Name="CALCULATION" Type="Int32" Nullable="false" />
+    <Property Name="QTYINVENTSTUP" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="QTYBOMSTUP" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="BOMID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FORMULA" Type="Int32" Nullable="false" />
+    <Property Name="BOMREFRECID" Type="Int64" Nullable="false" />
+    <Property Name="BOMQTYSERIE" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="ITEMBOMID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="INVENTDIMID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="REQPOID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="REQPLANIDSCHED" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SCRAPVAR" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="SCRAPCONST" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="CONSTANTRELEASED" Type="Int32" Nullable="false" />
+    <Property Name="ENDCONSUMP" Type="Int32" Nullable="false" />
+    <Property Name="PROJCATEGORYID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ACTIVITYNUMBER" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PROJTRANSID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PROJTRANSDATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="PROJLINEPROPERTYID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PROJCOSTPRICE" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PROJCOSTAMOUNT" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PROJSALESCURRENCYID" Type="String" MaxLength="3" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PROJSALESPRICE" Type="Decimal" Precision="28" Scale="12" Nullable="false" />
+    <Property Name="PROJTAXGROUPID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PROJTAXITEMGROUPID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PROJID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PROJSETSUBPRODTOCONSUMED" Type="Int32" Nullable="false" />
+    <Property Name="DATAAREAID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RECVERSION" Type="Int32" Nullable="false" />
+    <Property Name="RECID" Type="Int64" Nullable="false" />
+    <Property Name="OPRNUM" Type="Int32" Nullable="false" />
+    <Property Name="WRKCTRCONSUMPTION" Type="Int32" Nullable="false" />
+    <Property Name="ITEMROUTEID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RAWMATERIALTIME" Type="Int32" Nullable="false" />
+    <Property Name="ENDSCHEDCONSUMP" Type="Int32" Nullable="false" />
+    <Property Name="IWS_REPLACEITEMID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="QY_CHECK_CDTABLE_NEW">
+    <Key>
+      <PropertyRef Name="Num" />
+      <PropertyRef Name="CHECKDATA" />
+      <PropertyRef Name="COORDINATEY" />
+      <PropertyRef Name="COORDINATEX" />
+      <PropertyRef Name="SPEC" />
+      <PropertyRef Name="LINETYPE" />
+      <PropertyRef Name="CDTYPE" />
+      <PropertyRef Name="METHOD" />
+      <PropertyRef Name="DESIGN" />
+      <PropertyRef Name="GROUPID" />
+      <PropertyRef Name="PRODID" />
+      <PropertyRef Name="PRODSERIAL" />
+      <PropertyRef Name="INVALID" />
+      <PropertyRef Name="OPRID" />
+      <PropertyRef Name="DATAAREAID" />
+      <PropertyRef Name="RECVERSION" />
+      <PropertyRef Name="RECID" />
+    </Key>
+    <Property Name="Num" Type="String" MaxLength="3" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CHECKDATA" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="COORDINATEY" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="COORDINATEX" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SPEC" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LINETYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CDTYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="METHOD" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DESIGN" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="GROUPID" Type="Int32" Nullable="false" />
+    <Property Name="PRODID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PRODSERIAL" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="INVALID" Type="Int32" Nullable="false" />
+    <Property Name="OPRID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DATAAREAID" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RECVERSION" Type="Int32" Nullable="false" />
+    <Property Name="RECID" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="QY_CHECK_TPTABLE_NEW">
+    <Key>
+      <PropertyRef Name="DEVY" />
+      <PropertyRef Name="DEVX" />
+      <PropertyRef Name="NOMY" />
+      <PropertyRef Name="NOMX" />
+      <PropertyRef Name="ZCORRECTION" />
+      <PropertyRef Name="ORTHO" />
+      <PropertyRef Name="YSCALE" />
+      <PropertyRef Name="XSCALE" />
+      <PropertyRef Name="OPRID" />
+      <PropertyRef Name="INVALID" />
+      <PropertyRef Name="PRODSERIAL" />
+      <PropertyRef Name="PRODID" />
+      <PropertyRef Name="CREATEDDATETIME" />
+      <PropertyRef Name="DATAAREAID" />
+      <PropertyRef Name="RECVERSION" />
+      <PropertyRef Name="RECID" />
+    </Key>
+    <Property Name="DEVY" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DEVX" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NOMY" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NOMX" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ZCORRECTION" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ORTHO" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="YSCALE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="XSCALE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="OPRID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="INVALID" Type="Int32" Nullable="false" />
+    <Property Name="PRODSERIAL" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PRODID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CREATEDDATETIME" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DATAAREAID" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RECVERSION" Type="Int32" Nullable="false" />
+    <Property Name="RECID" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="TestQYDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="H_EQUIPMENTALARM" EntityType="Self.H_EQUIPMENTALARM" />
+    <EntitySet Name="H_EQUIPMENTTABLE" EntityType="Self.H_EQUIPMENTTABLE" />
+    <EntitySet Name="H_PRODUCTATTACHEDEDFILE" EntityType="Self.H_PRODUCTATTACHEDEDFILE" />
+    <EntitySet Name="IWS_CHECK_AOITABLE" EntityType="Self.IWS_CHECK_AOITABLE" />
+    <EntitySet Name="IWS_CHECK_INNERPACKTABLE" EntityType="Self.IWS_CHECK_INNERPACKTABLE" />
+    <EntitySet Name="IWS_CHECK_LONGSIZETABLE" EntityType="Self.IWS_CHECK_LONGSIZETABLE" />
+    <EntitySet Name="IWS_CHECK_PELLICLETABLE" EntityType="Self.IWS_CHECK_PELLICLETABLE" />
+    <EntitySet Name="IWS_CHECK_REPAIRTABLE" EntityType="Self.IWS_CHECK_REPAIRTABLE" />
+    <EntitySet Name="IWS_CHECK_WASHTABLE" EntityType="Self.IWS_CHECK_WASHTABLE" />
+    <EntitySet Name="PRODJOURNALBOM" EntityType="Self.PRODJOURNALBOM" />
+    <EntitySet Name="PRODJOURNALROUTE" EntityType="Self.PRODJOURNALROUTE" />
+    <EntitySet Name="PRODROUTE" EntityType="Self.PRODROUTE" />
+    <EntitySet Name="PRODTABLE" EntityType="Self.PRODTABLE" />
+    <EntitySet Name="ROUTEOPRTABLE" EntityType="Self.ROUTEOPRTABLE" />
+    <EntitySet Name="WRKCTRTABLE" EntityType="Self.WRKCTRTABLE" />
+    <EntitySet Name="H_EQUIPMENTMAINTENANCE" EntityType="Self.H_EQUIPMENTMAINTENANCE" />
+    <EntitySet Name="IWS_CAMCRAFTCMDEQPCONFIGTABLE" EntityType="Self.IWS_CAMCRAFTCMDEQPCONFIGTABLE" />
+    <EntitySet Name="IWS_CAMCRAFTCMDMATERIALTABLE" EntityType="Self.IWS_CAMCRAFTCMDMATERIALTABLE" />
+    <EntitySet Name="IWS_CAMCRAFTCMDTRADETABLE" EntityType="Self.IWS_CAMCRAFTCMDTRADETABLE" />
+    <EntitySet Name="IWS_CAMDESIGNPARAMTABLE" EntityType="Self.IWS_CAMDESIGNPARAMTABLE" />
+    <EntitySet Name="IWS_CUSTPARATRADETABLE" EntityType="Self.IWS_CUSTPARATRADETABLE" />
+    <EntitySet Name="IWS_JINGDUQUEXIANPARAMETER" EntityType="Self.IWS_JINGDUQUEXIANPARAMETER" />
+    <EntitySet Name="IWS_PRODUCTPARAMETER" EntityType="Self.IWS_PRODUCTPARAMETER" />
+    <EntitySet Name="PRODBOM" EntityType="Self.PRODBOM" />
+    <EntitySet Name="QY_CHECK_CDTABLE_NEW" EntityType="Self.QY_CHECK_CDTABLE_NEW" />
+    <EntitySet Name="QY_CHECK_TPTABLE_NEW" EntityType="Self.QY_CHECK_TPTABLE_NEW" />
+  </EntityContainer>
+</Schema>
