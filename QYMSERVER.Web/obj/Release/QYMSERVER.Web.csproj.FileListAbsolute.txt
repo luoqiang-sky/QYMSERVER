@@ -1,0 +1,2 @@
+E:\Work\AAAMES\LocalServer\ABP\ABP-ASP.NET-Boilerplate-Project-CMS-master\src\QYMSERVER.Web\obj\Release\QYMSERVER.Web.csprojAssemblyReference.cache
+E:\Work\AAAMES\LocalServer\ABP\ABP-ASP.NET-Boilerplate-Project-CMS-master\src\QYMSERVER.Web\obj\Release\QYMSERVER.Web.csproj.CoreCompileInputs.cache

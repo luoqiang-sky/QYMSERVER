@@ -1,0 +1,862 @@
+INFO  2020-01-02 16:04:55,881 [13   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:04:56,063 [13   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:05:01,426 [51   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:05:01,427 [51   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:05:01,427 [51   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:05:06,753 [49   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:05:06,753 [49   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:05:06,753 [49   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:05:11,960 [60   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:05:11,960 [60   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:05:11,960 [60   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:05:17,155 [60   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:05:17,155 [60   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:05:17,155 [60   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:05:22,339 [4    ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:05:22,339 [4    ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:05:22,339 [4    ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:05:29,501 [27   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:05:29,501 [27   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:05:29,501 [27   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:05:35,087 [59   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:05:35,087 [59   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:05:35,087 [59   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:05:41,916 [49   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:05:41,916 [49   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:05:41,916 [49   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+ERROR 2020-01-02 16:05:43,247 [59   ] nHandling.AbpApiExceptionFilterAttribute - There is no such an entity. Entity type: QYMSERVER.Entities.Test.TestEntity, id: 2
+Abp.Domain.Entities.EntityNotFoundException: There is no such an entity. Entity type: QYMSERVER.Entities.Test.TestEntity, id: 2
+   at Abp.Domain.Repositories.AbpRepositoryBase`2.Get(TPrimaryKey id)
+   at Castle.Proxies.Invocations.IRepository`2_Get_18.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options)
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options)
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.IRepository`1Proxy_4.Get(Int32 id)
+   at QYMSERVER.TestApp.TestAppService.GetTaskByID(Int32 id) in E:\Work\AAAMES\LocalServer\ABP\ABP-ASP.NET-Boilerplate-Project-CMS-master\src\ABPCMS.Application\TestApp\TestAppService.cs:line 62
+   at Castle.Proxies.TestAppServiceProxy.GetTaskByID_callback(Int32 id)
+   at Castle.Proxies.Invocations.ITestAppService_GetTaskByID.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options)
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options)
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Auditing.AuditingInterceptor.PerformSyncAuditing(IInvocation invocation, AuditInfo auditInfo)
+   at Abp.Auditing.AuditingInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.TestAppServiceProxy.GetTaskByID(Int32 id)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.DynamicApiController`1Proxy.GetTaskByID(Int32 id)
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+INFO  2020-01-02 16:05:48,366 [59   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:05:48,366 [59   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:05:48,366 [59   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:05:53,652 [13   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:05:53,653 [13   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:05:53,653 [13   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:05:58,845 [18   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:05:58,845 [18   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:05:58,845 [18   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:06:04,046 [27   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:06:04,046 [27   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:06:04,046 [27   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:06:09,271 [13   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:06:09,271 [13   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:06:09,271 [13   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:06:14,512 [60   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:06:14,512 [60   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:06:14,512 [60   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:06:19,707 [46   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:06:19,707 [46   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:06:19,707 [46   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:06:24,960 [13   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:06:24,960 [13   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:06:24,960 [13   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:06:30,168 [18   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:06:30,168 [18   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:06:30,168 [18   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:06:35,367 [51   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:06:35,367 [51   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:06:35,367 [51   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:06:40,660 [49   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:06:40,660 [49   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:06:40,660 [49   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+DEBUG 2020-01-02 16:06:41,101 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2020-01-02 16:06:41,296 [gator] Hangfire.SqlServer.CountersAggregator    - Records from the 'Counter' table aggregated.
+INFO  2020-01-02 16:06:45,861 [25   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:06:45,861 [25   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:06:45,861 [25   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:06:51,025 [6    ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:06:51,025 [6    ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:06:51,025 [6    ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:06:56,330 [59   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:06:56,330 [59   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:06:56,331 [59   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:07:01,515 [13   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:07:01,515 [13   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:07:01,515 [13   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:07:06,712 [60   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:07:06,712 [60   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:07:06,712 [60   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:07:11,922 [59   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:07:11,923 [59   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:07:11,923 [59   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:07:17,208 [25   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:07:17,208 [25   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:07:17,208 [25   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:07:22,420 [46   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:07:22,420 [46   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:07:22,420 [46   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:07:27,623 [51   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:07:27,623 [51   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:07:27,623 [51   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:07:32,824 [11   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:07:32,824 [11   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:07:32,824 [11   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:07:38,002 [23   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:07:38,002 [23   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:07:38,003 [23   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:07:43,288 [36   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:07:43,288 [36   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:07:43,288 [36   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:07:48,467 [18   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:07:48,467 [18   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:07:48,467 [18   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:07:53,720 [4    ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:07:53,720 [4    ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:07:53,720 [4    ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:07:58,892 [6    ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:07:58,893 [6    ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:07:58,893 [6    ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:08:04,118 [13   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:08:04,118 [13   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:08:04,118 [13   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:08:09,275 [11   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:08:09,275 [11   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:08:09,275 [11   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:08:14,474 [42   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:08:14,474 [42   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:08:14,474 [42   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:08:19,636 [60   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:08:19,636 [60   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:08:19,636 [60   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:08:24,961 [6    ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:08:24,961 [6    ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:08:24,961 [6    ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:08:30,193 [46   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:08:30,193 [46   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:08:30,193 [46   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:08:35,371 [11   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:08:35,371 [11   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:08:35,371 [11   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:08:40,556 [59   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:08:40,556 [59   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:08:40,556 [59   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:08:45,743 [46   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:08:45,743 [46   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:08:45,743 [46   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:08:50,942 [25   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:08:50,942 [25   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:08:50,942 [25   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:08:56,143 [11   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:08:56,143 [11   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:08:56,143 [11   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:09:01,417 [36   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:09:01,417 [36   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:09:01,417 [36   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:09:06,625 [42   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:09:06,625 [42   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:09:06,625 [42   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:09:11,823 [60   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:09:11,823 [60   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:09:11,823 [60   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:09:17,042 [59   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:09:17,042 [59   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:09:17,042 [59   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:09:22,225 [60   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:09:22,225 [60   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:09:22,225 [60   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:09:27,440 [59   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:09:27,441 [59   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:09:27,442 [59   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:09:32,828 [18   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:09:32,828 [18   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:09:32,828 [18   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:09:38,003 [42   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:09:38,003 [42   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:09:38,003 [42   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:09:43,210 [13   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:09:43,210 [13   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:09:43,210 [13   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:09:48,395 [13   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:09:48,395 [13   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:09:48,395 [13   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:09:53,720 [11   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:09:53,720 [11   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:09:53,720 [11   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:09:59,012 [49   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:09:59,012 [49   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:09:59,012 [49   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:10:04,327 [5    ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:10:04,327 [5    ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:10:04,327 [5    ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:10:09,479 [11   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:10:09,479 [11   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 16:10:09,479 [11   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+DEBUG 2020-01-02 17:03:18,219 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-01-02 17:03:18,326 [1    ] Abp.Modules.AbpModuleManager             - Found 19 ABP modules in total.
+DEBUG 2020-01-02 17:03:18,335 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.Web.QYMSERVERWebModule, QYMSERVER.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:03:18,338 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.QYMSERVERDataModule, QYMSERVER.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:03:18,338 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:03:18,339 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:03:18,339 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:03:18,339 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:03:18,340 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:03:18,340 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:03:18,341 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.QYMSERVERCoreModule, QYMSERVER.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:03:18,341 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.QYMSERVERApplicationModule, QYMSERVER.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:03:18,341 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:03:18,341 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:03:18,341 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Quartz.AbpQuartzModule, Abp.Quartz, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:03:18,342 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.Api.QYMSERVERWebApiModule, QYMSERVER.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:03:18,342 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:03:18,342 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:03:18,342 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:03:18,342 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:03:18,343 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:03:18,348 [1    ] Abp.Modules.AbpModuleManager             - 19 modules loaded.
+DEBUG 2020-01-02 17:03:18,783 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-01-02 17:03:18,783 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-01-02 17:03:18,783 [1    ] o.Configuration.LanguageManagementConfig - Converted QYMSERVER (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-01-02 17:03:18,783 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+INFO  2020-01-02 17:04:13,051 [1    ] Hangfire.SqlServer.SqlServerStorage      - Start installing Hangfire SQL objects...
+INFO  2020-01-02 17:04:13,463 [1    ] Hangfire.SqlServer.SqlServerStorage      - Hangfire SQL objects installed.
+DEBUG 2020-01-02 17:04:13,635 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: QYMSERVER.EntityFramework.QYMSERVERDbContext, QYMSERVER.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:04:14,603 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-01-02 17:04:14,725 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-01-02 17:04:14,734 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-01-02 17:04:14,739 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: QYMSERVER
+DEBUG 2020-01-02 17:04:14,741 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-01-02 17:04:14,749 [1    ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2020-01-02 17:04:14,758 [1    ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2020-01-02 17:04:14,763 [1    ] Hangfire.BackgroundJobServer             - Using job storage: 'SQL Server: .@ABSCMS'
+INFO  2020-01-02 17:04:14,763 [1    ] Hangfire.BackgroundJobServer             - Using the following options for SQL Server job storage:
+INFO  2020-01-02 17:04:14,763 [1    ] Hangfire.BackgroundJobServer             -     Queue poll interval: 00:00:15.
+INFO  2020-01-02 17:04:14,763 [1    ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2020-01-02 17:04:14,763 [1    ] Hangfire.BackgroundJobServer             -     Worker count: 20
+INFO  2020-01-02 17:04:14,763 [1    ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'
+INFO  2020-01-02 17:04:14,763 [1    ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15
+INFO  2020-01-02 17:04:14,764 [1    ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15
+DEBUG 2020-01-02 17:04:14,850 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2020-01-02 17:04:14,918 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes define auto mapping attributes
+DEBUG 2020-01-02 17:04:14,918 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-01-02 17:04:14,922 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-01-02 17:04:14,922 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Users.Dto.CreateUserDto
+DEBUG 2020-01-02 17:04:14,923 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Users.Dto.UpdateUserDto
+DEBUG 2020-01-02 17:04:14,923 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Users.Dto.UserDto
+DEBUG 2020-01-02 17:04:14,923 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Roles.Dto.CreateRoleDto
+DEBUG 2020-01-02 17:04:14,923 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Roles.Dto.PermissionDto
+DEBUG 2020-01-02 17:04:14,923 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Roles.Dto.RoleDto
+DEBUG 2020-01-02 17:04:14,923 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-01-02 17:04:14,923 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.MultiTenancy.Dto.EditTenantDto
+DEBUG 2020-01-02 17:04:14,923 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.MultiTenancy.Dto.TenantDto
+DEBUG 2020-01-02 17:04:14,923 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Web.Models.Account.TenantChangeViewModel
+DEBUG 2020-01-02 17:04:14,924 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2020-01-02 17:04:15,115 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2020-01-02 17:04:15,124 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2020-01-02 17:04:15,138 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2020-01-02 17:04:15,143 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'AggregatedCounter' table...
+DEBUG 2020-01-02 17:04:15,218 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2020-01-02 17:04:15,220 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+INFO  2020-01-02 17:04:15,247 [chdog] Hangfire.Server.ServerWatchdog           - 1 servers were removed due to timeout
+DEBUG 2020-01-02 17:04:15,289 [a8ab7] Hangfire.Server.Worker                   - Background process 'Worker #8aba8ab7' started.
+DEBUG 2020-01-02 17:04:15,355 [eef50] Hangfire.Server.Worker                   - Background process 'Worker #706eef50' started.
+DEBUG 2020-01-02 17:04:15,461 [4dea9] Hangfire.Server.Worker                   - Background process 'Worker #0e14dea9' started.
+DEBUG 2020-01-02 17:04:15,466 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'AggregatedCounter' table.
+DEBUG 2020-01-02 17:04:15,466 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Job' table...
+DEBUG 2020-01-02 17:04:15,547 [8671e] Hangfire.Server.Worker                   - Background process 'Worker #88c8671e' started.
+DEBUG 2020-01-02 17:04:15,550 [gator] Hangfire.SqlServer.CountersAggregator    - Records from the 'Counter' table aggregated.
+DEBUG 2020-01-02 17:04:15,627 [c8838] Hangfire.Server.Worker                   - Background process 'Worker #153c8838' started.
+DEBUG 2020-01-02 17:04:15,698 [26428] Hangfire.Server.Worker                   - Background process 'Worker #62926428' started.
+DEBUG 2020-01-02 17:04:15,735 [1f6f8] Hangfire.Server.Worker                   - Background process 'Worker #eb21f6f8' started.
+DEBUG 2020-01-02 17:04:15,741 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Job' table.
+DEBUG 2020-01-02 17:04:15,742 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'List' table...
+DEBUG 2020-01-02 17:04:15,789 [1e504] Hangfire.Server.Worker                   - Background process 'Worker #0621e504' started.
+DEBUG 2020-01-02 17:04:15,792 [ce547] Hangfire.Server.Worker                   - Background process 'Worker #8b9ce547' started.
+DEBUG 2020-01-02 17:04:15,898 [41cf8] Hangfire.Server.Worker                   - Background process 'Worker #b5c41cf8' started.
+DEBUG 2020-01-02 17:04:15,910 [371d8] Hangfire.Server.Worker                   - Background process 'Worker #454371d8' started.
+DEBUG 2020-01-02 17:04:15,925 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'List' table.
+DEBUG 2020-01-02 17:04:15,925 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Set' table...
+DEBUG 2020-01-02 17:04:15,944 [6008d] Hangfire.Server.Worker                   - Background process 'Worker #37d6008d' started.
+DEBUG 2020-01-02 17:04:15,972 [d77f7] Hangfire.Server.Worker                   - Background process 'Worker #e86d77f7' started.
+DEBUG 2020-01-02 17:04:15,988 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Set' table.
+DEBUG 2020-01-02 17:04:15,989 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Hash' table...
+DEBUG 2020-01-02 17:04:16,054 [c8253] Hangfire.Server.Worker                   - Background process 'Worker #baac8253' started.
+DEBUG 2020-01-02 17:04:16,064 [b36d4] Hangfire.Server.Worker                   - Background process 'Worker #035b36d4' started.
+DEBUG 2020-01-02 17:04:16,094 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Hash' table.
+DEBUG 2020-01-02 17:04:16,119 [27106] Hangfire.Server.Worker                   - Background process 'Worker #95927106' started.
+DEBUG 2020-01-02 17:04:16,130 [dd1b5] Hangfire.Server.Worker                   - Background process 'Worker #ea4dd1b5' started.
+DEBUG 2020-01-02 17:04:16,145 [849f9] Hangfire.Server.Worker                   - Background process 'Worker #07e849f9' started.
+DEBUG 2020-01-02 17:04:16,169 [696b1] Hangfire.Server.Worker                   - Background process 'Worker #35c696b1' started.
+DEBUG 2020-01-02 17:04:16,214 [8aba6] Hangfire.Server.Worker                   - Background process 'Worker #c2d8aba6' started.
+DEBUG 2020-01-02 17:04:16,262 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2020-01-02 17:04:16,288 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2020-01-02 17:04:16,520 [1    ] Abp.Quartz.QuartzScheduleJobManager      - Start background worker: Abp.Quartz.QuartzScheduleJobManager
+INFO  2020-01-02 17:04:16,524 [1    ] Abp.Quartz.QuartzScheduleJobManager      - Started QuartzScheduleJobManager
+DEBUG 2020-01-02 17:04:19,276 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2020-01-02 17:04:19,277 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2020-01-02 17:04:19,278 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.TestApp.ITestAppService' with service name 'app/test'.
+DEBUG 2020-01-02 17:04:19,279 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2020-01-02 17:04:19,280 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.Quartz.ISystemSchedulerService' with service name 'app/systemSchedulerService'.
+DEBUG 2020-01-02 17:04:19,281 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2020-01-02 17:04:19,282 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2020-01-02 17:04:19,283 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2020-01-02 17:04:19,342 [1    ] rviceBase.MakeInactiveUsersPassiveWorker - Start background worker: Castle.Proxies.MakeInactiveUsersPassiveWorkerProxy
+INFO  2020-01-02 17:04:26,849 [22   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:04:26,849 [22   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:04:26,849 [22   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+WARN  2020-01-02 17:04:28,478 [8    ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+DEBUG 2020-01-02 17:09:36,263 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+INFO  2020-01-02 17:09:37,096 [21   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:09:37,096 [21   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:09:37,096 [21   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+DEBUG 2020-01-02 17:09:37,556 [gator] Hangfire.SqlServer.CountersAggregator    - Records from the 'Counter' table aggregated.
+INFO  2020-01-02 17:09:42,782 [55   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:09:42,782 [55   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:09:42,782 [55   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:09:47,958 [50   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:09:47,958 [50   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:09:47,958 [50   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:09:53,274 [55   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:09:53,274 [55   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:09:53,274 [55   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:09:58,567 [50   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:09:58,567 [50   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:09:58,567 [50   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:10:03,850 [53   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:10:03,850 [53   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:10:03,850 [53   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:10:09,026 [57   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:10:09,026 [57   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:10:09,026 [57   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+WARN  2020-01-02 17:10:09,396 [56   ] naries.DictionaryBasedLocalizationSource - Can not find '用户详情' in localization source 'QYMSERVER'!
+WARN  2020-01-02 17:10:09,398 [56   ] naries.DictionaryBasedLocalizationSource - Can not find '后台工作者' in localization source 'QYMSERVER'!
+WARN  2020-01-02 17:10:09,399 [56   ] naries.DictionaryBasedLocalizationSource - Can not find 'swaggerAPI文档' in localization source 'QYMSERVER'!
+WARN  2020-01-02 17:10:11,690 [52   ] naries.DictionaryBasedLocalizationSource - Can not find '用户详情' in localization source 'QYMSERVER'!
+WARN  2020-01-02 17:10:11,691 [52   ] naries.DictionaryBasedLocalizationSource - Can not find '后台工作者' in localization source 'QYMSERVER'!
+WARN  2020-01-02 17:10:11,693 [52   ] naries.DictionaryBasedLocalizationSource - Can not find 'swaggerAPI文档' in localization source 'QYMSERVER'!
+DEBUG 2020-01-02 17:10:13,396 [57   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"007f4227-1b3a-4c8a-b476-fc58f880f0ec","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2020-01-02T17:10:13.3830001+08:00","Properties":{}}
+DEBUG 2020-01-02 17:10:13,728 [50   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 007f4227-1b3a-4c8a-b476-fc58f880f0ec
+INFO  2020-01-02 17:10:14,227 [52   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:10:14,227 [52   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:10:14,227 [52   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:10:19,494 [58   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:10:19,494 [58   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:10:19,494 [58   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:10:24,704 [52   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:10:24,704 [52   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:10:24,704 [52   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:10:29,921 [54   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:10:29,921 [54   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:10:29,921 [54   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:10:35,180 [57   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:10:35,180 [57   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:10:35,181 [57   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:10:40,576 [50   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:10:40,576 [50   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:10:40,576 [50   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:10:45,972 [56   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:10:45,972 [56   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:10:45,972 [56   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:10:51,259 [55   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:10:51,259 [55   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:10:51,259 [55   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:10:56,457 [50   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:10:56,457 [50   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:10:56,457 [50   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:11:01,702 [50   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:11:01,702 [50   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:11:01,702 [50   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:11:06,907 [55   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:11:06,907 [55   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:11:06,907 [55   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:11:12,134 [55   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:11:12,134 [55   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:11:12,134 [55   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:11:17,456 [50   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:11:17,456 [50   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:11:17,456 [50   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:11:22,685 [13   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:11:22,685 [13   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:11:22,685 [13   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:11:28,027 [50   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:11:28,027 [50   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:11:28,027 [50   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:11:33,319 [59   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:11:33,319 [59   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:11:33,319 [59   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:11:38,888 [55   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:11:38,888 [55   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:11:38,888 [55   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+ERROR 2020-01-02 17:11:39,043 [50   ] nHandling.AbpApiExceptionFilterAttribute - There is no such an entity. Entity type: QYMSERVER.Entities.Test.TestEntity, id: 2
+Abp.Domain.Entities.EntityNotFoundException: There is no such an entity. Entity type: QYMSERVER.Entities.Test.TestEntity, id: 2
+   at Abp.Domain.Repositories.AbpRepositoryBase`2.Get(TPrimaryKey id)
+   at Castle.Proxies.Invocations.IRepository`2_Get_19.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options)
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options)
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.IRepository`1Proxy_4.Get(Int32 id)
+   at QYMSERVER.TestApp.TestAppService.GetTaskByID(Int32 id) in E:\Work\AAAMES\LocalServer\ABP\ABP-ASP.NET-Boilerplate-Project-CMS-master\src\QYMSERVER.Application\TestApp\TestAppService.cs:line 62
+   at Castle.Proxies.TestAppServiceProxy.GetTaskByID_callback(Int32 id)
+   at Castle.Proxies.Invocations.ITestAppService_GetTaskByID.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options)
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options)
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Auditing.AuditingInterceptor.PerformSyncAuditing(IInvocation invocation, AuditInfo auditInfo)
+   at Abp.Auditing.AuditingInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.TestAppServiceProxy.GetTaskByID(Int32 id)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.DynamicApiController`1Proxy.GetTaskByID(Int32 id)
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+INFO  2020-01-02 17:11:45,004 [60   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:11:45,004 [60   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:11:45,004 [60   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:11:51,076 [60   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:11:51,076 [60   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:11:51,076 [60   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:11:56,563 [13   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:11:56,563 [13   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:11:56,563 [13   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:12:01,723 [61   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:12:01,723 [61   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:12:01,723 [61   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:12:06,903 [55   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:12:06,903 [55   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:12:06,903 [55   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:12:12,068 [59   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:12:12,068 [59   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:12:12,068 [59   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+DEBUG 2020-01-02 17:12:16,570 [50   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 007f4227-1b3a-4c8a-b476-fc58f880f0ec
+INFO  2020-01-02 17:12:17,281 [60   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:12:17,281 [60   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:12:17,281 [60   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+DEBUG 2020-01-02 17:40:13,978 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-01-02 17:40:14,005 [1    ] Abp.Modules.AbpModuleManager             - Found 19 ABP modules in total.
+DEBUG 2020-01-02 17:40:14,014 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.Web.QYMSERVERWebModule, QYMSERVER.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:40:14,018 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.QYMSERVERDataModule, QYMSERVER.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:40:14,018 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:40:14,019 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:40:14,034 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:40:14,034 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:40:14,035 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:40:14,035 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:40:14,035 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.QYMSERVERCoreModule, QYMSERVER.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:40:14,035 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.QYMSERVERApplicationModule, QYMSERVER.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:40:14,035 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:40:14,036 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:40:14,036 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Quartz.AbpQuartzModule, Abp.Quartz, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:40:14,036 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.Api.QYMSERVERWebApiModule, QYMSERVER.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:40:14,036 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:40:14,036 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:40:14,036 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:40:14,036 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:40:14,036 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:40:14,040 [1    ] Abp.Modules.AbpModuleManager             - 19 modules loaded.
+DEBUG 2020-01-02 17:40:14,503 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-01-02 17:40:14,503 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-01-02 17:40:14,503 [1    ] o.Configuration.LanguageManagementConfig - Converted QYMSERVER (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-01-02 17:40:14,503 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+INFO  2020-01-02 17:40:30,240 [1    ] Hangfire.SqlServer.SqlServerStorage      - Start installing Hangfire SQL objects...
+INFO  2020-01-02 17:40:30,698 [1    ] Hangfire.SqlServer.SqlServerStorage      - Hangfire SQL objects installed.
+DEBUG 2020-01-02 17:40:30,869 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: QYMSERVER.EntityFramework.QYMSERVERDbContext, QYMSERVER.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-02 17:40:32,018 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-01-02 17:40:32,044 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-01-02 17:40:32,055 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-01-02 17:40:32,058 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: QYMSERVER
+DEBUG 2020-01-02 17:40:32,060 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-01-02 17:40:32,068 [1    ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2020-01-02 17:40:32,075 [1    ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2020-01-02 17:40:32,081 [1    ] Hangfire.BackgroundJobServer             - Using job storage: 'SQL Server: .@ABSCMS'
+INFO  2020-01-02 17:40:32,082 [1    ] Hangfire.BackgroundJobServer             - Using the following options for SQL Server job storage:
+INFO  2020-01-02 17:40:32,082 [1    ] Hangfire.BackgroundJobServer             -     Queue poll interval: 00:00:15.
+INFO  2020-01-02 17:40:32,082 [1    ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2020-01-02 17:40:32,082 [1    ] Hangfire.BackgroundJobServer             -     Worker count: 20
+INFO  2020-01-02 17:40:32,083 [1    ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'
+INFO  2020-01-02 17:40:32,083 [1    ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15
+INFO  2020-01-02 17:40:32,083 [1    ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15
+DEBUG 2020-01-02 17:40:32,140 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2020-01-02 17:40:32,215 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes define auto mapping attributes
+DEBUG 2020-01-02 17:40:32,215 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-01-02 17:40:32,220 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-01-02 17:40:32,220 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Users.Dto.CreateUserDto
+DEBUG 2020-01-02 17:40:32,221 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Users.Dto.UpdateUserDto
+DEBUG 2020-01-02 17:40:32,221 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Users.Dto.UserDto
+DEBUG 2020-01-02 17:40:32,221 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Roles.Dto.CreateRoleDto
+DEBUG 2020-01-02 17:40:32,221 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Roles.Dto.PermissionDto
+DEBUG 2020-01-02 17:40:32,221 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Roles.Dto.RoleDto
+DEBUG 2020-01-02 17:40:32,221 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-01-02 17:40:32,221 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.MultiTenancy.Dto.EditTenantDto
+DEBUG 2020-01-02 17:40:32,221 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.MultiTenancy.Dto.TenantDto
+DEBUG 2020-01-02 17:40:32,221 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Web.Models.Account.TenantChangeViewModel
+DEBUG 2020-01-02 17:40:32,221 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2020-01-02 17:40:32,509 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2020-01-02 17:40:32,618 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2020-01-02 17:40:32,636 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2020-01-02 17:40:32,641 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'AggregatedCounter' table...
+INFO  2020-01-02 17:40:32,735 [chdog] Hangfire.Server.ServerWatchdog           - 1 servers were removed due to timeout
+DEBUG 2020-01-02 17:40:32,749 [727f1] Hangfire.Server.Worker                   - Background process 'Worker #6be727f1' started.
+DEBUG 2020-01-02 17:40:32,750 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2020-01-02 17:40:32,752 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2020-01-02 17:40:32,966 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'AggregatedCounter' table.
+DEBUG 2020-01-02 17:40:32,966 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Job' table...
+DEBUG 2020-01-02 17:40:33,023 [05fc3] Hangfire.Server.Worker                   - Background process 'Worker #fdc05fc3' started.
+DEBUG 2020-01-02 17:40:33,140 [gator] Hangfire.SqlServer.CountersAggregator    - Records from the 'Counter' table aggregated.
+DEBUG 2020-01-02 17:40:33,147 [2048e] Hangfire.Server.Worker                   - Background process 'Worker #c8f2048e' started.
+DEBUG 2020-01-02 17:40:33,246 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Job' table.
+DEBUG 2020-01-02 17:40:33,246 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'List' table...
+DEBUG 2020-01-02 17:40:33,287 [f5939] Hangfire.Server.Worker                   - Background process 'Worker #91cf5939' started.
+DEBUG 2020-01-02 17:40:33,380 [7c52f] Hangfire.Server.Worker                   - Background process 'Worker #06f7c52f' started.
+DEBUG 2020-01-02 17:40:33,382 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'List' table.
+DEBUG 2020-01-02 17:40:33,382 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Set' table...
+DEBUG 2020-01-02 17:40:33,464 [db224] Hangfire.Server.Worker                   - Background process 'Worker #cb0db224' started.
+DEBUG 2020-01-02 17:40:33,486 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Set' table.
+DEBUG 2020-01-02 17:40:33,486 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Hash' table...
+DEBUG 2020-01-02 17:40:33,579 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Hash' table.
+DEBUG 2020-01-02 17:40:33,580 [6e174] Hangfire.Server.Worker                   - Background process 'Worker #5f36e174' started.
+DEBUG 2020-01-02 17:40:33,580 [44d83] Hangfire.Server.Worker                   - Background process 'Worker #b3144d83' started.
+DEBUG 2020-01-02 17:40:33,586 [5ce66] Hangfire.Server.Worker                   - Background process 'Worker #1895ce66' started.
+DEBUG 2020-01-02 17:40:33,726 [a92a1] Hangfire.Server.Worker                   - Background process 'Worker #e41a92a1' started.
+DEBUG 2020-01-02 17:40:33,732 [012d2] Hangfire.Server.Worker                   - Background process 'Worker #3c2012d2' started.
+DEBUG 2020-01-02 17:40:33,758 [90aff] Hangfire.Server.Worker                   - Background process 'Worker #81890aff' started.
+DEBUG 2020-01-02 17:40:33,780 [d4bc3] Hangfire.Server.Worker                   - Background process 'Worker #d3cd4bc3' started.
+DEBUG 2020-01-02 17:40:33,794 [92c6c] Hangfire.Server.Worker                   - Background process 'Worker #3ae92c6c' started.
+DEBUG 2020-01-02 17:40:33,803 [9dd58] Hangfire.Server.Worker                   - Background process 'Worker #bb99dd58' started.
+DEBUG 2020-01-02 17:40:33,890 [8510d] Hangfire.Server.Worker                   - Background process 'Worker #8ee8510d' started.
+DEBUG 2020-01-02 17:40:33,922 [06746] Hangfire.Server.Worker                   - Background process 'Worker #70d06746' started.
+DEBUG 2020-01-02 17:40:33,968 [55b87] Hangfire.Server.Worker                   - Background process 'Worker #14e55b87' started.
+DEBUG 2020-01-02 17:40:34,065 [1ca18] Hangfire.Server.Worker                   - Background process 'Worker #e111ca18' started.
+DEBUG 2020-01-02 17:40:34,083 [9f650] Hangfire.Server.Worker                   - Background process 'Worker #e519f650' started.
+DEBUG 2020-01-02 17:40:34,133 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2020-01-02 17:40:34,141 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2020-01-02 17:40:34,294 [1    ] Abp.Quartz.QuartzScheduleJobManager      - Start background worker: Abp.Quartz.QuartzScheduleJobManager
+INFO  2020-01-02 17:40:34,297 [1    ] Abp.Quartz.QuartzScheduleJobManager      - Started QuartzScheduleJobManager
+DEBUG 2020-01-02 17:40:37,046 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2020-01-02 17:40:37,048 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2020-01-02 17:40:37,049 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.TestApp.ITestAppService' with service name 'app/test'.
+DEBUG 2020-01-02 17:40:37,050 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2020-01-02 17:40:37,051 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.Quartz.ISystemSchedulerService' with service name 'app/systemSchedulerService'.
+DEBUG 2020-01-02 17:40:37,052 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2020-01-02 17:40:37,053 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2020-01-02 17:40:37,054 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2020-01-02 17:40:37,126 [1    ] rviceBase.MakeInactiveUsersPassiveWorker - Start background worker: Castle.Proxies.MakeInactiveUsersPassiveWorkerProxy
+INFO  2020-01-02 17:40:44,383 [20   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:40:44,383 [20   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:40:44,383 [20   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+WARN  2020-01-02 17:40:45,221 [23   ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+INFO  2020-01-02 17:42:09,846 [23   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:42:09,847 [23   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:42:09,847 [23   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:42:15,328 [23   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:42:15,328 [23   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:42:15,328 [23   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:42:20,479 [52   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:42:20,479 [52   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:42:20,479 [52   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:42:25,625 [52   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:42:25,625 [52   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:42:25,625 [52   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:42:30,834 [53   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:42:30,834 [53   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:42:30,834 [53   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:42:36,061 [53   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:42:36,061 [53   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:42:36,061 [53   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:42:41,235 [53   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:42:41,235 [53   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:42:41,235 [53   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:42:46,417 [52   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:42:46,417 [52   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:42:46,417 [52   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:42:51,982 [53   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:42:51,982 [53   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:42:51,983 [53   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+WARN  2020-01-02 17:42:56,066 [58   ] naries.DictionaryBasedLocalizationSource - Can not find '用户详情' in localization source 'QYMSERVER'!
+WARN  2020-01-02 17:42:56,068 [58   ] naries.DictionaryBasedLocalizationSource - Can not find '后台工作者' in localization source 'QYMSERVER'!
+WARN  2020-01-02 17:42:56,069 [58   ] naries.DictionaryBasedLocalizationSource - Can not find 'swaggerAPI文档' in localization source 'QYMSERVER'!
+INFO  2020-01-02 17:42:57,237 [56   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:42:57,237 [56   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:42:57,237 [56   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+WARN  2020-01-02 17:42:58,822 [55   ] naries.DictionaryBasedLocalizationSource - Can not find '用户详情' in localization source 'QYMSERVER'!
+WARN  2020-01-02 17:42:58,824 [55   ] naries.DictionaryBasedLocalizationSource - Can not find '后台工作者' in localization source 'QYMSERVER'!
+WARN  2020-01-02 17:42:58,825 [55   ] naries.DictionaryBasedLocalizationSource - Can not find 'swaggerAPI文档' in localization source 'QYMSERVER'!
+INFO  2020-01-02 17:43:02,395 [20   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:43:02,395 [20   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:43:02,395 [20   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+DEBUG 2020-01-02 17:43:02,750 [53   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"9cd133f6-45aa-4156-a7b7-1385cc371a31","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2020-01-02T17:43:02.7430001+08:00","Properties":{}}
+DEBUG 2020-01-02 17:43:02,832 [52   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 9cd133f6-45aa-4156-a7b7-1385cc371a31
+INFO  2020-01-02 17:43:07,623 [58   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:43:07,623 [58   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:43:07,623 [58   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:43:13,014 [20   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:43:13,014 [20   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:43:13,014 [20   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:43:18,291 [58   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:43:18,291 [58   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:43:18,291 [58   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:43:23,499 [58   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:43:23,499 [58   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:43:23,499 [58   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:43:28,740 [57   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:43:28,740 [57   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:43:28,740 [57   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:43:33,909 [5    ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:43:33,909 [5    ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:43:33,909 [5    ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:43:39,139 [19   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:43:39,139 [19   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:43:39,139 [19   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:43:44,345 [23   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:43:44,345 [23   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:43:44,345 [23   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:43:49,899 [18   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:43:49,899 [18   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:43:49,899 [18   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:43:55,251 [19   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:43:55,251 [19   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:43:55,251 [19   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:44:00,500 [20   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:44:00,500 [20   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:44:00,500 [20   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:44:05,815 [55   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:44:05,815 [55   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:44:05,815 [55   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:44:10,976 [20   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:44:10,976 [20   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:44:10,977 [20   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:44:16,332 [57   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:44:16,332 [57   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:44:16,332 [57   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:44:21,490 [55   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:44:21,491 [55   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:44:21,491 [55   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:44:26,893 [5    ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:44:26,893 [5    ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:44:26,893 [5    ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:44:32,844 [57   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:44:32,844 [57   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:44:32,844 [57   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:44:38,241 [57   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:44:38,241 [57   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:44:38,241 [57   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:44:43,397 [18   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:44:43,397 [18   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:44:43,397 [18   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:44:48,711 [19   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:44:48,711 [19   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:44:48,711 [19   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:44:53,892 [18   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:44:53,892 [18   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:44:53,892 [18   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:44:59,200 [55   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:44:59,200 [55   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:44:59,200 [55   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:45:04,472 [59   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:45:04,473 [59   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:45:04,473 [59   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:45:09,826 [65   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:45:09,826 [65   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:45:09,826 [65   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:45:15,040 [5    ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:45:15,040 [5    ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:45:15,040 [5    ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:45:20,274 [61   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 1] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:45:20,274 [61   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-02 17:45:20,275 [61   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] QQQ made passive since he/she did not login in last 30 days.

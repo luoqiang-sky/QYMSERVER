@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>QYMSERVER.Application</name>
+    </assembly>
+    <members>
+        <member name="T:QYMSERVER.QYMSERVERAppServiceBase">
+            <summary>
+            Derive your application services from this class.
+            </summary>
+        </member>
+        <member name="M:QYMSERVER.TestApp.TestAppService.#ctor(Abp.Domain.Repositories.IRepository{QYMSERVER.Entities.Test.TestEntity})">
+             <summary>
+            In constructor, we can get needed classes/interfaces.
+            They are sent here by dependency injection system automatically.
+             </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,177 @@
+﻿@using System.Threading
+@using System.Web.Optimization
+@using Abp.Configuration
+@using Abp.Timing
+@using Abp.Web.Mvc.Extensions
+@using QYMSERVER
+@using QYMSERVER.Configuration
+@{
+    Layout = null;
+    SetAntiForgeryCookie();
+    var uiTheme = SettingManager.GetSettingValue(AppSettingNames.UiTheme);
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>AdminLTE 2 | Dashboard</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    @Styles.Render("~/Bundles/vendor/css")
+
+    @RenderSection("styles", required: false)
+
+    <script src="~/Scripts/jquery-3.2.1.js"></script>
+
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport' />
+    <!-- Bootstrap 3.3.4 -->
+    @*<script src="~/Scripts/AdminLTE-2.1.1/AdminLTE-2.1.1/bootstrap/js/bootstrap.js"></script>*@
+    <link href="~/Scripts/AdminLTE-2.1.1/AdminLTE-2.1.1/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <!-- FontAwesome 4.3.0 -->
+    <!-- Ionicons 2.0.0 -->
+    <link href="~/Scripts/AdminLTE-2.1.1/AdminLTE-2.1.1/dist/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+    <!-- Theme style -->
+    <link href="~/Scripts/AdminLTE-2.1.1/AdminLTE-2.1.1/dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Scripts/AdminLTE-2.1.1/AdminLTE-2.1.1/dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
+    <!-- iCheck -->
+    <link href="~/Scripts/AdminLTE-2.1.1/AdminLTE-2.1.1/plugins/iCheck/flat/blue.css" rel="stylesheet" type="text/css" />
+    <!-- Morris chart -->
+    <link href="~/Scripts/AdminLTE-2.1.1/AdminLTE-2.1.1/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
+    <!-- jvectormap -->
+    <link href="~/Scripts/AdminLTE-2.1.1/AdminLTE-2.1.1/plugins/jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+    <!-- Date Picker -->
+    <link href="~/Scripts/AdminLTE-2.1.1/AdminLTE-2.1.1/plugins/datepicker/datepicker3.css" rel="stylesheet" type="text/css" />
+    <!-- Daterange picker -->
+    <link href="~/Scripts/AdminLTE-2.1.1/AdminLTE-2.1.1/plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
+    <!-- bootstrap wysihtml5 - text editor -->
+    <link href="~/Scripts/AdminLTE-2.1.1/AdminLTE-2.1.1/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- ./wrapper -->
+    <!-- REQUIRED JS SCRIPTS -->
+    <!-- jQuery 2.2.3 -->
+    <link href="~/Scripts/Content/bootstrap-table/bootstrap-table.css" rel="stylesheet" />
+   @* <script src="~/Scripts/Content/bootstrap-table/bootstrap-table.js"></script>
+    <script src="~/Scripts/Content/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+    <link href="~/Scripts/Toastr/toastr.css" rel="stylesheet" />
+    <script src="~/Scripts/Toastr/toastr.min.js"></script>
+    <link href="~/Abp/Framework/styles/abp.css" rel="stylesheet" />
+    <script src="~/Abp/Framework/scripts/abp.js"></script>
+    <script src="~/Abp/Framework/scripts/libs/abp.jquery.js"></script>*@
+
+    <style type="text/css">
+        body {
+            font-family: verdana,helvetica,arial,sans-serif;
+            padding: 0 !important;
+            margin: 0;
+        }
+
+        .content {
+            min-height: 700px;
+            height: auto !important;
+        }
+        .wrapper {
+            min-height: 100%;
+            height: 1100px !important;
+        }
+
+        .main-header .navbar-custom-menu, .main-header .navbar-right {
+            float: right !important;
+        }
+
+        vendor-prefixes.less:76 * {
+            box-sizing: border-box !important;
+        }
+
+        .open:not(.dropup) > .animated-dropdown-menu {
+            backface-visibility: visible !important;
+            .animation(flipInX .7s both) !important;
+        }
+        .main-header .navbar-custom-menu, .main-header .navbar-right {
+            float: right !important;
+            margin-right: 300px !important;
+        }
+
+        .navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+            padding-right: 0;
+            padding-left: 0;
+            margin-top: -45px;
+            margin-left: 25px;
+        }
+
+        /*.sidebar {
+            display: none !important;
+
+        }*/
+
+        .content {
+            min-height: 700px ;
+            height: auto !important;
+        }
+
+        /*.content {
+            min-height: 250px !important;
+            padding: 15px !important;
+            margin-right: auto !important;
+            margin-left: auto !important;
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+        }
+        .panel-body {
+            padding: 15px;
+            margin-top: -60px !important;
+        }*/
+        /*section.content {
+            margin: 100px 15px 0 315px;
+            -moz-transition: 0.5s;
+            -o-transition: 0.5s;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            margin-left: -5px;
+        }*/
+
+
+    </style>
+
+
+    <script type="text/javascript">
+        //This is used to get the application's root path from javascript. It's useful if you're running application in a virtual directory under IIS.
+        var abp = abp || {}; abp.appPath = '@ApplicationPath';
+
+    </script>
+
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini"  >
+
+    <div class="wrapper">
+        @Html.Action("_MainHeader", "Layout")
+        @Html.Action("SideBarNav", "Layout", new { activeMenu = ViewBag.ActiveMenu })
+
+        <div class="content-wrapper">
+            @RenderBody()
+        </div>
+        @Html.Action("_MainFooter", "Layout")
+        <div class="control-sidebar-bg"></div>
+    </div>
+    @*<script src="~/Scripts/AdminLTE-2.1.1/AdminLTE-2.1.1/dist/js/app.min.js"></script>*@
+
+
+    @Scripts.Render("~/Bundles/vendor/js/bottom")
+
+    <script>
+        //Localizing momentjs
+        moment.locale('@Thread.CurrentThread.CurrentUICulture.Name');
+    </script>
+
+    <!-- Dynamic scripts of ABP system (They are created on runtime and can not be bundled) -->
+    <script src="~/api/AbpServiceProxies/GetAll?v=@(Clock.Now.Ticks)"></script>
+    <script src="~/AbpScripts/GetScripts?v=@(Clock.Now.Ticks)" type="text/javascript"></script>
+
+    <!-- SignalR scripts -->
+    <script src="~/signalr/hubs"></script>
+    @Html.IncludeScript("~/Abp/Framework/scripts/libs/abp.signalr.js")
+
+    <!-- View specific scripts -->
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>
