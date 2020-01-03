@@ -54,7 +54,10 @@ namespace QYMSERVER.TestApp
 
         public IList<TestDto> GetAllTask()
         {
-            throw new NotImplementedException();
+            var task = _taskRepository.GetAll();
+            List<TestDto> temp = task.MapTo<List<TestDto>>();
+            return temp;
+
         }
 
         public TestDto GetTaskByID(int id)

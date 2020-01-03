@@ -493,7 +493,6 @@ E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Core\bin\Debug\S
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Core\bin\Debug\System.Linq.Dynamic.Core.pdb
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Core\bin\Debug\System.Linq.Dynamic.Core.xml
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Core\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Core\obj\Debug\QYMSERVER.Core.csprojAssemblyReference.cache
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Core\obj\Debug\QYMSERVER.Core.csproj.CoreCompileInputs.cache
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Core\obj\Debug\QYMSERVER.Core.csproj.CopyComplete
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Core\obj\Debug\QYMSERVER.Core.dll

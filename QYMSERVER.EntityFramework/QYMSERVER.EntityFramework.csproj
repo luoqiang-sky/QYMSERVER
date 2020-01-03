@@ -208,9 +208,9 @@
     <Compile Include="Migrations\201710131316266_UpgradedTo_ABP_3.1.Designer.cs">
       <DependentUpon>201710131316266_UpgradedTo_ABP_3.1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202001020340184_Add_Test_Entity.cs" />
-    <Compile Include="Migrations\202001020340184_Add_Test_Entity.Designer.cs">
-      <DependentUpon>202001020340184_Add_Test_Entity.cs</DependentUpon>
+    <Compile Include="Migrations\202001030646494_NewTsetEntity.cs" />
+    <Compile Include="Migrations\202001030646494_NewTsetEntity.Designer.cs">
+      <DependentUpon>202001030646494_NewTsetEntity.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\AbpZeroDbMigrator.cs" />
     <Compile Include="Migrations\Configuration.cs" />
@@ -235,8 +235,8 @@
     <EmbeddedResource Include="Migrations\201710131316266_UpgradedTo_ABP_3.1.resx">
       <DependentUpon>201710131316266_UpgradedTo_ABP_3.1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202001020340184_Add_Test_Entity.resx">
-      <DependentUpon>202001020340184_Add_Test_Entity.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202001030646494_NewTsetEntity.resx">
+      <DependentUpon>202001030646494_NewTsetEntity.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

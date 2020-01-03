@@ -559,9 +559,9 @@ E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.EntityFramework\
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.EntityFramework\obj\Debug\QYMSERVER.EntityFramework.csprojAssemblyReference.cache
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.EntityFramework\obj\Debug\QYMSERVER.Migrations.Initial_Migration.resources
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.EntityFramework\obj\Debug\QYMSERVER.Migrations.UpgradedTo_ABP_31.resources
-E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.EntityFramework\obj\Debug\QYMSERVER.Migrations.Add_Test_Entity.resources
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.EntityFramework\obj\Debug\QYMSERVER.EntityFramework.csproj.GenerateResource.cache
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.EntityFramework\obj\Debug\QYMSERVER.EntityFramework.csproj.CoreCompileInputs.cache
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.EntityFramework\obj\Debug\QYMSERVER.EntityFramework.csproj.CopyComplete
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.EntityFramework\obj\Debug\QYMSERVER.EntityFramework.dll
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.EntityFramework\obj\Debug\QYMSERVER.EntityFramework.pdb
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.EntityFramework\obj\Debug\QYMSERVER.Migrations.NewTsetEntity.resources

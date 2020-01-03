@@ -1,5 +1,5 @@
 using System.Web.Http;
-using Jimmey.CMSProject;
+using QYMSERVER.Api;
 using System;
 using System.IO;
 using System.Linq;
@@ -9,7 +9,7 @@ using Swashbuckle.Application;
 
 [assembly: PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]
 
-namespace Jimmey.CMSProject
+namespace QYMSERVER.Api
 {
     public class SwaggerConfig
     {

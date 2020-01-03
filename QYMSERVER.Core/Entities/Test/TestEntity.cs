@@ -19,5 +19,17 @@ namespace QYMSERVER.Entities.Test
         {
             get;set;
         }
+        public virtual string CCC
+        {
+            get; set;
+        }
+        public virtual string DDD
+        {
+            get; set;
+        }
+        public virtual string EEE
+        {
+            get; set;
+        }
     }
 }

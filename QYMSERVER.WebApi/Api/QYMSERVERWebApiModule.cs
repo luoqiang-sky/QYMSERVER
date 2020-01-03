@@ -24,7 +24,7 @@ namespace QYMSERVER.Api
 
             Configuration.Modules.AbpWebApi().HttpConfiguration.Filters.Add(new HostAuthenticationFilter("Bearer"));
 
-            //ConfigureSwaggerUi();
+            //SwaggerConfig.Register();
         }
 
         //private void ConfigureSwaggerUi()

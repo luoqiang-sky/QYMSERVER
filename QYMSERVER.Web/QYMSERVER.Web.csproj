@@ -4090,8 +4090,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="App_Start\ABPCMSNavigationProvider.cs" />
-    <Compile Include="App_Start\ABPCMSWebModule.cs" />
+    <Compile Include="App_Start\QYMSERVERNavigationProvider.cs" />
+    <Compile Include="App_Start\QYMSERVERWebModule.cs" />
     <Compile Include="App_Start\PageNames.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.cs" />
@@ -4128,7 +4128,7 @@
     <Compile Include="Models\Users\EditUserModalViewModel.cs" />
     <Compile Include="Models\Users\UserListViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\ABPCMSWebViewPageBase.cs" />
+    <Compile Include="Views\QYMSERVERWebViewPageBase.cs" />
     <Compile Include="Views\UrlChecker.cs" />
   </ItemGroup>
   <ItemGroup>
