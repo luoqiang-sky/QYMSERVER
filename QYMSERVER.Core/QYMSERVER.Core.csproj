@@ -38,11 +38,17 @@
     <Reference Include="Abp, Version=3.2.5.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Abp.3.2.5\lib\netstandard2.0\Abp.dll</HintPath>
     </Reference>
+    <Reference Include="Abp.HangFire, Version=3.2.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Abp.HangFire.3.2.5\lib\netstandard2.0\Abp.HangFire.dll</HintPath>
+    </Reference>
     <Reference Include="Abp.Zero, Version=3.2.5.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Abp.Zero.3.2.5\lib\net461\Abp.Zero.dll</HintPath>
     </Reference>
     <Reference Include="Abp.Zero.Common, Version=3.2.5.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Abp.Zero.Common.3.2.5\lib\netstandard2.0\Abp.Zero.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>bin\Release\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
     <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
       <HintPath>..\packages\Castle.Core.4.2.1\lib\net45\Castle.Core.dll</HintPath>
@@ -52,6 +58,9 @@
     </Reference>
     <Reference Include="Castle.Windsor, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
       <HintPath>..\packages\Castle.Windsor.4.1.0\lib\net45\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="Hangfire.Core, Version=1.6.17.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Hangfire.Core.1.6.17\lib\net45\Hangfire.Core.dll</HintPath>
     </Reference>
     <Reference Include="JetBrains.Annotations, Version=11.1.0.0, Culture=neutral, PublicKeyToken=1010a0d8d6380325, processorArchitecture=MSIL">
       <HintPath>..\packages\JetBrains.Annotations.11.1.0\lib\net20\JetBrains.Annotations.dll</HintPath>
@@ -113,6 +122,29 @@
     </Reference>
     <Reference Include="Nito.Disposables, Version=1.2.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Nito.Disposables.1.2.3\lib\netstandard2.0\Nito.Disposables.dll</HintPath>
+    </Reference>
+    <Reference Include="Opc.Ua.Client, Version=1.4.354.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Opc.Ua.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Opc.Ua.ClientControls, Version=1.2.336.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Opc.Ua.ClientControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Opc.Ua.Configuration, Version=1.4.354.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Opc.Ua.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Opc.Ua.Core, Version=1.4.354.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Opc.Ua.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="OpcUaHelper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\OpcUaHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Collections.Immutable, Version=1.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -176,6 +208,34 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\BOM\PRODBOM.cs" />
+    <Compile Include="Entities\BOM\PRODJOURNALBOM.cs" />
+    <Compile Include="Entities\Checkout\QY_CHECK_CDTABLE.cs" />
+    <Compile Include="Entities\Checkout\QY_CHECK_TPTABLE.cs" />
+    <Compile Include="Entities\Equipment\Alarm\H_EQUIPMENTALARM.cs" />
+    <Compile Include="Entities\Equipment\Repair\H_EQUIPMENT_REPAIR.cs" />
+    <Compile Include="Entities\Equipment\Parameter\H_EQUIPMENT_PHOTOETCHING.cs" />
+    <Compile Include="Entities\IWS\IWS_CAMCRAFTCMDEQPCONFIGTABLE.cs" />
+    <Compile Include="Entities\IWS\IWS_CAMCRAFTCMDMATERIALTABLE.cs" />
+    <Compile Include="Entities\IWS\IWS_CAMCRAFTCMDTRADETABLE.cs" />
+    <Compile Include="Entities\IWS\IWS_CAMDESIGNPARAMTABLE.cs" />
+    <Compile Include="Entities\Checkout\IWS_CHECK_AOITABLE.cs" />
+    <Compile Include="Entities\Checkout\IWS_CHECK_INNERPACKTABLE.cs" />
+    <Compile Include="Entities\Checkout\IWS_CHECK_LONGSIZETABLE.cs" />
+    <Compile Include="Entities\Checkout\IWS_CHECK_PELLICLETABLE.cs" />
+    <Compile Include="Entities\Checkout\IWS_CHECK_REPAIRTABLE.cs" />
+    <Compile Include="Entities\Checkout\IWS_CHECK_WASHTABLE.cs" />
+    <Compile Include="Entities\IWS\IWS_CUSTPARATRADETABLE.cs" />
+    <Compile Include="Entities\IWS\IWS_JINGDUQUEXIANPARAMETER.cs" />
+    <Compile Include="Entities\IWS\IWS_PRODUCTPARAMETER.cs" />
+    <Compile Include="Entities\IWS\ROUTEOPRTABLE.cs" />
+    <Compile Include="Entities\IWS\WRKCTRTABLE.cs" />
+    <Compile Include="Entities\ProductReport\PRODJOURNALROUTE.cs" />
+    <Compile Include="Entities\Product\PRODROUTE.cs" />
+    <Compile Include="Entities\Product\PRODTABLE.cs" />
+    <Compile Include="OPC UA\AssignWorkManager.cs" />
+    <Compile Include="OPC UA\IAssignWorkManager.cs" />
+    <Compile Include="PeriodicBackgroundWork\ProductTableMonitorWorker.cs" />
     <Compile Include="QYMSERVERConsts.cs" />
     <Compile Include="QYMSERVERCoreModule.cs" />
     <Compile Include="AppVersionHelper.cs" />
@@ -237,7 +297,10 @@
   <ItemGroup>
     <EmbeddedResource Include="Localization\Source\ABPCMS-vi.xml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="MPS\" />
+    <Folder Include="OPC UA\DLL\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

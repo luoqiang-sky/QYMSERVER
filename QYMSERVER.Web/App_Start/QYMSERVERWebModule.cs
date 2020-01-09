@@ -30,9 +30,9 @@ namespace QYMSERVER.Web
         typeof(QYMSERVERWebApiModule),
          typeof(AbpWebSignalRModule),   
         typeof(AbpWebMvcModule),
-          typeof(AbpHangfireModule),
-          //typeof(AbpRedisCacheModule),
-        typeof(AbpQuartzModule)
+          typeof(AbpHangfireModule)
+        //typeof(AbpRedisCacheModule),
+        //typeof(AbpQuartzModule)
         )]
 
     public class QYMSERVERWebModule : AbpModule
@@ -74,22 +74,22 @@ namespace QYMSERVER.Web
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-            // Configuration.BackgroundJobs.IsJobExecutionEnabled = false;
+            //Configuration.BackgroundJobs.IsJobExecutionEnabled = false;
 
+            //至于在什么地方初始化hangfire，启动项目中也可，domain中也可
             Configuration.BackgroundJobs.UseHangfire(configuration => //Configure to use hangfire for background jobs.
             {
                 configuration.GlobalConfiguration.UseSqlServerStorage("Default"); //Set database connection
             });
 
 
-         
 
         }
 
         public override void PostInitialize()
         {
-            var workManager = IocManager.Resolve<IBackgroundWorkerManager>();
-            workManager.Add(IocManager.Resolve<MakeInactiveUsersPassiveWorker>());
+            //var workManager = IocManager.Resolve<IBackgroundWorkerManager>();
+            //workManager.Add(IocManager.Resolve<MakeInactiveUsersPassiveWorker>());
 
 
             var helloDependency = IocManager.Resolve<IHelloDependency>();

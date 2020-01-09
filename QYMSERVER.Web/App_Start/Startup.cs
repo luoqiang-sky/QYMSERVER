@@ -43,17 +43,18 @@ namespace QYMSERVER.Web
 
             //Hangfire.GlobalConfiguration.Configuration.UseSqlServerStorage("Default");
 
-            ////指定Hangfire使用内存存储后台任务信息
-            //Hangfire.GlobalConfiguration.Configuration.UseMemoryStorage();
-            ////启用HangfireServer这个中间件（它会自动释放）
-            //app.UseHangfireServer();
-            ////启用Hangfire的仪表盘（可以看到任务的状态，进度等信息）
-            //app.UseHangfireDashboard();
 
-            //app.UseHangfireDashboard("/hangfire", new DashboardOptions
-            //{
-            //    Authorization = new[] { new AbpHangfireAuthorizationFilter() }
-            //});
+
+            app.UseHangfireDashboard("/hangfire", new DashboardOptions
+            {
+                Authorization = new[] { new AbpHangfireAuthorizationFilter() }
+            });
+            //启用HangfireServer这个中间件（它会创建一个HangFire Server 并且自动释放）
+            //app.UseHangfireServer(); 
+            //指定Hangfire使用内存存储后台任务信息
+            Hangfire.GlobalConfiguration.Configuration.UseMemoryStorage();
+            //启用Hangfire的仪表盘（可以看到任务的状态，进度等信息）
+            //app.UseHangfireDashboard();
 
             //var jobId = BackgroundJob.Schedule(
             //    () => Console.WriteLine("Delayed!"),
@@ -73,9 +74,13 @@ namespace QYMSERVER.Web
             //            () => Console.WriteLine("Delayed!"),
             //            TimeSpan.FromDays(7));
 
+            //RecurringJob.AddOrUpdate(() => Console.WriteLine("Recurring!"), Cron.Minutely);
 
 
+            //BackgroundJob.Enqueue(() => Console.WriteLine("我只执行一次！！！！"));
+            //BackgroundJob.Schedule(() => Console.WriteLine($"我是1分钟后执行一次"), TimeSpan.FromMinutes(1));
 
+            //RecurringJob.AddOrUpdate("AAA", () => Console.Write("我每隔1分钟执行一次"),  Cron.MinuteInterval(1),TimeZoneInfo.Utc);
 
             //  ENABLE TO USE HANGFIRE dashboard(Requires enabling Hangfire in QYMSERVERWebModule)
             //app.UseHangfireDashboard("/hangfire", new DashboardOptions
@@ -88,11 +93,10 @@ namespace QYMSERVER.Web
             //input.Id = 1;
             //BackgroundJob.Enqueue<UserAppService>(x => x.Get(input));
 
-            app.MapSignalR();
+            //app.MapSignalR();
 
-            app.UseHangfireDashboard();
         }
 
 
-}
+    }
 }

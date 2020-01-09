@@ -7,7 +7,7 @@ using System.Reflection;
 using System.Web;
 using Swashbuckle.Application;
 
-[assembly: PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]
+[assembly: PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]//用这个方法运行SwaggerConfig
 
 namespace QYMSERVER.Api
 {

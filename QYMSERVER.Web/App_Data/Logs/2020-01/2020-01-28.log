@@ -1,0 +1,10 @@
+INFO  2020-01-28 21:22:54,766 [duler] Hangfire.Server.DelayedJobScheduler      - 2 scheduled job(s) enqueued.
+INFO  2020-01-28 21:22:55,963 [7    ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-28 21:22:55,963 [7    ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-28 21:23:01,097 [76   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-28 21:23:01,097 [76   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] admin made passive since he/she did not login in last 30 days.
+ERROR 2020-01-28 21:23:06,051 [82515] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+INFO  2020-01-28 21:23:08,640 [10   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-28 21:23:08,640 [10   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-28 21:23:14,318 [6    ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-28 21:23:14,319 [6    ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] admin made passive since he/she did not login in last 30 days.

@@ -214,6 +214,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DoWork\AssignTask\OPCInterface\IOpcInterfaceAppService.cs" />
+    <Compile Include="DoWork\AssignTask\OPCInterface\OpcInterfaceAppService.cs" />
+    <Compile Include="DoWork\MainProduct\Dto\PRODROUTEDto.cs" />
+    <Compile Include="DoWork\MainProduct\Dto\PRODTABLEDto.cs" />
+    <Compile Include="DoWork\MainProduct\Dto\ROUTEOPRTABLEDto.cs" />
+    <Compile Include="DoWork\MainProduct\ILocalProductTableAppService.cs" />
+    <Compile Include="DoWork\MainProduct\IProductRouteAppService.cs" />
+    <Compile Include="DoWork\MainProduct\ProductRouteAppService.cs" />
+    <Compile Include="DoWork\MainProduct\LocalProductTableAppService.cs" />
     <Compile Include="QYMSERVERApplicationModule.cs" />
     <Compile Include="QYMSERVERAppServiceBase.cs" />
     <Compile Include="Authorization\Accounts\AccountAppService.cs" />
@@ -228,14 +237,14 @@
     <Compile Include="Configuration\IConfigurationAppService.cs" />
     <Compile Include="Configuration\Ui\UiThemeInfo.cs" />
     <Compile Include="Configuration\Ui\UiThemes.cs" />
-    <Compile Include="HangfireServiceBase\IMyEmailAppService.cs" />
-    <Compile Include="HangfireServiceBase\MakeInactiveUsersPassiveWorker.cs" />
-    <Compile Include="HangfireServiceBase\MyEmailAppService.cs" />
-    <Compile Include="HangfireServiceBase\MyService.cs" />
-    <Compile Include="HangfireServiceBase\SendEmailInput.cs" />
-    <Compile Include="HangfireServiceBase\SimpleSendEmailJob.cs" />
-    <Compile Include="HangfireServiceBase\SimpleSendEmailJobArgs.cs" />
-    <Compile Include="HangfireServiceBase\TestJob.cs" />
+    <Compile Include="NOHangfireServiceBase\IMyEmailAppService.cs" />
+    <Compile Include="NOHangfireServiceBase\MakeInactiveUsersPassiveWorker.cs" />
+    <Compile Include="NOHangfireServiceBase\MyEmailAppService.cs" />
+    <Compile Include="NOHangfireServiceBase\MyService.cs" />
+    <Compile Include="NOHangfireServiceBase\SendEmailInput.cs" />
+    <Compile Include="NOHangfireServiceBase\SimpleSendEmailJob.cs" />
+    <Compile Include="NOHangfireServiceBase\SimpleSendEmailJobArgs.cs" />
+    <Compile Include="NOHangfireServiceBase\TestJob.cs" />
     <Compile Include="MultiTenancy\Dto\CreateTenantDto.cs" />
     <Compile Include="MultiTenancy\Dto\EditTenantDto.cs" />
     <Compile Include="MultiTenancy\Dto\TenantDto.cs" />
@@ -275,6 +284,10 @@
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DoWork\Equipment\" />
+    <Folder Include="DoWork\各大版块\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

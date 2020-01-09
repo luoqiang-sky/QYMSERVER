@@ -19,17 +19,21 @@ using Quartz;
 using Abp.Quartz.Configuration;
 using QYMSERVER.TestApp.DTO;
 using QYMSERVER.Entities.Test;
+using QYMSERVER.DoWork.MainProduct.Dto;
+using QYMSERVER.Entities.Product;
+using QYMSERVER.Entities.IWS;
+using Hangfire;
+using System;
 
 namespace QYMSERVER
 {
     [DependsOn(typeof(QYMSERVERCoreModule), typeof(AbpAutoMapperModule),
-                  typeof(AbpHangfireModule),
+                  typeof(AbpHangfireModule)
           // typeof(HangFireWorkerModule) //- ENABLE TO USE HANGFIRE INSTEAD OF DEFAULT JOB MANAGER
           //typeof(AbpRedisCacheModule),
-        typeof(AbpQuartzModule)
+        //typeof(AbpQuartzModule)
 
         )]
-
     public class QYMSERVERApplicationModule : AbpModule 
     {
 
@@ -43,6 +47,11 @@ namespace QYMSERVER
             //Configuration.Modules.AbpAutoMapper().Configurators.Add(mapper =>
             //{
             //    mapper.AddProfile<ScheduleProfile>();
+            //});
+
+            //Configuration.BackgroundJobs.UseHangfire(configuration =>
+            //{
+            //    configuration.GlobalConfiguration.UseSqlServerStorage("Default");
             //});
         }
 
@@ -68,6 +77,15 @@ namespace QYMSERVER
 
                 cfg.CreateMap<TestDto, TestEntity>();
                 cfg.CreateMap<TestDto, TestEntity>().ForMember(x => x.AAA, opt => opt.Ignore());
+
+                cfg.CreateMap<PRODTABLEDto, PRODTABLE>();
+                cfg.CreateMap<PRODTABLEDto, PRODTABLE>().ForMember(x => x.PRODID, opt => opt.Ignore());
+
+                cfg.CreateMap<ROUTEOPRTABLEDto, ROUTEOPRTABLE>();
+                cfg.CreateMap<ROUTEOPRTABLEDto, ROUTEOPRTABLE>().ForMember(x => x.OPRID, opt => opt.Ignore());
+
+                cfg.CreateMap<PRODROUTEDto, PRODROUTE>();
+                cfg.CreateMap<PRODROUTEDto, PRODROUTE>().ForMember(x => x.PRODID, opt => opt.Ignore());
                 //// 创建Job
                 //IScheduler scheduler = Configuration.Modules.AbpQuartz().Scheduler;
 
@@ -89,7 +107,17 @@ namespace QYMSERVER
         {
             //注册后台工作者标记消极用户
             var workManager = IocManager.Resolve<IBackgroundWorkerManager>();
-           //   workManager.Add(IocManager.Resolve<MakeInactiveUsersPassiveWorker>());
+            workManager.Add(IocManager.Resolve<MakeInactiveUsersPassiveWorker>());
+
+            RecurringJob.AddOrUpdate("QYMSERVERApplicationModule", () => dowork(), Cron.MinuteInterval(1), TimeZoneInfo.Utc);
+            RecurringJob.AddOrUpdate("2QYMSERVERApplicationModule", () => dowork(), Cron.MinuteInterval(1), TimeZoneInfo.Utc);
+
+            //var workManager1 = IocManager.Resolve<IBackgroundWorkerManager>();
+            //workManager1.Add(IocManager.Resolve<ProductTableMonitorWorker>());
+        }
+        public void dowork()
+        {
+            Logger.Error("Fuccck");
         }
     }
 }

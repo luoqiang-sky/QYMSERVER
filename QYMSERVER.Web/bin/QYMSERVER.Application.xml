@@ -4,6 +4,38 @@
         <name>QYMSERVER.Application</name>
     </assembly>
     <members>
+        <member name="M:QYMSERVER.DoWork.MainProduct.LocalProductTableAppService.GetProductByStatusAsync">
+            <summary>
+            获取所有订单状态》=4的订单（》=4表示可以生产的状态订单）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:QYMSERVER.DoWork.MainProduct.LocalProductTableAppService.GetProductByID(System.String)">
+            <summary>
+            获取指定PRODID的生产订单
+            </summary>
+            <param name="prodid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:QYMSERVER.DoWork.MainProduct.LocalProductTableAppService.PostInsertOneProduct(QYMSERVER.Entities.Product.PRODTABLE)">
+            <summary>
+            插入一个生产订单（业务逻辑上是不允许的）
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:QYMSERVER.DoWork.MainProduct.LocalProductTableAppService.DeleteOneProduct(System.String)">
+            <summary>
+            删除一个生产订单
+            </summary>
+            <param name="prodid"></param>
+        </member>
+        <member name="M:QYMSERVER.DoWork.MainProduct.LocalProductTableAppService.GetRouteProcessAsync">
+            <summary>
+            获取所有工序种类 给界面做为筛选条件
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:QYMSERVER.QYMSERVERAppServiceBase">
             <summary>
             Derive your application services from this class.

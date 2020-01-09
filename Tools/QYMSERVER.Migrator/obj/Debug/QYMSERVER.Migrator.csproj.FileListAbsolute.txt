@@ -580,3 +580,17 @@ E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\Tools\QYMSERVER.Migrator\o
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\Tools\QYMSERVER.Migrator\obj\Debug\QYMSERVER.Migrator.csproj.CopyComplete
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\Tools\QYMSERVER.Migrator\obj\Debug\QYMSERVER.Migrator.exe
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\Tools\QYMSERVER.Migrator\obj\Debug\QYMSERVER.Migrator.pdb
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\Tools\QYMSERVER.Migrator\bin\Debug\Abp.HangFire.dll
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\Tools\QYMSERVER.Migrator\bin\Debug\OpcUaHelper.dll
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\Tools\QYMSERVER.Migrator\bin\Debug\Opc.Ua.Core.dll
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\Tools\QYMSERVER.Migrator\bin\Debug\Opc.Ua.Client.dll
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\Tools\QYMSERVER.Migrator\bin\Debug\Hangfire.Core.dll
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\Tools\QYMSERVER.Migrator\bin\Debug\Opc.Ua.Configuration.dll
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\Tools\QYMSERVER.Migrator\bin\Debug\Opc.Ua.ClientControls.dll
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\Tools\QYMSERVER.Migrator\bin\Debug\BouncyCastle.Crypto.dll
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\Tools\QYMSERVER.Migrator\bin\Debug\Owin.dll
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\Tools\QYMSERVER.Migrator\bin\Debug\Abp.HangFire.pdb
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\Tools\QYMSERVER.Migrator\bin\Debug\Abp.HangFire.xml
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\Tools\QYMSERVER.Migrator\bin\Debug\Hangfire.Core.xml
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\Tools\QYMSERVER.Migrator\bin\Debug\es\Hangfire.Core.resources.dll
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\Tools\QYMSERVER.Migrator\bin\Debug\zh\Hangfire.Core.resources.dll

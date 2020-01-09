@@ -706,3 +706,9 @@ E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\Tests\QYMSERVER.Tests\obj\
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\Tests\QYMSERVER.Tests\obj\Debug\QYMSERVER.Tests.csproj.CopyComplete
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\Tests\QYMSERVER.Tests\obj\Debug\QYMSERVER.Tests.dll
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\Tests\QYMSERVER.Tests\obj\Debug\QYMSERVER.Tests.pdb
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\Tests\QYMSERVER.Tests\bin\Debug\OpcUaHelper.dll
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\Tests\QYMSERVER.Tests\bin\Debug\Opc.Ua.Core.dll
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\Tests\QYMSERVER.Tests\bin\Debug\Opc.Ua.Client.dll
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\Tests\QYMSERVER.Tests\bin\Debug\Opc.Ua.Configuration.dll
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\Tests\QYMSERVER.Tests\bin\Debug\Opc.Ua.ClientControls.dll
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\Tests\QYMSERVER.Tests\bin\Debug\BouncyCastle.Crypto.dll

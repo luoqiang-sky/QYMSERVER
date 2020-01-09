@@ -1,0 +1,10 @@
+INFO  2020-01-29 21:23:18,821 [13   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-29 21:23:18,822 [13   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-29 21:23:24,471 [79   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-29 21:23:24,471 [79   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-29 21:23:29,785 [78   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-29 21:23:29,785 [78   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-08 21:23:33,927 [80   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-08 21:23:33,927 [80   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-08 21:23:39,070 [68   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 2] admin made passive since he/she did not login in last 30 days.
+INFO  2020-01-08 21:23:39,070 [68   ] rviceBase.MakeInactiveUsersPassiveWorker - [User 3] admin made passive since he/she did not login in last 30 days.

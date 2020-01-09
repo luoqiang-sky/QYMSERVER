@@ -212,6 +212,14 @@
     <Compile Include="Migrations\202001030646494_NewTsetEntity.Designer.cs">
       <DependentUpon>202001030646494_NewTsetEntity.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202001031319512_Add_AllEntity_V1.cs" />
+    <Compile Include="Migrations\202001031319512_Add_AllEntity_V1.Designer.cs">
+      <DependentUpon>202001031319512_Add_AllEntity_V1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202001061005336_Add_AllEntity_V2.cs" />
+    <Compile Include="Migrations\202001061005336_Add_AllEntity_V2.Designer.cs">
+      <DependentUpon>202001061005336_Add_AllEntity_V2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\AbpZeroDbMigrator.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="QYMSERVERDataModule.cs" />
@@ -237,6 +245,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202001030646494_NewTsetEntity.resx">
       <DependentUpon>202001030646494_NewTsetEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001031319512_Add_AllEntity_V1.resx">
+      <DependentUpon>202001031319512_Add_AllEntity_V1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001061005336_Add_AllEntity_V2.resx">
+      <DependentUpon>202001061005336_Add_AllEntity_V2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
