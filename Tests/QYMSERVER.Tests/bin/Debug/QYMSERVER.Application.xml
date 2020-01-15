@@ -4,48 +4,161 @@
         <name>QYMSERVER.Application</name>
     </assembly>
     <members>
-        <member name="M:QYMSERVER.DoWork.MainProduct.LocalProductTableAppService.GetProductByStatusAsync">
+        <member name="T:QYMSERVER.BasicWork.BasicWorkCore">
             <summary>
-            获取所有订单状态》=4的订单（》=4表示可以生产的状态订单）
+                                                由于Core层不实现数据库仓储，所以讲这部分放到应用层
+            </summary>
+        </member>
+        <member name="M:QYMSERVER.BasicWork.BasicWorkCore.ProductTableMonitoring">
+            <summary>
+            监控LocalDB中的生产订单，如有符合生产就下发，没有就继续监控
+            </summary>
+        </member>
+        <member name="M:QYMSERVER.BasicWork.BasicWorkCore.FeedBackToAX(System.String)">
+            <summary>
+            报工
+            </summary>
+            <param name="prodid"></param>
+        </member>
+        <member name="M:QYMSERVER.ClientService.MPS.ClientMPSAppService.GetProductByStatusAsync">
+            <summary>
+            获取所有订单状态》=4的订单（》=4表示可以生产的状态订单）(由于用户操作的时候数据库查询效率可能存在延迟，这部分查询工作由Core从的BasicWorkCore来处理，这查询直接返回一个现成的数组)
             </summary>
             <returns></returns>
         </member>
-        <member name="M:QYMSERVER.DoWork.MainProduct.LocalProductTableAppService.GetProductByID(System.String)">
+        <member name="M:QYMSERVER.ClientService.MPS.ClientMPSAppService.GetProductByID(System.String)">
             <summary>
             获取指定PRODID的生产订单
             </summary>
             <param name="prodid"></param>
             <returns></returns>
         </member>
-        <member name="M:QYMSERVER.DoWork.MainProduct.LocalProductTableAppService.PostInsertOneProduct(QYMSERVER.Entities.Product.PRODTABLE)">
+        <member name="M:QYMSERVER.ClientService.MPS.ClientMPSAppService.PostInsertOneProduct(QYMSERVER.Entities.Product.PRODTABLE)">
             <summary>
             插入一个生产订单（业务逻辑上是不允许的）
             </summary>
             <param name="input"></param>
-            <returns></returns>
+            <returns></returns> 
         </member>
-        <member name="M:QYMSERVER.DoWork.MainProduct.LocalProductTableAppService.DeleteOneProduct(System.String)">
+        <member name="M:QYMSERVER.ClientService.MPS.ClientMPSAppService.DeleteOneProduct(System.String)">
             <summary>
             删除一个生产订单
             </summary>
             <param name="prodid"></param>
         </member>
-        <member name="M:QYMSERVER.DoWork.MainProduct.LocalProductTableAppService.GetRouteProcessAsync">
+        <member name="M:QYMSERVER.ClientService.MPS.ClientMPSAppService.GetRouteProcessAsync(System.String)">
             <summary>
-            获取所有工序种类 给界面做为筛选条件
+            获取订单的进度（客户端子页面中展示生产订单当前进度，展示每个工序状态）
             </summary>
+            <returns></returns>
+        </member>
+        <member name="T:QYMSERVER.ClientService.MPS.IClientMPSAppService">
+            <summary>
+            一般的MPS任务接口
+            </summary>
+        </member>
+        <member name="M:QYMSERVER.ClientService.MPS.IClientMPSAppService.GetProductByID(System.String)">
+            <summary>
+            获取一个生产订单
+            </summary>
+            <param name="prodid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:QYMSERVER.ClientService.MPS.IClientMPSAppService.GetProductByStatusAsync">
+            <summary>
+            获取符合要求的所有生产订单（这个是从本地数据库中查出的，动态显示到客户端）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:QYMSERVER.ClientService.MPS.IClientMPSAppService.PostInsertOneProduct(QYMSERVER.Entities.Product.PRODTABLE)">
+            <summary>
+            插入一个生产订单（暂时用不到）
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:QYMSERVER.ClientService.MPS.IClientMPSAppService.DeleteOneProduct(System.String)">
+            <summary>
+            删除一个生产订单
+            </summary>
+            <param name="prodid"></param>
+        </member>
+        <member name="M:QYMSERVER.ClientService.MPS.IClientMPSAppService.GetRouteProcessAsync(System.String)">
+            <summary>
+            获取订单的进度（客户端子页面中展示当前进度）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:QYMSERVER.ClientService.MPS.IRouteWorkAppService">
+            <summary>
+            工序订单的所有功能接口
+            </summary>
+        </member>
+        <member name="M:QYMSERVER.ClientService.MPS.IRouteWorkAppService.GetProductRouteByID(System.String,System.String,System.Int32)">
+            <summary>
+            获取一个生产订单下面的所有工序
+            </summary>
+            <param name="prodid">生产订单ID</param>
+            <param name="routeid">工序ID</param>
+            <param name="num">工序编号（重复操作的工序由此编号区分）</param>
+            <returns></returns>
+        </member>
+        <member name="M:QYMSERVER.ClientService.MPS.IRouteWorkAppService.GetRoutesByIDAsync(System.String)">
+            <summary>
+            获取一个生产订单下面的所有工序
+            </summary>
+            <param name="prodid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:QYMSERVER.ClientService.MPS.IRouteWorkAppService.InsertOneProductRoute(QYMSERVER.ClientService.MPS.PRODROUTEDto)">
+            <summary>
+            给特定生产订单插入一个工序ID
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:QYMSERVER.ClientService.MPS.IRouteWorkAppService.DeleteOneRoute(System.String,System.String,System.Int32)">
+            <summary>
+            删除一个工序 
+            </summary>
+            <param name="prodid">生产订单ID</param>
+            <param name="routeid">工序ID</param>
+            <param name="num">工序编号（重复操作的工序由此编号区分）</param>
+        </member>
+        <member name="M:QYMSERVER.ClientService.MPS.IRouteWorkAppService.ModifyOneRoute(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            修改工序的某个参数
+            </summary>
+            <param name="prodid"></param>
+            <param name="routeid"></param>
+            <param name="num"></param>
+            <param name="WorkCenterValue">value</param>
+        </member>
+        <member name="M:QYMSERVER.ClientService.MPS.IRouteWorkAppService.CalcRouteWorkCenters(System.String,System.String)">
+            <summary>
+            计算当前工序可选工作中心
+            </summary>
+            <param name="prodid"></param>
+            <param name="routeid"></param>
+            <returns></returns>
+        </member>
+        <member name="T:QYMSERVER.ClientService.MPS.RouteWorkAppService">
+            <summary>
+            工序操作接口
+            </summary>
+        </member>
+        <member name="M:QYMSERVER.ClientService.MPS.RouteWorkAppService.CalcRouteWorkCenters(System.String,System.String)">
+            <summary>
+            计算当前工序可选工作中心
+            </summary>
+            <param name="prodid"></param>
+            <param name="routeid"></param>
             <returns></returns>
         </member>
         <member name="T:QYMSERVER.QYMSERVERAppServiceBase">
             <summary>
             Derive your application services from this class.
             </summary>
-        </member>
-        <member name="M:QYMSERVER.TestApp.TestAppService.#ctor(Abp.Domain.Repositories.IRepository{QYMSERVER.Entities.Test.TestEntity})">
-             <summary>
-            In constructor, we can get needed classes/interfaces.
-            They are sent here by dependency injection system automatically.
-             </summary>
         </member>
     </members>
 </doc>

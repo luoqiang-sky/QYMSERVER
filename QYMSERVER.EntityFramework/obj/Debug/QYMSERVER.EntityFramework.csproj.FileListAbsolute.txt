@@ -581,3 +581,8 @@ E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.EntityFramework\
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.EntityFramework\bin\Debug\Hangfire.Core.xml
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.EntityFramework\bin\Debug\es\Hangfire.Core.resources.dll
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.EntityFramework\bin\Debug\zh\Hangfire.Core.resources.dll
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.EntityFramework\obj\Debug\QYMSERVER.Migrations.PRODIDTABLENULLABLE.resources
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.EntityFramework\obj\Debug\QYMSERVER.Migrations.ADD_MACHINE_TABLE.resources
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.EntityFramework\bin\Debug\Microsoft.Dynamics.BusinessConnectorNet.dll
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.EntityFramework\bin\Debug\Microsoft.Dynamics.BusinessConnectorNet.xml
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.EntityFramework\obj\Debug\QYMSERVER.Migrations.addsystemconfigandoperationlog.resources

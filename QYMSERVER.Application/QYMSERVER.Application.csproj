@@ -214,15 +214,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DoWork\AssignTask\OPCInterface\IOpcInterfaceAppService.cs" />
-    <Compile Include="DoWork\AssignTask\OPCInterface\OpcInterfaceAppService.cs" />
-    <Compile Include="DoWork\MainProduct\Dto\PRODROUTEDto.cs" />
-    <Compile Include="DoWork\MainProduct\Dto\PRODTABLEDto.cs" />
-    <Compile Include="DoWork\MainProduct\Dto\ROUTEOPRTABLEDto.cs" />
-    <Compile Include="DoWork\MainProduct\ILocalProductTableAppService.cs" />
-    <Compile Include="DoWork\MainProduct\IProductRouteAppService.cs" />
-    <Compile Include="DoWork\MainProduct\ProductRouteAppService.cs" />
-    <Compile Include="DoWork\MainProduct\LocalProductTableAppService.cs" />
+    <Compile Include="BasicWork\BasicWorkCore.cs" />
+    <Compile Include="ClientService\MPS\ClientMPSAppService.cs" />
+    <Compile Include="ClientService\MPS\Dto\ProcessInfoDto.cs" />
+    <Compile Include="ClientService\MPS\IClientMPSAppService.cs" />
+    <Compile Include="ClientService\MPS\Dto\PRODROUTEDto.cs" />
+    <Compile Include="ClientService\MPS\Dto\PRODTABLEDto.cs" />
+    <Compile Include="ClientService\MPS\Dto\ROUTEOPRTABLEDto.cs" />
+    <Compile Include="ClientService\MPS\IRouteWorkAppService.cs" />
+    <Compile Include="ClientService\MPS\RouteWorkAppService.cs" />
     <Compile Include="QYMSERVERApplicationModule.cs" />
     <Compile Include="QYMSERVERAppServiceBase.cs" />
     <Compile Include="Authorization\Accounts\AccountAppService.cs" />
@@ -286,8 +286,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DoWork\Equipment\" />
-    <Folder Include="DoWork\各大版块\" />
+    <Folder Include="ClientService\Equipment\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

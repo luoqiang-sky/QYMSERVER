@@ -5,13 +5,14 @@ using QYMSERVER.Authorization.Roles;
 using QYMSERVER.Authorization.Users;
 using QYMSERVER.Entities.BOM;
 using QYMSERVER.Entities.Checkout;
+using QYMSERVER.Entities.Equipment;
 using QYMSERVER.Entities.Equipment.Alarm;
 using QYMSERVER.Entities.Equipment.Maintain;
 using QYMSERVER.Entities.Equipment.Parameter;
 using QYMSERVER.Entities.IWS;
 using QYMSERVER.Entities.Product;
 using QYMSERVER.Entities.ProductReport;
-using QYMSERVER.Entities.Test;
+using QYMSERVER.Entities.SystemConfig;
 using QYMSERVER.MultiTenancy;
 
 namespace QYMSERVER.EntityFramework
@@ -50,7 +51,10 @@ namespace QYMSERVER.EntityFramework
 
         public DbSet<PRODJOURNALROUTE> PRODJOURNALROUTEs { get; set; }
 
-        public DbSet<TestEntity> TestEntitys { get; set; }
+        public DbSet<Machines> Machines { get; set; }
+        public DbSet<SYS_OPERATIONLOG> OPERATIONLOGs { get; set; }
+        public DbSet<SYS_CONFIG> SYSTEMCONFIGs { get; set; }
+
 
         /* NOTE: 
          *   Setting "Default" to base class helps us when working migration commands on Package Manager Console.

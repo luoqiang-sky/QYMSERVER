@@ -594,3 +594,5 @@ E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\Tools\QYMSERVER.Migrator\b
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\Tools\QYMSERVER.Migrator\bin\Debug\Hangfire.Core.xml
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\Tools\QYMSERVER.Migrator\bin\Debug\es\Hangfire.Core.resources.dll
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\Tools\QYMSERVER.Migrator\bin\Debug\zh\Hangfire.Core.resources.dll
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\Tools\QYMSERVER.Migrator\bin\Debug\Microsoft.Dynamics.BusinessConnectorNet.dll
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\Tools\QYMSERVER.Migrator\bin\Debug\Microsoft.Dynamics.BusinessConnectorNet.xml

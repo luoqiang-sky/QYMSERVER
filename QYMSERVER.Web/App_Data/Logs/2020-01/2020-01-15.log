@@ -1,0 +1,783 @@
+﻿DEBUG 2020-01-15 08:55:04,260 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-01-15 08:55:05,074 [1    ] Abp.Modules.AbpModuleManager             - Found 18 ABP modules in total.
+DEBUG 2020-01-15 08:55:05,086 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.Web.QYMSERVERWebModule, QYMSERVER.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 08:55:05,090 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.QYMSERVERDataModule, QYMSERVER.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 08:55:05,091 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 08:55:05,092 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 08:55:05,093 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 08:55:05,095 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 08:55:05,096 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 08:55:05,097 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 08:55:05,098 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.QYMSERVERCoreModule, QYMSERVER.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 08:55:05,099 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 08:55:05,100 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.QYMSERVERApplicationModule, QYMSERVER.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 08:55:05,101 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 08:55:05,101 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.Api.QYMSERVERWebApiModule, QYMSERVER.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 08:55:05,102 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 08:55:05,103 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 08:55:05,105 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 08:55:05,107 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 08:55:05,108 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 08:55:05,115 [1    ] Abp.Modules.AbpModuleManager             - 18 modules loaded.
+ERROR 2020-01-15 08:55:09,236 [1    ] QYMSERVER.QYMSERVERCoreModule            - A_OpcUaClient -BadTooManySessions
+ERROR 2020-01-15 08:55:10,497 [1    ] QYMSERVER.QYMSERVERCoreModule            - B_OpcUaClient -BadTooManySessions
+ERROR 2020-01-15 08:55:11,763 [1    ] QYMSERVER.QYMSERVERCoreModule            - C_OpcUaClient -BadTooManySessions
+DEBUG 2020-01-15 08:55:12,119 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-01-15 08:55:12,119 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-01-15 08:55:12,120 [1    ] o.Configuration.LanguageManagementConfig - Converted QYMSERVER (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-01-15 08:55:12,120 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+INFO  2020-01-15 08:55:13,180 [1    ] Hangfire.SqlServer.SqlServerStorage      - Start installing Hangfire SQL objects...
+INFO  2020-01-15 08:55:13,486 [1    ] Hangfire.SqlServer.SqlServerStorage      - Hangfire SQL objects installed.
+DEBUG 2020-01-15 08:55:13,908 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: QYMSERVER.EntityFramework.QYMSERVERDbContext, QYMSERVER.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+FATAL 2020-01-15 08:55:14,127 [1    ] Abp.AbpBootstrapper                      - System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 OpcUaHelper.OpcUaClient.AddSubscription(String key, String[] tags, Action`3 callback)
+   在 QYMSERVER.OPC_UA.OpcBasicMonitorWorkManager.A_MultipleSubscription(String[] nodes) 位置 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Core\OPC UA\OpcBasicMonitorWorkManager.cs:行号 35
+   在 QYMSERVER.OPC_UA.OpcBasicMonitorWorkManager..ctor() 位置 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Core\OPC UA\OpcBasicMonitorWorkManager.cs:行号 29
+   在 QYMSERVER.QYMSERVERCoreModule.Initialize() 位置 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Core\QYMSERVERCoreModule.cs:行号 82
+   在 Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Abp.Modules.AbpModuleManager.StartModules()
+   在 Abp.AbpBootstrapper.Initialize()
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 OpcUaHelper.OpcUaClient.AddSubscription(String key, String[] tags, Action`3 callback)
+   在 QYMSERVER.OPC_UA.OpcBasicMonitorWorkManager.A_MultipleSubscription(String[] nodes) 位置 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Core\OPC UA\OpcBasicMonitorWorkManager.cs:行号 35
+   在 QYMSERVER.OPC_UA.OpcBasicMonitorWorkManager..ctor() 位置 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Core\OPC UA\OpcBasicMonitorWorkManager.cs:行号 29
+   在 QYMSERVER.QYMSERVERCoreModule.Initialize() 位置 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Core\QYMSERVERCoreModule.cs:行号 82
+   在 Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Abp.Modules.AbpModuleManager.StartModules()
+   在 Abp.AbpBootstrapper.Initialize()
+DEBUG 2020-01-15 08:55:24,358 [14   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2020-01-15 08:55:24,367 [14   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2020-01-15 08:56:06,101 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-01-15 08:56:06,606 [1    ] Abp.Modules.AbpModuleManager             - Found 18 ABP modules in total.
+DEBUG 2020-01-15 08:56:06,613 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.Web.QYMSERVERWebModule, QYMSERVER.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 08:56:06,614 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.QYMSERVERDataModule, QYMSERVER.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 08:56:06,615 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 08:56:06,616 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 08:56:06,617 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 08:56:06,618 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 08:56:06,619 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 08:56:06,619 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 08:56:06,620 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.QYMSERVERCoreModule, QYMSERVER.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 08:56:06,621 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 08:56:06,621 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.QYMSERVERApplicationModule, QYMSERVER.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 08:56:06,622 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 08:56:06,623 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.Api.QYMSERVERWebApiModule, QYMSERVER.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 08:56:06,624 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 08:56:06,624 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 08:56:06,625 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 08:56:06,626 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 08:56:06,627 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 08:56:06,632 [1    ] Abp.Modules.AbpModuleManager             - 18 modules loaded.
+ERROR 2020-01-15 08:56:10,308 [1    ] QYMSERVER.QYMSERVERCoreModule            - B_OpcUaClient -BadTooManySessions
+ERROR 2020-01-15 08:56:11,642 [1    ] QYMSERVER.QYMSERVERCoreModule            - C_OpcUaClient -BadTooManySessions
+DEBUG 2020-01-15 08:56:12,012 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-01-15 08:56:12,013 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-01-15 08:56:12,013 [1    ] o.Configuration.LanguageManagementConfig - Converted QYMSERVER (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-01-15 08:56:12,014 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+INFO  2020-01-15 08:56:12,722 [1    ] Hangfire.SqlServer.SqlServerStorage      - Start installing Hangfire SQL objects...
+INFO  2020-01-15 08:56:12,908 [1    ] Hangfire.SqlServer.SqlServerStorage      - Hangfire SQL objects installed.
+DEBUG 2020-01-15 08:56:13,347 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: QYMSERVER.EntityFramework.QYMSERVERDbContext, QYMSERVER.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 08:56:15,404 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-01-15 08:56:15,434 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-01-15 08:56:15,442 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-01-15 08:56:15,446 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: QYMSERVER
+DEBUG 2020-01-15 08:56:15,450 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-01-15 08:56:15,457 [1    ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2020-01-15 08:56:15,468 [1    ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2020-01-15 08:56:15,473 [1    ] Hangfire.BackgroundJobServer             - Using job storage: 'SQL Server: .@QYMESDB'
+INFO  2020-01-15 08:56:15,474 [1    ] Hangfire.BackgroundJobServer             - Using the following options for SQL Server job storage:
+INFO  2020-01-15 08:56:15,474 [1    ] Hangfire.BackgroundJobServer             -     Queue poll interval: 00:00:15.
+INFO  2020-01-15 08:56:15,475 [1    ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2020-01-15 08:56:15,475 [1    ] Hangfire.BackgroundJobServer             -     Worker count: 20
+INFO  2020-01-15 08:56:15,476 [1    ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'
+INFO  2020-01-15 08:56:15,477 [1    ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15
+INFO  2020-01-15 08:56:15,477 [1    ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15
+DEBUG 2020-01-15 08:56:15,520 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2020-01-15 08:56:15,666 [1    ] BackgroundWork.ProductTableMonitorWorker - Start background worker: Castle.Proxies.ProductTableMonitorWorkerProxy
+DEBUG 2020-01-15 08:56:19,711 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2020-01-15 08:56:19,781 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2020-01-15 08:56:19,846 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2020-01-15 08:56:19,846 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'AggregatedCounter' table...
+DEBUG 2020-01-15 08:56:20,052 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2020-01-15 08:56:20,061 [e078d] Hangfire.Server.Worker                   - Background process 'Worker #10ce078d' started.
+DEBUG 2020-01-15 08:56:20,155 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2020-01-15 08:56:20,371 [0032f] Hangfire.Server.Worker                   - Background process 'Worker #1ce0032f' started.
+INFO  2020-01-15 08:56:20,394 [chdog] Hangfire.Server.ServerWatchdog           - 2 servers were removed due to timeout
+DEBUG 2020-01-15 08:56:20,454 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'AggregatedCounter' table.
+DEBUG 2020-01-15 08:56:20,455 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Job' table...
+DEBUG 2020-01-15 08:56:20,502 [3b9e4] Hangfire.Server.Worker                   - Background process 'Worker #7913b9e4' started.
+DEBUG 2020-01-15 08:56:20,620 [e897e] Hangfire.Server.Worker                   - Background process 'Worker #2bfe897e' started.
+DEBUG 2020-01-15 08:56:20,904 [b3c47] Hangfire.Server.Worker                   - Background process 'Worker #b20b3c47' started.
+DEBUG 2020-01-15 08:56:21,007 [b5156] Hangfire.Server.Worker                   - Background process 'Worker #ad2b5156' started.
+DEBUG 2020-01-15 08:56:21,010 [65a26] Hangfire.Server.Worker                   - Background process 'Worker #a0565a26' started.
+DEBUG 2020-01-15 08:56:21,162 [d2a92] Hangfire.Server.Worker                   - Background process 'Worker #365d2a92' started.
+DEBUG 2020-01-15 08:56:21,198 [gator] Hangfire.SqlServer.CountersAggregator    - Records from the 'Counter' table aggregated.
+DEBUG 2020-01-15 08:56:21,349 [dd4b5] Hangfire.Server.Worker                   - Background process 'Worker #d32dd4b5' started.
+DEBUG 2020-01-15 08:56:21,447 [73f4c] Hangfire.Server.Worker                   - Background process 'Worker #58473f4c' started.
+DEBUG 2020-01-15 08:56:21,489 [6c333] Hangfire.Server.Worker                   - Background process 'Worker #0246c333' started.
+DEBUG 2020-01-15 08:56:21,672 [c65fd] Hangfire.Server.Worker                   - Background process 'Worker #dd0c65fd' started.
+DEBUG 2020-01-15 08:56:21,771 [2eb67] Hangfire.Server.Worker                   - Background process 'Worker #6802eb67' started.
+DEBUG 2020-01-15 08:56:21,933 [1b061] Hangfire.Server.Worker                   - Background process 'Worker #1911b061' started.
+DEBUG 2020-01-15 08:56:21,966 [40625] Hangfire.Server.Worker                   - Background process 'Worker #8f640625' started.
+DEBUG 2020-01-15 08:56:22,010 [956b5] Hangfire.Server.Worker                   - Background process 'Worker #22d956b5' started.
+DEBUG 2020-01-15 08:56:22,112 [76025] Hangfire.Server.Worker                   - Background process 'Worker #4b676025' started.
+DEBUG 2020-01-15 08:56:22,199 [bb30d] Hangfire.Server.Worker                   - Background process 'Worker #f68bb30d' started.
+DEBUG 2020-01-15 08:56:22,235 [57545] Hangfire.Server.Worker                   - Background process 'Worker #54457545' started.
+DEBUG 2020-01-15 08:56:22,269 [1d09f] Hangfire.Server.Worker                   - Background process 'Worker #57c1d09f' started.
+DEBUG 2020-01-15 08:56:22,382 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2020-01-15 08:56:22,509 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2020-01-15 08:56:22,595 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Job' table.
+DEBUG 2020-01-15 08:56:22,596 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'List' table...
+DEBUG 2020-01-15 08:56:22,717 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'List' table.
+DEBUG 2020-01-15 08:56:22,718 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Set' table...
+DEBUG 2020-01-15 08:56:22,944 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Set' table.
+DEBUG 2020-01-15 08:56:22,945 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Hash' table...
+DEBUG 2020-01-15 08:56:22,966 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Hash' table.
+WARN  2020-01-15 08:56:24,903 [1    ] Abp.MultiTenancy.TenantResolver          - System.Web.HttpException (0x80004005): 请求在此上下文中不可用
+   在 System.Web.HttpContext.get_Request()
+   在 Abp.Web.MultiTenancy.HttpHeaderTenantResolveContributor.ResolveTenantId()
+   在 Abp.MultiTenancy.TenantResolver.GetTenantIdFromContributors()
+System.Web.HttpException (0x80004005): 请求在此上下文中不可用
+   在 System.Web.HttpContext.get_Request()
+   在 Abp.Web.MultiTenancy.HttpHeaderTenantResolveContributor.ResolveTenantId()
+   在 Abp.MultiTenancy.TenantResolver.GetTenantIdFromContributors()
+WARN  2020-01-15 08:56:24,930 [1    ] Abp.MultiTenancy.TenantResolver          - System.Web.HttpException (0x80004005): 请求在此上下文中不可用
+   在 System.Web.HttpContext.get_Request()
+   在 Abp.Web.MultiTenancy.HttpCookieTenantResolveContributor.ResolveTenantId()
+   在 Abp.MultiTenancy.TenantResolver.GetTenantIdFromContributors()
+System.Web.HttpException (0x80004005): 请求在此上下文中不可用
+   在 System.Web.HttpContext.get_Request()
+   在 Abp.Web.MultiTenancy.HttpCookieTenantResolveContributor.ResolveTenantId()
+   在 Abp.MultiTenancy.TenantResolver.GetTenantIdFromContributors()
+DEBUG 2020-01-15 08:56:30,616 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes define auto mapping attributes
+DEBUG 2020-01-15 08:56:30,617 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-01-15 08:56:30,623 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-01-15 08:56:30,624 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Users.Dto.CreateUserDto
+DEBUG 2020-01-15 08:56:30,625 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Users.Dto.UpdateUserDto
+DEBUG 2020-01-15 08:56:30,626 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Users.Dto.UserDto
+DEBUG 2020-01-15 08:56:30,627 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Roles.Dto.CreateRoleDto
+DEBUG 2020-01-15 08:56:30,629 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Roles.Dto.PermissionDto
+DEBUG 2020-01-15 08:56:30,629 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Roles.Dto.RoleDto
+DEBUG 2020-01-15 08:56:30,630 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-01-15 08:56:30,631 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.MultiTenancy.Dto.EditTenantDto
+DEBUG 2020-01-15 08:56:30,631 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.MultiTenancy.Dto.TenantDto
+DEBUG 2020-01-15 08:56:30,632 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Web.Models.Account.TenantChangeViewModel
+DEBUG 2020-01-15 08:56:30,633 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2020-01-15 08:56:31,447 [1    ] rviceBase.MakeInactiveUsersPassiveWorker - Start background worker: Castle.Proxies.MakeInactiveUsersPassiveWorkerProxy
+DEBUG 2020-01-15 08:56:33,454 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2020-01-15 08:56:33,455 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2020-01-15 08:56:33,458 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.TestApp.ITestAppService' with service name 'app/test'.
+DEBUG 2020-01-15 08:56:33,460 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2020-01-15 08:56:33,462 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.Quartz.ISystemSchedulerService' with service name 'app/systemSchedulerService'.
+DEBUG 2020-01-15 08:56:33,464 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2020-01-15 08:56:33,467 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2020-01-15 08:56:33,469 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2020-01-15 08:56:33,471 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.ClientService.MPS.IClientMPSAppService' with service name 'app/clientMPS'.
+DEBUG 2020-01-15 08:56:33,473 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.ClientService.MPS.IRouteWorkAppService' with service name 'app/routeWork'.
+WARN  2020-01-15 08:56:42,210 [48   ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+WARN  2020-01-15 08:57:03,038 [62   ] SERVER.Web.Controllers.AccountController - Login failed!
+Abp.UI.UserFriendlyException: Login failed!
+   at QYMSERVER.Web.Controllers.AccountController.<GetLoginResultAsync>d__15.MoveNext() in E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Web\Controllers\AccountController.cs:line 146
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at QYMSERVER.Web.Controllers.AccountController.<Login>d__14.MoveNext() in E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Web\Controllers\AccountController.cs:line 112
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+WARN  2020-01-15 08:57:52,815 [85   ] naries.DictionaryBasedLocalizationSource - Can not find '用户详情' in localization source 'QYMSERVER'!
+WARN  2020-01-15 08:57:52,819 [85   ] naries.DictionaryBasedLocalizationSource - Can not find '后台工作者' in localization source 'QYMSERVER'!
+WARN  2020-01-15 08:57:52,821 [85   ] naries.DictionaryBasedLocalizationSource - Can not find 'swaggerAPI文档' in localization source 'QYMSERVER'!
+WARN  2020-01-15 08:57:57,370 [85   ] naries.DictionaryBasedLocalizationSource - Can not find '用户详情' in localization source 'QYMSERVER'!
+WARN  2020-01-15 08:57:57,372 [85   ] naries.DictionaryBasedLocalizationSource - Can not find '后台工作者' in localization source 'QYMSERVER'!
+WARN  2020-01-15 08:57:57,375 [85   ] naries.DictionaryBasedLocalizationSource - Can not find 'swaggerAPI文档' in localization source 'QYMSERVER'!
+DEBUG 2020-01-15 08:58:07,587 [95   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"2fb311e6-7367-4308-989c-518dc788b628","IpAddress":"::1","TenantId":null,"UserId":2,"ConnectTime":"2020-01-15T08:58:07.5770004+08:00","Properties":{}}
+DEBUG 2020-01-15 08:58:08,132 [92   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 2fb311e6-7367-4308-989c-518dc788b628
+DEBUG 2020-01-15 08:58:38,887 [110  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 2fb311e6-7367-4308-989c-518dc788b628
+DEBUG 2020-01-15 09:01:21,218 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2020-01-15 09:01:21,827 [gator] Hangfire.SqlServer.CountersAggregator    - Records from the 'Counter' table aggregated.
+DEBUG 2020-01-15 09:12:23,247 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-01-15 09:12:23,265 [1    ] Abp.Modules.AbpModuleManager             - Found 18 ABP modules in total.
+DEBUG 2020-01-15 09:12:23,273 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.Web.QYMSERVERWebModule, QYMSERVER.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 09:12:23,277 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.QYMSERVERDataModule, QYMSERVER.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 09:12:23,278 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 09:12:23,279 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 09:12:23,280 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 09:12:23,281 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 09:12:23,282 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 09:12:23,283 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 09:12:23,284 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.QYMSERVERCoreModule, QYMSERVER.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 09:12:23,285 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 09:12:23,286 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.QYMSERVERApplicationModule, QYMSERVER.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 09:12:23,287 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 09:12:23,288 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.Api.QYMSERVERWebApiModule, QYMSERVER.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 09:12:23,289 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 09:12:23,290 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 09:12:23,291 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 09:12:23,292 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 09:12:23,293 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 09:12:23,300 [1    ] Abp.Modules.AbpModuleManager             - 18 modules loaded.
+DEBUG 2020-01-15 09:12:29,934 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-01-15 09:12:29,934 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-01-15 09:12:29,935 [1    ] o.Configuration.LanguageManagementConfig - Converted QYMSERVER (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-01-15 09:12:29,935 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+INFO  2020-01-15 09:12:34,540 [1    ] Hangfire.SqlServer.SqlServerStorage      - Start installing Hangfire SQL objects...
+INFO  2020-01-15 09:12:34,731 [1    ] Hangfire.SqlServer.SqlServerStorage      - Hangfire SQL objects installed.
+DEBUG 2020-01-15 09:12:34,868 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: QYMSERVER.EntityFramework.QYMSERVERDbContext, QYMSERVER.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 09:12:37,497 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-01-15 09:12:37,530 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-01-15 09:12:37,543 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-01-15 09:12:37,547 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: QYMSERVER
+DEBUG 2020-01-15 09:12:37,550 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-01-15 09:12:37,560 [1    ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2020-01-15 09:12:37,572 [1    ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2020-01-15 09:12:37,583 [1    ] Hangfire.BackgroundJobServer             - Using job storage: 'SQL Server: .@QYMESDB'
+INFO  2020-01-15 09:12:37,584 [1    ] Hangfire.BackgroundJobServer             - Using the following options for SQL Server job storage:
+INFO  2020-01-15 09:12:37,585 [1    ] Hangfire.BackgroundJobServer             -     Queue poll interval: 00:00:15.
+INFO  2020-01-15 09:12:37,586 [1    ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2020-01-15 09:12:37,586 [1    ] Hangfire.BackgroundJobServer             -     Worker count: 20
+INFO  2020-01-15 09:12:37,588 [1    ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'
+INFO  2020-01-15 09:12:37,591 [1    ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15
+INFO  2020-01-15 09:12:37,591 [1    ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15
+DEBUG 2020-01-15 09:12:37,624 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2020-01-15 09:12:38,086 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2020-01-15 09:12:38,113 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2020-01-15 09:12:38,116 [1    ] BackgroundWork.ProductTableMonitorWorker - Start background worker: Castle.Proxies.ProductTableMonitorWorkerProxy
+INFO  2020-01-15 09:12:38,155 [chdog] Hangfire.Server.ServerWatchdog           - 1 servers were removed due to timeout
+DEBUG 2020-01-15 09:12:38,175 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2020-01-15 09:12:38,179 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'AggregatedCounter' table...
+DEBUG 2020-01-15 09:12:38,262 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2020-01-15 09:12:38,264 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2020-01-15 09:12:38,285 [4784c] Hangfire.Server.Worker                   - Background process 'Worker #1d74784c' started.
+DEBUG 2020-01-15 09:12:38,397 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'AggregatedCounter' table.
+DEBUG 2020-01-15 09:12:38,397 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Job' table...
+DEBUG 2020-01-15 09:12:38,452 [1e889] Hangfire.Server.Worker                   - Background process 'Worker #f741e889' started.
+DEBUG 2020-01-15 09:12:38,557 [e46e3] Hangfire.Server.Worker                   - Background process 'Worker #fc1e46e3' started.
+DEBUG 2020-01-15 09:12:38,557 [041f4] Hangfire.Server.Worker                   - Background process 'Worker #c6d041f4' started.
+DEBUG 2020-01-15 09:12:38,598 [cd1be] Hangfire.Server.Worker                   - Background process 'Worker #1efcd1be' started.
+DEBUG 2020-01-15 09:12:38,650 [gator] Hangfire.SqlServer.CountersAggregator    - Records from the 'Counter' table aggregated.
+DEBUG 2020-01-15 09:12:38,678 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Job' table.
+DEBUG 2020-01-15 09:12:38,679 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'List' table...
+DEBUG 2020-01-15 09:12:38,712 [6ff43] Hangfire.Server.Worker                   - Background process 'Worker #5986ff43' started.
+DEBUG 2020-01-15 09:12:38,795 [e71d3] Hangfire.Server.Worker                   - Background process 'Worker #c30e71d3' started.
+DEBUG 2020-01-15 09:12:38,830 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'List' table.
+DEBUG 2020-01-15 09:12:38,831 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Set' table...
+DEBUG 2020-01-15 09:12:38,931 [bd765] Hangfire.Server.Worker                   - Background process 'Worker #50dbd765' started.
+DEBUG 2020-01-15 09:12:38,956 [ff5f1] Hangfire.Server.Worker                   - Background process 'Worker #dbbff5f1' started.
+DEBUG 2020-01-15 09:12:38,979 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Set' table.
+DEBUG 2020-01-15 09:12:38,980 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Hash' table...
+DEBUG 2020-01-15 09:12:39,019 [0a457] Hangfire.Server.Worker                   - Background process 'Worker #e6b0a457' started.
+DEBUG 2020-01-15 09:12:39,028 [cd7e1] Hangfire.Server.Worker                   - Background process 'Worker #c4dcd7e1' started.
+DEBUG 2020-01-15 09:12:39,054 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Hash' table.
+DEBUG 2020-01-15 09:12:39,067 [3c727] Hangfire.Server.Worker                   - Background process 'Worker #7773c727' started.
+DEBUG 2020-01-15 09:12:39,076 [657f0] Hangfire.Server.Worker                   - Background process 'Worker #af0657f0' started.
+DEBUG 2020-01-15 09:12:39,184 [6df66] Hangfire.Server.Worker                   - Background process 'Worker #b316df66' started.
+DEBUG 2020-01-15 09:12:39,238 [4ea56] Hangfire.Server.Worker                   - Background process 'Worker #0744ea56' started.
+DEBUG 2020-01-15 09:12:39,292 [d7778] Hangfire.Server.Worker                   - Background process 'Worker #175d7778' started.
+DEBUG 2020-01-15 09:12:39,311 [5f9e9] Hangfire.Server.Worker                   - Background process 'Worker #2645f9e9' started.
+DEBUG 2020-01-15 09:12:39,372 [9104d] Hangfire.Server.Worker                   - Background process 'Worker #6219104d' started.
+DEBUG 2020-01-15 09:12:39,416 [84756] Hangfire.Server.Worker                   - Background process 'Worker #9ef84756' started.
+DEBUG 2020-01-15 09:12:39,465 [065d6] Hangfire.Server.Worker                   - Background process 'Worker #206065d6' started.
+DEBUG 2020-01-15 09:12:39,487 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2020-01-15 09:12:39,509 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+WARN  2020-01-15 09:12:44,086 [1    ] Abp.MultiTenancy.TenantResolver          - System.Web.HttpException (0x80004005): 请求在此上下文中不可用
+   在 System.Web.HttpContext.get_Request()
+   在 Abp.Web.MultiTenancy.HttpHeaderTenantResolveContributor.ResolveTenantId()
+   在 Abp.MultiTenancy.TenantResolver.GetTenantIdFromContributors()
+System.Web.HttpException (0x80004005): 请求在此上下文中不可用
+   在 System.Web.HttpContext.get_Request()
+   在 Abp.Web.MultiTenancy.HttpHeaderTenantResolveContributor.ResolveTenantId()
+   在 Abp.MultiTenancy.TenantResolver.GetTenantIdFromContributors()
+WARN  2020-01-15 09:12:44,110 [1    ] Abp.MultiTenancy.TenantResolver          - System.Web.HttpException (0x80004005): 请求在此上下文中不可用
+   在 System.Web.HttpContext.get_Request()
+   在 Abp.Web.MultiTenancy.HttpCookieTenantResolveContributor.ResolveTenantId()
+   在 Abp.MultiTenancy.TenantResolver.GetTenantIdFromContributors()
+System.Web.HttpException (0x80004005): 请求在此上下文中不可用
+   在 System.Web.HttpContext.get_Request()
+   在 Abp.Web.MultiTenancy.HttpCookieTenantResolveContributor.ResolveTenantId()
+   在 Abp.MultiTenancy.TenantResolver.GetTenantIdFromContributors()
+DEBUG 2020-01-15 09:12:50,105 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes define auto mapping attributes
+DEBUG 2020-01-15 09:12:50,106 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-01-15 09:12:50,111 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-01-15 09:12:50,112 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Users.Dto.CreateUserDto
+DEBUG 2020-01-15 09:12:50,114 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Users.Dto.UpdateUserDto
+DEBUG 2020-01-15 09:12:50,114 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Users.Dto.UserDto
+DEBUG 2020-01-15 09:12:50,115 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Roles.Dto.CreateRoleDto
+DEBUG 2020-01-15 09:12:50,116 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Roles.Dto.PermissionDto
+DEBUG 2020-01-15 09:12:50,117 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Roles.Dto.RoleDto
+DEBUG 2020-01-15 09:12:50,118 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-01-15 09:12:50,118 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.MultiTenancy.Dto.EditTenantDto
+DEBUG 2020-01-15 09:12:50,119 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.MultiTenancy.Dto.TenantDto
+DEBUG 2020-01-15 09:12:50,120 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Web.Models.Account.TenantChangeViewModel
+DEBUG 2020-01-15 09:12:50,121 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2020-01-15 09:12:50,733 [1    ] rviceBase.MakeInactiveUsersPassiveWorker - Start background worker: Castle.Proxies.MakeInactiveUsersPassiveWorkerProxy
+DEBUG 2020-01-15 09:12:56,140 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2020-01-15 09:12:56,142 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2020-01-15 09:12:56,144 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.TestApp.ITestAppService' with service name 'app/test'.
+DEBUG 2020-01-15 09:12:56,147 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2020-01-15 09:12:56,152 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.Quartz.ISystemSchedulerService' with service name 'app/systemSchedulerService'.
+DEBUG 2020-01-15 09:12:56,155 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2020-01-15 09:12:56,157 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2020-01-15 09:12:56,160 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2020-01-15 09:12:56,162 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.ClientService.MPS.IClientMPSAppService' with service name 'app/clientMPS'.
+DEBUG 2020-01-15 09:12:56,164 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.ClientService.MPS.IRouteWorkAppService' with service name 'app/routeWork'.
+WARN  2020-01-15 09:14:29,795 [47   ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+DEBUG 2020-01-15 09:18:00,493 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2020-01-15 09:18:01,610 [gator] Hangfire.SqlServer.CountersAggregator    - Records from the 'Counter' table aggregated.
+DEBUG 2020-01-15 11:26:12,391 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-01-15 11:26:12,443 [1    ] Abp.Modules.AbpModuleManager             - Found 18 ABP modules in total.
+DEBUG 2020-01-15 11:26:12,454 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.Web.QYMSERVERWebModule, QYMSERVER.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:26:12,457 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.QYMSERVERDataModule, QYMSERVER.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:26:12,458 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:26:12,459 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:26:12,460 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:26:12,460 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:26:12,462 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:26:12,462 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:26:12,464 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.QYMSERVERCoreModule, QYMSERVER.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:26:12,465 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:26:12,466 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.QYMSERVERApplicationModule, QYMSERVER.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:26:12,467 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:26:12,468 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.Api.QYMSERVERWebApiModule, QYMSERVER.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:26:12,469 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:26:12,470 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:26:12,471 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:26:12,472 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:26:12,473 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:26:12,478 [1    ] Abp.Modules.AbpModuleManager             - 18 modules loaded.
+ERROR 2020-01-15 11:26:15,018 [1    ] QYMSERVER.QYMSERVERCoreModule            - A_OpcUaClient -BadTooManySessions
+ERROR 2020-01-15 11:26:16,296 [1    ] QYMSERVER.QYMSERVERCoreModule            - B_OpcUaClient -BadTooManySessions
+ERROR 2020-01-15 11:26:17,929 [1    ] QYMSERVER.QYMSERVERCoreModule            - C_OpcUaClient -BadTooManySessions
+DEBUG 2020-01-15 11:26:18,182 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-01-15 11:26:18,182 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-01-15 11:26:18,183 [1    ] o.Configuration.LanguageManagementConfig - Converted QYMSERVER (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-01-15 11:26:18,184 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+INFO  2020-01-15 11:26:25,644 [1    ] Hangfire.SqlServer.SqlServerStorage      - Start installing Hangfire SQL objects...
+INFO  2020-01-15 11:26:28,907 [1    ] Hangfire.SqlServer.SqlServerStorage      - Hangfire SQL objects installed.
+DEBUG 2020-01-15 11:26:29,042 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: QYMSERVER.EntityFramework.QYMSERVERDbContext, QYMSERVER.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+FATAL 2020-01-15 11:26:29,279 [1    ] Abp.AbpBootstrapper                      - System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 OpcUaHelper.OpcUaClient.AddSubscription(String key, String[] tags, Action`3 callback)
+   在 QYMSERVER.OPC_UA.OpcBasicMonitorWorkManager.A_MultipleSubscription(String[] nodes) 位置 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Core\OPC UA\OpcBasicMonitorWorkManager.cs:行号 35
+   在 QYMSERVER.OPC_UA.OpcBasicMonitorWorkManager..ctor() 位置 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Core\OPC UA\OpcBasicMonitorWorkManager.cs:行号 29
+   在 QYMSERVER.QYMSERVERCoreModule.Initialize() 位置 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Core\QYMSERVERCoreModule.cs:行号 82
+   在 Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Abp.Modules.AbpModuleManager.StartModules()
+   在 Abp.AbpBootstrapper.Initialize()
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 OpcUaHelper.OpcUaClient.AddSubscription(String key, String[] tags, Action`3 callback)
+   在 QYMSERVER.OPC_UA.OpcBasicMonitorWorkManager.A_MultipleSubscription(String[] nodes) 位置 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Core\OPC UA\OpcBasicMonitorWorkManager.cs:行号 35
+   在 QYMSERVER.OPC_UA.OpcBasicMonitorWorkManager..ctor() 位置 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Core\OPC UA\OpcBasicMonitorWorkManager.cs:行号 29
+   在 QYMSERVER.QYMSERVERCoreModule.Initialize() 位置 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Core\QYMSERVERCoreModule.cs:行号 82
+   在 Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Abp.Modules.AbpModuleManager.StartModules()
+   在 Abp.AbpBootstrapper.Initialize()
+DEBUG 2020-01-15 11:26:39,430 [13   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2020-01-15 11:26:39,433 [13   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2020-01-15 11:27:31,540 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-01-15 11:27:32,370 [1    ] Abp.Modules.AbpModuleManager             - Found 18 ABP modules in total.
+DEBUG 2020-01-15 11:27:32,385 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.Web.QYMSERVERWebModule, QYMSERVER.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:27:32,388 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.QYMSERVERDataModule, QYMSERVER.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:27:32,389 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:27:32,390 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:27:32,391 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:27:32,392 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:27:32,393 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:27:32,394 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:27:32,395 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.QYMSERVERCoreModule, QYMSERVER.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:27:32,395 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:27:32,396 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.QYMSERVERApplicationModule, QYMSERVER.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:27:32,397 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:27:32,398 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.Api.QYMSERVERWebApiModule, QYMSERVER.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:27:32,399 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:27:32,400 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:27:32,401 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:27:32,402 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:27:32,404 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:27:32,410 [1    ] Abp.Modules.AbpModuleManager             - 18 modules loaded.
+ERROR 2020-01-15 11:27:35,210 [1    ] QYMSERVER.QYMSERVERCoreModule            - A_OpcUaClient -BadTooManySessions
+ERROR 2020-01-15 11:27:36,534 [1    ] QYMSERVER.QYMSERVERCoreModule            - B_OpcUaClient -BadTooManySessions
+ERROR 2020-01-15 11:27:37,718 [1    ] QYMSERVER.QYMSERVERCoreModule            - C_OpcUaClient -BadTooManySessions
+DEBUG 2020-01-15 11:27:38,161 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-01-15 11:27:38,162 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-01-15 11:27:38,162 [1    ] o.Configuration.LanguageManagementConfig - Converted QYMSERVER (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-01-15 11:27:38,163 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+INFO  2020-01-15 11:27:39,359 [1    ] Hangfire.SqlServer.SqlServerStorage      - Start installing Hangfire SQL objects...
+INFO  2020-01-15 11:27:39,589 [1    ] Hangfire.SqlServer.SqlServerStorage      - Hangfire SQL objects installed.
+DEBUG 2020-01-15 11:27:40,005 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: QYMSERVER.EntityFramework.QYMSERVERDbContext, QYMSERVER.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+FATAL 2020-01-15 11:27:40,362 [1    ] Abp.AbpBootstrapper                      - System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 OpcUaHelper.OpcUaClient.AddSubscription(String key, String[] tags, Action`3 callback)
+   在 QYMSERVER.OPC_UA.OpcBasicMonitorWorkManager.A_MultipleSubscription(String[] nodes) 位置 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Core\OPC UA\OpcBasicMonitorWorkManager.cs:行号 35
+   在 QYMSERVER.OPC_UA.OpcBasicMonitorWorkManager..ctor() 位置 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Core\OPC UA\OpcBasicMonitorWorkManager.cs:行号 29
+   在 QYMSERVER.QYMSERVERCoreModule.Initialize() 位置 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Core\QYMSERVERCoreModule.cs:行号 82
+   在 Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Abp.Modules.AbpModuleManager.StartModules()
+   在 Abp.AbpBootstrapper.Initialize()
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 OpcUaHelper.OpcUaClient.AddSubscription(String key, String[] tags, Action`3 callback)
+   在 QYMSERVER.OPC_UA.OpcBasicMonitorWorkManager.A_MultipleSubscription(String[] nodes) 位置 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Core\OPC UA\OpcBasicMonitorWorkManager.cs:行号 35
+   在 QYMSERVER.OPC_UA.OpcBasicMonitorWorkManager..ctor() 位置 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Core\OPC UA\OpcBasicMonitorWorkManager.cs:行号 29
+   在 QYMSERVER.QYMSERVERCoreModule.Initialize() 位置 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Core\QYMSERVERCoreModule.cs:行号 82
+   在 Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Abp.Modules.AbpModuleManager.StartModules()
+   在 Abp.AbpBootstrapper.Initialize()
+DEBUG 2020-01-15 11:27:50,432 [13   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2020-01-15 11:27:50,434 [13   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2020-01-15 11:28:52,123 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-01-15 11:28:52,716 [1    ] Abp.Modules.AbpModuleManager             - Found 18 ABP modules in total.
+DEBUG 2020-01-15 11:28:52,724 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.Web.QYMSERVERWebModule, QYMSERVER.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:28:52,726 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.QYMSERVERDataModule, QYMSERVER.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:28:52,727 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:28:52,728 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:28:52,729 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:28:52,730 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:28:52,730 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:28:52,731 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:28:52,732 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.QYMSERVERCoreModule, QYMSERVER.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:28:52,733 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:28:52,734 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.QYMSERVERApplicationModule, QYMSERVER.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:28:52,735 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:28:52,736 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.Api.QYMSERVERWebApiModule, QYMSERVER.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:28:52,737 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:28:52,738 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:28:52,740 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:28:52,741 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:28:52,741 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:28:52,747 [1    ] Abp.Modules.AbpModuleManager             - 18 modules loaded.
+ERROR 2020-01-15 11:28:55,056 [1    ] QYMSERVER.QYMSERVERCoreModule            - A_OpcUaClient -BadTooManySessions
+ERROR 2020-01-15 11:28:56,266 [1    ] QYMSERVER.QYMSERVERCoreModule            - B_OpcUaClient -BadTooManySessions
+ERROR 2020-01-15 11:28:57,511 [1    ] QYMSERVER.QYMSERVERCoreModule            - C_OpcUaClient -BadTooManySessions
+DEBUG 2020-01-15 11:28:58,093 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-01-15 11:28:58,094 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-01-15 11:28:58,094 [1    ] o.Configuration.LanguageManagementConfig - Converted QYMSERVER (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-01-15 11:28:58,095 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+INFO  2020-01-15 11:28:58,897 [1    ] Hangfire.SqlServer.SqlServerStorage      - Start installing Hangfire SQL objects...
+INFO  2020-01-15 11:28:59,226 [1    ] Hangfire.SqlServer.SqlServerStorage      - Hangfire SQL objects installed.
+DEBUG 2020-01-15 11:28:59,705 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: QYMSERVER.EntityFramework.QYMSERVERDbContext, QYMSERVER.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+FATAL 2020-01-15 11:28:59,865 [1    ] Abp.AbpBootstrapper                      - System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 OpcUaHelper.OpcUaClient.AddSubscription(String key, String[] tags, Action`3 callback)
+   在 QYMSERVER.OPC_UA.OpcBasicMonitorWorkManager.A_MultipleSubscription(String[] nodes) 位置 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Core\OPC UA\OpcBasicMonitorWorkManager.cs:行号 35
+   在 QYMSERVER.OPC_UA.OpcBasicMonitorWorkManager..ctor() 位置 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Core\OPC UA\OpcBasicMonitorWorkManager.cs:行号 29
+   在 QYMSERVER.QYMSERVERCoreModule.Initialize() 位置 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Core\QYMSERVERCoreModule.cs:行号 82
+   在 Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Abp.Modules.AbpModuleManager.StartModules()
+   在 Abp.AbpBootstrapper.Initialize()
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 OpcUaHelper.OpcUaClient.AddSubscription(String key, String[] tags, Action`3 callback)
+   在 QYMSERVER.OPC_UA.OpcBasicMonitorWorkManager.A_MultipleSubscription(String[] nodes) 位置 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Core\OPC UA\OpcBasicMonitorWorkManager.cs:行号 35
+   在 QYMSERVER.OPC_UA.OpcBasicMonitorWorkManager..ctor() 位置 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Core\OPC UA\OpcBasicMonitorWorkManager.cs:行号 29
+   在 QYMSERVER.QYMSERVERCoreModule.Initialize() 位置 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Core\QYMSERVERCoreModule.cs:行号 82
+   在 Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Abp.Modules.AbpModuleManager.StartModules()
+   在 Abp.AbpBootstrapper.Initialize()
+DEBUG 2020-01-15 11:29:09,906 [14   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2020-01-15 11:29:09,907 [14   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2020-01-15 11:37:05,117 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-01-15 11:37:05,706 [1    ] Abp.Modules.AbpModuleManager             - Found 18 ABP modules in total.
+DEBUG 2020-01-15 11:37:05,717 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.Web.QYMSERVERWebModule, QYMSERVER.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:37:05,719 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.QYMSERVERDataModule, QYMSERVER.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:37:05,720 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:37:05,721 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:37:05,722 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:37:05,723 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:37:05,725 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:37:05,727 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:37:05,729 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.QYMSERVERCoreModule, QYMSERVER.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:37:05,730 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:37:05,731 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.QYMSERVERApplicationModule, QYMSERVER.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:37:05,765 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:37:05,766 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.Api.QYMSERVERWebApiModule, QYMSERVER.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:37:05,768 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:37:05,770 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:37:05,771 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:37:05,772 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:37:05,773 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:37:05,779 [1    ] Abp.Modules.AbpModuleManager             - 18 modules loaded.
+ERROR 2020-01-15 11:37:09,857 [1    ] QYMSERVER.QYMSERVERCoreModule            - B_OpcUaClient -BadTooManySessions
+ERROR 2020-01-15 11:37:11,062 [1    ] QYMSERVER.QYMSERVERCoreModule            - C_OpcUaClient -BadTooManySessions
+DEBUG 2020-01-15 11:37:11,439 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-01-15 11:37:11,440 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-01-15 11:37:11,441 [1    ] o.Configuration.LanguageManagementConfig - Converted QYMSERVER (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-01-15 11:37:11,442 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+INFO  2020-01-15 11:37:12,267 [1    ] Hangfire.SqlServer.SqlServerStorage      - Start installing Hangfire SQL objects...
+INFO  2020-01-15 11:37:12,509 [1    ] Hangfire.SqlServer.SqlServerStorage      - Hangfire SQL objects installed.
+DEBUG 2020-01-15 11:37:12,851 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: QYMSERVER.EntityFramework.QYMSERVERDbContext, QYMSERVER.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-15 11:37:15,128 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-01-15 11:37:15,198 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-01-15 11:37:15,208 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-01-15 11:37:15,211 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: QYMSERVER
+DEBUG 2020-01-15 11:37:15,214 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-01-15 11:37:15,221 [1    ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2020-01-15 11:37:15,232 [1    ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2020-01-15 11:37:15,249 [1    ] Hangfire.BackgroundJobServer             - Using job storage: 'SQL Server: .@QYMESDB'
+INFO  2020-01-15 11:37:15,251 [1    ] Hangfire.BackgroundJobServer             - Using the following options for SQL Server job storage:
+INFO  2020-01-15 11:37:15,252 [1    ] Hangfire.BackgroundJobServer             -     Queue poll interval: 00:00:15.
+INFO  2020-01-15 11:37:15,253 [1    ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2020-01-15 11:37:15,254 [1    ] Hangfire.BackgroundJobServer             -     Worker count: 20
+INFO  2020-01-15 11:37:15,255 [1    ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'
+INFO  2020-01-15 11:37:15,255 [1    ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15
+INFO  2020-01-15 11:37:15,256 [1    ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15
+DEBUG 2020-01-15 11:37:15,302 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2020-01-15 11:37:15,454 [1    ] BackgroundWork.ProductTableMonitorWorker - Start background worker: Castle.Proxies.ProductTableMonitorWorkerProxy
+DEBUG 2020-01-15 11:37:16,438 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2020-01-15 11:37:16,521 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2020-01-15 11:37:16,557 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2020-01-15 11:37:16,645 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2020-01-15 11:37:16,682 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'AggregatedCounter' table...
+DEBUG 2020-01-15 11:37:16,682 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2020-01-15 11:37:16,726 [052a3] Hangfire.Server.Worker                   - Background process 'Worker #4ab052a3' started.
+INFO  2020-01-15 11:37:16,745 [chdog] Hangfire.Server.ServerWatchdog           - 1 servers were removed due to timeout
+DEBUG 2020-01-15 11:37:16,773 [02375] Hangfire.Server.Worker                   - Background process 'Worker #e7502375' started.
+DEBUG 2020-01-15 11:37:16,872 [af04d] Hangfire.Server.Worker                   - Background process 'Worker #174af04d' started.
+DEBUG 2020-01-15 11:37:17,056 [e48c8] Hangfire.Server.Worker                   - Background process 'Worker #60ee48c8' started.
+DEBUG 2020-01-15 11:37:17,092 [0b40b] Hangfire.Server.Worker                   - Background process 'Worker #92c0b40b' started.
+DEBUG 2020-01-15 11:37:17,205 [0566c] Hangfire.Server.Worker                   - Background process 'Worker #fe60566c' started.
+DEBUG 2020-01-15 11:37:17,256 [a9793] Hangfire.Server.Worker                   - Background process 'Worker #124a9793' started.
+DEBUG 2020-01-15 11:37:17,279 [d9b73] Hangfire.Server.Worker                   - Background process 'Worker #8afd9b73' started.
+DEBUG 2020-01-15 11:37:17,309 [082d5] Hangfire.Server.Worker                   - Background process 'Worker #6a6082d5' started.
+DEBUG 2020-01-15 11:37:17,351 [ae023] Hangfire.Server.Worker                   - Background process 'Worker #bbaae023' started.
+DEBUG 2020-01-15 11:37:17,361 [0b79d] Hangfire.Server.Worker                   - Background process 'Worker #6520b79d' started.
+DEBUG 2020-01-15 11:37:17,407 [35f4f] Hangfire.Server.Worker                   - Background process 'Worker #60835f4f' started.
+DEBUG 2020-01-15 11:37:17,443 [1abdd] Hangfire.Server.Worker                   - Background process 'Worker #0dc1abdd' started.
+DEBUG 2020-01-15 11:37:17,477 [d25ee] Hangfire.Server.Worker                   - Background process 'Worker #37fd25ee' started.
+DEBUG 2020-01-15 11:37:17,479 [d1ff1] Hangfire.Server.Worker                   - Background process 'Worker #e2cd1ff1' started.
+DEBUG 2020-01-15 11:37:17,505 [fa009] Hangfire.Server.Worker                   - Background process 'Worker #ba9fa009' started.
+DEBUG 2020-01-15 11:37:17,531 [d0444] Hangfire.Server.Worker                   - Background process 'Worker #ac1d0444' started.
+DEBUG 2020-01-15 11:37:17,552 [856af] Hangfire.Server.Worker                   - Background process 'Worker #d28856af' started.
+DEBUG 2020-01-15 11:37:17,559 [cd3c5] Hangfire.Server.Worker                   - Background process 'Worker #8e1cd3c5' started.
+DEBUG 2020-01-15 11:37:17,581 [28d10] Hangfire.Server.Worker                   - Background process 'Worker #fdc28d10' started.
+DEBUG 2020-01-15 11:37:17,616 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2020-01-15 11:37:17,624 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+WARN  2020-01-15 11:37:18,275 [1    ] Abp.MultiTenancy.TenantResolver          - System.Web.HttpException (0x80004005): 请求在此上下文中不可用
+   在 System.Web.HttpContext.get_Request()
+   在 Abp.Web.MultiTenancy.HttpHeaderTenantResolveContributor.ResolveTenantId()
+   在 Abp.MultiTenancy.TenantResolver.GetTenantIdFromContributors()
+System.Web.HttpException (0x80004005): 请求在此上下文中不可用
+   在 System.Web.HttpContext.get_Request()
+   在 Abp.Web.MultiTenancy.HttpHeaderTenantResolveContributor.ResolveTenantId()
+   在 Abp.MultiTenancy.TenantResolver.GetTenantIdFromContributors()
+WARN  2020-01-15 11:37:18,304 [1    ] Abp.MultiTenancy.TenantResolver          - System.Web.HttpException (0x80004005): 请求在此上下文中不可用
+   在 System.Web.HttpContext.get_Request()
+   在 Abp.Web.MultiTenancy.HttpCookieTenantResolveContributor.ResolveTenantId()
+   在 Abp.MultiTenancy.TenantResolver.GetTenantIdFromContributors()
+System.Web.HttpException (0x80004005): 请求在此上下文中不可用
+   在 System.Web.HttpContext.get_Request()
+   在 Abp.Web.MultiTenancy.HttpCookieTenantResolveContributor.ResolveTenantId()
+   在 Abp.MultiTenancy.TenantResolver.GetTenantIdFromContributors()
+DEBUG 2020-01-15 11:37:18,425 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'AggregatedCounter' table.
+DEBUG 2020-01-15 11:37:18,426 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Job' table...
+DEBUG 2020-01-15 11:37:20,930 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Job' table.
+DEBUG 2020-01-15 11:37:20,931 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'List' table...
+DEBUG 2020-01-15 11:37:21,388 [gator] Hangfire.SqlServer.CountersAggregator    - Records from the 'Counter' table aggregated.
+DEBUG 2020-01-15 11:37:21,419 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'List' table.
+DEBUG 2020-01-15 11:37:21,420 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Set' table...
+DEBUG 2020-01-15 11:37:21,471 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Set' table.
+DEBUG 2020-01-15 11:37:21,472 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Hash' table...
+DEBUG 2020-01-15 11:37:21,624 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Hash' table.
+DEBUG 2020-01-15 11:37:30,998 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes define auto mapping attributes
+DEBUG 2020-01-15 11:37:30,999 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-01-15 11:37:31,004 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-01-15 11:37:31,005 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Users.Dto.CreateUserDto
+DEBUG 2020-01-15 11:37:31,006 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Users.Dto.UpdateUserDto
+DEBUG 2020-01-15 11:37:31,007 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Users.Dto.UserDto
+DEBUG 2020-01-15 11:37:31,008 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Roles.Dto.CreateRoleDto
+DEBUG 2020-01-15 11:37:31,008 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Roles.Dto.PermissionDto
+DEBUG 2020-01-15 11:37:31,009 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Roles.Dto.RoleDto
+DEBUG 2020-01-15 11:37:31,010 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-01-15 11:37:31,010 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.MultiTenancy.Dto.EditTenantDto
+DEBUG 2020-01-15 11:37:31,011 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.MultiTenancy.Dto.TenantDto
+DEBUG 2020-01-15 11:37:31,012 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Web.Models.Account.TenantChangeViewModel
+DEBUG 2020-01-15 11:37:31,013 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2020-01-15 11:37:31,663 [1    ] rviceBase.MakeInactiveUsersPassiveWorker - Start background worker: Castle.Proxies.MakeInactiveUsersPassiveWorkerProxy
+DEBUG 2020-01-15 11:37:34,641 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2020-01-15 11:37:34,643 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2020-01-15 11:37:34,645 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.TestApp.ITestAppService' with service name 'app/test'.
+DEBUG 2020-01-15 11:37:34,648 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2020-01-15 11:37:34,650 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.Quartz.ISystemSchedulerService' with service name 'app/systemSchedulerService'.
+DEBUG 2020-01-15 11:37:34,653 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2020-01-15 11:37:34,655 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2020-01-15 11:37:34,657 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2020-01-15 11:37:34,659 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.ClientService.MPS.IClientMPSAppService' with service name 'app/clientMPS'.
+DEBUG 2020-01-15 11:37:34,660 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.ClientService.MPS.IRouteWorkAppService' with service name 'app/routeWork'.
+WARN  2020-01-15 11:37:46,150 [51   ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+WARN  2020-01-15 11:39:03,093 [87   ] naries.DictionaryBasedLocalizationSource - Can not find '用户详情' in localization source 'QYMSERVER'!
+WARN  2020-01-15 11:39:03,098 [87   ] naries.DictionaryBasedLocalizationSource - Can not find '后台工作者' in localization source 'QYMSERVER'!
+WARN  2020-01-15 11:39:03,100 [87   ] naries.DictionaryBasedLocalizationSource - Can not find 'swaggerAPI文档' in localization source 'QYMSERVER'!
+WARN  2020-01-15 11:39:11,212 [94   ] naries.DictionaryBasedLocalizationSource - Can not find '用户详情' in localization source 'QYMSERVER'!
+WARN  2020-01-15 11:39:11,222 [94   ] naries.DictionaryBasedLocalizationSource - Can not find '后台工作者' in localization source 'QYMSERVER'!
+WARN  2020-01-15 11:39:11,231 [94   ] naries.DictionaryBasedLocalizationSource - Can not find 'swaggerAPI文档' in localization source 'QYMSERVER'!
+DEBUG 2020-01-15 11:39:17,288 [95   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"f59e0c1f-24c2-455d-94ee-7ec4b6820a8a","IpAddress":"::1","TenantId":null,"UserId":2,"ConnectTime":"2020-01-15T11:39:17.2810004+08:00","Properties":{}}
+DEBUG 2020-01-15 11:39:19,247 [95   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: f59e0c1f-24c2-455d-94ee-7ec4b6820a8a
+DEBUG 2020-01-15 11:39:39,418 [111  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: f59e0c1f-24c2-455d-94ee-7ec4b6820a8a
+DEBUG 2020-01-15 11:40:44,612 [142  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"b58465fe-3f15-49a5-84c0-88d2ad387f60","IpAddress":"::1","TenantId":null,"UserId":2,"ConnectTime":"2020-01-15T11:40:44.6120004+08:00","Properties":{}}
+DEBUG 2020-01-15 11:40:45,164 [142  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: b58465fe-3f15-49a5-84c0-88d2ad387f60
+DEBUG 2020-01-15 11:41:24,783 [160  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: b58465fe-3f15-49a5-84c0-88d2ad387f60
+DEBUG 2020-01-15 11:42:21,395 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2020-01-15 11:42:21,812 [gator] Hangfire.SqlServer.CountersAggregator    - Records from the 'Counter' table aggregated.
+DEBUG 2020-01-15 11:42:35,282 [200  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: a5dce167-f237-4d4a-8130-383f217a82e2
+DEBUG 2020-01-15 11:42:35,285 [198  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"a5dce167-f237-4d4a-8130-383f217a82e2","IpAddress":"::1","TenantId":null,"UserId":2,"ConnectTime":"2020-01-15T11:42:35.2850004+08:00","Properties":{}}

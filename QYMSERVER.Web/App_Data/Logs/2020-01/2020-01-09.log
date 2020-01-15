@@ -1086,3 +1086,527 @@ INFO  2020-01-09 16:52:06,338 [b5cfa] QYMSERVER.OPC_UA.AssignWorkManager       -
 INFO  2020-01-09 16:52:06,338 [b5cfa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.03028688
 ERROR 2020-01-09 16:53:01,145 [11f6a] QYMSERVER.OPC_UA.AssignWorkManager       - Error establishing a connection: BadNotConnected
 ERROR 2020-01-09 16:54:00,449 [a5771] QYMSERVER.OPC_UA.AssignWorkManager       - Error establishing a connection: BadNotConnected
+DEBUG 2020-01-09 17:31:44,033 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-01-09 17:31:44,054 [1    ] Abp.Modules.AbpModuleManager             - Found 18 ABP modules in total.
+DEBUG 2020-01-09 17:31:44,063 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.Web.QYMSERVERWebModule, QYMSERVER.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-09 17:31:44,064 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.QYMSERVERDataModule, QYMSERVER.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-09 17:31:44,065 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-09 17:31:44,065 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-09 17:31:44,065 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-09 17:31:44,065 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-09 17:31:44,065 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-09 17:31:44,065 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-09 17:31:44,066 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.QYMSERVERCoreModule, QYMSERVER.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-09 17:31:44,066 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-09 17:31:44,066 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.QYMSERVERApplicationModule, QYMSERVER.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-09 17:31:44,066 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-09 17:31:44,066 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: QYMSERVER.Api.QYMSERVERWebApiModule, QYMSERVER.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-09 17:31:44,066 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-09 17:31:44,066 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-09 17:31:44,066 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-09 17:31:44,067 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-09 17:31:44,067 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-09 17:31:44,072 [1    ] Abp.Modules.AbpModuleManager             - 18 modules loaded.
+DEBUG 2020-01-09 17:31:46,389 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-01-09 17:31:46,389 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-01-09 17:31:46,389 [1    ] o.Configuration.LanguageManagementConfig - Converted QYMSERVER (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-01-09 17:31:46,389 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+INFO  2020-01-09 17:31:51,067 [1    ] Hangfire.SqlServer.SqlServerStorage      - Start installing Hangfire SQL objects...
+INFO  2020-01-09 17:31:51,240 [1    ] Hangfire.SqlServer.SqlServerStorage      - Hangfire SQL objects installed.
+DEBUG 2020-01-09 17:31:51,401 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: QYMSERVER.EntityFramework.QYMSERVERDbContext, QYMSERVER.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-01-09 17:31:52,207 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-01-09 17:31:52,231 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-01-09 17:31:52,239 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-01-09 17:31:52,243 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: QYMSERVER
+DEBUG 2020-01-09 17:31:52,246 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-01-09 17:31:52,252 [1    ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2020-01-09 17:31:52,260 [1    ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2020-01-09 17:31:52,264 [1    ] Hangfire.BackgroundJobServer             - Using job storage: 'SQL Server: .@QYMESDB'
+INFO  2020-01-09 17:31:52,264 [1    ] Hangfire.BackgroundJobServer             - Using the following options for SQL Server job storage:
+INFO  2020-01-09 17:31:52,264 [1    ] Hangfire.BackgroundJobServer             -     Queue poll interval: 00:00:15.
+INFO  2020-01-09 17:31:52,264 [1    ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2020-01-09 17:31:52,264 [1    ] Hangfire.BackgroundJobServer             -     Worker count: 20
+INFO  2020-01-09 17:31:52,264 [1    ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'
+INFO  2020-01-09 17:31:52,264 [1    ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15
+INFO  2020-01-09 17:31:52,265 [1    ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15
+DEBUG 2020-01-09 17:31:52,288 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2020-01-09 17:31:52,419 [1    ] BackgroundWork.ProductTableMonitorWorker - Start background worker: Castle.Proxies.ProductTableMonitorWorkerProxy
+DEBUG 2020-01-09 17:31:52,495 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes define auto mapping attributes
+DEBUG 2020-01-09 17:31:52,495 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-01-09 17:31:52,500 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-01-09 17:31:52,500 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Users.Dto.CreateUserDto
+DEBUG 2020-01-09 17:31:52,501 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Users.Dto.UpdateUserDto
+DEBUG 2020-01-09 17:31:52,501 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Users.Dto.UserDto
+DEBUG 2020-01-09 17:31:52,501 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Roles.Dto.CreateRoleDto
+DEBUG 2020-01-09 17:31:52,501 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Roles.Dto.PermissionDto
+DEBUG 2020-01-09 17:31:52,501 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Roles.Dto.RoleDto
+DEBUG 2020-01-09 17:31:52,501 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-01-09 17:31:52,501 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.MultiTenancy.Dto.EditTenantDto
+DEBUG 2020-01-09 17:31:52,501 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.MultiTenancy.Dto.TenantDto
+DEBUG 2020-01-09 17:31:52,501 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Web.Models.Account.TenantChangeViewModel
+DEBUG 2020-01-09 17:31:52,502 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - QYMSERVER.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2020-01-09 17:31:52,594 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2020-01-09 17:31:52,603 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2020-01-09 17:31:52,605 [nager] Hangfire.SqlServer.ExpirationManager     - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2020-01-09 17:31:52,608 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'AggregatedCounter' table...
+INFO  2020-01-09 17:31:52,658 [chdog] Hangfire.Server.ServerWatchdog           - 1 servers were removed due to timeout
+DEBUG 2020-01-09 17:31:52,681 [gator] Hangfire.SqlServer.CountersAggregator    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2020-01-09 17:31:52,683 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2020-01-09 17:31:52,742 [f5eea] Hangfire.Server.Worker                   - Background process 'Worker #96ff5eea' started.
+DEBUG 2020-01-09 17:31:52,743 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'AggregatedCounter' table.
+DEBUG 2020-01-09 17:31:52,743 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Job' table...
+DEBUG 2020-01-09 17:31:52,744 [67e95] Hangfire.Server.Worker                   - Background process 'Worker #9c167e95' started.
+DEBUG 2020-01-09 17:31:52,878 [6d851] Hangfire.Server.Worker                   - Background process 'Worker #89c6d851' started.
+DEBUG 2020-01-09 17:31:52,951 [gator] Hangfire.SqlServer.CountersAggregator    - Records from the 'Counter' table aggregated.
+DEBUG 2020-01-09 17:31:52,951 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Job' table.
+DEBUG 2020-01-09 17:31:52,953 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'List' table...
+DEBUG 2020-01-09 17:31:52,955 [a0a04] Hangfire.Server.Worker                   - Background process 'Worker #33ca0a04' started.
+DEBUG 2020-01-09 17:31:53,012 [7f595] Hangfire.Server.Worker                   - Background process 'Worker #a437f595' started.
+DEBUG 2020-01-09 17:31:53,059 [f7081] Hangfire.Server.Worker                   - Background process 'Worker #f2cf7081' started.
+DEBUG 2020-01-09 17:31:53,063 [fcc44] Hangfire.Server.Worker                   - Background process 'Worker #5b6fcc44' started.
+DEBUG 2020-01-09 17:31:53,063 [8a95c] Hangfire.Server.Worker                   - Background process 'Worker #b9e8a95c' started.
+DEBUG 2020-01-09 17:31:53,112 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'List' table.
+DEBUG 2020-01-09 17:31:53,113 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Set' table...
+DEBUG 2020-01-09 17:31:53,130 [b6ef1] Hangfire.Server.Worker                   - Background process 'Worker #251b6ef1' started.
+DEBUG 2020-01-09 17:31:53,135 [02841] Hangfire.Server.Worker                   - Background process 'Worker #3a702841' started.
+DEBUG 2020-01-09 17:31:53,143 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Set' table.
+DEBUG 2020-01-09 17:31:53,143 [nager] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Hash' table...
+DEBUG 2020-01-09 17:31:53,190 [nager] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Hash' table.
+DEBUG 2020-01-09 17:31:53,220 [eb90a] Hangfire.Server.Worker                   - Background process 'Worker #e56eb90a' started.
+DEBUG 2020-01-09 17:31:53,224 [7f232] Hangfire.Server.Worker                   - Background process 'Worker #6fc7f232' started.
+DEBUG 2020-01-09 17:31:53,224 [50507] Hangfire.Server.Worker                   - Background process 'Worker #3bd50507' started.
+DEBUG 2020-01-09 17:31:53,307 [8f4b9] Hangfire.Server.Worker                   - Background process 'Worker #04a8f4b9' started.
+DEBUG 2020-01-09 17:31:53,337 [be1eb] Hangfire.Server.Worker                   - Background process 'Worker #d61be1eb' started.
+DEBUG 2020-01-09 17:31:53,398 [f6e4d] Hangfire.Server.Worker                   - Background process 'Worker #30ff6e4d' started.
+DEBUG 2020-01-09 17:31:53,413 [598fa] Hangfire.Server.Worker                   - Background process 'Worker #2f7598fa' started.
+DEBUG 2020-01-09 17:31:53,428 [a94d5] Hangfire.Server.Worker                   - Background process 'Worker #b92a94d5' started.
+DEBUG 2020-01-09 17:31:53,464 [0e02a] Hangfire.Server.Worker                   - Background process 'Worker #4200e02a' started.
+DEBUG 2020-01-09 17:31:53,513 [b16df] Hangfire.Server.Worker                   - Background process 'Worker #830b16df' started.
+DEBUG 2020-01-09 17:31:53,531 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2020-01-09 17:31:53,639 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2020-01-09 17:31:56,311 [1    ] rviceBase.MakeInactiveUsersPassiveWorker - Start background worker: Castle.Proxies.MakeInactiveUsersPassiveWorkerProxy
+DEBUG 2020-01-09 17:31:58,483 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2020-01-09 17:31:58,484 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2020-01-09 17:31:58,486 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.TestApp.ITestAppService' with service name 'app/test'.
+DEBUG 2020-01-09 17:31:58,487 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2020-01-09 17:31:58,488 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.Quartz.ISystemSchedulerService' with service name 'app/systemSchedulerService'.
+DEBUG 2020-01-09 17:31:58,489 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2020-01-09 17:31:58,490 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2020-01-09 17:31:58,492 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2020-01-09 17:31:58,493 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.DoWork.MainProduct.ILocalProductTableAppService' with service name 'app/localProductTable'.
+DEBUG 2020-01-09 17:31:58,497 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.DoWork.MainProduct.IProductRouteAppService' with service name 'app/productRoute'.
+DEBUG 2020-01-09 17:31:58,499 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'QYMSERVER.DoWork.AssignTask.OPCInterface.IOpcInterfaceAppService' with service name 'app/opcInterface'.
+ERROR 2020-01-09 17:32:00,929 [50507] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+INFO  2020-01-09 17:32:01,170 [be1eb] QYMSERVER.OPC_UA.AssignWorkManager       - 0.7898895
+INFO  2020-01-09 17:32:01,170 [be1eb] QYMSERVER.OPC_UA.AssignWorkManager       - 0.7898895
+INFO  2020-01-09 17:32:01,170 [be1eb] QYMSERVER.OPC_UA.AssignWorkManager       - 0.7898895
+INFO  2020-01-09 17:32:01,170 [be1eb] QYMSERVER.OPC_UA.AssignWorkManager       - 0.7898895
+INFO  2020-01-09 17:32:01,170 [be1eb] QYMSERVER.OPC_UA.AssignWorkManager       - 0.7898895
+INFO  2020-01-09 17:32:01,170 [be1eb] QYMSERVER.OPC_UA.AssignWorkManager       - 0.7898895
+INFO  2020-01-09 17:32:01,170 [be1eb] QYMSERVER.OPC_UA.AssignWorkManager       - 0.7898895
+ERROR 2020-01-09 17:32:01,572 [0e02a] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+WARN  2020-01-09 17:32:06,162 [8    ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+WARN  2020-01-09 17:32:43,779 [40   ] naries.DictionaryBasedLocalizationSource - Can not find '用户详情' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:32:43,781 [40   ] naries.DictionaryBasedLocalizationSource - Can not find '后台工作者' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:32:43,782 [40   ] naries.DictionaryBasedLocalizationSource - Can not find 'swaggerAPI文档' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:32:46,157 [10   ] naries.DictionaryBasedLocalizationSource - Can not find '用户详情' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:32:46,158 [10   ] naries.DictionaryBasedLocalizationSource - Can not find '后台工作者' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:32:46,160 [10   ] naries.DictionaryBasedLocalizationSource - Can not find 'swaggerAPI文档' in localization source 'QYMSERVER'!
+DEBUG 2020-01-09 17:32:49,104 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"932108b2-137b-4297-99a4-32ccf27ab180","IpAddress":"::1","TenantId":null,"UserId":2,"ConnectTime":"2020-01-09T17:32:49.0946004+08:00","Properties":{}}
+DEBUG 2020-01-09 17:32:49,262 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 932108b2-137b-4297-99a4-32ccf27ab180
+INFO  2020-01-09 17:33:01,281 [a94d5] QYMSERVER.OPC_UA.AssignWorkManager       - 0.8081692
+INFO  2020-01-09 17:33:01,281 [a94d5] QYMSERVER.OPC_UA.AssignWorkManager       - 0.8081692
+INFO  2020-01-09 17:33:01,281 [a94d5] QYMSERVER.OPC_UA.AssignWorkManager       - 0.8081692
+INFO  2020-01-09 17:33:01,281 [a94d5] QYMSERVER.OPC_UA.AssignWorkManager       - 0.8081692
+INFO  2020-01-09 17:33:01,281 [a94d5] QYMSERVER.OPC_UA.AssignWorkManager       - 0.8081692
+INFO  2020-01-09 17:33:01,281 [a94d5] QYMSERVER.OPC_UA.AssignWorkManager       - 0.8081692
+INFO  2020-01-09 17:33:01,281 [a94d5] QYMSERVER.OPC_UA.AssignWorkManager       - 0.8081692
+ERROR 2020-01-09 17:33:01,678 [0e02a] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+ERROR 2020-01-09 17:33:01,949 [b16df] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+WARN  2020-01-09 17:33:05,934 [6    ] naries.DictionaryBasedLocalizationSource - Can not find '用户详情' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:33:05,937 [6    ] naries.DictionaryBasedLocalizationSource - Can not find '后台工作者' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:33:05,938 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'swaggerAPI文档' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:33:06,459 [42   ] naries.DictionaryBasedLocalizationSource - Can not find '用户详情' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:33:06,460 [42   ] naries.DictionaryBasedLocalizationSource - Can not find '后台工作者' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:33:06,461 [42   ] naries.DictionaryBasedLocalizationSource - Can not find 'swaggerAPI文档' in localization source 'QYMSERVER'!
+DEBUG 2020-01-09 17:33:06,581 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 932108b2-137b-4297-99a4-32ccf27ab180
+WARN  2020-01-09 17:33:06,892 [10   ] naries.DictionaryBasedLocalizationSource - Can not find '用户详情' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:33:06,893 [10   ] naries.DictionaryBasedLocalizationSource - Can not find '后台工作者' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:33:06,894 [10   ] naries.DictionaryBasedLocalizationSource - Can not find 'swaggerAPI文档' in localization source 'QYMSERVER'!
+DEBUG 2020-01-09 17:33:07,110 [45   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"9bca1a38-278b-4941-b2b7-1455c38c3cfc","IpAddress":"::1","TenantId":null,"UserId":2,"ConnectTime":"2020-01-09T17:33:07.1106004+08:00","Properties":{}}
+DEBUG 2020-01-09 17:33:07,164 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 9bca1a38-278b-4941-b2b7-1455c38c3cfc
+INFO  2020-01-09 17:34:01,446 [b16df] QYMSERVER.OPC_UA.AssignWorkManager       - 0.9754474
+INFO  2020-01-09 17:34:01,446 [b16df] QYMSERVER.OPC_UA.AssignWorkManager       - 0.9754474
+INFO  2020-01-09 17:34:01,446 [b16df] QYMSERVER.OPC_UA.AssignWorkManager       - 0.9754474
+INFO  2020-01-09 17:34:01,446 [b16df] QYMSERVER.OPC_UA.AssignWorkManager       - 0.9754474
+INFO  2020-01-09 17:34:01,447 [b16df] QYMSERVER.OPC_UA.AssignWorkManager       - 0.9754474
+INFO  2020-01-09 17:34:01,447 [b16df] QYMSERVER.OPC_UA.AssignWorkManager       - 0.9754474
+INFO  2020-01-09 17:34:01,447 [b16df] QYMSERVER.OPC_UA.AssignWorkManager       - 0.9754474
+ERROR 2020-01-09 17:34:01,640 [0e02a] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+ERROR 2020-01-09 17:34:02,036 [8f4b9] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+DEBUG 2020-01-09 17:34:58,057 [48   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 9bca1a38-278b-4941-b2b7-1455c38c3cfc
+INFO  2020-01-09 17:35:00,514 [0e02a] QYMSERVER.OPC_UA.AssignWorkManager       - 0.6280985
+INFO  2020-01-09 17:35:00,514 [0e02a] QYMSERVER.OPC_UA.AssignWorkManager       - 0.6280985
+INFO  2020-01-09 17:35:00,514 [0e02a] QYMSERVER.OPC_UA.AssignWorkManager       - 0.6280985
+INFO  2020-01-09 17:35:00,514 [0e02a] QYMSERVER.OPC_UA.AssignWorkManager       - 0.6280985
+INFO  2020-01-09 17:35:00,514 [0e02a] QYMSERVER.OPC_UA.AssignWorkManager       - 0.6280985
+INFO  2020-01-09 17:35:00,514 [0e02a] QYMSERVER.OPC_UA.AssignWorkManager       - 0.6280985
+INFO  2020-01-09 17:35:00,514 [0e02a] QYMSERVER.OPC_UA.AssignWorkManager       - 0.6280985
+ERROR 2020-01-09 17:35:00,672 [a94d5] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+ERROR 2020-01-09 17:35:01,330 [f6e4d] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+DEBUG 2020-01-09 17:35:18,546 [55   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"6365ef2a-b74a-4289-9a8d-0dcc4210e880","IpAddress":"::1","TenantId":null,"UserId":2,"ConnectTime":"2020-01-09T17:35:18.5466004+08:00","Properties":{}}
+DEBUG 2020-01-09 17:35:18,588 [51   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 6365ef2a-b74a-4289-9a8d-0dcc4210e880
+WARN  2020-01-09 17:35:20,669 [55   ] naries.DictionaryBasedLocalizationSource - Can not find 'Pages' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:35:20,670 [55   ] naries.DictionaryBasedLocalizationSource - Can not find 'UserInfos' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:35:20,670 [55   ] naries.DictionaryBasedLocalizationSource - Can not find 'UserInfosCreate' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:35:20,671 [55   ] naries.DictionaryBasedLocalizationSource - Can not find 'UserInfosDelete' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:35:20,672 [55   ] naries.DictionaryBasedLocalizationSource - Can not find 'UserInfosUpdate' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:35:23,601 [56   ] naries.DictionaryBasedLocalizationSource - Can not find '用户详情' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:35:23,602 [56   ] naries.DictionaryBasedLocalizationSource - Can not find '后台工作者' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:35:23,604 [56   ] naries.DictionaryBasedLocalizationSource - Can not find 'swaggerAPI文档' in localization source 'QYMSERVER'!
+DEBUG 2020-01-09 17:35:23,824 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 6365ef2a-b74a-4289-9a8d-0dcc4210e880
+WARN  2020-01-09 17:35:23,967 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'Pages' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:35:23,967 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'UserInfos' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:35:23,969 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'UserInfosCreate' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:35:23,970 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'UserInfosDelete' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:35:23,971 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'UserInfosUpdate' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:35:24,287 [6    ] naries.DictionaryBasedLocalizationSource - Can not find '用户详情' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:35:24,287 [6    ] naries.DictionaryBasedLocalizationSource - Can not find '后台工作者' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:35:24,288 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'swaggerAPI文档' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:35:24,492 [55   ] naries.DictionaryBasedLocalizationSource - Can not find 'Pages' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:35:24,493 [55   ] naries.DictionaryBasedLocalizationSource - Can not find 'UserInfos' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:35:24,494 [55   ] naries.DictionaryBasedLocalizationSource - Can not find 'UserInfosCreate' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:35:24,495 [55   ] naries.DictionaryBasedLocalizationSource - Can not find 'UserInfosDelete' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:35:24,496 [55   ] naries.DictionaryBasedLocalizationSource - Can not find 'UserInfosUpdate' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:35:24,610 [56   ] naries.DictionaryBasedLocalizationSource - Can not find '用户详情' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:35:24,611 [56   ] naries.DictionaryBasedLocalizationSource - Can not find '后台工作者' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:35:24,612 [56   ] naries.DictionaryBasedLocalizationSource - Can not find 'swaggerAPI文档' in localization source 'QYMSERVER'!
+DEBUG 2020-01-09 17:35:25,969 [55   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"a7c488f9-020d-4407-8315-0dc4205a7ecd","IpAddress":"::1","TenantId":null,"UserId":2,"ConnectTime":"2020-01-09T17:35:25.9696004+08:00","Properties":{}}
+DEBUG 2020-01-09 17:35:26,008 [52   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: a7c488f9-020d-4407-8315-0dc4205a7ecd
+DEBUG 2020-01-09 17:35:27,266 [56   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: a7c488f9-020d-4407-8315-0dc4205a7ecd
+DEBUG 2020-01-09 17:35:29,810 [48   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"c878b199-8cae-4672-a804-a2603be6b821","IpAddress":"::1","TenantId":null,"UserId":2,"ConnectTime":"2020-01-09T17:35:29.8106004+08:00","Properties":{}}
+DEBUG 2020-01-09 17:35:29,864 [54   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: c878b199-8cae-4672-a804-a2603be6b821
+INFO  2020-01-09 17:36:00,937 [50507] QYMSERVER.OPC_UA.AssignWorkManager       - 0.454424
+INFO  2020-01-09 17:36:00,937 [50507] QYMSERVER.OPC_UA.AssignWorkManager       - 0.454424
+INFO  2020-01-09 17:36:00,937 [50507] QYMSERVER.OPC_UA.AssignWorkManager       - 0.454424
+INFO  2020-01-09 17:36:00,937 [50507] QYMSERVER.OPC_UA.AssignWorkManager       - 0.454424
+INFO  2020-01-09 17:36:00,937 [50507] QYMSERVER.OPC_UA.AssignWorkManager       - 0.454424
+INFO  2020-01-09 17:36:00,937 [50507] QYMSERVER.OPC_UA.AssignWorkManager       - 0.454424
+INFO  2020-01-09 17:36:00,937 [50507] QYMSERVER.OPC_UA.AssignWorkManager       - 0.454424
+ERROR 2020-01-09 17:36:01,111 [eb90a] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+ERROR 2020-01-09 17:36:01,400 [0e02a] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+DEBUG 2020-01-09 17:36:52,957 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2020-01-09 17:36:53,237 [gator] Hangfire.SqlServer.CountersAggregator    - Records from the 'Counter' table aggregated.
+ERROR 2020-01-09 17:37:00,961 [b16df] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+INFO  2020-01-09 17:37:00,979 [f7081] QYMSERVER.OPC_UA.AssignWorkManager       - 0.2149357
+INFO  2020-01-09 17:37:00,979 [f7081] QYMSERVER.OPC_UA.AssignWorkManager       - 0.2149357
+INFO  2020-01-09 17:37:00,979 [f7081] QYMSERVER.OPC_UA.AssignWorkManager       - 0.2149357
+INFO  2020-01-09 17:37:00,979 [f7081] QYMSERVER.OPC_UA.AssignWorkManager       - 0.2149357
+INFO  2020-01-09 17:37:00,979 [f7081] QYMSERVER.OPC_UA.AssignWorkManager       - 0.2149357
+INFO  2020-01-09 17:37:00,979 [f7081] QYMSERVER.OPC_UA.AssignWorkManager       - 0.2149357
+INFO  2020-01-09 17:37:00,979 [f7081] QYMSERVER.OPC_UA.AssignWorkManager       - 0.2149357
+ERROR 2020-01-09 17:37:01,227 [7f595] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+INFO  2020-01-09 17:38:00,769 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.3346799
+INFO  2020-01-09 17:38:00,769 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.3346799
+INFO  2020-01-09 17:38:00,769 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.3346799
+INFO  2020-01-09 17:38:00,769 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.3346799
+INFO  2020-01-09 17:38:00,769 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.3346799
+INFO  2020-01-09 17:38:00,769 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.3346799
+INFO  2020-01-09 17:38:00,769 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.3346799
+ERROR 2020-01-09 17:38:00,947 [67e95] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+ERROR 2020-01-09 17:38:01,188 [f6e4d] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+WARN  2020-01-09 17:38:51,661 [61   ] naries.DictionaryBasedLocalizationSource - Can not find '用户详情' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:38:51,661 [61   ] naries.DictionaryBasedLocalizationSource - Can not find '后台工作者' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:38:51,662 [61   ] naries.DictionaryBasedLocalizationSource - Can not find 'swaggerAPI文档' in localization source 'QYMSERVER'!
+DEBUG 2020-01-09 17:38:51,716 [61   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: c878b199-8cae-4672-a804-a2603be6b821
+ERROR 2020-01-09 17:38:52,667 [61   ] nHandling.AbpApiExceptionFilterAttribute - The operation was canceled.
+System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at System.Web.Http.HostAuthenticationFilter.<AuthenticateAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+WARN  2020-01-09 17:38:53,008 [65   ] naries.DictionaryBasedLocalizationSource - Can not find '用户详情' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:38:53,009 [65   ] naries.DictionaryBasedLocalizationSource - Can not find '后台工作者' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:38:53,010 [65   ] naries.DictionaryBasedLocalizationSource - Can not find 'swaggerAPI文档' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:38:53,372 [58   ] naries.DictionaryBasedLocalizationSource - Can not find '用户详情' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:38:53,372 [58   ] naries.DictionaryBasedLocalizationSource - Can not find '后台工作者' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:38:53,373 [58   ] naries.DictionaryBasedLocalizationSource - Can not find 'swaggerAPI文档' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:38:53,444 [59   ] naries.DictionaryBasedLocalizationSource - Can not find '用户详情' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:38:53,445 [59   ] naries.DictionaryBasedLocalizationSource - Can not find '后台工作者' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:38:53,446 [59   ] naries.DictionaryBasedLocalizationSource - Can not find 'swaggerAPI文档' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:38:53,905 [63   ] naries.DictionaryBasedLocalizationSource - Can not find '用户详情' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:38:53,906 [63   ] naries.DictionaryBasedLocalizationSource - Can not find '后台工作者' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:38:53,908 [63   ] naries.DictionaryBasedLocalizationSource - Can not find 'swaggerAPI文档' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:38:54,268 [52   ] naries.DictionaryBasedLocalizationSource - Can not find '用户详情' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:38:54,270 [52   ] naries.DictionaryBasedLocalizationSource - Can not find '后台工作者' in localization source 'QYMSERVER'!
+WARN  2020-01-09 17:38:54,271 [52   ] naries.DictionaryBasedLocalizationSource - Can not find 'swaggerAPI文档' in localization source 'QYMSERVER'!
+DEBUG 2020-01-09 17:38:54,838 [58   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"dc97b81d-5da7-45a6-b966-5163348ae528","IpAddress":"::1","TenantId":null,"UserId":2,"ConnectTime":"2020-01-09T17:38:54.8386004+08:00","Properties":{}}
+DEBUG 2020-01-09 17:38:54,894 [59   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: dc97b81d-5da7-45a6-b966-5163348ae528
+INFO  2020-01-09 17:39:00,757 [8f4b9] QYMSERVER.OPC_UA.AssignWorkManager       - 0.04126125
+INFO  2020-01-09 17:39:00,757 [8f4b9] QYMSERVER.OPC_UA.AssignWorkManager       - 0.04126125
+INFO  2020-01-09 17:39:00,757 [8f4b9] QYMSERVER.OPC_UA.AssignWorkManager       - 0.04126125
+INFO  2020-01-09 17:39:00,757 [8f4b9] QYMSERVER.OPC_UA.AssignWorkManager       - 0.04126125
+INFO  2020-01-09 17:39:00,757 [8f4b9] QYMSERVER.OPC_UA.AssignWorkManager       - 0.04126125
+INFO  2020-01-09 17:39:00,757 [8f4b9] QYMSERVER.OPC_UA.AssignWorkManager       - 0.04126125
+INFO  2020-01-09 17:39:00,757 [8f4b9] QYMSERVER.OPC_UA.AssignWorkManager       - 0.04126125
+ERROR 2020-01-09 17:39:00,796 [a0a04] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+ERROR 2020-01-09 17:39:01,301 [f6e4d] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+INFO  2020-01-09 17:40:00,686 [50507] QYMSERVER.OPC_UA.AssignWorkManager       - 0.2569825
+INFO  2020-01-09 17:40:00,686 [50507] QYMSERVER.OPC_UA.AssignWorkManager       - 0.2569825
+INFO  2020-01-09 17:40:00,686 [50507] QYMSERVER.OPC_UA.AssignWorkManager       - 0.2569825
+INFO  2020-01-09 17:40:00,687 [50507] QYMSERVER.OPC_UA.AssignWorkManager       - 0.2569825
+INFO  2020-01-09 17:40:00,687 [50507] QYMSERVER.OPC_UA.AssignWorkManager       - 0.2569825
+INFO  2020-01-09 17:40:00,687 [50507] QYMSERVER.OPC_UA.AssignWorkManager       - 0.2569825
+INFO  2020-01-09 17:40:00,687 [50507] QYMSERVER.OPC_UA.AssignWorkManager       - 0.2569825
+ERROR 2020-01-09 17:40:00,889 [7f595] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+ERROR 2020-01-09 17:40:01,539 [598fa] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+ERROR 2020-01-09 17:41:00,781 [a0a04] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+INFO  2020-01-09 17:41:00,788 [6d851] QYMSERVER.OPC_UA.AssignWorkManager       - 0.1070751
+INFO  2020-01-09 17:41:00,788 [6d851] QYMSERVER.OPC_UA.AssignWorkManager       - 0.1070751
+INFO  2020-01-09 17:41:00,788 [6d851] QYMSERVER.OPC_UA.AssignWorkManager       - 0.1070751
+INFO  2020-01-09 17:41:00,788 [6d851] QYMSERVER.OPC_UA.AssignWorkManager       - 0.1070751
+INFO  2020-01-09 17:41:00,788 [6d851] QYMSERVER.OPC_UA.AssignWorkManager       - 0.1070751
+INFO  2020-01-09 17:41:00,788 [6d851] QYMSERVER.OPC_UA.AssignWorkManager       - 0.1070751
+INFO  2020-01-09 17:41:00,788 [6d851] QYMSERVER.OPC_UA.AssignWorkManager       - 0.1070751
+ERROR 2020-01-09 17:41:01,158 [7f595] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+DEBUG 2020-01-09 17:41:53,237 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2020-01-09 17:41:53,509 [gator] Hangfire.SqlServer.CountersAggregator    - Records from the 'Counter' table aggregated.
+INFO  2020-01-09 17:42:00,645 [b16df] QYMSERVER.OPC_UA.AssignWorkManager       - 0.2268192
+INFO  2020-01-09 17:42:00,645 [b16df] QYMSERVER.OPC_UA.AssignWorkManager       - 0.2268192
+INFO  2020-01-09 17:42:00,645 [b16df] QYMSERVER.OPC_UA.AssignWorkManager       - 0.2268192
+INFO  2020-01-09 17:42:00,645 [b16df] QYMSERVER.OPC_UA.AssignWorkManager       - 0.2268192
+INFO  2020-01-09 17:42:00,645 [b16df] QYMSERVER.OPC_UA.AssignWorkManager       - 0.2268192
+INFO  2020-01-09 17:42:00,645 [b16df] QYMSERVER.OPC_UA.AssignWorkManager       - 0.2268192
+INFO  2020-01-09 17:42:00,645 [b16df] QYMSERVER.OPC_UA.AssignWorkManager       - 0.2268192
+ERROR 2020-01-09 17:42:00,933 [f5eea] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+ERROR 2020-01-09 17:42:01,151 [b16df] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+INFO  2020-01-09 17:43:00,511 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.3419853
+INFO  2020-01-09 17:43:00,511 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.3419853
+INFO  2020-01-09 17:43:00,511 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.3419853
+INFO  2020-01-09 17:43:00,511 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.3419853
+INFO  2020-01-09 17:43:00,511 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.3419853
+INFO  2020-01-09 17:43:00,511 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.3419853
+INFO  2020-01-09 17:43:00,511 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.3419853
+ERROR 2020-01-09 17:43:00,707 [8f4b9] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+ERROR 2020-01-09 17:43:00,951 [f6e4d] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+INFO  2020-01-09 17:44:01,437 [eb90a] QYMSERVER.OPC_UA.AssignWorkManager       - 0.3886102
+INFO  2020-01-09 17:44:01,438 [eb90a] QYMSERVER.OPC_UA.AssignWorkManager       - 0.3886102
+INFO  2020-01-09 17:44:01,438 [eb90a] QYMSERVER.OPC_UA.AssignWorkManager       - 0.3886102
+INFO  2020-01-09 17:44:01,438 [eb90a] QYMSERVER.OPC_UA.AssignWorkManager       - 0.3886102
+INFO  2020-01-09 17:44:01,438 [eb90a] QYMSERVER.OPC_UA.AssignWorkManager       - 0.3886102
+INFO  2020-01-09 17:44:01,438 [eb90a] QYMSERVER.OPC_UA.AssignWorkManager       - 0.3886102
+INFO  2020-01-09 17:44:01,438 [eb90a] QYMSERVER.OPC_UA.AssignWorkManager       - 0.3886102
+ERROR 2020-01-09 17:44:01,635 [0e02a] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+ERROR 2020-01-09 17:44:01,946 [f6e4d] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+INFO  2020-01-09 17:45:01,383 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.2807495
+INFO  2020-01-09 17:45:01,383 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.2807495
+INFO  2020-01-09 17:45:01,383 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.2807495
+INFO  2020-01-09 17:45:01,383 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.2807495
+INFO  2020-01-09 17:45:01,383 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.2807495
+INFO  2020-01-09 17:45:01,383 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.2807495
+INFO  2020-01-09 17:45:01,383 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.2807495
+ERROR 2020-01-09 17:45:01,465 [eb90a] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+ERROR 2020-01-09 17:45:01,928 [a94d5] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+INFO  2020-01-09 17:46:01,276 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.1189586
+INFO  2020-01-09 17:46:01,276 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.1189586
+INFO  2020-01-09 17:46:01,276 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.1189586
+INFO  2020-01-09 17:46:01,276 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.1189586
+INFO  2020-01-09 17:46:01,276 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.1189586
+INFO  2020-01-09 17:46:01,276 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.1189586
+INFO  2020-01-09 17:46:01,276 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.1189586
+ERROR 2020-01-09 17:46:01,550 [a94d5] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+ERROR 2020-01-09 17:46:01,901 [598fa] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+DEBUG 2020-01-09 17:46:53,510 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2020-01-09 17:46:53,591 [gator] Hangfire.SqlServer.CountersAggregator    - Records from the 'Counter' table aggregated.
+INFO  2020-01-09 17:47:01,422 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.9334006
+INFO  2020-01-09 17:47:01,422 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.9334006
+INFO  2020-01-09 17:47:01,422 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.9334006
+INFO  2020-01-09 17:47:01,422 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.9334006
+INFO  2020-01-09 17:47:01,422 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.9334006
+INFO  2020-01-09 17:47:01,422 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.9334006
+INFO  2020-01-09 17:47:01,422 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.9334006
+ERROR 2020-01-09 17:47:01,476 [f6e4d] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+ERROR 2020-01-09 17:47:01,950 [7f232] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+INFO  2020-01-09 17:48:01,403 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.478191
+INFO  2020-01-09 17:48:01,404 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.478191
+INFO  2020-01-09 17:48:01,404 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.478191
+INFO  2020-01-09 17:48:01,404 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.478191
+INFO  2020-01-09 17:48:01,404 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.478191
+INFO  2020-01-09 17:48:01,404 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.478191
+INFO  2020-01-09 17:48:01,404 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.478191
+ERROR 2020-01-09 17:48:01,525 [b16df] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+ERROR 2020-01-09 17:48:01,783 [0e02a] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+INFO  2020-01-09 17:49:01,208 [a94d5] QYMSERVER.OPC_UA.AssignWorkManager       - 0.478191
+INFO  2020-01-09 17:49:01,208 [a94d5] QYMSERVER.OPC_UA.AssignWorkManager       - 0.478191
+INFO  2020-01-09 17:49:01,208 [a94d5] QYMSERVER.OPC_UA.AssignWorkManager       - 0.478191
+INFO  2020-01-09 17:49:01,208 [a94d5] QYMSERVER.OPC_UA.AssignWorkManager       - 0.478191
+INFO  2020-01-09 17:49:01,208 [a94d5] QYMSERVER.OPC_UA.AssignWorkManager       - 0.478191
+INFO  2020-01-09 17:49:01,208 [a94d5] QYMSERVER.OPC_UA.AssignWorkManager       - 0.478191
+INFO  2020-01-09 17:49:01,208 [a94d5] QYMSERVER.OPC_UA.AssignWorkManager       - 0.478191
+ERROR 2020-01-09 17:49:01,469 [b16df] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+ERROR 2020-01-09 17:49:01,679 [a0a04] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+INFO  2020-01-09 17:50:01,038 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.8374234
+INFO  2020-01-09 17:50:01,038 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.8374234
+INFO  2020-01-09 17:50:01,038 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.8374234
+INFO  2020-01-09 17:50:01,038 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.8374234
+INFO  2020-01-09 17:50:01,038 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.8374234
+INFO  2020-01-09 17:50:01,038 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.8374234
+INFO  2020-01-09 17:50:01,038 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.8374234
+ERROR 2020-01-09 17:50:01,086 [7f232] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+ERROR 2020-01-09 17:50:01,373 [7f232] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+INFO  2020-01-09 17:51:00,941 [f6e4d] QYMSERVER.OPC_UA.AssignWorkManager       - 0.9690511
+INFO  2020-01-09 17:51:00,941 [f6e4d] QYMSERVER.OPC_UA.AssignWorkManager       - 0.9690511
+INFO  2020-01-09 17:51:00,942 [f6e4d] QYMSERVER.OPC_UA.AssignWorkManager       - 0.9690511
+INFO  2020-01-09 17:51:00,942 [f6e4d] QYMSERVER.OPC_UA.AssignWorkManager       - 0.9690511
+INFO  2020-01-09 17:51:00,942 [f6e4d] QYMSERVER.OPC_UA.AssignWorkManager       - 0.9690511
+INFO  2020-01-09 17:51:00,942 [f6e4d] QYMSERVER.OPC_UA.AssignWorkManager       - 0.9690511
+INFO  2020-01-09 17:51:00,942 [f6e4d] QYMSERVER.OPC_UA.AssignWorkManager       - 0.9690511
+ERROR 2020-01-09 17:51:01,272 [fcc44] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+ERROR 2020-01-09 17:51:02,325 [598fa] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+DEBUG 2020-01-09 17:51:53,591 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2020-01-09 17:51:53,641 [gator] Hangfire.SqlServer.CountersAggregator    - Records from the 'Counter' table aggregated.
+INFO  2020-01-09 17:52:00,455 [02841] QYMSERVER.OPC_UA.AssignWorkManager       - 0.7953767
+INFO  2020-01-09 17:52:00,455 [02841] QYMSERVER.OPC_UA.AssignWorkManager       - 0.7953767
+INFO  2020-01-09 17:52:00,455 [02841] QYMSERVER.OPC_UA.AssignWorkManager       - 0.7953767
+INFO  2020-01-09 17:52:00,455 [02841] QYMSERVER.OPC_UA.AssignWorkManager       - 0.7953767
+INFO  2020-01-09 17:52:00,455 [02841] QYMSERVER.OPC_UA.AssignWorkManager       - 0.7953767
+INFO  2020-01-09 17:52:00,455 [02841] QYMSERVER.OPC_UA.AssignWorkManager       - 0.7953767
+INFO  2020-01-09 17:52:00,455 [02841] QYMSERVER.OPC_UA.AssignWorkManager       - 0.7953767
+ERROR 2020-01-09 17:52:00,663 [f6e4d] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+ERROR 2020-01-09 17:52:01,042 [be1eb] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+INFO  2020-01-09 17:53:00,522 [0e02a] QYMSERVER.OPC_UA.AssignWorkManager       - 0.2387027
+INFO  2020-01-09 17:53:00,522 [0e02a] QYMSERVER.OPC_UA.AssignWorkManager       - 0.2387027
+INFO  2020-01-09 17:53:00,522 [0e02a] QYMSERVER.OPC_UA.AssignWorkManager       - 0.2387027
+INFO  2020-01-09 17:53:00,522 [0e02a] QYMSERVER.OPC_UA.AssignWorkManager       - 0.2387027
+INFO  2020-01-09 17:53:00,522 [0e02a] QYMSERVER.OPC_UA.AssignWorkManager       - 0.2387027
+INFO  2020-01-09 17:53:00,522 [0e02a] QYMSERVER.OPC_UA.AssignWorkManager       - 0.2387027
+INFO  2020-01-09 17:53:00,522 [0e02a] QYMSERVER.OPC_UA.AssignWorkManager       - 0.2387027
+ERROR 2020-01-09 17:53:00,615 [b16df] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+ERROR 2020-01-09 17:53:01,177 [f6e4d] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+INFO  2020-01-09 17:54:00,560 [b6ef1] QYMSERVER.OPC_UA.AssignWorkManager       - 0.4361442
+INFO  2020-01-09 17:54:00,560 [b6ef1] QYMSERVER.OPC_UA.AssignWorkManager       - 0.4361442
+INFO  2020-01-09 17:54:00,560 [b6ef1] QYMSERVER.OPC_UA.AssignWorkManager       - 0.4361442
+INFO  2020-01-09 17:54:00,560 [b6ef1] QYMSERVER.OPC_UA.AssignWorkManager       - 0.4361442
+INFO  2020-01-09 17:54:00,560 [b6ef1] QYMSERVER.OPC_UA.AssignWorkManager       - 0.4361442
+INFO  2020-01-09 17:54:00,569 [b6ef1] QYMSERVER.OPC_UA.AssignWorkManager       - 0.4361442
+INFO  2020-01-09 17:54:00,569 [b6ef1] QYMSERVER.OPC_UA.AssignWorkManager       - 0.4361442
+ERROR 2020-01-09 17:54:00,606 [0e02a] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+ERROR 2020-01-09 17:54:00,986 [b16df] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+ERROR 2020-01-09 17:55:01,440 [be1eb] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+INFO  2020-01-09 17:55:01,447 [b6ef1] QYMSERVER.OPC_UA.AssignWorkManager       - 0.7295628
+INFO  2020-01-09 17:55:01,447 [b6ef1] QYMSERVER.OPC_UA.AssignWorkManager       - 0.7295628
+INFO  2020-01-09 17:55:01,447 [b6ef1] QYMSERVER.OPC_UA.AssignWorkManager       - 0.7295628
+INFO  2020-01-09 17:55:01,447 [b6ef1] QYMSERVER.OPC_UA.AssignWorkManager       - 0.7295628
+INFO  2020-01-09 17:55:01,447 [b6ef1] QYMSERVER.OPC_UA.AssignWorkManager       - 0.7295628
+INFO  2020-01-09 17:55:01,447 [b6ef1] QYMSERVER.OPC_UA.AssignWorkManager       - 0.7295628
+INFO  2020-01-09 17:55:01,447 [b6ef1] QYMSERVER.OPC_UA.AssignWorkManager       - 0.7295628
+ERROR 2020-01-09 17:55:01,825 [8a95c] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+ERROR 2020-01-09 17:56:01,307 [0e02a] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+INFO  2020-01-09 17:56:01,345 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.5138415
+INFO  2020-01-09 17:56:01,345 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.5138415
+INFO  2020-01-09 17:56:01,345 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.5138415
+INFO  2020-01-09 17:56:01,345 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.5138415
+INFO  2020-01-09 17:56:01,345 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.5138415
+INFO  2020-01-09 17:56:01,345 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.5138415
+INFO  2020-01-09 17:56:01,345 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.5138415
+ERROR 2020-01-09 17:56:01,918 [eb90a] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+DEBUG 2020-01-09 17:56:53,642 [gator] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2020-01-09 17:56:53,706 [gator] Hangfire.SqlServer.CountersAggregator    - Records from the 'Counter' table aggregated.
+ERROR 2020-01-09 17:57:01,324 [7f232] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+INFO  2020-01-09 17:57:01,339 [eb90a] QYMSERVER.OPC_UA.AssignWorkManager       - 0.7953767
+INFO  2020-01-09 17:57:01,339 [eb90a] QYMSERVER.OPC_UA.AssignWorkManager       - 0.7953767
+INFO  2020-01-09 17:57:01,339 [eb90a] QYMSERVER.OPC_UA.AssignWorkManager       - 0.7953767
+INFO  2020-01-09 17:57:01,339 [eb90a] QYMSERVER.OPC_UA.AssignWorkManager       - 0.7953767
+INFO  2020-01-09 17:57:01,339 [eb90a] QYMSERVER.OPC_UA.AssignWorkManager       - 0.7953767
+INFO  2020-01-09 17:57:01,339 [eb90a] QYMSERVER.OPC_UA.AssignWorkManager       - 0.7953767
+INFO  2020-01-09 17:57:01,340 [eb90a] QYMSERVER.OPC_UA.AssignWorkManager       - 0.7953767
+ERROR 2020-01-09 17:57:01,765 [02841] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+INFO  2020-01-09 17:58:01,138 [7f232] QYMSERVER.OPC_UA.AssignWorkManager       - 0.3465634
+INFO  2020-01-09 17:58:01,138 [7f232] QYMSERVER.OPC_UA.AssignWorkManager       - 0.3465634
+INFO  2020-01-09 17:58:01,138 [7f232] QYMSERVER.OPC_UA.AssignWorkManager       - 0.3465634
+INFO  2020-01-09 17:58:01,138 [7f232] QYMSERVER.OPC_UA.AssignWorkManager       - 0.3465634
+INFO  2020-01-09 17:58:01,138 [7f232] QYMSERVER.OPC_UA.AssignWorkManager       - 0.3465634
+INFO  2020-01-09 17:58:01,138 [7f232] QYMSERVER.OPC_UA.AssignWorkManager       - 0.3465634
+INFO  2020-01-09 17:58:01,138 [7f232] QYMSERVER.OPC_UA.AssignWorkManager       - 0.3465634
+ERROR 2020-01-09 17:58:01,321 [fcc44] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+ERROR 2020-01-09 17:58:01,721 [7f232] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+INFO  2020-01-09 17:59:01,052 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.4480277
+INFO  2020-01-09 17:59:01,052 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.4480277
+INFO  2020-01-09 17:59:01,052 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.4480277
+INFO  2020-01-09 17:59:01,052 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.4480277
+INFO  2020-01-09 17:59:01,053 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.4480277
+INFO  2020-01-09 17:59:01,053 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.4480277
+INFO  2020-01-09 17:59:01,053 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.4480277
+ERROR 2020-01-09 17:59:01,318 [f7081] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+ERROR 2020-01-09 17:59:01,558 [a94d5] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+INFO  2020-01-09 18:00:01,021 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.1125623
+INFO  2020-01-09 18:00:01,022 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.1125623
+INFO  2020-01-09 18:00:01,022 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.1125623
+INFO  2020-01-09 18:00:01,022 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.1125623
+INFO  2020-01-09 18:00:01,022 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.1125623
+INFO  2020-01-09 18:00:01,022 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.1125623
+INFO  2020-01-09 18:00:01,022 [598fa] QYMSERVER.OPC_UA.AssignWorkManager       - 0.1125623
+ERROR 2020-01-09 18:00:01,101 [a94d5] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+ERROR 2020-01-09 18:00:01,489 [eb90a] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+INFO  2020-01-09 18:01:00,800 [b16df] QYMSERVER.OPC_UA.AssignWorkManager       - 0.8849574
+INFO  2020-01-09 18:01:00,800 [b16df] QYMSERVER.OPC_UA.AssignWorkManager       - 0.8849574
+INFO  2020-01-09 18:01:00,800 [b16df] QYMSERVER.OPC_UA.AssignWorkManager       - 0.8849574
+INFO  2020-01-09 18:01:00,800 [b16df] QYMSERVER.OPC_UA.AssignWorkManager       - 0.8849574
+INFO  2020-01-09 18:01:00,800 [b16df] QYMSERVER.OPC_UA.AssignWorkManager       - 0.8849574
+INFO  2020-01-09 18:01:00,800 [b16df] QYMSERVER.OPC_UA.AssignWorkManager       - 0.8849574
+INFO  2020-01-09 18:01:00,800 [b16df] QYMSERVER.OPC_UA.AssignWorkManager       - 0.8849574
+ERROR 2020-01-09 18:01:00,839 [fcc44] QYMSERVER.QYMSERVERApplicationModule     - Fuccck
+ERROR 2020-01-09 18:01:01,163 [8f4b9] QYMSERVER.QYMSERVERApplicationModule     - Fuccck

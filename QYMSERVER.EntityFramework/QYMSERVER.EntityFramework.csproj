@@ -220,6 +220,18 @@
     <Compile Include="Migrations\202001061005336_Add_AllEntity_V2.Designer.cs">
       <DependentUpon>202001061005336_Add_AllEntity_V2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202001110844131_PRODIDTABLENULLABLE.cs" />
+    <Compile Include="Migrations\202001110844131_PRODIDTABLENULLABLE.Designer.cs">
+      <DependentUpon>202001110844131_PRODIDTABLENULLABLE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202001111008570_ADD_MACHINE_TABLE.cs" />
+    <Compile Include="Migrations\202001111008570_ADD_MACHINE_TABLE.Designer.cs">
+      <DependentUpon>202001111008570_ADD_MACHINE_TABLE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202001150801338_add systemconfig and operationlog.cs" />
+    <Compile Include="Migrations\202001150801338_add systemconfig and operationlog.Designer.cs">
+      <DependentUpon>202001150801338_add systemconfig and operationlog.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\AbpZeroDbMigrator.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="QYMSERVERDataModule.cs" />
@@ -251,6 +263,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202001061005336_Add_AllEntity_V2.resx">
       <DependentUpon>202001061005336_Add_AllEntity_V2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001110844131_PRODIDTABLENULLABLE.resx">
+      <DependentUpon>202001110844131_PRODIDTABLENULLABLE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001111008570_ADD_MACHINE_TABLE.resx">
+      <DependentUpon>202001111008570_ADD_MACHINE_TABLE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001150801338_add systemconfig and operationlog.resx">
+      <DependentUpon>202001150801338_add systemconfig and operationlog.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

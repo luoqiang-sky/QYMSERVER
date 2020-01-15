@@ -17,13 +17,11 @@ using Abp.Quartz;
 using QYMSERVER.HangfireServiceBase;
 using Quartz;
 using Abp.Quartz.Configuration;
-using QYMSERVER.TestApp.DTO;
-using QYMSERVER.Entities.Test;
-using QYMSERVER.DoWork.MainProduct.Dto;
 using QYMSERVER.Entities.Product;
 using QYMSERVER.Entities.IWS;
 using Hangfire;
 using System;
+using QYMSERVER.ClientService.MPS;
 
 namespace QYMSERVER
 {
@@ -75,9 +73,6 @@ namespace QYMSERVER
                 cfg.CreateMap<CreateUserDto, User>();
                 cfg.CreateMap<CreateUserDto, User>().ForMember(x => x.Roles, opt => opt.Ignore());
 
-                cfg.CreateMap<TestDto, TestEntity>();
-                cfg.CreateMap<TestDto, TestEntity>().ForMember(x => x.AAA, opt => opt.Ignore());
-
                 cfg.CreateMap<PRODTABLEDto, PRODTABLE>();
                 cfg.CreateMap<PRODTABLEDto, PRODTABLE>().ForMember(x => x.PRODID, opt => opt.Ignore());
 
@@ -103,14 +98,13 @@ namespace QYMSERVER
             });
         }
         public override void PostInitialize()
-
         {
             //注册后台工作者标记消极用户
             var workManager = IocManager.Resolve<IBackgroundWorkerManager>();
             workManager.Add(IocManager.Resolve<MakeInactiveUsersPassiveWorker>());
 
-            RecurringJob.AddOrUpdate("QYMSERVERApplicationModule", () => dowork(), Cron.MinuteInterval(1), TimeZoneInfo.Utc);
-            RecurringJob.AddOrUpdate("2QYMSERVERApplicationModule", () => dowork(), Cron.MinuteInterval(1), TimeZoneInfo.Utc);
+            //RecurringJob.AddOrUpdate("QYMSERVERApplicationModule", () => dowork(), Cron.MinuteInterval(1), TimeZoneInfo.Utc);
+            //RecurringJob.AddOrUpdate("2QYMSERVERApplicationModule", () => dowork(), Cron.MinuteInterval(1), TimeZoneInfo.Utc);
 
             //var workManager1 = IocManager.Resolve<IBackgroundWorkerManager>();
             //workManager1.Add(IocManager.Resolve<ProductTableMonitorWorker>());

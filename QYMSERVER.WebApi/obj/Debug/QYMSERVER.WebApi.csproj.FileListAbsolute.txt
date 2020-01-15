@@ -850,3 +850,5 @@ E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.WebApi\bin\Debug
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.WebApi\bin\Debug\Opc.Ua.Client.dll
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.WebApi\bin\Debug\Opc.Ua.ClientControls.dll
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.WebApi\bin\Debug\BouncyCastle.Crypto.dll
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.WebApi\bin\Debug\Microsoft.Dynamics.BusinessConnectorNet.dll
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.WebApi\bin\Debug\Microsoft.Dynamics.BusinessConnectorNet.xml

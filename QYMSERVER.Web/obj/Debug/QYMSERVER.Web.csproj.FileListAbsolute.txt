@@ -907,3 +907,5 @@ E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Web\bin\Opc.Ua.C
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Web\bin\Opc.Ua.Client.dll
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Web\bin\Opc.Ua.ClientControls.dll
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Web\bin\BouncyCastle.Crypto.dll
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Web\bin\Microsoft.Dynamics.BusinessConnectorNet.dll
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Web\bin\Microsoft.Dynamics.BusinessConnectorNet.xml
