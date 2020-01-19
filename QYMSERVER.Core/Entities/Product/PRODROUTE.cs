@@ -35,6 +35,10 @@ namespace QYMSERVER.Entities.Product
         public string SETUPCATEGORYID { get; set; }                 //
         public string PROCESSCATEGORYID { get; set; }               //
         public int? OPRFINISHED { get; set; }                       //工序是否完成（工序完成状态 1：完成 0：未完成）
+        /// <summary>
+        /// 标记工序已经开始 1已经开始，2已经结束，0没有开始，默认为0
+        /// </summary>
+        public int? ISSTARTED { get; set; }                          //
         public decimal? FORMULAFACTOR1 { get; set; }                //
         public int? ROUTETYPE { get; set; }                         //
         public int? BACKORDERSTATUS { get; set; }                   //

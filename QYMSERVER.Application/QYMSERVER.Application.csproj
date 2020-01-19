@@ -286,7 +286,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ClientService\Equipment\" />
+    <Folder Include="ClientService\Equipment\AOI\" />
+    <Folder Include="ClientService\Equipment\CD\" />
+    <Folder Include="ClientService\Equipment\LVCD\" />
+    <Folder Include="ClientService\Equipment\WRI\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

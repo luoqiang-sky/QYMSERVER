@@ -125,5 +125,9 @@ namespace QYMSERVER.ClientService.MPS
             return ProcessInfos;
         }
 
+        public Task<bool> InsertSingleRoute(PRODROUTE insertDTO, string prodid)
+        {
+            return null;//OPRNUM  OPRNUMNEXT  两个关键字
+        }
     }
 }

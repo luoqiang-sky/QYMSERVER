@@ -232,6 +232,22 @@
     <Compile Include="Migrations\202001150801338_add systemconfig and operationlog.Designer.cs">
       <DependentUpon>202001150801338_add systemconfig and operationlog.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202001150923159_ISSTARTED add default value.cs" />
+    <Compile Include="Migrations\202001150923159_ISSTARTED add default value.Designer.cs">
+      <DependentUpon>202001150923159_ISSTARTED add default value.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202001160700483_PRODROUTE ADD ISSTARTED.cs" />
+    <Compile Include="Migrations\202001160700483_PRODROUTE ADD ISSTARTED.Designer.cs">
+      <DependentUpon>202001160700483_PRODROUTE ADD ISSTARTED.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202001170841182_pdodroute add default value.cs" />
+    <Compile Include="Migrations\202001170841182_pdodroute add default value.Designer.cs">
+      <DependentUpon>202001170841182_pdodroute add default value.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202001180733151_Machines add default value.cs" />
+    <Compile Include="Migrations\202001180733151_Machines add default value.Designer.cs">
+      <DependentUpon>202001180733151_Machines add default value.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\AbpZeroDbMigrator.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="QYMSERVERDataModule.cs" />
@@ -243,6 +259,8 @@
     <Compile Include="Migrations\SeedData\InitialHostDbBuilder.cs" />
     <Compile Include="Migrations\SeedData\TenantRoleAndUserBuilder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQL\ISqlExecuter.cs" />
+    <Compile Include="SQL\SqlExecuter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -272,6 +290,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202001150801338_add systemconfig and operationlog.resx">
       <DependentUpon>202001150801338_add systemconfig and operationlog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001150923159_ISSTARTED add default value.resx">
+      <DependentUpon>202001150923159_ISSTARTED add default value.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001160700483_PRODROUTE ADD ISSTARTED.resx">
+      <DependentUpon>202001160700483_PRODROUTE ADD ISSTARTED.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001170841182_pdodroute add default value.resx">
+      <DependentUpon>202001170841182_pdodroute add default value.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001180733151_Machines add default value.resx">
+      <DependentUpon>202001180733151_Machines add default value.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -42,7 +42,12 @@ namespace QYMSERVER.ClientService.MPS
         /// </summary>
         /// <returns></returns>
         Task<ObservableCollection<ProcessInfoDto>> GetRouteProcessAsync(string prodid);
-
-
+        /// <summary>
+        /// 插入一步工序
+        /// </summary>
+        /// <param name="insertDTO">工序数据</param>
+        /// <param name="prodid">工序所在的生产单号</param>
+        /// <returns></returns>
+        Task<bool> InsertSingleRoute(PRODROUTE insertDTO,string prodid);
     }
 }

@@ -89,6 +89,14 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:QYMSERVER.ClientService.MPS.IClientMPSAppService.InsertSingleRoute(QYMSERVER.Entities.Product.PRODROUTE,System.String)">
+            <summary>
+            插入一步工序
+            </summary>
+            <param name="insertDTO">工序数据</param>
+            <param name="prodid">工序所在的生产单号</param>
+            <returns></returns>
+        </member>
         <member name="T:QYMSERVER.ClientService.MPS.IRouteWorkAppService">
             <summary>
             工序订单的所有功能接口

@@ -543,6 +543,13 @@ E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Application\bin\
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Application\bin\Debug\System.Linq.Dynamic.Core.dll
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Application\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Application\bin\Debug\System.Xml.XPath.XmlDocument.dll
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Application\bin\Debug\Microsoft.Dynamics.BusinessConnectorNet.dll
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Application\bin\Debug\OpcUaHelper.dll
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Application\bin\Debug\Opc.Ua.Core.dll
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Application\bin\Debug\Opc.Ua.Client.dll
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Application\bin\Debug\Opc.Ua.Configuration.dll
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Application\bin\Debug\Opc.Ua.ClientControls.dll
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Application\bin\Debug\BouncyCastle.Crypto.dll
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Application\bin\Debug\Abp.pdb
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Application\bin\Debug\Abp.xml
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Application\bin\Debug\Abp.AutoMapper.pdb
@@ -594,6 +601,7 @@ E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Application\bin\
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Application\bin\Debug\System.Linq.Dynamic.Core.pdb
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Application\bin\Debug\System.Linq.Dynamic.Core.xml
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Application\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Application\bin\Debug\Microsoft.Dynamics.BusinessConnectorNet.xml
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Application\bin\Debug\es\Hangfire.Core.resources.dll
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Application\bin\Debug\zh\Hangfire.Core.resources.dll
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Application\obj\Debug\QYMSERVER.Application.csprojAssemblyReference.cache
@@ -601,11 +609,3 @@ E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Application\obj\
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Application\obj\Debug\QYMSERVER.Application.csproj.CopyComplete
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Application\obj\Debug\QYMSERVER.Application.dll
 E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Application\obj\Debug\QYMSERVER.Application.pdb
-E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Application\bin\Debug\OpcUaHelper.dll
-E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Application\bin\Debug\Opc.Ua.Core.dll
-E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Application\bin\Debug\Opc.Ua.Configuration.dll
-E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Application\bin\Debug\Opc.Ua.Client.dll
-E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Application\bin\Debug\Opc.Ua.ClientControls.dll
-E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Application\bin\Debug\BouncyCastle.Crypto.dll
-E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Application\bin\Debug\Microsoft.Dynamics.BusinessConnectorNet.dll
-E:\Work\AAAMES\LocalServer\QYMSERVERPROJECT\QYMSERVER\QYMSERVER.Application\bin\Debug\Microsoft.Dynamics.BusinessConnectorNet.xml

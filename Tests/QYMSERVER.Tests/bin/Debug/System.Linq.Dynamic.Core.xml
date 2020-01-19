@@ -146,6 +146,11 @@
             A factory to create dynamic classes, based on <see href="http://stackoverflow.com/questions/29413942/c-sharp-anonymous-object-with-properties-from-dictionary" />.
             </summary>
         </member>
+        <member name="F:System.Linq.Dynamic.Core.DynamicClassFactory.DynamicAssemblyName">
+            <summary>
+            The AssemblyName
+            </summary>
+        </member>
         <member name="M:System.Linq.Dynamic.Core.DynamicClassFactory.#cctor">
             <summary>
             Initializes the <see cref="T:System.Linq.Dynamic.Core.DynamicClassFactory"/> class.

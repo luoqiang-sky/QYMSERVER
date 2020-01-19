@@ -89,7 +89,7 @@ namespace QYMSERVER.Entities.Product
         public System.DateTime? QY_PREEXPOSEDATE { get; set; }          //
         public int? QY_PREEXPOSEDATETZID { get; set; }                  //
         public int? PROCESS { get; set; }                               //
-        public int? ISSTARTED { get; set; }                             //
+        public int ISSTARTED { get; set; } = 0;                         //标记订单已经开始 1已经开始，2已经结束，0没有开始，默认为0
         public DateTime?STARTDATE { get; set; }                         //
         public System.DateTime? DUEDATE { get; set; }                   //
     }
